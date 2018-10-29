@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="15" family="Times" color="#000000"/>
+	<fontspec id="1" size="9" family="Times" color="#000000"/>
+	<fontspec id="2" size="12" family="Times" color="#000000"/>
+	<fontspec id="3" size="28" family="Times" color="#7f7f7f"/>
+<text top="146" left="166" width="588" height="16" font="0">SINGING VOICE CORRECTION USING CANONICAL TIME WARPING</text>
+<text top="190" left="265" width="95" height="15" font="0">Yin-Jyun Luo</text>
+<text top="187" left="360" width="6" height="11" font="1">1</text>
+<text top="190" left="367" width="121" height="15" font="0">, Ming-Tso Chen</text>
+<text top="187" left="488" width="6" height="11" font="1">2</text>
+<text top="190" left="495" width="99" height="15" font="0">, Tai-Shih Chi</text>
+<text top="187" left="595" width="6" height="11" font="1">2</text>
+<text top="190" left="602" width="46" height="15" font="0">, Li Su</text>
+<text top="187" left="648" width="6" height="11" font="1">1</text>
+<text top="229" left="244" width="6" height="11" font="1">1</text>
+<text top="232" left="255" width="421" height="16" font="0">Institute of Information Science, Academia Sinica, Taiwan</text>
+<text top="250" left="117" width="6" height="11" font="1">2</text>
+<text top="253" left="128" width="675" height="16" font="0">Department of Electrical and Computer Engineering, National Chiao Tung University, Taiwan</text>
+<text top="313" left="224" width="81" height="13" font="2">ABSTRACT</text>
+<text top="340" left="82" width="366" height="13" font="2">Expressive singing voice correction is an appealing but chal-</text>
+<text top="358" left="82" width="366" height="13" font="2">lenging problem. A robust time-warping algorithm which</text>
+<text top="376" left="82" width="366" height="13" font="2">synchronizes two singing recordings can provide a promis-</text>
+<text top="394" left="82" width="366" height="13" font="2">ing solution. We thereby propose to address the problem by</text>
+<text top="412" left="82" width="366" height="13" font="2">canonical time warping (CTW) which aligns amateur singing</text>
+<text top="430" left="82" width="366" height="13" font="2">recordings to professional ones. A new pitch contour is gen-</text>
+<text top="448" left="82" width="366" height="13" font="2">erated given the alignment information, and a pitch-corrected</text>
+<text top="466" left="82" width="366" height="13" font="2">singing is synthesized back through the vocoder. The ob-</text>
+<text top="484" left="82" width="366" height="13" font="2">jective evaluation shows that CTW is robust against pitch-</text>
+<text top="502" left="82" width="366" height="13" font="2">shifting and time-stretching effects, and the subjective test</text>
+<text top="520" left="82" width="366" height="13" font="2">demonstrates that CTW prevails the other methods includ-</text>
+<text top="538" left="82" width="366" height="13" font="2">ing DTW and the commercial auto-tuning software. Finally,</text>
+<text top="556" left="82" width="366" height="13" font="2">we demonstrate the applicability of the proposed method in a</text>
+<text top="573" left="82" width="178" height="13" font="2">practical, real-world scenario.</text>
+<text top="599" left="104" width="343" height="14" font="2">Index Terms— Singing voice correction, singing voice</text>
+<text top="617" left="82" width="202" height="13" font="2">synthesis, canonical time warping</text>
+<text top="661" left="195" width="139" height="13" font="2">1. INTRODUCTION</text>
+<text top="695" left="82" width="366" height="13" font="2">Synchronizing a music signal with another sequence of dif-</text>
+<text top="713" left="82" width="366" height="13" font="2">ferent modality, such as audio, <a href="xml/_1711.08600v1.html#5">[1] </a>MIDI <a href="xml/_1711.08600v1.html#5">[2], </a>sheet music</text>
+<text top="731" left="82" width="366" height="13" font="2"><a href="xml/_1711.08600v1.html#5">[3], </a>lyrics <a href="xml/_1711.08600v1.html#5">[4], </a>or video <a href="xml/_1711.08600v1.html#5">[5], </a>provides great possibilities in</text>
+<text top="749" left="82" width="366" height="13" font="2">automatizing music annotation <a href="xml/_1711.08600v1.html#5">[6], </a>interactive performance</text>
+<text top="767" left="82" width="366" height="13" font="2"><a href="xml/_1711.08600v1.html#5">[7], </a>education <a href="xml/_1711.08600v1.html#5">[8], </a>and many other applications. In this pa-</text>
+<text top="785" left="82" width="366" height="13" font="2">per, we focus on the use of audio synchronization algorithms</text>
+<text top="803" left="82" width="366" height="13" font="2">to solve the singing voice correction problem. Our main fo-</text>
+<text top="821" left="82" width="366" height="13" font="2">cus of singing voice correction is to automatically modify</text>
+<text top="838" left="82" width="366" height="13" font="2">the unsatisfactory singing of an amateur singer with wrong</text>
+<text top="856" left="82" width="366" height="13" font="2">key and intonation into correct one, while preserving orig-</text>
+<text top="874" left="82" width="366" height="13" font="2">inal timbre as much as possible. Here the ‘unsatisfactory’</text>
+<text top="892" left="82" width="366" height="13" font="2">singing, namely the source, is an audio signal, while the ‘cor-</text>
+<text top="910" left="82" width="366" height="13" font="2">rect’ singing, namely the target, can be a predefined music</text>
+<text top="928" left="82" width="366" height="13" font="2">scale <a href="xml/_1711.08600v1.html#5">[9], </a>a MIDI score of the same song <a href="xml/_1711.08600v1.html#5">[10], </a>a phonetic se-</text>
+<text top="946" left="82" width="366" height="13" font="2">quence of the lyric <a href="xml/_1711.08600v1.html#5">[11], </a>or a recording of the same song per-</text>
+<text top="964" left="82" width="366" height="13" font="2">formed by a professional singer. Previous studies on this topic</text>
+<text top="982" left="82" width="366" height="13" font="2">mostly propose rules or time-warping algorithms to shift the</text>
+<text top="1000" left="82" width="366" height="13" font="2">source pitch contour to fit a musical scale or a MIDI score,</text>
+<text top="1018" left="82" width="366" height="13" font="2">then use a vocoder to resynthesize the signal with the new</text>
+<text top="1036" left="82" width="366" height="13" font="2">pitch contour and the spectral envelope of the source <a href="xml/_1711.08600v1.html#5">[10].</a></text>
+<text top="1054" left="82" width="366" height="13" font="2">For instance, intonation is adjusted locally using rule-based</text>
+<text top="1072" left="82" width="366" height="13" font="2">algorithms such as the dynamic pitch warping (DPW) <a href="xml/_1711.08600v1.html#5">[12].</a></text>
+<text top="313" left="473" width="366" height="13" font="2">Since the ground truth given here are deadpan notes, the out-</text>
+<text top="331" left="473" width="366" height="13" font="2">comes of these techniques tend to lose the voice articulation</text>
+<text top="349" left="473" width="366" height="13" font="2">such as the sliding and vibrato, which are important for hu-</text>
+<text top="367" left="473" width="97" height="13" font="2">man expression.</text>
+<text top="387" left="495" width="343" height="13" font="2">One way to achieve expressive singing voice correction</text>
+<text top="405" left="473" width="366" height="13" font="2">is to align the source recording to a professional recording</text>
+<text top="423" left="473" width="366" height="13" font="2">of the same song as the target, then modify the source pitch</text>
+<text top="441" left="473" width="366" height="13" font="2">contour according to the alignment path. In this way, an am-</text>
+<text top="458" left="473" width="366" height="13" font="2">ateur singer can get the professional singer’s key, intonation,</text>
+<text top="476" left="473" width="366" height="13" font="2">and even expression all at once. Seemingly a straightforward</text>
+<text top="494" left="473" width="366" height="13" font="2">idea, such a task is however quite challenging because of not</text>
+<text top="512" left="473" width="366" height="13" font="2">only the wrong pitch in the source, but also the timbre among</text>
+<text top="530" left="473" width="366" height="13" font="2">various sources and targets. Furthermore, since a clean pro-</text>
+<text top="548" left="473" width="366" height="13" font="2">fessional monophonic singing is seldom available, in prac-</text>
+<text top="566" left="473" width="366" height="13" font="2">tice one would need to consider the alignment from the user’s</text>
+<text top="584" left="473" width="366" height="13" font="2">input (typically monophonic singing) to a polyphonic target</text>
+<text top="602" left="473" width="366" height="13" font="2">containing singing as well as accompaniment. To the best of</text>
+<text top="620" left="473" width="366" height="13" font="2">our knowledge, no study has investigated singing voice cor-</text>
+<text top="638" left="473" width="211" height="13" font="2">rection in such a practical scenario.</text>
+<text top="657" left="495" width="343" height="13" font="2">Other studies on the alignment of singing voice, such as</text>
+<text top="675" left="473" width="366" height="13" font="2">those for automatic singing voice assessment <a href="xml/_1711.08600v1.html#5">[13], </a>melody</text>
+<text top="693" left="473" width="366" height="13" font="2">similarity measurement <a href="xml/_1711.08600v1.html#5">[14], </a>speech-to-singing synthesis</text>
+<text top="711" left="473" width="366" height="13" font="2"><a href="xml/_1711.08600v1.html#5">[15], </a>and an adaptive karaoke system <a href="xml/_1711.08600v1.html#5">[16] </a>also face similar</text>
+<text top="729" left="473" width="366" height="13" font="2">challenges caused by high-modality data, in which the con-</text>
+<text top="747" left="473" width="366" height="13" font="2">ventional dynamic time warping (DTW) can not handle well.</text>
+<text top="765" left="473" width="366" height="13" font="2">They usually focus on pertaining alignment accuracy using</text>
+<text top="783" left="473" width="366" height="13" font="2">DTW on low-level features, but ignore the expressive parts</text>
+<text top="801" left="473" width="366" height="13" font="2">of the features. For example, the targets for alignment are</text>
+<text top="819" left="473" width="366" height="13" font="2">dull singings without vibrato in <a href="xml/_1711.08600v1.html#5">[13]. </a>In <a href="xml/_1711.08600v1.html#5">[14], </a>the alignment</text>
+<text top="837" left="473" width="366" height="13" font="2">is performed on automatically transcribed notes where the</text>
+<text top="855" left="473" width="366" height="13" font="2">vibrato and ornamentation are also suppressed. Also in <a href="xml/_1711.08600v1.html#5">[16],</a></text>
+<text top="873" left="473" width="366" height="13" font="2">it is reported that DTW is inferior in aligning clean singings</text>
+<text top="891" left="473" width="227" height="13" font="2">to source-separated professional ones.</text>
+<text top="910" left="495" width="343" height="13" font="2">These issues motivate us to investigate the use of ad-</text>
+<text top="928" left="473" width="366" height="13" font="2">vanced time-warping algorithms, such as canonical time</text>
+<text top="946" left="473" width="366" height="13" font="2">warping (CTW) <a href="xml/_1711.08600v1.html#5">[17], </a>to solve the singing voice correction</text>
+<text top="964" left="473" width="366" height="13" font="2">problem. CTW combines the canonical correlation analysis</text>
+<text top="982" left="473" width="366" height="13" font="2">(CCA) and DTW, to offer more robustness and flexibility to</text>
+<text top="1000" left="473" width="366" height="13" font="2">cross-domain features than DTW. Although CTW has been</text>
+<text top="1018" left="473" width="366" height="13" font="2">used in the lyrics-to-audio alignment task <a href="xml/_1711.08600v1.html#5">[4], </a>its application</text>
+<text top="1036" left="473" width="366" height="13" font="2">in aligning an amateur singing to a professional singing with</text>
+<text top="1054" left="473" width="366" height="13" font="2">or without accompaniment, is never investigated. To verify</text>
+<text top="1072" left="473" width="366" height="13" font="2">the potential of CTW in a more accurate way, we compiled</text>
+<text top="835" left="48" width="0" height="27" font="3">arXiv:1711.08600v1  [eess.AS]  23 Nov 2017</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="4" size="8" family="Times" color="#000000"/>
+	<fontspec id="5" size="5" family="Times" color="#000000"/>
+<text top="417" left="149" width="231" height="14" font="2">Fig. 1: The proposed system flowchart</text>
+<text top="452" left="82" width="366" height="13" font="2">a professional-singing dataset parallel to the amateur-singing</text>
+<text top="470" left="82" width="366" height="13" font="2">MIR-1k dataset <a href="xml/_1711.08600v1.html#5">[18]. </a>This simplifies the problem a bit to</text>
+<text top="488" left="82" width="366" height="13" font="2">allow us to extract the target pitch contour from monophonic</text>
+<text top="506" left="82" width="366" height="13" font="2">pitch tracking algorithm while avoiding melody tracking in</text>
+<text top="524" left="82" width="110" height="13" font="2">polyphonic music.</text>
+<text top="543" left="104" width="343" height="13" font="2">The remaining part of this paper is organized as follows.</text>
+<text top="561" left="82" width="366" height="13" font="2">The method and the proposed system are presented in Sec. <a href="xml/_1711.08600v1.html#2">2.</a></text>
+<text top="579" left="82" width="366" height="13" font="2">The new dataset is presented in Sec. <a href="xml/_1711.08600v1.html#2">3. </a>The experiments and</text>
+<text top="597" left="82" width="343" height="13" font="2">results are detailed in <a href="xml/_1711.08600v1.html#3">4. </a>We conclude the paper in Sec. <a href="xml/_1711.08600v1.html#4">5.</a></text>
+<text top="644" left="193" width="144" height="13" font="2">2. METHODOLOGY</text>
+<text top="680" left="82" width="366" height="13" font="2">Fig. <a href="xml/_1711.08600v1.html#2">1 </a>illustrates the system diagram with major building</text>
+<text top="698" left="82" width="363" height="13" font="2">blocks including feature extraction, alignment and synthesis.</text>
+<text top="743" left="82" width="99" height="13" font="2">2.1. Alignment</text>
+<text top="773" left="82" width="220" height="15" font="2">Given two time sequences, X ∈ R</text>
+<text top="771" left="302" width="23" height="9" font="4">d×n</text>
+<text top="774" left="325" width="6" height="7" font="5">x</text>
+<text top="773" left="337" width="76" height="15" font="2">and Y ∈ R</text>
+<text top="771" left="413" width="23" height="9" font="4">d×n</text>
+<text top="774" left="436" width="5" height="7" font="5">y</text>
+<text top="773" left="444" width="4" height="13" font="2">,</text>
+<text top="791" left="82" width="366" height="13" font="2">where d and n denote the feature and temporal dimension,</text>
+<text top="809" left="82" width="366" height="13" font="2">respectively. A DTW algorithm aligns the samples in X and</text>
+<text top="827" left="82" width="216" height="14" font="2">Y by optimizing the following cost:</text>
+<text top="861" left="125" width="25" height="14" font="2">{W</text>
+<text top="867" left="150" width="7" height="9" font="4">x</text>
+<text top="862" left="158" width="24" height="13" font="2">, W</text>
+<text top="867" left="182" width="6" height="9" font="4">y</text>
+<text top="861" left="189" width="80" height="14" font="2">} = arg min</text>
+<text top="878" left="217" width="20" height="10" font="4">{W</text>
+<text top="882" left="237" width="6" height="7" font="5">x</text>
+<text top="878" left="243" width="17" height="9" font="4">,W</text>
+<text top="882" left="261" width="5" height="7" font="5">y</text>
+<text top="878" left="267" width="6" height="10" font="4">}</text>
+<text top="861" left="276" width="38" height="14" font="2">kXW</text>
+<text top="859" left="314" width="7" height="9" font="4">T</text>
+<text top="869" left="314" width="7" height="9" font="4">x</text>
+<text top="861" left="327" width="46" height="14" font="2">− YW</text>
+<text top="859" left="373" width="7" height="9" font="4">T</text>
+<text top="869" left="373" width="6" height="9" font="4">y</text>
+<text top="861" left="382" width="7" height="14" font="2">k</text>
+<text top="859" left="390" width="6" height="9" font="4">2</text>
+<text top="869" left="390" width="8" height="9" font="4">F</text>
+<text top="862" left="400" width="4" height="13" font="2">,</text>
+<text top="862" left="430" width="17" height="13" font="2">(1)</text>
+<text top="910" left="82" width="57" height="13" font="2">where W</text>
+<text top="915" left="139" width="7" height="9" font="4">x</text>
+<text top="909" left="151" width="51" height="14" font="2">∈ {0, 1}</text>
+<text top="908" left="202" width="27" height="9" font="4">m×n</text>
+<text top="911" left="229" width="6" height="7" font="5">x</text>
+<text top="910" left="240" width="43" height="13" font="2">and W</text>
+<text top="915" left="282" width="7" height="9" font="4">y</text>
+<text top="909" left="294" width="51" height="14" font="2">∈ {0, 1}</text>
+<text top="908" left="345" width="27" height="9" font="4">m×n</text>
+<text top="911" left="372" width="5" height="7" font="5">y</text>
+<text top="910" left="383" width="65" height="13" font="2">are binary-</text>
+<text top="928" left="82" width="366" height="13" font="2">valued matrices representing the aligned indexes of the two</text>
+<text top="946" left="82" width="366" height="13" font="2">sequences, and m is the length of the warping path. Despite</text>
+<text top="964" left="82" width="366" height="13" font="2">the efficiency of the algorithm, DTW usually falls short of</text>
+<text top="982" left="82" width="366" height="13" font="2">aligning two sequences with nonlinear distortion between</text>
+<text top="1000" left="82" width="366" height="13" font="2">them, e.g., an in-tune singing voice and an out-of-tune one.</text>
+<text top="1018" left="82" width="366" height="13" font="2">Though being drastically different, a pair of source-target</text>
+<text top="1036" left="82" width="366" height="13" font="2">singing could share common characteristics. We thereby in-</text>
+<text top="1054" left="82" width="366" height="13" font="2">vestigate CTW, an advanced technique that combines CCA</text>
+<text top="1072" left="82" width="366" height="13" font="2"><a href="xml/_1711.08600v1.html#5">[19] </a>and DTW, to offer feature selection and alignment at the</text>
+<text top="113" left="473" width="366" height="13" font="2">same time <a href="xml/_1711.08600v1.html#5">[17]. </a>The objective function of CTW therefore has</text>
+<text top="131" left="473" width="298" height="13" font="2">additional linear transformation comparing to <a href="xml/_1711.08600v1.html#2">(1):</a></text>
+<text top="164" left="485" width="25" height="14" font="2">{W</text>
+<text top="171" left="510" width="7" height="9" font="4">x</text>
+<text top="165" left="518" width="24" height="13" font="2">, W</text>
+<text top="171" left="542" width="6" height="9" font="4">y</text>
+<text top="164" left="549" width="80" height="14" font="2">} = arg min</text>
+<text top="181" left="577" width="20" height="10" font="4">{W</text>
+<text top="185" left="597" width="6" height="7" font="5">x</text>
+<text top="182" left="603" width="17" height="9" font="4">,W</text>
+<text top="185" left="621" width="5" height="7" font="5">y</text>
+<text top="181" left="627" width="6" height="10" font="4">}</text>
+<text top="164" left="636" width="20" height="14" font="2">kV</text>
+<text top="162" left="656" width="7" height="9" font="4">T</text>
+<text top="172" left="656" width="7" height="9" font="4">x</text>
+<text top="165" left="666" width="31" height="13" font="2">XW</text>
+<text top="162" left="697" width="7" height="9" font="4">T</text>
+<text top="172" left="697" width="7" height="9" font="4">x</text>
+<text top="164" left="710" width="28" height="14" font="2">− V</text>
+<text top="162" left="738" width="7" height="9" font="4">T</text>
+<text top="172" left="737" width="6" height="9" font="4">y</text>
+<text top="165" left="747" width="31" height="13" font="2">YW</text>
+<text top="162" left="778" width="7" height="9" font="4">T</text>
+<text top="172" left="778" width="6" height="9" font="4">y</text>
+<text top="164" left="788" width="7" height="14" font="2">k</text>
+<text top="162" left="795" width="6" height="9" font="4">2</text>
+<text top="172" left="795" width="8" height="9" font="4">F</text>
+<text top="165" left="805" width="34" height="14" font="2">, (2)</text>
+<text top="214" left="473" width="55" height="13" font="2">where V</text>
+<text top="219" left="527" width="7" height="9" font="4">x</text>
+<text top="213" left="542" width="27" height="16" font="2">∈ R</text>
+<text top="212" left="569" width="21" height="9" font="4">d×b</text>
+<text top="214" left="596" width="40" height="13" font="2">and V</text>
+<text top="219" left="635" width="6" height="9" font="4">y</text>
+<text top="213" left="649" width="27" height="16" font="2">∈ R</text>
+<text top="212" left="676" width="21" height="9" font="4">d×b</text>
+<text top="214" left="703" width="136" height="13" font="2">are the projection ma-</text>
+<text top="232" left="473" width="366" height="13" font="2">trices for X and Y, respectively, and b is the dimension of</text>
+<text top="250" left="473" width="366" height="13" font="2">the low-dimensional embedded space sought by CCA, where</text>
+<text top="268" left="473" width="366" height="14" font="2">b ≤ d. Inherited from CCA, multiple constraints are imposed</text>
+<text top="286" left="473" width="366" height="13" font="2">for CTW, and the optimization rule can be found in <a href="xml/_1711.08600v1.html#5">[17]. </a>In</text>
+<text top="304" left="473" width="303" height="13" font="2">order to solve Eq. <a href="xml/_1711.08600v1.html#2">(2), </a>we consider initializing W</text>
+<text top="309" left="776" width="7" height="9" font="4">x</text>
+<text top="304" left="788" width="44" height="13" font="2">and W</text>
+<text top="309" left="831" width="6" height="9" font="4">y</text>
+<text top="322" left="473" width="366" height="13" font="2">in two ways. One is with DTW by solving Eq. <a href="xml/_1711.08600v1.html#2">(1), </a>and the</text>
+<text top="340" left="473" width="366" height="13" font="2">other is by linearly scaling, as in <a href="xml/_1711.08600v1.html#5">[4], </a>the temporal dimensions</text>
+<text top="358" left="473" width="366" height="13" font="2">of the input sequences X and Y such that the two sequences</text>
+<text top="376" left="473" width="220" height="13" font="2">share a common length L = max (n</text>
+<text top="381" left="693" width="7" height="9" font="4">x</text>
+<text top="375" left="701" width="16" height="13" font="2">, n</text>
+<text top="381" left="716" width="6" height="9" font="4">y</text>
+<text top="375" left="723" width="115" height="14" font="2">). In this paper, we</text>
+<text top="394" left="473" width="366" height="13" font="2">denote CTW initialized with the two methods as CTW-dtw</text>
+<text top="412" left="473" width="366" height="13" font="2">and CTW-uniform, respectively, which will be compared in</text>
+<text top="429" left="473" width="41" height="13" font="2">Sec. <a href="xml/_1711.08600v1.html#3">4.</a></text>
+<text top="474" left="473" width="259" height="13" font="2">2.2. Singing voice analysis and synthesis</text>
+<text top="504" left="473" width="366" height="13" font="2">In this work, we leverage alignment information to achieve</text>
+<text top="522" left="473" width="366" height="13" font="2">expressive, yet efficient, singing voice pitch correction. To</text>
+<text top="540" left="473" width="366" height="13" font="2">analyze audio and synthesize ones from manipulated pitch</text>
+<text top="558" left="473" width="366" height="13" font="2">contours, we use WORLD <a href="xml/_1711.08600v1.html#5">[20] </a>(D4C edition <a href="xml/_1711.08600v1.html#5">[21]) </a>which is a</text>
+<text top="576" left="473" width="366" height="13" font="2">vocoder-based speech analysis/synthesis system. It is shown</text>
+<text top="594" left="473" width="366" height="13" font="2">to reduce computational cost without performance deteriora-</text>
+<text top="612" left="473" width="366" height="13" font="2">tion compared to STRAIGHT <a href="xml/_1711.08600v1.html#5">[22] </a>which is widely used in</text>
+<text top="630" left="473" width="366" height="13" font="2">the literature. WORLD extracts parameters including spectral</text>
+<text top="648" left="473" width="366" height="13" font="2">envelope (SP), fundamental frequency (F0) and aperiodicity</text>
+<text top="666" left="473" width="366" height="13" font="2">(AP), from input audio. In this study, 1024-point FFT and 5-</text>
+<text top="684" left="473" width="366" height="13" font="2">ms frame shift are used to extract the parameters. As the rep-</text>
+<text top="702" left="473" width="366" height="13" font="2">resentative feature for alignment, 24-ordered mel-cepstral co-</text>
+<text top="720" left="473" width="366" height="13" font="2">efficients (MCEP) are derived for every frame from SP. Such</text>
+<text top="738" left="473" width="366" height="13" font="2">a setting is utilized because it is common in aligning pairs of</text>
+<text top="755" left="473" width="349" height="13" font="2">speech and for synthesis purpose in voice conversion <a href="xml/_1711.08600v1.html#5">[23].</a></text>
+<text top="774" left="495" width="343" height="13" font="2">Note that in the subjective test, an optimal warping path</text>
+<text top="792" left="473" width="366" height="13" font="2">is derived from either DTW or CTW given source and target</text>
+<text top="810" left="473" width="366" height="13" font="2">audio features. Our goal is to synthesize a pitch-corrected</text>
+<text top="828" left="473" width="366" height="13" font="2">singing with source SP, AP and modified pitch contour. We</text>
+<text top="846" left="473" width="366" height="13" font="2">keep same the length of the modified and unmodified source</text>
+<text top="864" left="473" width="366" height="13" font="2">pitch contour, by duplicating or averaging the F0 values in</text>
+<text top="882" left="473" width="366" height="13" font="2">target pitch contour according to a derived warping path. SP</text>
+<text top="900" left="473" width="344" height="13" font="2">is left untouched to preserve the timbre of source singing.</text>
+<text top="946" left="612" width="87" height="13" font="2">3. DATASET</text>
+<text top="982" left="473" width="366" height="13" font="2">For the purpose of this study, parallel songs that are sung</text>
+<text top="1000" left="473" width="366" height="13" font="2">by amateur/below-average and professional/above-average</text>
+<text top="1018" left="473" width="366" height="13" font="2">singers are necessary. Moreover, monophonic singing tracks</text>
+<text top="1036" left="473" width="366" height="13" font="2">are favored for better performance of an F0 extractor, on</text>
+<text top="1054" left="473" width="366" height="13" font="2">which synthesis quality depends. Such a parallel dataset is</text>
+<text top="1072" left="473" width="366" height="13" font="2">not within reach to our best knowledge. We therefore com-</text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="6" size="14" family="Times" color="#000000"/>
+	<fontspec id="7" size="18" family="Times" color="#000000"/>
+	<fontspec id="8" size="19" family="Times" color="#000000"/>
+	<fontspec id="9" size="6" family="Times" color="#000000"/>
+	<fontspec id="10" size="10" family="Times" color="#000000"/>
+	<fontspec id="11" size="17" family="Times" color="#000000"/>
+<text top="190" left="104" width="7" height="21" font="6">0</text>
+<text top="159" left="98" width="13" height="21" font="6">20</text>
+<text top="127" left="98" width="13" height="21" font="6">40</text>
+<text top="108" left="148" width="25" height="21" font="6">DTW</text>
+<text top="108" left="443" width="68" height="21" font="6">CTW-uniform</text>
+<text top="108" left="782" width="47" height="21" font="6">CTW-dtw</text>
+<text top="283" left="116" width="41" height="21" font="6">-2 -1</text>
+<text top="283" left="179" width="7" height="21" font="6">0</text>
+<text top="283" left="210" width="7" height="21" font="6">1</text>
+<text top="283" left="241" width="7" height="21" font="6">2</text>
+<text top="272" left="104" width="7" height="21" font="6">0</text>
+<text top="241" left="98" width="13" height="21" font="6">20</text>
+<text top="209" left="98" width="13" height="21" font="6">40</text>
+<text top="283" left="261" width="41" height="21" font="6">-2 -1</text>
+<text top="283" left="325" width="7" height="21" font="6">0</text>
+<text top="283" left="356" width="7" height="21" font="6">1</text>
+<text top="283" left="387" width="61" height="21" font="6">2 -2 -1</text>
+<text top="283" left="471" width="7" height="21" font="6">0</text>
+<text top="283" left="502" width="7" height="21" font="6">1</text>
+<text top="283" left="533" width="61" height="21" font="6">2 -2 -1</text>
+<text top="283" left="616" width="7" height="21" font="6">0</text>
+<text top="283" left="647" width="7" height="21" font="6">1</text>
+<text top="283" left="678" width="61" height="21" font="6">2 -2 -1</text>
+<text top="283" left="762" width="7" height="21" font="6">0</text>
+<text top="283" left="793" width="7" height="21" font="6">1</text>
+<text top="283" left="824" width="7" height="21" font="6">2</text>
+<text top="295" left="377" width="179" height="26" font="7">pitch-shift step (semitones)</text>
+<text top="231" left="95" width="0" height="27" font="8">err</text>
+<text top="213" left="95" width="0" height="27" font="8">or </text>
+<text top="197" left="95" width="0" height="27" font="8">me</text>
+<text top="177" left="95" width="0" height="27" font="8">asu</text>
+<text top="155" left="95" width="0" height="27" font="8">re</text>
+<text top="330" left="82" width="757" height="14" font="2">Fig. 2: The error measure e of linear time-stretch. Top panel: mono-to-mono; bottom panel: mono-to-poly. From left to right:</text>
+<text top="348" left="82" width="254" height="13" font="2">time-stretch rate r = 0.8, 0.9, 1.0, 1.1, 1.2.</text>
+<text top="382" left="82" width="243" height="13" font="2">pile a new dataset based on the <a href="xml/_1711.08600v1.html#3">MIR-1k</a></text>
+<text top="379" left="324" width="5" height="9" font="4"><a href="xml/_1711.08600v1.html#3">1</a></text>
+<text top="382" left="335" width="112" height="13" font="2">dataset covered by</text>
+<text top="399" left="82" width="366" height="13" font="2">amateurs as the source data, then recruit singers to build the</text>
+<text top="417" left="82" width="366" height="13" font="2">target data. Although a more reasonable way is simply using</text>
+<text top="435" left="82" width="366" height="13" font="2">the high-quality professional singings available online as our</text>
+<text top="453" left="82" width="366" height="13" font="2">target data, we did not adopt this way because most of the</text>
+<text top="471" left="82" width="366" height="13" font="2">state-of-the-art melody extraction algorithm from polyphonic</text>
+<text top="489" left="82" width="329" height="13" font="2">music are still not that satisfactory for a subjective test.</text>
+<text top="508" left="104" width="343" height="13" font="2">Four female and five male singers were recruited to record</text>
+<text top="526" left="82" width="366" height="13" font="2">the target singings of the dataset. Though not up to the profes-</text>
+<text top="543" left="82" width="366" height="13" font="2">sional level, they are with better singing skills than the ones in</text>
+<text top="561" left="82" width="366" height="13" font="2">MIR-1k, and are therefore feasible to record the data to ver-</text>
+<text top="579" left="82" width="366" height="13" font="2">ify the performance of a singing voice correction algorithm.</text>
+<text top="597" left="82" width="366" height="13" font="2">We picked 104 songs in MIR-1k and assigned around 10 to</text>
+<text top="615" left="82" width="366" height="13" font="2">30 songs to each singer depending on his or her acquaintance</text>
+<text top="633" left="82" width="366" height="13" font="2">with the songs. The recruited singers were demanded to sing</text>
+<text top="651" left="82" width="366" height="13" font="2">in-tune and temporally correct. The signing voice was then</text>
+<text top="669" left="82" width="366" height="13" font="2">recorded independently as a mono-channel track. Though</text>
+<text top="687" left="82" width="366" height="13" font="2">there were 216 recordings in total, we only selected three</text>
+<text top="705" left="82" width="366" height="13" font="2">songs for the subjective test (see Sec. <a href="xml/_1711.08600v1.html#4">4.2) </a>to demonstrate the</text>
+<text top="723" left="82" width="366" height="13" font="2">proposed system. On the other hand, 104 songs in the original</text>
+<text top="741" left="82" width="366" height="13" font="2">MIR-1k are used in the objective test. For each song, only a</text>
+<text top="759" left="82" width="318" height="13" font="2">segment of the first 30 seconds is used (see Sec. <a href="xml/_1711.08600v1.html#3">4.1).</a></text>
+<text top="803" left="146" width="236" height="13" font="2">4. EXPERIMENTS AND RESULTS</text>
+<text top="837" left="82" width="122" height="13" font="2">4.1. Objective Test</text>
+<text top="867" left="82" width="366" height="13" font="2">The three time-warping algorithms, namely DTW, CTW-</text>
+<text top="885" left="82" width="366" height="13" font="2">uniform and CTW-dtw, are tested under two tasks. The first</text>
+<text top="903" left="82" width="366" height="13" font="2">one, named as the mono-to-mono task, is to align two differ-</text>
+<text top="921" left="82" width="366" height="13" font="2">ent monophonic singing voice tracks, while the second one,</text>
+<text top="938" left="82" width="366" height="13" font="2">named mono-to-poly, is a more practical and challenging task</text>
+<text top="956" left="82" width="366" height="13" font="2">that aims to align a singing voice track to a mixture having</text>
+<text top="974" left="82" width="366" height="13" font="2">both singing voice and accompaniment. Since there is no</text>
+<text top="992" left="82" width="366" height="13" font="2">ground-truth annotation for the alignment path between a</text>
+<text top="1010" left="82" width="366" height="13" font="2">source and a target, we manage to generate sample pairs with</text>
+<text top="1028" left="82" width="366" height="13" font="2">ground truth in a synthetic way. Specifically, we employ time-</text>
+<text top="1057" left="98" width="4" height="8" font="9">1</text>
+<text top="1059" left="103" width="344" height="11" font="1">the MIR-1k dataset is in <a href="https://sites.google.com/site/unvoicedsoundseparation/mir-1k">https://sites.google.com/site/</a></text>
+<text top="1074" left="82" width="216" height="9" font="1"><a href="https://sites.google.com/site/unvoicedsoundseparation/mir-1k">unvoicedsoundseparation/mir-1k</a></text>
+<text top="1074" left="298" width="3" height="11" font="1"><a href="https://sites.google.com/site/unvoicedsoundseparation/mir-1k">.</a></text>
+<text top="472" left="528" width="149" height="16" font="10">0 1000 2000 3000 4000 5000</text>
+<text top="461" left="516" width="5" height="16" font="10">0</text>
+<text top="435" left="502" width="18" height="16" font="10">2000</text>
+<text top="409" left="502" width="18" height="16" font="10">4000</text>
+<text top="383" left="502" width="18" height="16" font="10">6000</text>
+<text top="472" left="687" width="142" height="16" font="10">0 1000 2000 3000 4000 5000 6000</text>
+<text top="478" left="553" width="231" height="27" font="7">Frame # of the modified audio feature</text>
+<text top="462" left="485" width="0" height="25" font="11">Fra</text>
+<text top="442" left="485" width="0" height="25" font="11">me</text>
+<text top="422" left="485" width="0" height="25" font="11"> #</text>
+<text top="407" left="485" width="0" height="25" font="11"> of</text>
+<text top="391" left="485" width="0" height="25" font="11"> th</text>
+<text top="374" left="485" width="0" height="25" font="11">e </text>
+<text top="455" left="498" width="0" height="25" font="11">au</text>
+<text top="439" left="498" width="0" height="25" font="11">dio</text>
+<text top="420" left="498" width="0" height="25" font="11"> fe</text>
+<text top="403" left="498" width="0" height="25" font="11">at</text>
+<text top="390" left="498" width="0" height="25" font="11">ur</text>
+<text top="377" left="498" width="0" height="25" font="11">e</text>
+<text top="514" left="473" width="366" height="14" font="2">Fig. 3: Examples of ground-truth warping paths. Left: linear,</text>
+<text top="532" left="473" width="366" height="14" font="2">r = 1.2; right: nonlinear, r = 0.93, 1.08, 0.94, 0.80, 1.06.</text>
+<text top="550" left="473" width="231" height="13" font="2">The dots denote the chunk boundaries.</text>
+<text top="586" left="473" width="366" height="13" font="2">stretching and pitch-shifting effects with predetermined pa-</text>
+<text top="604" left="473" width="366" height="13" font="2">rameters on the 104 song in the original MIR-1k, and thereby</text>
+<text top="622" left="473" width="326" height="13" font="2">obtain the sample pairs and known alignment path.</text>
+<text top="622" left="812" width="26" height="13" font="2">Two</text>
+<text top="640" left="473" width="366" height="13" font="2">scenarios are considered: in the linear time-stretching sce-</text>
+<text top="658" left="473" width="366" height="13" font="2">nario, five time-stretching rates r ∈ {0.8, 0.9, 1.0, 1.1, 1.2}</text>
+<text top="676" left="473" width="366" height="13" font="2">and five pitch-shifting steps s ∈ {−2, −1, 0, 1, 2} are consid-</text>
+<text top="694" left="473" width="366" height="13" font="2">ered, resulting in 25 distinct parameter sets. In the non-linear</text>
+<text top="711" left="473" width="366" height="13" font="2">time-stretching scenario, the same five pitch-shifting steps</text>
+<text top="729" left="473" width="366" height="13" font="2">are also used, while every song is divided into 5 equal-length</text>
+<text top="747" left="473" width="366" height="13" font="2">chunks, each assigned with a randomly sampled r from a</text>
+<text top="765" left="473" width="366" height="13" font="2">uniform distribution U (0.8, 1.2) in order to provide irregular</text>
+<text top="783" left="473" width="366" height="13" font="2">speed variation. Fig. <a href="xml/_1711.08600v1.html#3">3 </a>illustrates examples of ground-truth</text>
+<text top="801" left="473" width="327" height="13" font="2">warping paths of the linear and nonlinear scenario.</text>
+<text top="801" left="815" width="23" height="13" font="2">The</text>
+<text top="819" left="473" width="366" height="13" font="2">time-stretching and pitch-shifting effects are implemented by</text>
+<text top="838" left="473" width="63" height="12" font="2">librosa</text>
+<text top="837" left="542" width="297" height="13" font="2"><a href="xml/_1711.08600v1.html#5">[24]. </a>We evaluate the performance by an error</text>
+<text top="855" left="473" width="366" height="13" font="2">measure e comparing the discrepancy between the estimated</text>
+<text top="873" left="473" width="366" height="13" font="2">warping path and the ground-truth warping path; the defini-</text>
+<text top="891" left="473" width="366" height="13" font="2">tion of such an error measure can be found in <a href="xml/_1711.08600v1.html#5">[25]. </a>The lower</text>
+<text top="909" left="473" width="310" height="13" font="2">the error measure is, the better the system performs.</text>
+<text top="928" left="495" width="343" height="13" font="2">Fig. <a href="xml/_1711.08600v1.html#3">2 </a>and <a href="xml/_1711.08600v1.html#4">4 </a>shows the median of the error measure e</text>
+<text top="946" left="473" width="366" height="13" font="2">over all songs in the testing dataset under each parameter set</text>
+<text top="964" left="473" width="366" height="13" font="2">for the linear and nonlinear time-stretching scenario, respec-</text>
+<text top="982" left="473" width="366" height="13" font="2">tively. Overall, CTW-based methods are more robust than</text>
+<text top="1000" left="473" width="366" height="13" font="2">DTW to the pitch-shifting effect, a nonlinear distortion that</text>
+<text top="1018" left="473" width="366" height="13" font="2">causes instability in the distance measure between features. It</text>
+<text top="1036" left="473" width="366" height="13" font="2">is worth noting that, in the mono-to-poly task, CTW-uniform</text>
+<text top="1054" left="473" width="366" height="13" font="2">outperforms the other two algorithms in the linear time-</text>
+<text top="1072" left="473" width="366" height="13" font="2">stretching scenario, while CTW-dtw outperforms the others</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="12" size="13" family="Times" color="#000000"/>
+	<fontspec id="13" size="17" family="Times" color="#000000"/>
+	<fontspec id="14" size="18" family="Times" color="#000000"/>
+<text top="222" left="115" width="10" height="20" font="12">-2</text>
+<text top="222" left="152" width="10" height="20" font="12">-1</text>
+<text top="222" left="190" width="6" height="20" font="12">0</text>
+<text top="222" left="226" width="6" height="20" font="12">1</text>
+<text top="222" left="263" width="6" height="20" font="12">2</text>
+<text top="214" left="103" width="6" height="20" font="12">0</text>
+<text top="185" left="97" width="13" height="20" font="12">20</text>
+<text top="156" left="97" width="13" height="20" font="12">40</text>
+<text top="126" left="97" width="13" height="20" font="12">60</text>
+<text top="108" left="145" width="24" height="20" font="12">DTW</text>
+<text top="108" left="248" width="65" height="20" font="12">CTW-uniform</text>
+<text top="108" left="393" width="45" height="20" font="12">CTW-dtw</text>
+<text top="222" left="284" width="10" height="20" font="12">-2</text>
+<text top="222" left="321" width="10" height="20" font="12">-1</text>
+<text top="222" left="359" width="6" height="20" font="12">0</text>
+<text top="222" left="395" width="6" height="20" font="12">1</text>
+<text top="222" left="432" width="6" height="20" font="12">2</text>
+<text top="232" left="185" width="171" height="25" font="13">pitch-shift step (semitones)</text>
+<text top="201" left="95" width="0" height="26" font="14">err</text>
+<text top="184" left="95" width="0" height="26" font="14">or </text>
+<text top="168" left="95" width="0" height="26" font="14">me</text>
+<text top="149" left="95" width="0" height="26" font="14">asu</text>
+<text top="128" left="95" width="0" height="26" font="14">re</text>
+<text top="266" left="82" width="366" height="14" font="2">Fig. 4: The error measure e of nonlinear time-stretch. Left:</text>
+<text top="285" left="82" width="88" height="13" font="2">mono-to-mono</text>
+<text top="285" left="170" width="129" height="13" font="2">; right: mono-to-poly.</text>
+<text top="335" left="82" width="366" height="13" font="2">in the nonlinear ones. Moreover, CTW-uniform performs the</text>
+<text top="353" left="82" width="366" height="13" font="2">worst under the nonlinear scenario. These results indicates</text>
+<text top="371" left="82" width="366" height="13" font="2">the importance of initialization when performing CTW. Our</text>
+<text top="389" left="82" width="366" height="13" font="2">results suggest that, when there is severe temporal discrep-</text>
+<text top="406" left="82" width="366" height="13" font="2">ancy between two sequences, initialization with DTW can</text>
+<text top="424" left="82" width="366" height="13" font="2">help stabilize the performance, while uniform initialization</text>
+<text top="442" left="82" width="366" height="13" font="2">may force the CCA projects the features into a confounding</text>
+<text top="460" left="82" width="366" height="13" font="2">subspace that simply makes the resulting features be aligned</text>
+<text top="478" left="82" width="63" height="13" font="2">uniformly.</text>
+<text top="518" left="82" width="127" height="13" font="2">4.2. Subjective Test</text>
+<text top="546" left="82" width="360" height="13" font="2">For subjective test, we conduct an online questionna<a href="xml/_1711.08600v1.html#4">ire</a></text>
+<text top="544" left="441" width="5" height="9" font="4"><a href="xml/_1711.08600v1.html#4">2</a></text>
+<text top="564" left="82" width="366" height="13" font="2">containing three clips of amateur singing voice, each being</text>
+<text top="582" left="82" width="366" height="13" font="2">modified with three pitch-corrected algorithms. The first two</text>
+<text top="600" left="82" width="366" height="13" font="2">are the DTW and CTW-uniform with mono-to-mono setting,</text>
+<text top="618" left="82" width="366" height="13" font="2">while the third one is the auto-tuning function of the commer-</text>
+<text top="636" left="82" width="366" height="13" font="2">cial software Melodyne <a href="xml/_1711.08600v1.html#5">[9]. </a>In Melodyne, we firstly make</text>
+<text top="654" left="82" width="366" height="13" font="2">comparable the pitch level of source and target, and then each</text>
+<text top="672" left="82" width="366" height="13" font="2">individual note is snapped to the musical scale of the original</text>
+<text top="690" left="82" width="366" height="13" font="2">CD version. To prevent the participants from fatigue, the</text>
+<text top="708" left="82" width="366" height="13" font="2">length of each testing clip is only 15 seconds. For each song,</text>
+<text top="725" left="82" width="366" height="13" font="2">participants are required to listen to the amateur voice and its</text>
+<text top="743" left="82" width="366" height="13" font="2">three corresponding pitch-corrected versions, and rate their</text>
+<text top="761" left="82" width="344" height="13" font="2">pitch accuracy and singing fluency in a range from 1 to 5.</text>
+<text top="779" left="104" width="343" height="13" font="2">Results collected from 143 valid responses, including the</text>
+<text top="797" left="82" width="366" height="13" font="2">average rating of pitch accuracy and singing fluency, are listed</text>
+<text top="815" left="82" width="366" height="13" font="2">in Table <a href="xml/_1711.08600v1.html#4">1. </a>In average, DTW and CTW-uniform improve the</text>
+<text top="833" left="82" width="366" height="13" font="2">pitch accuracy of the source singing voice by 1.10 and 1.37</text>
+<text top="851" left="82" width="366" height="13" font="2">points, respectively, while Melodyne improves it by 0.48</text>
+<text top="869" left="82" width="366" height="13" font="2">points. Moreover, CTW-uniform outperforms DTW signifi-</text>
+<text top="887" left="82" width="366" height="13" font="2">cantly under the two-tailed t-test (p &lt; 0.01%, d.f. = 283).</text>
+<text top="905" left="82" width="366" height="13" font="2">Both alignment methods outperform Melodyne, implying</text>
+<text top="923" left="82" width="366" height="13" font="2">that the behaviors of an unsatisfactory singing, such as time-</text>
+<text top="941" left="82" width="366" height="13" font="2">varying tonal drift and intonation drift, are hard to be cor-</text>
+<text top="959" left="82" width="366" height="13" font="2">rected without an associated music score or original singing.</text>
+<text top="977" left="82" width="366" height="13" font="2">Meanwhile, CTW-uniform also prevails in terms of singing</text>
+<text top="994" left="82" width="366" height="13" font="2">fluency (p &lt; 0.1%, d.f. = 283), which implies that CTW-</text>
+<text top="1012" left="82" width="366" height="13" font="2">uniform is more likely to preserve human singing expression</text>
+<text top="1030" left="82" width="366" height="13" font="2">and is more natural. However, the results still show relatively</text>
+<text top="1057" left="98" width="4" height="8" font="9">2</text>
+<text top="1059" left="103" width="344" height="11" font="1">The online questionnaire can be found in <a href=" https://goo.gl/forms/hXdFtUaC1Z9WLXZB2">https://goo.gl/</a></text>
+<text top="1074" left="82" width="165" height="9" font="1"><a href=" https://goo.gl/forms/hXdFtUaC1Z9WLXZB2">forms/hXdFtUaC1Z9WLXZB2</a></text>
+<text top="1074" left="247" width="3" height="11" font="1"><a href=" https://goo.gl/forms/hXdFtUaC1Z9WLXZB2">.</a></text>
+<text top="111" left="562" width="31" height="13" font="2">Song</text>
+<text top="111" left="611" width="41" height="13" font="2">Source</text>
+<text top="111" left="670" width="34" height="13" font="2">DTW</text>
+<text top="111" left="722" width="45" height="13" font="2">CTW-u</text>
+<text top="111" left="785" width="35" height="13" font="2">Melo.</text>
+<text top="133" left="574" width="7" height="13" font="2">1</text>
+<text top="133" left="618" width="26" height="13" font="2">1.23</text>
+<text top="133" left="674" width="26" height="13" font="2">2.16</text>
+<text top="133" left="731" width="26" height="13" font="2">2.58</text>
+<text top="133" left="789" width="26" height="13" font="2">2.06</text>
+<text top="150" left="502" width="31" height="13" font="2">Pitch</text>
+<text top="150" left="574" width="7" height="13" font="2">2</text>
+<text top="150" left="618" width="26" height="13" font="2">1.26</text>
+<text top="150" left="674" width="26" height="13" font="2">2.35</text>
+<text top="150" left="731" width="26" height="13" font="2">2.90</text>
+<text top="150" left="789" width="26" height="13" font="2">1.42</text>
+<text top="168" left="491" width="53" height="13" font="2">accuracy</text>
+<text top="168" left="574" width="7" height="13" font="2">3</text>
+<text top="168" left="618" width="26" height="13" font="2">1.34</text>
+<text top="168" left="674" width="26" height="13" font="2">2.64</text>
+<text top="168" left="731" width="26" height="13" font="2">2.45</text>
+<text top="168" left="789" width="26" height="13" font="2">1.80</text>
+<text top="186" left="563" width="28" height="13" font="2">Avg.</text>
+<text top="186" left="618" width="26" height="13" font="2">1.28</text>
+<text top="186" left="674" width="26" height="13" font="2">2.38</text>
+<text top="186" left="731" width="26" height="13" font="2">2.65</text>
+<text top="186" left="789" width="26" height="13" font="2">1.76</text>
+<text top="235" left="494" width="48" height="13" font="2">Fluency</text>
+<text top="208" left="574" width="7" height="13" font="2">1</text>
+<text top="208" left="618" width="26" height="13" font="2">2.08</text>
+<text top="208" left="674" width="26" height="13" font="2">2.50</text>
+<text top="208" left="731" width="26" height="13" font="2">2.78</text>
+<text top="208" left="789" width="26" height="13" font="2">2.43</text>
+<text top="226" left="574" width="7" height="13" font="2">2</text>
+<text top="226" left="618" width="26" height="13" font="2">2.23</text>
+<text top="226" left="674" width="26" height="13" font="2">2.37</text>
+<text top="226" left="731" width="26" height="13" font="2">2.72</text>
+<text top="226" left="789" width="26" height="13" font="2">2.01</text>
+<text top="244" left="574" width="7" height="13" font="2">3</text>
+<text top="244" left="618" width="26" height="13" font="2">2.18</text>
+<text top="244" left="674" width="26" height="13" font="2">2.32</text>
+<text top="244" left="731" width="26" height="13" font="2">2.34</text>
+<text top="244" left="789" width="26" height="13" font="2">2.19</text>
+<text top="262" left="563" width="28" height="13" font="2">Avg.</text>
+<text top="262" left="618" width="26" height="13" font="2">2.16</text>
+<text top="262" left="674" width="26" height="13" font="2">2.40</text>
+<text top="262" left="731" width="26" height="13" font="2">2.61</text>
+<text top="262" left="789" width="26" height="13" font="2">2.21</text>
+<text top="295" left="473" width="366" height="14" font="2">Table 1: Subjective test results with DTW, CTW-uniform</text>
+<text top="313" left="473" width="252" height="13" font="2">(CTW-u) and Melodyne (Melo.) methods.</text>
+<text top="361" left="473" width="366" height="13" font="2">low ratings overall (i.e., even the best rating is lower than 3</text>
+<text top="379" left="473" width="366" height="13" font="2">points), probably because the targets recordings are also not</text>
+<text top="397" left="473" width="366" height="13" font="2">as professional as the in-market ones, and are likely to leave</text>
+<text top="415" left="473" width="301" height="13" font="2">an unsatisfactory impression to the participants.</text>
+<text top="415" left="788" width="50" height="13" font="2">Besides,</text>
+<text top="433" left="473" width="366" height="13" font="2">unlike the result of the objective test, DTW in the subjective</text>
+<text top="451" left="473" width="366" height="13" font="2">test seems to be relatively insensitive to the significant pitch</text>
+<text top="469" left="473" width="366" height="13" font="2">level difference between the source and target singings. This</text>
+<text top="487" left="473" width="366" height="13" font="2">might be due to that the artificial pitch-shifting algorithm</text>
+<text top="505" left="473" width="366" height="13" font="2">tends to introduce more distortion effects than the out-of-tune</text>
+<text top="523" left="473" width="116" height="13" font="2">but natural singing.</text>
+<text top="541" left="495" width="343" height="13" font="2">Last but not least, in order to demonstrate the proposed</text>
+<text top="559" left="473" width="366" height="13" font="2">method in an even more general case, we also consider the</text>
+<text top="577" left="473" width="366" height="13" font="2">short-time Fourier transform (STFT) being the feature for</text>
+<text top="594" left="473" width="366" height="13" font="2">alignment, as one might exploit the alignment information</text>
+<text top="612" left="473" width="366" height="13" font="2">for various applications other than singing voice correction,</text>
+<text top="630" left="473" width="366" height="13" font="2">and STFT is one of the most broadly used data represen-</text>
+<text top="648" left="473" width="366" height="13" font="2">tations in the field. Specifically, STFT is extracted from a</text>
+<text top="666" left="473" width="366" height="13" font="2">monophonic source and its parallel target recording mixed</text>
+<text top="684" left="473" width="366" height="13" font="2">with accompaniment music. The FFT size and hop length are</text>
+<text top="702" left="473" width="366" height="13" font="2">kept the same with that used for SP. The dimension of STFT</text>
+<text top="720" left="473" width="366" height="13" font="2">is reduced from 513 to 25 by principal component analysis</text>
+<text top="738" left="473" width="366" height="13" font="2">(PCA) before alignment. We demonstrate the results on the</text>
+<text top="756" left="473" width="49" height="13" font="2"><a href="xml/_1711.08600v1.html#4">website.</a></text>
+<text top="753" left="522" width="5" height="9" font="4"><a href="xml/_1711.08600v1.html#4">3</a></text>
+<text top="797" left="518" width="275" height="13" font="2">5. CONCLUSION AND FUTURE WORK</text>
+<text top="830" left="473" width="366" height="13" font="2">We demonstrate the effectiveness of utilizing CTW-based al-</text>
+<text top="848" left="473" width="366" height="13" font="2">gorithms with the aid of parallel data on the singing voice</text>
+<text top="866" left="473" width="366" height="13" font="2">correction task. With the high stability in the alignment be-</text>
+<text top="884" left="473" width="366" height="13" font="2">tween a singing track and a mixture, and with improved pitch</text>
+<text top="902" left="473" width="366" height="13" font="2">accuracy and fluency in the listening test, such a method is</text>
+<text top="920" left="473" width="366" height="13" font="2">promising for real-world application. As future work, we</text>
+<text top="938" left="473" width="366" height="13" font="2">will extend the study by incorporating other techniques such</text>
+<text top="956" left="473" width="366" height="13" font="2">as melody extraction from polyphonic signals and query-by-</text>
+<text top="974" left="473" width="366" height="13" font="2">humming algorithms, to offer facilities for retrieving melody</text>
+<text top="992" left="473" width="366" height="13" font="2">contours from polyphonic sources which are accessible on the</text>
+<text top="1010" left="473" width="366" height="13" font="2">web. Furthermore, since the relation between a source-target</text>
+<text top="1028" left="473" width="366" height="13" font="2">pair is highly nonlinear, more advanced algorithms such as</text>
+<text top="1046" left="473" width="330" height="13" font="2">the deep CTW <a href="xml/_1711.08600v1.html#5">[26] </a>might lead to further improvement.</text>
+<text top="1071" left="489" width="4" height="8" font="9">3</text>
+<text top="1074" left="494" width="271" height="11" font="1">Samples can be found in <a href="https://goo.gl/MxTFyj">https://goo.gl/MxTFyj</a></text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="204" width="121" height="13" font="2">6. REFERENCES</text>
+<text top="146" left="89" width="358" height="13" font="2">[1] N. Montecchio and A. Cont, “A unified approach to</text>
+<text top="164" left="114" width="333" height="13" font="2">real time audio-to-score and audio-to-audio alignment</text>
+<text top="182" left="114" width="333" height="13" font="2">using sequential montecarlo inference techniques,” in</text>
+<text top="200" left="114" width="48" height="13" font="2">ICASSP</text>
+<text top="200" left="162" width="123" height="13" font="2">, 2011, pp. 193–196.</text>
+<text top="229" left="89" width="358" height="13" font="2">[2] C. Raffel and D. P.W. Ellis, “Optimizing DTW-based</text>
+<text top="247" left="114" width="248" height="13" font="2">audio-to-midi alignment and matching,”</text>
+<text top="247" left="377" width="70" height="13" font="2">in ICASSP,</text>
+<text top="265" left="114" width="101" height="13" font="2">2016, pp. 81–85.</text>
+<text top="294" left="89" width="358" height="13" font="2">[3] S. Ewert, M. Muller, and P. Grosche, “High resolution</text>
+<text top="312" left="114" width="333" height="13" font="2">audio synchronization using chroma onset features,” in</text>
+<text top="330" left="114" width="48" height="13" font="2">ICASSP</text>
+<text top="330" left="162" width="138" height="13" font="2">, 2009, pp. 1869–1872.</text>
+<text top="360" left="89" width="203" height="13" font="2">[4] Sungkyun C. and Kyogu L.,</text>
+<text top="360" left="307" width="140" height="13" font="2">“Lyrics-to-audio align-</text>
+<text top="378" left="114" width="333" height="13" font="2">ment by unsupervised discovery of repetitive patterns</text>
+<text top="395" left="114" width="333" height="13" font="2">in vowel acoustics,” IEEE Access, vol. 5, pp. 16635–</text>
+<text top="413" left="114" width="78" height="13" font="2">16648, 2017.</text>
+<text top="443" left="89" width="358" height="13" font="2">[5] L. Bochen, D. Karthik, D. Zhiyao, and S. Gaurav, “See</text>
+<text top="461" left="114" width="333" height="13" font="2">and listenl score-informed association of sound tracks</text>
+<text top="479" left="114" width="333" height="13" font="2">to players in chamber music performance videos,” in</text>
+<text top="497" left="114" width="48" height="13" font="2">ICASSP</text>
+<text top="497" left="162" width="138" height="13" font="2">, 2017, pp. 2906–2910.</text>
+<text top="526" left="89" width="298" height="13" font="2">[6] J. Thickstun, Z. Harchaoui, and S. Kakade,</text>
+<text top="526" left="401" width="46" height="13" font="2">“Learn-</text>
+<text top="544" left="114" width="229" height="13" font="2">ing features of music from scratch,”</text>
+<text top="544" left="359" width="88" height="13" font="2">arXiv preprint</text>
+<text top="562" left="114" width="109" height="13" font="2"><a href="http://arxiv.org/abs/1611.09827">arXiv:1611.09827</a></text>
+<text top="562" left="223" width="41" height="13" font="2"><a href="http://arxiv.org/abs/1611.09827">, </a>2016.</text>
+<text top="591" left="89" width="358" height="13" font="2">[7] M. Grachten, M. Gasser, A. Arzt, and G. Widmer, “Au-</text>
+<text top="609" left="114" width="333" height="13" font="2">tomatic alignment of music performances with struc-</text>
+<text top="627" left="114" width="207" height="13" font="2">tural differences,” in ISMIR, 2013.</text>
+<text top="656" left="89" width="358" height="13" font="2">[8] T. Fukuda, Y. Ikemiya, K. Itoyama, and K. Yoshii, “A</text>
+<text top="674" left="114" width="333" height="13" font="2">score-informed piano tutoring system with mistake de-</text>
+<text top="692" left="114" width="288" height="13" font="2">tection and score simplification,” in SMC, 2015.</text>
+<text top="721" left="89" width="92" height="13" font="2">[9] “Melodyne</text>
+<text top="721" left="219" width="15" height="13" font="2">by</text>
+<text top="721" left="272" width="66" height="13" font="2">celemony,”</text>
+<text top="722" left="385" width="63" height="12" font="2"><a href="http://www.celemony.com/en/melodyne/what-is-melodyne">http://</a></text>
+<text top="740" left="114" width="260" height="12" font="2"><a href="http://www.celemony.com/en/melodyne/what-is-melodyne">www.celemony.com/en/melodyne/</a></text>
+<text top="758" left="114" width="145" height="12" font="2"><a href="http://www.celemony.com/en/melodyne/what-is-melodyne">what-is-melodyne</a></text>
+<text top="757" left="259" width="4" height="13" font="2"><a href="http://www.celemony.com/en/melodyne/what-is-melodyne">,</a></text>
+<text top="757" left="297" width="50" height="13" font="2">[Online;</text>
+<text top="757" left="363" width="84" height="13" font="2">accessed 24-</text>
+<text top="775" left="114" width="91" height="13" font="2">October-2017].</text>
+<text top="804" left="82" width="366" height="13" font="2">[10] E. Azarov, M. Vashkevich, and A. Petrovsky, “Guslar: a</text>
+<text top="822" left="114" width="333" height="13" font="2">framework for automated singing voice correction,” in</text>
+<text top="840" left="114" width="48" height="13" font="2">ICASSP</text>
+<text top="840" left="162" width="138" height="13" font="2">, 2014, pp. 7919–7923.</text>
+<text top="870" left="82" width="366" height="13" font="2">[11] T. Nakano and M. Goto, “Vocalistener: A singing-to-</text>
+<text top="887" left="114" width="333" height="13" font="2">singing synthesis system based on iterative parameter</text>
+<text top="905" left="114" width="230" height="13" font="2">estimation,” SMC, pp. 343–348, 2009.</text>
+<text top="935" left="82" width="366" height="13" font="2">[12] O. Perrotin and C. Dalessandro, “Target acquisition vs.</text>
+<text top="953" left="114" width="333" height="13" font="2">expressive motion: Dynamic pitch warping for intona-</text>
+<text top="971" left="114" width="333" height="13" font="2">tion correction,” ACM Trans. Computer-Human Inter-</text>
+<text top="989" left="114" width="96" height="13" font="2">action (TOCHI)</text>
+<text top="988" left="210" width="172" height="13" font="2">, vol. 23, no. 3, pp. 17, 2016.</text>
+<text top="1018" left="82" width="366" height="13" font="2">[13] E. Molina, I. Barbancho, E. G´omez, A. M. Barbancho,</text>
+<text top="1036" left="114" width="333" height="13" font="2">and L. J. Tard´on, “Fundamental frequency alignment vs.</text>
+<text top="1054" left="114" width="333" height="13" font="2">note-based melodic similarity for singing voice assess-</text>
+<text top="1072" left="114" width="231" height="13" font="2">ment,” in ICASSP, 2013, pp. 744–748.</text>
+<text top="113" left="473" width="366" height="13" font="2">[14] N. Kroher, E. G´omez, C. Guastavino, F. G´omez, and</text>
+<text top="131" left="505" width="68" height="13" font="2">J. Bonada,</text>
+<text top="131" left="597" width="241" height="13" font="2">“Computational models for perceived</text>
+<text top="149" left="505" width="333" height="13" font="2">melodic similarity in a cappella flamenco singing,” in</text>
+<text top="167" left="505" width="39" height="13" font="2">ISMIR</text>
+<text top="167" left="544" width="108" height="13" font="2">, 2014, pp. 65–70.</text>
+<text top="196" left="473" width="366" height="13" font="2">[15] L. Cen, M. Dong, and P. Y. Chan, “Template-based per-</text>
+<text top="214" left="505" width="333" height="13" font="2">sonalized singing voice synthesis,” in ICASSP, 2012,</text>
+<text top="232" left="505" width="93" height="13" font="2">pp. 4509–4512.</text>
+<text top="261" left="473" width="366" height="13" font="2">[16] Y. Wada, Y. Bando, E. Nakamura, K. Itoyama, and</text>
+<text top="279" left="505" width="60" height="13" font="2">K Yoshii,</text>
+<text top="279" left="584" width="254" height="13" font="2">“An adaptive karaoke system that plays</text>
+<text top="297" left="505" width="333" height="13" font="2">accompaniment parts of music audio signals syn-</text>
+<text top="315" left="505" width="333" height="13" font="2">chronously with users’ singing voices,” in SMC, 2017,</text>
+<text top="333" left="505" width="78" height="13" font="2">pp. 110–116.</text>
+<text top="362" left="473" width="366" height="13" font="2">[17] F. Zhou and F. Torre, “Canonical time warping for align-</text>
+<text top="380" left="505" width="333" height="13" font="2">ment of human behavior,” in Advances in neural infor-</text>
+<text top="398" left="505" width="159" height="13" font="2">mation processing systems</text>
+<text top="398" left="664" width="138" height="13" font="2">, 2009, pp. 2286–2294.</text>
+<text top="427" left="473" width="366" height="13" font="2">[18] C.-L. Hsu and J.-S. R. Jang, “On the improvement of</text>
+<text top="445" left="505" width="333" height="13" font="2">singing voice separation for monaural recordings using</text>
+<text top="463" left="505" width="333" height="13" font="2">the mir-1k dataset,” TASLP, vol. 18, no. 2, pp. 310–319,</text>
+<text top="481" left="505" width="34" height="13" font="2">2010.</text>
+<text top="510" left="473" width="366" height="13" font="2">[19] T.W. Anderson, An Introduction to Multivariate Statisti-</text>
+<text top="528" left="505" width="73" height="13" font="2">cal Analysis</text>
+<text top="528" left="578" width="260" height="13" font="2">, Wiley Series in Probability and Statistics.</text>
+<text top="546" left="505" width="76" height="13" font="2">Wiley, 2003.</text>
+<text top="575" left="473" width="366" height="13" font="2">[20] M. Morise, F. Yokomori, and K. Ozawa, “World: A</text>
+<text top="593" left="505" width="333" height="13" font="2">vocoder-based high-quality speech synthesis system for</text>
+<text top="611" left="505" width="333" height="13" font="2">real-time applications,” IEICE Trans. Information and</text>
+<text top="629" left="505" width="47" height="13" font="2">Systems</text>
+<text top="629" left="552" width="224" height="13" font="2">, vol. 99, no. 7, pp. 1877–1884, 2016.</text>
+<text top="658" left="473" width="366" height="13" font="2">[21] Masanori M., “D4C, a band-aperiodicity estimator for</text>
+<text top="676" left="505" width="333" height="13" font="2">high-quality speech synthesis,” Speech Communication,</text>
+<text top="694" left="505" width="272" height="13" font="2">vol. 84, no. Supplement C, pp. 57 – 65, 2016.</text>
+<text top="723" left="473" width="366" height="13" font="2">[22] H. Kawahara, M. Morise, T. Takahashi, R. Nisimura,</text>
+<text top="741" left="505" width="150" height="13" font="2">T. Irino, and H. Banno,</text>
+<text top="741" left="669" width="169" height="13" font="2">“TANDEM-STRAIGHT: A</text>
+<text top="759" left="505" width="333" height="13" font="2">temporally stable power spectral representation for peri-</text>
+<text top="777" left="505" width="333" height="13" font="2">odic signals and applications to interference-free spec-</text>
+<text top="795" left="505" width="246" height="13" font="2">trum, F0, and aperiodicity estimation,”</text>
+<text top="795" left="768" width="71" height="13" font="2">in ICASSP,</text>
+<text top="813" left="505" width="131" height="13" font="2">2008, pp. 3933–3936.</text>
+<text top="842" left="473" width="366" height="13" font="2">[23] S. H. Mohammadi and A. Kain, “An overview of voice</text>
+<text top="860" left="505" width="313" height="13" font="2">conversion systems,” Speech Communication, 2017.</text>
+<text top="889" left="473" width="366" height="13" font="2">[24] B. McFee, M. McVicar, O. Nieto, S. Balke, C. Thome,</text>
+<text top="907" left="505" width="333" height="13" font="2">D. Liang, E. Battenberg, J. Moore, R. Bittner, R. Ya-</text>
+<text top="925" left="505" width="277" height="13" font="2">mamoto, and et al., “librosa 0.5.0,” Feb. 2017.</text>
+<text top="954" left="473" width="366" height="13" font="2">[25] F. Zhou and F. De la Torre, “Generalized time warping</text>
+<text top="972" left="505" width="333" height="13" font="2">for multi-modal alignment of human motion,” in CVPR,</text>
+<text top="990" left="505" width="131" height="13" font="2">2012, pp. 1282–1289.</text>
+<text top="1019" left="473" width="366" height="13" font="2">[26] G. Trigeorgis, M. A Nicolaou, S. Zafeiriou, and B. W.</text>
+<text top="1037" left="505" width="333" height="13" font="2">Schuller, “Deep canonical time warping,” in CVPR,</text>
+<text top="1055" left="505" width="131" height="13" font="2">2016, pp. 5110–5118.</text>
+</page>
+<outline>
+<item page="1">1  Introduction</item>
+<item page="2">2  Methodology</item>
+<outline>
+<item page="2">2.1  Alignment</item>
+<item page="2">2.2  Singing voice analysis and synthesis</item>
+</outline>
+<item page="2">3  Dataset</item>
+<item page="3">4  Experiments and results</item>
+<outline>
+<item page="3">4.1  Objective Test</item>
+<item page="4">4.2  Subjective Test</item>
+</outline>
+<item page="4">5  Conclusion and Future Work</item>
+<item page="5">6  References</item>
+</outline>
+</pdf2xml>

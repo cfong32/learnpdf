@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="28" family="Times" color="#7f7f7f"/>
+	<fontspec id="1" size="15" family="Times" color="#000000"/>
+<text top="770" left="48" width="0" height="27" font="0"><a href="http://arxiv.org/abs/astro-ph/9204003v2">arXiv:astro-ph/9204003v2  30 Apr 1992</a></text>
+<text top="113" left="288" width="343" height="18" font="1">The Ptolemaic Gamma-Ray Burst Universe</text>
+<text top="170" left="421" width="75" height="18" font="1">J. I. Katz</text>
+<text top="216" left="188" width="541" height="18" font="1">Department of Physics and McDonnell Center for the Space Sciences</text>
+<text top="252" left="329" width="261" height="18" font="1">Washington University, St. Louis</text>
+<text top="948" left="108" width="275" height="18" font="1">2 Copies, 10 pp., 0 figures, 0 tables</text>
+<text top="984" left="108" width="681" height="18" font="1">Mailing address: Department of Physics, Washington University, St. Louis, Mo. 63130</text>
+<text top="1020" left="108" width="194" height="18" font="1">Telephone: 314-935-6202</text>
+<text top="1056" left="108" width="246" height="18" font="1">e-mail: katz@wuphys.wustl.edu</text>
+<text top="1099" left="454" width="9" height="18" font="1">1</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="425" width="68" height="18" font="1">Abstract</text>
+<text top="170" left="144" width="666" height="18" font="1">The BATSE experiment on GRO has demonstrated the isotropic arrival directions</text>
+<text top="206" left="108" width="702" height="18" font="1">and flat log N vs. log S of cosmic gamma-ray bursts. These data are best explained if the</text>
+<text top="242" left="108" width="702" height="18" font="1">burst sources are distributed throughout an extended spherical Galactic halo, as previously</text>
+<text top="277" left="108" width="702" height="18" font="1">suggested by Jennings. The halo’s radius is at least 40 Kpc, and probably is more than 100</text>
+<text top="313" left="108" width="702" height="18" font="1">Kpc. I consider possible origins of this halo, including primordial formation and neutron</text>
+<text top="349" left="108" width="702" height="18" font="1">stars recoiling from their birthplaces in the Galactic disc. A simple geometrical model</text>
+<text top="385" left="108" width="702" height="18" font="1">leads to a predicted relation between the dipole and quadrupole anisotropy. I suggest</text>
+<text top="421" left="108" width="702" height="18" font="1">that neutron stars born with low recoil become millisecond pulsars, while those born with</text>
+<text top="457" left="108" width="702" height="18" font="1">high recoil become the sources of gamma-ray bursts; these populations are nearly disjoint.</text>
+<text top="493" left="108" width="658" height="18" font="1">Quiescent counterparts of gamma-ray bursts are predicted to be undetectably faint.</text>
+<text top="1099" left="454" width="9" height="18" font="1">2</text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="2" size="10" family="Times" color="#000000"/>
+<text top="113" left="144" width="666" height="18" font="1">The first results from the BATSE on GRO (BATSE Science Team 1991) have revived</text>
+<text top="148" left="108" width="702" height="18" font="1">the question of the distribution of gamma-ray burst sources in space. Their chief results,</text>
+<text top="184" left="108" width="702" height="18" font="1">isotropy of gamma-ray burst directions and a log N vs. log S slope significantly flatter than</text>
+<text top="220" left="108" width="702" height="18" font="1">-1.5, confirm earlier reports (see, for example, Meegan, Fishman and Wilson 1985 and the</text>
+<text top="256" left="108" width="702" height="18" font="1">review by Cline 1984). Questions of relative calibration of different instruments and the</text>
+<text top="292" left="108" width="702" height="18" font="1">paucity of good directional data permitted skepticism in the past. Such skepticism is no</text>
+<text top="328" left="108" width="575" height="18" font="1">longer tenable, and the theoretical questions raised earlier must be faced.</text>
+<text top="363" left="144" width="666" height="18" font="1">An isotropic distribution of sources implies that, out to the maximum distance of</text>
+<text top="399" left="108" width="702" height="18" font="1">observation permitted by instrumental sensitivity, all directions contain equivalent source</text>
+<text top="435" left="108" width="702" height="18" font="1">populations. The source population for an observed flux or fluence S is expressed as the</text>
+<text top="471" left="108" width="59" height="18" font="1">integral</text>
+<text top="507" left="320" width="34" height="18" font="1">N ( ˆ</text>
+<text top="507" left="343" width="59" height="18" font="1">Ω, S) =</text>
+<text top="479" left="407" width="10" height="24" font="1">Z</text>
+<text top="507" left="428" width="29" height="18" font="1">n( ˆ</text>
+<text top="507" left="445" width="65" height="18" font="1">Ω, r, 4πr</text>
+<text top="505" left="511" width="7" height="9" font="2">2</text>
+<text top="507" left="518" width="47" height="18" font="1">S)4πr</text>
+<text top="505" left="566" width="7" height="9" font="2">2</text>
+<text top="507" left="577" width="22" height="18" font="1">dr,</text>
+<text top="507" left="787" width="23" height="18" font="1">(1)</text>
+<text top="554" left="108" width="83" height="18" font="1">where n( ˆ</text>
+<text top="554" left="180" width="65" height="18" font="1">Ω, r, 4πr</text>
+<text top="552" left="245" width="7" height="9" font="2">2</text>
+<text top="554" left="253" width="558" height="18" font="1">S) is the density of sources at a distance r from the observer in the</text>
+<text top="590" left="108" width="86" height="18" font="1">direction ˆ</text>
+<text top="590" left="183" width="318" height="18" font="1">Ω radiating a total power or energy 4πr</text>
+<text top="588" left="502" width="7" height="9" font="2">2</text>
+<text top="590" left="510" width="300" height="18" font="1">S; a temporal average is implicit, and</text>
+<text top="625" left="108" width="700" height="18" font="1">it is assumed that the sources radiate isotropically. While it is possible to obtain N</text>
+<text top="661" left="108" width="137" height="18" font="1">independent of ˆ</text>
+<text top="661" left="234" width="576" height="18" font="1">Ω for a variety of artificial spatial distributions n, the only plausible n</text>
+<text top="697" left="108" width="702" height="18" font="1">which does not require the observer to be in a preferred position (for example, at the</text>
+<text top="733" left="108" width="702" height="18" font="1">center of spherical shells) is a homogeneous distribution out to the greatest distances at</text>
+<text top="769" left="108" width="643" height="21" font="1">which the most luminous burst may be observed. Such a distribution implies N ∝ S</text>
+<text top="768" left="752" width="18" height="9" font="2">−3</text>
+<text top="766" left="770" width="15" height="13" font="2">/2</text>
+<text top="769" left="786" width="25" height="18" font="1">, in</text>
+<text top="805" left="108" width="702" height="18" font="1">contradiction to observation. This dilemma was fully appreciated and discussed by several</text>
+<text top="840" left="108" width="702" height="18" font="1">of the contributors to the 1983 Symposium on High Energy Transients in Astrophysics</text>
+<text top="876" left="108" width="126" height="18" font="1">(Woosley 1984).</text>
+<text top="912" left="144" width="666" height="18" font="1">The only geometric resolution of this problem is the Ptolemaic gamma-ray burst</text>
+<text top="948" left="108" width="702" height="18" font="1">universe, as discussed by Cline (1984). The flat dependence of N on S (equivalent to</text>
+<text top="984" left="108" width="134" height="18" font="1">a peak in a V /V</text>
+<text top="991" left="242" width="29" height="13" font="2">max</text>
+<text top="984" left="280" width="183" height="21" font="1">distribution at V ≪ V</text>
+<text top="991" left="463" width="29" height="13" font="2">max</text>
+<text top="984" left="493" width="317" height="18" font="1">, and to a deficiency of faint bursts) is</text>
+<text top="1020" left="108" width="702" height="18" font="1">explained if the sources are distributed throughout a volume of finite extent, with most</text>
+<text top="1056" left="108" width="702" height="18" font="1">bursts within the volume luminous enough to be observed. This volume is spherical, with</text>
+<text top="1099" left="455" width="9" height="18" font="1">3</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="702" height="18" font="1">the Earth at its center. The sources must be at cosmological distances, or be distributed</text>
+<text top="148" left="108" width="702" height="18" font="1">in an extended halo around our Galaxy (such as the Massive Extended Halo suggested</text>
+<text top="184" left="108" width="702" height="18" font="1">by Jennings 1984), or be evidence of a previously unsuspected Earth-centered spherical</text>
+<text top="220" left="108" width="97" height="18" font="1">distribution.</text>
+<text top="256" left="144" width="363" height="18" font="1">At cosmological distances a typical burst of 10</text>
+<text top="255" left="507" width="18" height="9" font="2">−7</text>
+<text top="256" left="531" width="56" height="18" font="1">erg/cm</text>
+<text top="254" left="587" width="7" height="9" font="2">2</text>
+<text top="256" left="601" width="209" height="18" font="1">fluence must have radiated</text>
+<text top="292" left="108" width="37" height="21" font="1">∼ 10</text>
+<text top="290" left="145" width="14" height="9" font="2">50</text>
+<text top="292" left="166" width="644" height="18" font="1">erg in gamma-rays. This is energetically consistent with the spiraling-in or coales-</text>
+<text top="328" left="108" width="702" height="18" font="1">cence of binary neutron stars, if they convert gravitational energy to gamma-rays, perhaps</text>
+<text top="363" left="108" width="702" height="18" font="1">through a magnetohydrodynamic dynamo, or with a relativistic supernova shock breakout,</text>
+<text top="399" left="108" width="702" height="18" font="1">but the mechanisms are obscure. The breakout of a relativistic shock from a spherical shell</text>
+<text top="435" left="108" width="88" height="18" font="1">of radius R</text>
+<text top="442" left="196" width="7" height="13" font="2">s</text>
+<text top="435" left="210" width="600" height="18" font="1">would produce a pulse of radiation whose envelope would be proportional to</text>
+<text top="471" left="108" width="665" height="18" font="1">the local (relativistically collimated) emission pattern f (θ(t)), where θ(t) = (2ct/R</text>
+<text top="478" left="773" width="7" height="13" font="2">s</text>
+<text top="471" left="780" width="7" height="18" font="1">)</text>
+<text top="470" left="788" width="7" height="9" font="2">1</text>
+<text top="469" left="795" width="15" height="13" font="2">/2</text>
+<text top="507" left="108" width="82" height="21" font="1">and θ ∼ γ</text>
+<text top="506" left="192" width="18" height="9" font="2">−1</text>
+<text top="507" left="218" width="592" height="21" font="1">≪ 1 is assumed. The rapid fluctuations of intensity under a flat envelope</text>
+<text top="543" left="108" width="702" height="18" font="1">observed in many bursts might then be explained by shock refraction in a turbulent stellar</text>
+<text top="579" left="108" width="377" height="18" font="1">envelope. Unfortunately, the implied values of R</text>
+<text top="585" left="485" width="7" height="13" font="2">s</text>
+<text top="579" left="497" width="42" height="21" font="1">∼ 2ct</text>
+<text top="585" left="540" width="6" height="13" font="2">b</text>
+<text top="579" left="547" width="9" height="18" font="1">γ</text>
+<text top="577" left="557" width="7" height="9" font="2">2</text>
+<text top="579" left="565" width="68" height="18" font="1">, where t</text>
+<text top="585" left="633" width="6" height="13" font="2">b</text>
+<text top="579" left="645" width="165" height="18" font="1">is the burst duration,</text>
+<text top="615" left="108" width="702" height="18" font="1">are unreasonably large, particularly because the γ-γ pair-production constraint on 100</text>
+<text top="650" left="108" width="275" height="18" font="1">MeV gamma-rays implies θ &lt; 0.01.</text>
+<text top="686" left="144" width="666" height="18" font="1">Such catastrophic events might be expected all to have similar time histories, or to fall</text>
+<text top="722" left="108" width="702" height="18" font="1">into a small number of homogeneous classes, inconsistent with observation. The observed</text>
+<text top="758" left="108" width="702" height="18" font="1">soft gamma repeaters, the 8 second periodicity of the March 5, 1979 burst, the absence</text>
+<text top="794" left="108" width="702" height="18" font="1">of bursts from local supernovae, the identification of 400–500 KeV spectral features with</text>
+<text top="830" left="108" width="702" height="18" font="1">positron annihilation lines of modest redshift, and the complex and varied time histories</text>
+<text top="866" left="108" width="535" height="18" font="1">of intensity within bursts all disfavor these cosmological hypotheses.</text>
+<text top="901" left="144" width="666" height="18" font="1">If an observer is displaced by a distance a from the center of a sphere of radius</text>
+<text top="937" left="108" width="14" height="18" font="1">R</text>
+<text top="937" left="127" width="683" height="21" font="1">≫ a, the mean cosine of the angle θ between the points in the sphere and the direction</text>
+<text top="973" left="108" width="661" height="18" font="1">of displacement is found by integration, keeping only the lowest order terms in a/R:</text>
+<text top="1015" left="261" width="69" height="21" font="1">hcos θi =</text>
+<text top="1002" left="353" width="9" height="18" font="1">3</text>
+<text top="1027" left="337" width="34" height="18" font="1">4πR</text>
+<text top="1027" left="371" width="7" height="9" font="2">3</text>
+<text top="986" left="384" width="52" height="24" font="1">Z Z Z</text>
+<text top="1015" left="446" width="56" height="18" font="1">dφ sin θ</text>
+<text top="1022" left="503" width="7" height="9" font="2">0</text>
+<text top="1015" left="511" width="18" height="18" font="1">dθ</text>
+<text top="1022" left="529" width="7" height="9" font="2">0</text>
+<text top="1015" left="537" width="8" height="18" font="1">r</text>
+<text top="1012" left="545" width="7" height="9" font="2">2</text>
+<text top="1015" left="553" width="76" height="21" font="1">dr cos θ ≈</text>
+<text top="1002" left="638" width="9" height="18" font="1">a</text>
+<text top="1027" left="636" width="14" height="18" font="1">R</text>
+<text top="1015" left="652" width="5" height="18" font="1">,</text>
+<text top="1015" left="787" width="23" height="18" font="1">(2)</text>
+<text top="1056" left="108" width="102" height="18" font="1">where θ = θ</text>
+<text top="1063" left="210" width="7" height="9" font="2">0</text>
+<text top="1056" left="223" width="82" height="21" font="1">+ ∆θ ≈ θ</text>
+<text top="1063" left="305" width="7" height="9" font="2">0</text>
+<text top="1056" left="319" width="14" height="21" font="1">−</text>
+<text top="1053" left="340" width="8" height="13" font="2">a</text>
+<text top="1066" left="341" width="7" height="13" font="2">r</text>
+<text top="1056" left="353" width="33" height="18" font="1">sin θ</text>
+<text top="1063" left="387" width="7" height="9" font="2">0</text>
+<text top="1056" left="403" width="374" height="18" font="1">and the integration runs over coordinates (r, θ</text>
+<text top="1063" left="777" width="7" height="9" font="2">0</text>
+<text top="1056" left="784" width="26" height="18" font="1">, φ)</text>
+<text top="1099" left="455" width="9" height="18" font="1">4</text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="702" height="18" font="1">measured from the center of the sphere. Adopting a = 8.5 Kpc for our displacement from</text>
+<text top="148" left="108" width="702" height="21" font="1">the center of the Galaxy and hcos θi &lt; 0.08 (BATSE 1991; 1σ bound) implies R &gt; 106</text>
+<text top="184" left="108" width="702" height="21" font="1">Kpc; the 3σ bound of hcos θi &lt; 0.22 relaxes this to R &gt; 39 Kpc. There is little other</text>
+<text top="220" left="108" width="702" height="18" font="1">direct evidence for a spherical component of our Galaxy extending to these radii, but it is</text>
+<text top="256" left="108" width="702" height="18" font="1">believed (based on dynamical measurements) that the mass distributions of many galaxies</text>
+<text top="292" left="108" width="702" height="18" font="1">similarly extend far beyond their visible radii. The requirement that the halo be spherical</text>
+<text top="328" left="108" width="488" height="18" font="1">constrains models of its formation and gravitational potential.</text>
+<text top="369" left="144" width="666" height="18" font="1">It is possible that the objects (by consensus, probably neutron stars) producing</text>
+<text top="405" left="108" width="702" height="18" font="1">gamma-ray bursts were formed in this extended halo early in the history of the Galaxy,</text>
+<text top="441" left="108" width="286" height="21" font="1">and that they remain active for ≥ 10</text>
+<text top="439" left="394" width="14" height="9" font="2">10</text>
+<text top="441" left="414" width="396" height="18" font="1">years. The total mean gamma-ray burst flux cross-</text>
+<text top="477" left="108" width="240" height="21" font="1">ing the Galactic plane is ∼ 10</text>
+<text top="476" left="348" width="26" height="9" font="2">−11</text>
+<text top="477" left="381" width="56" height="18" font="1">erg/cm</text>
+<text top="475" left="437" width="7" height="9" font="2">2</text>
+<text top="477" left="445" width="365" height="18" font="1">sec, corresponding to a Galactic luminosity of</text>
+<text top="512" left="108" width="37" height="21" font="1">∼ 10</text>
+<text top="511" left="145" width="14" height="9" font="2">37</text>
+<text top="512" left="166" width="505" height="21" font="1">erg/sec even for a very extended halo (R ∼ 100 Kpc), or to ∼ 10</text>
+<text top="511" left="671" width="14" height="9" font="2">26</text>
+<text top="512" left="692" width="79" height="18" font="1">erg/sec M</text>
+<text top="521" left="771" width="11" height="9" font="2">⊙</text>
+<text top="512" left="789" width="21" height="18" font="1">for</text>
+<text top="548" left="108" width="156" height="21" font="1">a halo mass of ∼ 10</text>
+<text top="547" left="264" width="14" height="9" font="2">11</text>
+<text top="548" left="279" width="17" height="18" font="1">M</text>
+<text top="557" left="297" width="11" height="9" font="2">⊙</text>
+<text top="548" left="309" width="501" height="18" font="1">, comparable to the mass of the visible Galaxy. The cumulative</text>
+<text top="584" left="108" width="214" height="21" font="1">power radiated is ∼ 3 × 10</text>
+<text top="583" left="322" width="14" height="9" font="2">43</text>
+<text top="584" left="344" width="50" height="18" font="1">erg/M</text>
+<text top="593" left="394" width="11" height="9" font="2">⊙</text>
+<text top="584" left="406" width="404" height="18" font="1">. If all the mass were in neutron stars, this energy</text>
+<text top="620" left="108" width="515" height="21" font="1">would be comparable to their magnetospheric energy for B ∼ 10</text>
+<text top="618" left="623" width="14" height="9" font="2">13</text>
+<text top="620" left="645" width="165" height="18" font="1">gauss, or to their ro-</text>
+<text top="656" left="108" width="363" height="18" font="1">tational energy with moments of inertia of 10</text>
+<text top="654" left="471" width="14" height="9" font="2">45</text>
+<text top="656" left="494" width="54" height="18" font="1">gm cm</text>
+<text top="654" left="547" width="7" height="9" font="2">2</text>
+<text top="656" left="562" width="248" height="21" font="1">and spin periods ∼ 25 seconds.</text>
+<text top="692" left="108" width="702" height="18" font="1">Presumably only a fraction of the mass is in neutron stars; their expected magnetospheric</text>
+<text top="728" left="108" width="525" height="18" font="1">energy is inadequate, but their rotational energy may be sufficient.</text>
+<text top="769" left="144" width="666" height="18" font="1">Alternatively, the sources of gamma-ray bursts may be born within the visible Galaxy</text>
+<text top="805" left="108" width="702" height="18" font="1">but escape to an extended halo. It is well known (Lyne, Anderson and Salter 1982) that</text>
+<text top="840" left="108" width="576" height="18" font="1">many (but probably not all) pulsars are produced with recoil velocities</text>
+<text top="840" left="692" width="118" height="21" font="1">∼ 200 km/sec,</text>
+<text top="876" left="108" width="702" height="18" font="1">sufficient to escape the Galactic disc. When combined with their initial orbital kinetic</text>
+<text top="912" left="108" width="702" height="18" font="1">energy, they may be sufficiently energetic to escape into an extended halo. The time</text>
+<text top="948" left="108" width="485" height="21" font="1">required to fill a halo of radius R ∼ 40–100 Kpc is 1–3 ×10</text>
+<text top="947" left="593" width="7" height="9" font="2">8</text>
+<text top="948" left="609" width="201" height="18" font="1">years. This hypothesis is</text>
+<text top="984" left="108" width="702" height="18" font="1">complicated by the fact that their initial orbital velocities about the Galactic center will</text>
+<text top="1020" left="108" width="702" height="18" font="1">tend to concentrate the neutron stars to low Galactic latitudes, and any low-recoil fraction</text>
+<text top="1056" left="108" width="589" height="18" font="1">will remain in the Galactic plane, concentrated toward the Galactic center.</text>
+<text top="1099" left="454" width="9" height="18" font="1">5</text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="144" width="666" height="18" font="1">The lifetimes of these neutron stars as gamma-ray burst sources must not be less</text>
+<text top="148" left="108" width="702" height="18" font="1">than this filling time (or the bursts would be concentrated within the visible Galaxy, and</text>
+<text top="184" left="108" width="702" height="18" font="1">peak towards its center), but could be arbitrarily greater. It is not possible to estimate the</text>
+<text top="220" left="108" width="702" height="18" font="1">number of neutron stars required because their burst frequency is unknown. If the neutron</text>
+<text top="256" left="108" width="505" height="21" font="1">stars freely escape to infinity and radiate indefinitely their n ∝ r</text>
+<text top="255" left="613" width="18" height="9" font="2">−2</text>
+<text top="256" left="638" width="172" height="18" font="1">implies an asymptotic</text>
+<text top="292" left="108" width="702" height="21" font="1">d log N/d log S = −0.5, not as flat as the d log N/d log S = 0 found for a confined space</text>
+<text top="328" left="108" width="702" height="18" font="1">distribution, but flat enough to explain the data. The energy required is the same as in</text>
+<text top="363" left="108" width="424" height="18" font="1">the case of gamma-ray burst sources born in the halo.</text>
+<text top="400" left="144" width="666" height="18" font="1">For a simple model of gamma-ray burst sources recoiling from their birthplaces in the</text>
+<text top="436" left="108" width="702" height="18" font="1">Galactic disc, it is possible to calculate the expected dipole moment of their distribution</text>
+<text top="472" left="108" width="702" height="18" font="1">of arrival directions with respect to the Galactic center and the quadrupole moment with</text>
+<text top="507" left="108" width="527" height="18" font="1">respect to the Galactic plane. Assume that we reside a distance r</text>
+<text top="515" left="635" width="7" height="9" font="2">0</text>
+<text top="507" left="650" width="160" height="18" font="1">from the center of a</text>
+<text top="543" left="108" width="702" height="18" font="1">Galactic disc of radius L, uniformly populated with source birthplaces, and that each point</text>
+<text top="579" left="108" width="694" height="21" font="1">in the disc uniformly fills with observable gamma-ray bursts a sphere of radius R ≫ L, r</text>
+<text top="587" left="802" width="7" height="9" font="2">0</text>
+<text top="615" left="108" width="702" height="18" font="1">with itself at its center. The uniformly filled sphere is a rough approximation to the motion</text>
+<text top="651" left="108" width="702" height="18" font="1">of neutron stars in the unknown potential of the Galactic halo. Using the result (2), which</text>
+<text top="687" left="108" width="505" height="18" font="1">now describes the observed asymmetry of each sphere, with a</text>
+<text top="685" left="613" width="7" height="9" font="2">2</text>
+<text top="687" left="630" width="31" height="18" font="1">= r</text>
+<text top="685" left="661" width="7" height="9" font="2">2</text>
+<text top="687" left="674" width="28" height="18" font="1">+ r</text>
+<text top="685" left="703" width="7" height="9" font="2">2</text>
+<text top="696" left="702" width="7" height="9" font="2">0</text>
+<text top="687" left="716" width="45" height="21" font="1">− 2rr</text>
+<text top="695" left="761" width="7" height="9" font="2">0</text>
+<text top="687" left="772" width="38" height="18" font="1">cos φ</text>
+<text top="723" left="108" width="702" height="18" font="1">and (r, φ) denoting the coordinates of the disc point, projecting this asymmetry onto the</text>
+<text top="759" left="108" width="533" height="18" font="1">direction to the Galactic center, and integrating over the disc yields</text>
+<text top="817" left="409" width="69" height="21" font="1">hcos θi ≈</text>
+<text top="805" left="485" width="8" height="18" font="1">r</text>
+<text top="813" left="493" width="7" height="9" font="2">0</text>
+<text top="830" left="487" width="14" height="18" font="1">R</text>
+<text top="817" left="504" width="5" height="18" font="1">,</text>
+<text top="817" left="787" width="23" height="18" font="1">(3)</text>
+<text top="876" left="108" width="702" height="18" font="1">where θ is the angle between a burst’s arrival direction and that to the Galactic center.</text>
+<text top="912" left="108" width="702" height="18" font="1">Application to the BATSE data yields the same bounds on R as discussed above, although</text>
+<text top="948" left="108" width="702" height="18" font="1">now R refers to the radius of a sphere populated by gamma-ray bursts from a given</text>
+<text top="984" left="108" width="702" height="18" font="1">neutron star birthplace, rather than the radius of a sphere of source positions centered</text>
+<text top="1020" left="108" width="490" height="21" font="1">at the Galactic center; the distinction is slight for R ≫ L, r</text>
+<text top="1028" left="598" width="7" height="9" font="2">0</text>
+<text top="1020" left="606" width="204" height="18" font="1">, as must be the case. If</text>
+<text top="1056" left="108" width="395" height="18" font="1">the assumption of uniform filling is replaced by d</text>
+<text top="1055" left="503" width="18" height="9" font="2">−2</text>
+<text top="1056" left="530" width="280" height="18" font="1">density distribution, where d is the</text>
+<text top="1099" left="454" width="9" height="18" font="1">6</text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="702" height="18" font="1">distance from the birthplace (reflecting an outward streaming distribution, rather than a</text>
+<text top="148" left="108" width="531" height="18" font="1">trapped one), then the result (3) is multiplied by a factor O(ln(R/r</text>
+<text top="156" left="639" width="7" height="9" font="2">0</text>
+<text top="148" left="647" width="52" height="21" font="1">)) ∼ 2.</text>
+<text top="184" left="144" width="397" height="21" font="1">It is similarly possible to calculate an average hsin</text>
+<text top="182" left="541" width="7" height="9" font="2">2</text>
+<text top="184" left="552" width="258" height="21" font="1">βi, where β is a burst’s Galactic</text>
+<text top="220" left="108" width="702" height="18" font="1">latitude. For an observer in the Galactic equatorial plane but at a distance a from the</text>
+<text top="256" left="108" width="404" height="18" font="1">center of a uniformly populated sphere of radius R,</text>
+<text top="310" left="380" width="29" height="21" font="1">hsin</text>
+<text top="307" left="409" width="7" height="9" font="2">2</text>
+<text top="310" left="420" width="37" height="21" font="1">βi ≈</text>
+<text top="298" left="465" width="9" height="18" font="1">1</text>
+<text top="322" left="465" width="9" height="18" font="1">3</text>
+<text top="310" left="480" width="14" height="21" font="1">−</text>
+<text top="298" left="502" width="18" height="18" font="1">4a</text>
+<text top="296" left="520" width="7" height="9" font="2">2</text>
+<text top="322" left="500" width="23" height="18" font="1">5R</text>
+<text top="322" left="523" width="7" height="9" font="2">2</text>
+<text top="310" left="533" width="5" height="18" font="1">,</text>
+<text top="310" left="787" width="23" height="18" font="1">(4)</text>
+<text top="363" left="108" width="702" height="18" font="1">to lowest non-vanishing order in a/R. Averaging over spheres centered in the Galactic disc</text>
+<text top="399" left="108" width="45" height="18" font="1">yields</text>
+<text top="435" left="357" width="29" height="21" font="1">hsin</text>
+<text top="433" left="386" width="7" height="9" font="2">2</text>
+<text top="435" left="397" width="37" height="21" font="1">βi ≈</text>
+<text top="423" left="442" width="9" height="18" font="1">1</text>
+<text top="448" left="442" width="9" height="18" font="1">3</text>
+<text top="435" left="457" width="14" height="21" font="1">−</text>
+<text top="423" left="477" width="17" height="18" font="1">4r</text>
+<text top="422" left="494" width="7" height="9" font="2">2</text>
+<text top="433" left="494" width="7" height="9" font="2">0</text>
+<text top="423" left="506" width="39" height="18" font="1">+ 2L</text>
+<text top="422" left="546" width="7" height="9" font="2">2</text>
+<text top="448" left="500" width="23" height="18" font="1">5R</text>
+<text top="447" left="523" width="7" height="9" font="2">2</text>
+<text top="435" left="556" width="5" height="18" font="1">.</text>
+<text top="435" left="787" width="23" height="18" font="1">(5)</text>
+<text top="482" left="108" width="702" height="18" font="1">Because of the quadratic dependence on R the resulting bounds are less strict than those</text>
+<text top="518" left="108" width="195" height="18" font="1">obtained from (2) or (3).</text>
+<text top="554" left="144" width="666" height="18" font="1">The results (3) and (5) may be combined to predict a relation between these two</text>
+<text top="590" left="108" width="402" height="18" font="1">angular averages, if the relation between L and r</text>
+<text top="597" left="510" width="7" height="9" font="2">0</text>
+<text top="590" left="526" width="284" height="18" font="1">is known. Take, for simplicity, the</text>
+<text top="625" left="108" width="191" height="18" font="1">reasonable estimate L =</text>
+<text top="611" left="304" width="15" height="21" font="1">√</text>
+<text top="625" left="319" width="17" height="18" font="1">2r</text>
+<text top="633" left="336" width="7" height="9" font="2">0</text>
+<text top="625" left="344" width="54" height="18" font="1">. Then</text>
+<text top="679" left="362" width="29" height="21" font="1">hsin</text>
+<text top="677" left="391" width="7" height="9" font="2">2</text>
+<text top="679" left="402" width="37" height="21" font="1">βi ≈</text>
+<text top="667" left="446" width="9" height="18" font="1">1</text>
+<text top="691" left="446" width="9" height="18" font="1">3</text>
+<text top="679" left="462" width="14" height="21" font="1">−</text>
+<text top="667" left="482" width="9" height="18" font="1">8</text>
+<text top="691" left="482" width="9" height="18" font="1">5</text>
+<text top="679" left="493" width="50" height="21" font="1">hcos θi</text>
+<text top="677" left="543" width="7" height="9" font="2">2</text>
+<text top="679" left="551" width="5" height="18" font="1">.</text>
+<text top="679" left="787" width="23" height="18" font="1">(6)</text>
+<text top="733" left="108" width="702" height="18" font="1">This relation offers a test of the simple geometrical model used here. This test is readily</text>
+<text top="769" left="108" width="702" height="18" font="1">satisfied by the extant BATSE data, but may become more discriminating as more data</text>
+<text top="805" left="108" width="93" height="18" font="1">accumulate.</text>
+<text top="840" left="144" width="666" height="18" font="1">The gamma-ray burst of March 5, 1979 may, in part, be explained by the extended</text>
+<text top="876" left="108" width="702" height="18" font="1">halo hypothesis. If most other bursts are at distances less than the thickness of the Galactic</text>
+<text top="912" left="108" width="702" height="18" font="1">disc, as was often supposed before the BATSE data became available, then the March 5,</text>
+<text top="948" left="108" width="596" height="21" font="1">1979 event was extraordinary, because its luminosity must have been ∼ 10</text>
+<text top="947" left="704" width="7" height="9" font="2">5</text>
+<text top="948" left="717" width="37" height="21" font="1">− 10</text>
+<text top="947" left="753" width="7" height="9" font="2">6</text>
+<text top="948" left="768" width="42" height="18" font="1">times</text>
+<text top="984" left="108" width="702" height="18" font="1">greater than that of a typical burst. It is hard to reconcile this interpretation with the</text>
+<text top="1020" left="108" width="702" height="18" font="1">absence of bursts similar to that of March 5, 1979, but occurring in our own Galaxy, which</text>
+<text top="1056" left="108" width="702" height="21" font="1">contains ∼ 10 times the mass of the LMC, and might therefore be expected to have ∼ 10</text>
+<text top="1099" left="455" width="9" height="18" font="1">7</text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="702" height="18" font="1">times as many such events (but closer and even brighter!). If, instead, bursts in general</text>
+<text top="148" left="108" width="702" height="18" font="1">are distributed throughout a very extended halo of our Galaxy, extending to distances at</text>
+<text top="184" left="108" width="702" height="18" font="1">least as great as that of the LMC, then the March 5, 1979 burst would be explicable as</text>
+<text top="220" left="108" width="702" height="18" font="1">an unusually (but not extraordinarily) luminous member of a class of events with a broad</text>
+<text top="256" left="108" width="216" height="18" font="1">distribution of luminosities.</text>
+<text top="295" left="144" width="666" height="18" font="1">Another consequence of the hypothesis of the birth of gamma-ray burst sources in</text>
+<text top="330" left="108" width="702" height="18" font="1">the Galactic disc is a further development of the empirical division of neutron star births</text>
+<text top="366" left="108" width="702" height="18" font="1">into high and low recoil classes (Katz 1975). Millisecond pulsars, found in superabundance</text>
+<text top="402" left="108" width="702" height="18" font="1">in dynamically fragile globular clusters (like their probable ancestors, the X-ray binaries)</text>
+<text top="438" left="108" width="702" height="18" font="1">must have been formed recoillessly. Slowly spinning pulsars, most of which are single and</text>
+<text top="474" left="108" width="702" height="18" font="1">are observed (Lyne, Anderson and Salter 1982) to have high space velocities (and hence</text>
+<text top="510" left="108" width="455" height="18" font="1">high recoil) are the ancestors of gamma-ray burst sources.</text>
+<text top="548" left="144" width="666" height="18" font="1">These categories are nearly disjoint because low-recoil millisecond pulsars retain their</text>
+<text top="584" left="108" width="702" height="18" font="1">companions, initially suppressing their pulsar emission (Shvartsman 1971), but later spin-</text>
+<text top="620" left="108" width="702" height="18" font="1">ning them up. The observed small magnetic dipole moment µ of millisecond pulsars reduces</text>
+<text top="656" left="108" width="115" height="18" font="1">the power &lt; µ</text>
+<text top="654" left="223" width="7" height="9" font="2">2</text>
+<text top="656" left="231" width="46" height="18" font="1">c/(3R</text>
+<text top="654" left="278" width="7" height="9" font="2">2</text>
+<text top="664" left="277" width="16" height="13" font="2">ns</text>
+<text top="656" left="294" width="516" height="18" font="1">) potentially released by magnetospheric dissipation in a gamma-</text>
+<text top="692" left="108" width="702" height="18" font="1">ray burst, explaining the absence of this Galactocentrically-concentrated population from</text>
+<text top="728" left="108" width="702" height="18" font="1">the spatial distribution of bursts, although their large rotational energy suggests that a</text>
+<text top="763" left="108" width="421" height="18" font="1">significant luminosity in microbursts may be possible.</text>
+<text top="802" left="144" width="666" height="18" font="1">High-recoil neutron stars, born with slow spin but which lose any binary companion,</text>
+<text top="838" left="108" width="702" height="18" font="1">must retain their magnetic fields for a very long time in order to produce gamma-ray bursts</text>
+<text top="874" left="108" width="505" height="21" font="1">(empirically, Her X-1 has retained its large field for at least 3 ×10</text>
+<text top="872" left="613" width="7" height="9" font="2">7</text>
+<text top="874" left="626" width="184" height="18" font="1">years, the time required</text>
+<text top="910" left="108" width="702" height="18" font="1">for it to reach its height above the Galactic plane, and perhaps much longer). Low-recoil</text>
+<text top="945" left="108" width="702" height="18" font="1">single neutron stars and high-recoil neutron stars which retain their companions, although</text>
+<text top="981" left="108" width="509" height="18" font="1">individually interesting (Her X-1, PSR1913+16), are uncommon.</text>
+<text top="1020" left="144" width="666" height="18" font="1">If gamma-ray bursts are distant then they must be very powerful. At 100 Kpc a strong</text>
+<text top="1056" left="108" width="18" height="18" font="1">10</text>
+<text top="1055" left="126" width="18" height="9" font="2">−5</text>
+<text top="1056" left="154" width="56" height="18" font="1">erg/cm</text>
+<text top="1054" left="210" width="7" height="9" font="2">2</text>
+<text top="1056" left="227" width="312" height="18" font="1">burst, radiating isotropically, emits 10</text>
+<text top="1054" left="539" width="14" height="9" font="2">43</text>
+<text top="1056" left="563" width="247" height="18" font="1">erg, posing energetic problems</text>
+<text top="1099" left="454" width="9" height="18" font="1">8</text>
+</page>
+<page number="9" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="702" height="18" font="1">similar to those posed by the March 5, 1979 event (Katz 1982). Nonthermal mechanisms</text>
+<text top="148" left="108" width="702" height="18" font="1">involving the flare-like dissipation of much of a magnetosphere’s energy are an attractive</text>
+<text top="184" left="108" width="702" height="18" font="1">explanation of much gamma-ray burst phenomenology, but they are barely energetically</text>
+<text top="220" left="108" width="702" height="18" font="1">adequate for a single burst. The possibility of regeneration of magnetospheric energy even</text>
+<text top="256" left="108" width="702" height="18" font="1">during a burst (perhaps by twisting up the magnetosphere by differential rotation) must</text>
+<text top="292" left="108" width="702" height="18" font="1">be considered. Note, though, that even if the burst population fills a sphere of radius R</text>
+<text top="328" left="108" width="702" height="18" font="1">the brighter bursts will, on average, be significantly closer than R, reducing their energy</text>
+<text top="363" left="108" width="560" height="18" font="1">requirements but increasing the spatial anisotropy of their distribution.</text>
+<text top="399" left="144" width="666" height="18" font="1">A final consequence of the distances suggested here is that quiescent burst counterparts</text>
+<text top="435" left="108" width="702" height="18" font="1">will be too faint to observe. Stellar companions (unless close and compact) will have been</text>
+<text top="471" left="108" width="702" height="18" font="1">lost when recoil was imparted. Accurate burst coordinates and deep searches will show</text>
+<text top="507" left="108" width="702" height="18" font="1">only blank fields, as has been the case for the few accurate positions presently available</text>
+<text top="543" left="108" width="702" height="18" font="1">(Schaefer 1990). An essentially distance-independent argument (Katz 1985) implies that</text>
+<text top="579" left="108" width="702" height="18" font="1">Schaefer’s (1990; but see ˙Zytkow 1990) reported optical flashes can only be explained as</text>
+<text top="615" left="108" width="702" height="18" font="1">nonthermal emission. At a distance of 100 Kpc thermal reprocessing would be inadequate</text>
+<text top="650" left="108" width="702" height="18" font="1">to explain the reported intensities (the inferred absolute magnitudes would be brighter</text>
+<text top="686" left="108" width="702" height="18" font="1">than -15!). Similarly, at these distances self-absorption suppresses the reprocessed X-ray</text>
+<text top="722" left="108" width="702" height="18" font="1">flux, explaining the low X-ray luminosity of gamma-ray bursts (Imamura and Epstein</text>
+<text top="758" left="108" width="48" height="18" font="1">1987).</text>
+<text top="794" left="144" width="666" height="18" font="1">I thank G. J. Fishman for supplying data in advance of publication and F. J. Dyson</text>
+<text top="830" left="108" width="117" height="18" font="1">for discussions.</text>
+<text top="1099" left="455" width="9" height="18" font="1">9</text>
+</page>
+<page number="10" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="418" width="82" height="18" font="1">References</text>
+<text top="170" left="108" width="378" height="18" font="1">BATSE Science Team 1991, I. A. U. Circ. 5358.</text>
+<text top="216" left="108" width="702" height="18" font="1">Cline, T. L. 1984 in High Energy Transients in Astrophysics, ed. S. E. Woosley (AIP: New</text>
+<text top="252" left="144" width="105" height="18" font="1">York) p. 333.</text>
+<text top="299" left="108" width="456" height="18" font="1">Imamura, J. N., and Epstein, R. I. 1987, Ap. J. 313, 711.</text>
+<text top="346" left="108" width="702" height="18" font="1">Jennings, M. C. 1984, in High Energy Transients in Astrophysics, ed. S. E. Woosley (AIP:</text>
+<text top="381" left="144" width="146" height="18" font="1">New York) p. 412.</text>
+<text top="428" left="108" width="266" height="18" font="1">Katz, J. I. 1975, Nature 253, 698.</text>
+<text top="475" left="108" width="264" height="18" font="1">Katz, J. I. 1982, Ap. J. 260, 371.</text>
+<text top="521" left="108" width="277" height="18" font="1">Katz, J. I. 1985, Ap. Lett. 24, 183.</text>
+<text top="568" left="108" width="645" height="21" font="1">Katz, J. I. 1987, High Energy Astrophysics (Addison-Wesley: Menlo Park) §4.5.1.</text>
+<text top="615" left="108" width="603" height="18" font="1">Lyne, A. G., Anderson, B., and Salter, M. J. 1982, M. N. R. A. S. 201, 503.</text>
+<text top="661" left="108" width="579" height="18" font="1">Meegan, C. A., Fishman, G. J., and Wilson, R. B. 1985, Ap. J. 291, 479.</text>
+<text top="708" left="108" width="300" height="18" font="1">Schaefer, B. E. 1990, Ap. J. 364, 590.</text>
+<text top="754" left="108" width="397" height="18" font="1">Shvartsman, V. F. 1971, Sov. Astron.–AJ 15, 342.</text>
+<text top="801" left="108" width="653" height="18" font="1">Woosley, S. E. 1984, ed. High Energy Transients in Astrophysics (AIP: New York).</text>
+<text top="843" left="111" width="268" height="22" font="1">˙Zytkow, A. 1990, Ap. J. 359, 138.</text>
+<text top="1099" left="450" width="18" height="18" font="1">10</text>
+</page>
+</pdf2xml>

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="0" size="30" family="Times" color="#000000"/>
+	<fontspec id="1" size="16" family="Times" color="#000000"/>
+	<fontspec id="2" size="10" family="Times" color="#000000"/>
+	<fontspec id="3" size="10" family="Times" color="#000000"/>
+	<fontspec id="4" size="16" family="Times" color="#000000"/>
+<text top="170" left="155" width="591" height="30" font="0">On-a-chip biosensing based on all-dielectric </text>
+<text top="246" left="347" width="216" height="30" font="0">nanoresonators  </text>
+<text top="341" left="115" width="94" height="20" font="1"><i>Ozlem Yavas</i></text>
+<text top="338" left="208" width="6" height="13" font="2"><i>1</i></text>
+<text top="341" left="214" width="146" height="20" font="1"><i>, Mikael Svedendahl</i></text>
+<text top="338" left="360" width="6" height="13" font="2"><i>1</i></text>
+<text top="341" left="367" width="125" height="20" font="1"><i>, Paulina Dobosz</i></text>
+<text top="338" left="491" width="6" height="13" font="2"><i>1</i></text>
+<text top="341" left="497" width="100" height="20" font="1"><i>, Vanesa Sanz</i></text>
+<text top="338" left="598" width="6" height="13" font="2"><i>1</i></text>
+<text top="341" left="604" width="160" height="20" font="1"><i>, and Romain Quidant</i></text>
+<text top="338" left="764" width="18" height="13" font="2"><i>1,2 </i></text>
+<text top="397" left="131" width="9" height="13" font="3">1 </text>
+<text top="400" left="141" width="625" height="20" font="4">ICFO-Institut de Ciencies Fotoniques, Barcelona Institute of Science and Technology, </text>
+<text top="442" left="306" width="286" height="20" font="4">08860 Castelldefels (Barcelona), Spain </text>
+<text top="498" left="139" width="12" height="13" font="3">2  </text>
+<text top="501" left="152" width="607" height="20" font="4">ICREA–Institució Catalana de Recerca i Estudis Avançats, 08010 Barcelona, Spain </text>
+<text top="570" left="108" width="681" height="20" font="4">Nanophotonics has become a key enabling technology in biomedicine with great promises in </text>
+<text top="611" left="108" width="681" height="20" font="4">early diagnosis and less invasive therapies. In this context, the unique capability of plasmonic </text>
+<text top="652" left="108" width="681" height="20" font="4">noble metal nanoparticles to concentrate light on the nanometer scale has widely contributed </text>
+<text top="694" left="108" width="681" height="20" font="4">to  biosensing  and  enhanced  spectroscopy.  Recently,  high-refractive  index  dielectric </text>
+<text top="735" left="108" width="681" height="20" font="4">nanostructures featuring low loss resonances have been proposed as a promising alternative </text>
+<text top="777" left="108" width="681" height="20" font="4">to  nanoplasmonics,  potentially  offering  better  sensing  performances  along  with  full </text>
+<text top="818" left="108" width="681" height="20" font="4">compatibility  with  the  microelectronics  industry.  In  this  letter  we  report  the  first </text>
+<text top="859" left="108" width="682" height="20" font="4">demonstration  of  biosensing  with  silicon  nanoresonators  integrated  in  state-of-the-art </text>
+<text top="901" left="108" width="681" height="20" font="4">microfluidics. Our lab-on-a-chip platform enables detecting Prostate Specific Antigen (PSA) </text>
+<text top="942" left="108" width="681" height="20" font="4">cancer  marker  in  human  serum  with  a  sensitivity  that  meets  clinical  needs.  These </text>
+<text top="984" left="108" width="681" height="20" font="4">performances are directly compared with its plasmonic counterpart based on gold nanorods. </text>
+<text top="1025" left="108" width="682" height="20" font="4">Our  work  opens  new  opportunities  in  the  development  of  future  point-of-care  devices </text>
+<text top="1066" left="108" width="294" height="20" font="4">towards a more personalized healthcare. </text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="588" height="20" font="4">Keywords: lab-on-chip, all-dielectric nanoresonators, biosensing, cancer, silicon  </text>
+<text top="165" left="108" width="5" height="20" font="4"> </text>
+<text top="200" left="123" width="666" height="20" font="4">The need for point-of-care devices in health and wellness monitoring is one of the principal </text>
+<text top="242" left="108" width="682" height="20" font="4">motivations  behind  the  current  development  in  biosensing.  Among  the  different  available </text>
+<text top="283" left="108" width="681" height="20" font="4">transduction  schemes,  optical  biosensors  hold  the  advantage  of  being  highly  sensitive, </text>
+<text top="325" left="108" width="419" height="20" font="4">enabling  label  free  and  cost  effective  real  time  sensing</text>
+<text top="322" left="528" width="6" height="13" font="3">1</text>
+<text top="325" left="534" width="256" height="20" font="4">.  Beyond  silicon-based  integrated </text>
+<text top="366" left="108" width="43" height="20" font="4">optics</text>
+<text top="363" left="151" width="18" height="13" font="3">2–4</text>
+<text top="366" left="169" width="528" height="20" font="4"> that shows great promises for sensing, surface plasmon resonance (SPR)</text>
+<text top="363" left="698" width="18" height="13" font="3">5–8</text>
+<text top="366" left="716" width="74" height="20" font="4"> and fiber </text>
+<text top="407" left="108" width="43" height="20" font="4">optics</text>
+<text top="404" left="151" width="21" height="13" font="3">9,10</text>
+<text top="407" left="172" width="617" height="20" font="4"> based sensors utilizing propagating evanescent waves have been extensively studied </text>
+<text top="449" left="108" width="682" height="20" font="4">and validated on a wide range of analytes. However, coupling incoming light to the surface </text>
+<text top="490" left="108" width="681" height="20" font="4">modes  usually  requires  sophisticated  optics  and  such  sensors  are  often  limited  to  large </text>
+<text top="531" left="108" width="682" height="20" font="4">bioanalytes,  owing  to  a  substantial  spatial  mismatch  of  the  sensing  mode  with  the  tiniest </text>
+<text top="573" left="108" width="82" height="20" font="4">molecules. </text>
+<text top="614" left="123" width="666" height="20" font="4">These  limitations  can  partially  be  overcome  by  using  3D  nano-optical  resonators.  In </text>
+<text top="656" left="108" width="681" height="20" font="4">particular,  extensive  efforts  have  been  put  on  localized  surface  plasmon  resonance  (LSPR) </text>
+<text top="697" left="108" width="53" height="20" font="4">sensors</text>
+<text top="694" left="161" width="30" height="13" font="3">11–13</text>
+<text top="697" left="191" width="598" height="20" font="4"> which exploit the unique properties of noble metal nanoantennas. The ability to </text>
+<text top="738" left="108" width="681" height="20" font="4">excite LSPR with freely propagating incident light considerably simplifies the optical setup </text>
+<text top="780" left="108" width="681" height="20" font="4">needed for such label free measurements. Highly confined modes also provide strong overlap </text>
+<text top="821" left="108" width="682" height="20" font="4">between  the  electromagnetic  field  on  the  surface  and  the  relevant  biological  analyte </text>
+<text top="863" left="108" width="681" height="20" font="4">dimensions.  Finally,  the  tiny  size  of  each  nanosensors  enable  their  assembly  in  small  foot </text>
+<text top="904" left="108" width="559" height="20" font="4">print  sensing  areas  compatible  with  parallel  multi-detection  platforms</text>
+<text top="901" left="667" width="30" height="13" font="3">11–13</text>
+<text top="904" left="697" width="92" height="20" font="4">.  However, </text>
+<text top="945" left="108" width="682" height="20" font="4">plasmonic  nanoparticles  suffer  from  dissipative  losses  in  the  metal  that  lead  to  broad </text>
+<text top="987" left="108" width="682" height="20" font="4">resonances  that  eventually  limit  the  sensitivity  of  the  sensor  read-out.  Recently,  high </text>
+<text top="1028" left="108" width="682" height="20" font="4">refractive  index  dielectric  nanoparticles  have  been  proposed  as  an  attractive  alternative  to </text>
+<text top="1070" left="108" width="392" height="20" font="4">plasmonic nanoparticles in wide range of applications.</text>
+<text top="1067" left="501" width="27" height="13" font="3">14,15</text>
+<text top="1070" left="528" width="9" height="20" font="4">  </text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="123" width="666" height="20" font="4">All-dielectric nanophotonics is a fast progressing field which enables manipulation of both </text>
+<text top="150" left="108" width="682" height="20" font="4">electric  and  magnetic  components  of  the  incoming  light.  These  unique  properties  open  up </text>
+<text top="191" left="108" width="682" height="20" font="4">new opportunities in the field of metamaterials including negative refractive index, cloaking, </text>
+<text top="232" left="108" width="224" height="20" font="4">superlensing  and  many  more.</text>
+<text top="229" left="333" width="30" height="13" font="3">15–20</text>
+<text top="232" left="363" width="427" height="20" font="4">  In  practice,  light  coupling  to  dielectric  subwavelength </text>
+<text top="274" left="108" width="682" height="20" font="4">particles results in the excitation of  both  magnetic and electric multipole resonances which </text>
+<text top="315" left="108" width="682" height="20" font="4">translates into multiple peaks in their extinction spectrum. Similar to metallic nanoparticles, </text>
+<text top="357" left="108" width="682" height="20" font="4">the resonance frequencies depend on their geometry, constitutive material and the dielectric </text>
+<text top="398" left="108" width="682" height="20" font="4">environment.  Their  sensitivity  to  the  surrounding  dielectric  permittivity  along  with  their </text>
+<text top="439" left="108" width="682" height="20" font="4">strong mode localization suggests high index dielectric nanoparticles could perform well as </text>
+<text top="481" left="108" width="168" height="20" font="4">biosensing transducers.</text>
+<text top="478" left="276" width="45" height="13" font="3">14,21–23</text>
+<text top="481" left="322" width="468" height="20" font="4"> Silicon nanoresonators, with resonances in visible-NIR spectral </text>
+<text top="522" left="108" width="608" height="20" font="4">range,  were  first  studied  theoretically  and  more  recently  measured  experimentally</text>
+<text top="519" left="716" width="30" height="13" font="3">24–28</text>
+<text top="522" left="746" width="43" height="20" font="4">.  The </text>
+<text top="564" left="108" width="681" height="20" font="4">use  of  silicon  is  motivated  by  its  compatibility  with  the  microelectronics  industry,  high </text>
+<text top="605" left="108" width="681" height="20" font="4">material abundance and low cost. While it has recently been suggested that Si nanoresonators </text>
+<text top="646" left="108" width="682" height="20" font="4">could  benefit  to  the  detection  of  biological  molecules,  so  far,  only  bulk  refractive  index </text>
+<text top="688" left="108" width="307" height="20" font="4">sensing measurements have been reported.</text>
+<text top="685" left="415" width="30" height="13" font="3">21–23</text>
+<text top="688" left="445" width="5" height="20" font="4"> </text>
+<text top="729" left="123" width="666" height="20" font="4">In this letter, we demonstrate that Si  nanoresonator arrays integrated with  state-of-the-art </text>
+<text top="771" left="108" width="681" height="20" font="4">microfluidics  result  in  an  efficient  sensing  platform  for  the  detection  of  protein  cancer </text>
+<text top="812" left="108" width="682" height="20" font="4">markers in human serum, at clinically relevant concentrations for cancer screening. We first </text>
+<text top="853" left="108" width="682" height="20" font="4">study  the  optimal  structural  design  of  Si  nanodisks  for  molecular  sensing.  Then,  we </text>
+<text top="895" left="108" width="681" height="20" font="4">demonstrate detection of  PSA (prostate specific  antigen) in  buffer with  a  limit  of detection </text>
+<text top="936" left="108" width="682" height="20" font="4">(LOD) that is comparable to gold standard immunoassay techniques. Finally, to validate its </text>
+<text top="978" left="108" width="513" height="20" font="4">operation in clinical conditions, the platform is tested in human serum. </text>
+<text top="1019" left="123" width="666" height="20" font="4">Our  platform  consists  of  silicon  nanodisk  arrays  on  a  quartz  substrate  integrated  with  a </text>
+<text top="1061" left="108" width="682" height="20" font="4">PDMS  microfluidic  chip  including  micromechanical  valves  (Fig.  1a-c).  We  fabricate  the </text>
+<text top="1102" left="108" width="681" height="20" font="4">silicon  nanodisk  arrays  using  standard  negative  resist  e-beam  lithography  followed  by  a </text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="682" height="20" font="4">reactive ion etching step on commercial silicon coated quartz samples (see the Supplementary </text>
+<text top="150" left="108" width="681" height="20" font="4">Information). The nanodisk arrays have a fixed height <i>h</i>=50 nm. We choose to tune the disk </text>
+<text top="191" left="108" width="682" height="20" font="4">radius  <i>r</i>  and  inter-particle  distance  <i>s</i>  to  assess  the  optimum  nanosensor  parameters.  The </text>
+<text top="232" left="108" width="681" height="20" font="4">extinction  spectra  of  the  nanodisk  arrays  are  measured  using  a  homemade  transmission </text>
+<text top="274" left="108" width="627" height="20" font="4">microscopy set-up integrated with a VIS-NIR light source  coupled to a spectrometer</text>
+<text top="271" left="735" width="12" height="13" font="3">29</text>
+<text top="274" left="747" width="42" height="20" font="4">. Our </text>
+<text top="315" left="108" width="681" height="20" font="4">optical detection enables us to interrogate up to 32 regions in parallel throughout the chip for </text>
+<text top="357" left="108" width="403" height="20" font="4">real-time resonance tracking of different sensor arrays.  </text>
+<text top="398" left="123" width="666" height="20" font="4">The PDMS chip is fabricated by multilayer soft lithography leading to 8 sensing channels </text>
+<text top="439" left="108" width="681" height="20" font="4">that  are  all  individually  and  simultaneously  addressable  (see  the  Supplementary </text>
+<text top="481" left="108" width="96" height="20" font="4">Information).</text>
+<text top="478" left="204" width="12" height="13" font="3">29</text>
+<text top="481" left="217" width="573" height="20" font="4">  The  sample  flow  on  the  experiment  channels  is  controlled  by  the </text>
+<text top="522" left="108" width="177" height="20" font="4">micromechanical  valves</text>
+<text top="519" left="285" width="12" height="13" font="3">30</text>
+<text top="522" left="297" width="492" height="20" font="4">  that  are  thin  PDMS  membranes  between  the  flow  layer  and  the </text>
+<text top="564" left="108" width="681" height="20" font="4">control  layer  of  the  chip.  By  pressurizing  the  control  channels,  the  thin  PDMS  membrane </text>
+<text top="605" left="108" width="681" height="20" font="4">valve  is  actuated  to  control  the  flow  of  the  samples  on  the  experiment  layer.  These </text>
+<text top="646" left="108" width="681" height="20" font="4">micromechanical  valves  are  pressure-driven  by  electronic  valves  that  are  controlled  by  a </text>
+<text top="688" left="108" width="272" height="20" font="4">home-made graphical user interface.  </text>
+<text top="729" left="123" width="666" height="20" font="4">The detection of the biomolecules is based on a standard sandwich assay scheme where the </text>
+<text top="771" left="108" width="682" height="20" font="4">protein  of  interest  is  captured  between  two  specific  antibodies,  one  immobilized  on  the </text>
+<text top="812" left="108" width="682" height="20" font="4">silicon surface, acting as capture antibody and another that is flowed in solution as detection </text>
+<text top="853" left="108" width="681" height="20" font="4">antibody  (Fig.  1d).  The  capture  antibody  is  immobilized  on  the  silicon  sensors  by  passive </text>
+<text top="895" left="108" width="506" height="20" font="4">adsorption  similarly  to  ELISA  and  other  immunoassay  techniques.</text>
+<text top="892" left="614" width="12" height="13" font="3">31</text>
+<text top="895" left="626" width="164" height="20" font="4">  The  samples,  which </text>
+<text top="936" left="108" width="682" height="20" font="4">contain  different  concentrations  of  the  target  protein  of  interest,  are  then  introduced  into </text>
+<text top="978" left="108" width="681" height="20" font="4">individual  channels  and  the  protein  is  captured  by  the  immobilized  antibody.  Finally,  the </text>
+<text top="1019" left="108" width="682" height="20" font="4">detection  antibody  is  introduced  and  is  bound  to  the  previously  captured  protein.  This </text>
+<text top="1061" left="108" width="681" height="20" font="4">amplification  step  provides  higher  resonance  shifts  compared  to  the  shifts  obtained  by  the </text>
+<text top="1102" left="108" width="681" height="20" font="4">target  proteins, offering  higher  concentration resolution  for small proteins.  It  also  increases </text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="5" size="16" family="Times" color="#000000"/>
+	<fontspec id="6" size="8" family="Times" color="#000000"/>
+	<fontspec id="7" size="11" family="Times" color="#000000"/>
+	<fontspec id="8" size="11" family="Times" color="#404040"/>
+	<fontspec id="9" size="11" family="Times" color="#a801b9"/>
+	<fontspec id="10" size="7" family="Times" color="#000000"/>
+	<fontspec id="11" size="5" family="Times" color="#000000"/>
+	<fontspec id="12" size="5" family="Times" color="#000000"/>
+	<fontspec id="13" size="10" family="Times" color="#000000"/>
+<text top="108" left="108" width="681" height="20" font="4">the  selectivity  of  the  sensing  protocol  since  the  protein  of  interest  is  recognized  by  two </text>
+<text top="150" left="108" width="681" height="20" font="4">specific  antibodies  (see  the  Supplementary  Information).  The  increased  effective  refractive </text>
+<text top="191" left="108" width="681" height="20" font="4">index at the sensor vicinity resulting from the binding steps (Fig. 1d) causes the resonances of </text>
+<text top="232" left="108" width="681" height="20" font="4">the  nanodisk  arrays  to  redshift  enabling  accurate  monitoring  of  the  adsorption  and  binding </text>
+<text top="274" left="108" width="259" height="20" font="4">kinetics of the molecules (Fig. 1e).  </text>
+<text top="704" left="716" width="5" height="20" font="4"> </text>
+<text top="735" left="108" width="682" height="20" font="5"><b>Figure 1:</b> On-a-chip biosensing with silicon on quartz nanodisks. (a) Picture of an assembled </text>
+<text top="777" left="108" width="682" height="20" font="4">chip with 8 sensing channels. (b) Close-up picture of the 8 sensing channels showing silicon </text>
+<text top="818" left="108" width="682" height="20" font="4">nanodisk arrays with different parameters. (c) SEM micrograph of a small portion of a silicon </text>
+<text top="859" left="108" width="682" height="20" font="4">nanodisk  array  with  <i>h</i>=50nm,  <i>r</i>=140  nm  and  <i>s</i>=200  nm.  (d)  Schematics  of  the  sensing </text>
+<text top="901" left="108" width="682" height="20" font="4">protocol. (e) Evolution of the nanodisk resonance during the different steps of the sandwich </text>
+<text top="942" left="108" width="682" height="20" font="4">assay. The sample (100 ng/ml PSA) and control (no PSA) experiments are in grey and purple, </text>
+<text top="984" left="108" width="100" height="20" font="4">respectively. <b> </b></text>
+<text top="1040" left="123" width="666" height="20" font="4">The  extinction  spectrum  of  individual  <i>h</i>=50  nm  Si  nanodisks  is  mainly  dominated  by  an </text>
+<text top="1081" left="108" width="389" height="20" font="4">electric dipole resonance (See Supplementary Fig. 1).</text>
+<text top="1078" left="497" width="27" height="13" font="3">28,32</text>
+<text top="1081" left="524" width="265" height="20" font="4"> Here, for sensing purposes, we aim </text>
+<text top="1123" left="108" width="682" height="20" font="4">at exploiting the strong collective resonance arising from far field dipole coupling. The array </text>
+<text top="497" left="630" width="32" height="10" font="6">500 nm</text>
+<text top="312" left="206" width="9" height="18" font="4">a</text>
+<text top="314" left="394" width="9" height="18" font="4">b</text>
+<text top="313" left="525" width="8" height="18" font="4">c</text>
+<text top="492" left="205" width="9" height="18" font="4">d</text>
+<text top="704" left="233" width="89" height="12" font="3">: capture antibody</text>
+<text top="705" left="399" width="73" height="12" font="3">: target protein</text>
+<text top="705" left="559" width="98" height="12" font="3">: detection antibody</text>
+<text top="518" left="208" width="3" height="14" font="7">i</text>
+<text top="581" left="204" width="6" height="14" font="7">ii</text>
+<text top="658" left="203" width="9" height="14" font="7">iii</text>
+<text top="491" left="370" width="9" height="18" font="4">e</text>
+<text top="592" left="483" width="3" height="14" font="7">i</text>
+<text top="554" left="544" width="6" height="14" font="7">ii</text>
+<text top="541" left="609" width="9" height="14" font="7">iii</text>
+<text top="519" left="434" width="29" height="14" font="7">[PSA]</text>
+<text top="349" left="607" width="9" height="14" font="7">Si</text>
+<text top="367" left="614" width="35" height="14" font="7">quartz</text>
+<text top="496" left="463" width="32" height="10" font="6">500 μm</text>
+<text top="609" left="614" width="39" height="14" font="8">control</text>
+<text top="609" left="531" width="39" height="14" font="9">sample</text>
+<text top="672" left="417" width="6" height="10" font="6">0</text>
+<text top="672" left="487" width="6" height="10" font="6">1</text>
+<text top="672" left="557" width="6" height="10" font="6">2</text>
+<text top="672" left="627" width="6" height="10" font="6">3</text>
+<text top="656" left="396" width="6" height="10" font="6">0</text>
+<text top="607" left="396" width="6" height="10" font="6">1</text>
+<text top="559" left="396" width="6" height="10" font="6">2</text>
+<text top="510" left="396" width="6" height="10" font="6">3</text>
+<text top="534" left="438" width="45" height="9" font="10"> 100 ng/ml</text>
+<text top="546" left="438" width="34" height="9" font="10"> 0 ng/ml</text>
+<text top="592" left="690" width="0" height="7" font="11"> </text>
+<text top="502" left="541" width="2" height="7" font="12"> </text>
+<text top="632" left="390" width="0" height="11" font="13">Re</text>
+<text top="617" left="390" width="0" height="11" font="13">son</text>
+<text top="597" left="390" width="0" height="11" font="13">an</text>
+<text top="583" left="390" width="0" height="11" font="13">ce Shi</text>
+<text top="549" left="390" width="0" height="11" font="13">ft</text>
+<text top="542" left="390" width="0" height="11" font="13"> (nm)</text>
+<text top="683" left="521" width="38" height="11" font="3">time(h)</text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="14" size="9" family="Times" color="#000000"/>
+	<fontspec id="15" size="12" family="Times" color="#000000"/>
+	<fontspec id="16" size="12" family="Times" color="#000000"/>
+<text top="108" left="108" width="682" height="20" font="4">resonance is optimized by changing the disk radius (<i>r</i>) and separation (<i>s</i>). Fig. 2 shows the </text>
+<text top="150" left="108" width="681" height="20" font="4">measured  extinction  spectra  of  the  different  arrays  along  with  the  corresponding  Finite </text>
+<text top="191" left="108" width="682" height="20" font="4">Element Method (FEM) simulations. The resonances are tuned by changing the periodicity at </text>
+<text top="232" left="108" width="682" height="20" font="4">fixed radius (Fig. 2a), or conversely, changing the nanodisk radius at constant disk separation </text>
+<text top="274" left="108" width="681" height="20" font="4">(Fig.  2c).  The  corresponding  FEM  simulations  on  infinitely  large  arrays  are  in  good </text>
+<text top="315" left="108" width="682" height="20" font="4">agreement with the measured data (Fig 2b and 2d). The amplitude and width of each of these </text>
+<text top="357" left="108" width="681" height="20" font="4">resonances  vary  for  different  nanodisk  arrays.  While  these  properties  are  important  for  the </text>
+<text top="398" left="108" width="681" height="20" font="4">detectability of spectral shifts, also the refractive index sensitivity is expected to vary with the </text>
+<text top="439" left="108" width="129" height="20" font="4">array parameters. </text>
+<text top="870" left="716" width="5" height="20" font="4"> </text>
+<text top="901" left="108" width="681" height="20" font="5"><b>Figure 2: </b>Resonance tuning of Si-nanodisk arrays. Experimental extinction spectra of silicon </text>
+<text top="942" left="108" width="682" height="20" font="4">nanodisk arrays in air: (a) Influence of the disk separations at fixed radius <i>r</i>=140 nm and (b) </text>
+<text top="984" left="108" width="682" height="20" font="4">Influence of the disk radius at fixed disk separation of <i>s</i>=200 nm. (c, d) Corresponding FEM </text>
+<text top="1025" left="108" width="662" height="20" font="4">simulations. Inset in (a) shows the geometry of the disks and the incident light polarization.<b> </b></text>
+<text top="1081" left="123" width="666" height="20" font="4">In order to identify the structural parameters (<i>r</i> and <i>s</i>) that provide the highest sensitivity to </text>
+<text top="1123" left="108" width="681" height="20" font="4">the surrounding media we performed bulk refractive index sensitivity (BRIS) experiments. In </text>
+<text top="662" left="458" width="18" height="10" font="6">500</text>
+<text top="662" left="495" width="18" height="10" font="6">600</text>
+<text top="662" left="533" width="18" height="10" font="6">700</text>
+<text top="662" left="570" width="18" height="10" font="6">800</text>
+<text top="662" left="608" width="18" height="10" font="6">900</text>
+<text top="646" left="430" width="15" height="10" font="6">0.0</text>
+<text top="575" left="430" width="15" height="10" font="6">0.5</text>
+<text top="504" left="430" width="15" height="10" font="6">1.0</text>
+<text top="545" left="680" width="20" height="9" font="6"> 100</text>
+<text top="557" left="680" width="20" height="9" font="6"> 150</text>
+<text top="569" left="680" width="20" height="9" font="6"> 200</text>
+<text top="582" left="680" width="20" height="9" font="6"> 250</text>
+<text top="594" left="680" width="20" height="9" font="6"> 300</text>
+<text top="662" left="224" width="18" height="10" font="6">500</text>
+<text top="662" left="261" width="18" height="10" font="6">600</text>
+<text top="662" left="298" width="18" height="10" font="6">700</text>
+<text top="662" left="335" width="18" height="10" font="6">800</text>
+<text top="662" left="373" width="18" height="10" font="6">900</text>
+<text top="642" left="196" width="15" height="10" font="6">0.0</text>
+<text top="596" left="196" width="15" height="10" font="6">0.2</text>
+<text top="550" left="196" width="15" height="10" font="6">0.4</text>
+<text top="504" left="196" width="15" height="10" font="6">0.6</text>
+<text top="584" left="430" width="0" height="7" font="11"> </text>
+<text top="495" left="315" width="2" height="7" font="12"> </text>
+<text top="849" left="225" width="18" height="10" font="6">500</text>
+<text top="849" left="262" width="18" height="10" font="6">600</text>
+<text top="849" left="299" width="18" height="10" font="6">700</text>
+<text top="849" left="336" width="18" height="10" font="6">800</text>
+<text top="849" left="374" width="18" height="10" font="6">900</text>
+<text top="819" left="197" width="15" height="10" font="6">0.0</text>
+<text top="776" left="197" width="15" height="10" font="6">0.2</text>
+<text top="733" left="197" width="15" height="10" font="6">0.4</text>
+<text top="691" left="197" width="15" height="10" font="6">0.6</text>
+<text top="771" left="431" width="0" height="7" font="11"> </text>
+<text top="682" left="316" width="2" height="7" font="12"> </text>
+<text top="699" left="221" width="9" height="18" font="4">b</text>
+<text top="511" left="219" width="9" height="18" font="4">a</text>
+<text top="849" left="458" width="18" height="10" font="6">500</text>
+<text top="849" left="495" width="18" height="10" font="6">600</text>
+<text top="849" left="533" width="18" height="10" font="6">700</text>
+<text top="849" left="570" width="18" height="10" font="6">800</text>
+<text top="849" left="607" width="18" height="10" font="6">900</text>
+<text top="827" left="430" width="15" height="10" font="6">0.0</text>
+<text top="759" left="430" width="15" height="10" font="6">0.5</text>
+<text top="691" left="430" width="15" height="10" font="6">1.0</text>
+<text top="713" left="679" width="20" height="9" font="6"> 200</text>
+<text top="726" left="679" width="20" height="9" font="6"> 180</text>
+<text top="738" left="679" width="20" height="9" font="6"> 160</text>
+<text top="750" left="679" width="20" height="9" font="6"> 140</text>
+<text top="763" left="679" width="20" height="9" font="6"> 120</text>
+<text top="775" left="679" width="20" height="9" font="6"> 100</text>
+<text top="787" left="679" width="14" height="9" font="6"> 80</text>
+<text top="656" left="663" width="45" height="10" font="6">r = 140nm </text>
+<text top="511" left="454" width="8" height="18" font="4">c</text>
+<text top="699" left="453" width="9" height="18" font="4">d</text>
+<text top="562" left="289" width="6" height="11" font="14">E</text>
+<text top="543" left="279" width="5" height="11" font="14">k</text>
+<text top="700" left="189" width="0" height="15" font="15">Ext</text>
+<text top="681" left="189" width="0" height="15" font="15">in</text>
+<text top="669" left="189" width="0" height="15" font="15">ctio</text>
+<text top="647" left="189" width="0" height="15" font="15">n</text>
+<text top="860" left="365" width="104" height="15" font="16">Wavelength (nm)</text>
+<text top="697" left="667" width="34" height="14" font="7">r (nm)</text>
+<text top="522" left="667" width="34" height="14" font="7">s (nm)</text>
+<text top="489" left="263" width="91" height="15" font="16">Measurements</text>
+<text top="489" left="515" width="70" height="15" font="16">Simulations</text>
+<text top="608" left="680" width="4" height="10" font="6">s</text>
+<text top="626" left="697" width="4" height="10" font="6">s</text>
+<text top="847" left="662" width="46" height="10" font="6">s = 200 nm</text>
+<text top="811" left="701" width="4" height="10" font="6">r</text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="681" height="20" font="4">these  experiments,  we  fabricated  sensor  arrays  with  4  different  radii  (<i>r</i>=120,  140,  160  and </text>
+<text top="150" left="108" width="681" height="20" font="4">180 nm) and with disk separations varying from 100 nm to 450 nm with 50 nm increments. </text>
+<text top="191" left="108" width="682" height="20" font="4">Once integrated to  the  microfluidics, the fabricated sensor arrays  are  exposed to  increasing </text>
+<text top="232" left="108" width="476" height="20" font="4">concentrations of glucose solutions in ultra-pure water (Fig. 3a).   </text>
+<text top="274" left="123" width="666" height="20" font="4">For illustration, Fig. 3b shows the resulting redshift in the extinction spectra for <i>r</i>=140 nm </text>
+<text top="315" left="108" width="682" height="20" font="4">and  <i>s</i>=300  nm.  Our  automated  parallel  acquisition  enables  us  to  track  in  real  time  the </text>
+<text top="357" left="108" width="682" height="20" font="4">spectrum of each of the different arrays on the chip and extract the corresponding shifts in the </text>
+<text top="398" left="108" width="682" height="20" font="4">main  peak  centroid.  For  asymmetric  extinction  peaks  like  the  one  considered  here,  peak </text>
+<text top="439" left="108" width="682" height="20" font="4">centroid  tracking  was  found  to  be  more  sensitive  than  standard  peak  tracking  (See </text>
+<text top="481" left="108" width="173" height="20" font="4">Supplementary  Fig.  2).</text>
+<text top="478" left="281" width="12" height="13" font="3">33</text>
+<text top="481" left="293" width="496" height="20" font="4">  The  inset  of  Fig.  3c  displays  the  real  time  measurement  of  the </text>
+<text top="522" left="108" width="681" height="20" font="4">centroid  shifts  for  the  same  array  where  different  glucose  concentrations  are  flowed  in  the </text>
+<text top="564" left="108" width="681" height="20" font="4">channels  sequentially  with  a  step  of  washing  with  water  in  between.  We  observe </text>
+<text top="605" left="108" width="681" height="20" font="4">instantaneous shifts as the refractive index of the surrounding media changes. The redshifted </text>
+<text top="646" left="108" width="681" height="20" font="4">signal returns back to the baseline value for the washing steps with water ensuring that there </text>
+<text top="688" left="108" width="681" height="20" font="4">is no irreversible modification of the sensors and the shifts are indeed due to bulk refractive </text>
+<text top="729" left="108" width="116" height="20" font="4">index changes.  </text>
+<text top="771" left="123" width="666" height="20" font="4">Fig. 3c shows the evolution of the solution of the peak centroid with the refractive index for </text>
+<text top="812" left="108" width="681" height="20" font="4">the same nanodisk array. From the slope of the linear fit we extract the bulk refractive index </text>
+<text top="853" left="108" width="681" height="20" font="4">sensitivity (BRIS) of the sensor. The BRIS values for sensors with different disk separation </text>
+<text top="895" left="108" width="682" height="20" font="4">and  radius  are  gathered  in  Fig.  3d  (See  also  supplementary  Fig.  3).  The  arrays  with </text>
+<text top="936" left="108" width="682" height="20" font="4">separations larger than 300 nm were not considered as they either exhibit very low extinction, </text>
+<text top="978" left="108" width="682" height="20" font="4">due to a low particle density, or resonances that were out of the spectral range of our set-up. </text>
+<text top="1019" left="108" width="682" height="20" font="4">Within  the  considered  parameter  range,  we  found  that  the  BRIS  values  increased  with </text>
+<text top="1061" left="108" width="682" height="20" font="4">increasing nanodisk separations. The highest BRIS value reached in our parameter range was </text>
+<text top="1102" left="108" width="681" height="20" font="4">227 nm/RIU which corresponds to the BRIS of the array with <i>r</i>=140 nm and <i>s</i>=300 nm (Fig. </text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="17" size="16" family="Times" color="#4f81bc"/>
+	<fontspec id="18" size="16" family="Times" color="#000000"/>
+	<fontspec id="19" size="19" family="Times" color="#000000"/>
+	<fontspec id="20" size="6" family="Times" color="#000000"/>
+	<fontspec id="21" size="13" family="Times" color="#000000"/>
+	<fontspec id="22" size="1" family="Times" color="#000000"/>
+	<fontspec id="23" size="1" family="Times" color="#000000"/>
+	<fontspec id="24" size="14" family="Times" color="#000000"/>
+	<fontspec id="25" size="7" family="Times" color="#000000"/>
+	<fontspec id="26" size="20" family="Times" color="#000000"/>
+	<fontspec id="27" size="6" family="Times" color="#000000"/>
+<text top="108" left="108" width="681" height="20" font="4">3b-d). Despite the simplicity of our structure, this BRIS value is only slightly lower than the </text>
+<text top="150" left="108" width="619" height="20" font="4">previously reported BRIS values of more complex silicon nanostructure arrangements</text>
+<text top="147" left="727" width="27" height="13" font="3">22,23</text>
+<text top="150" left="755" width="13" height="20" font="4">.  </text>
+<text top="670" left="775" width="5" height="20" font="4"> </text>
+<text top="686" left="446" width="4" height="17" font="16"> </text>
+<text top="718" left="108" width="681" height="20" font="5"><b>Figure 3:</b> Bulk refractive index sensitivity (BRIS). (a) Schematics of the BRIS experiment in </text>
+<text top="760" left="108" width="682" height="20" font="4">which the 8 microfluidic channels are used to  flow different  water/glucose  mixtures on Si </text>
+<text top="801" left="108" width="681" height="20" font="4">nanodisk arrays with different <i>s</i> and <i>r</i>. (b) Evolution of the extinction spectra of a nanodisk </text>
+<text top="842" left="108" width="681" height="20" font="4">array (<i>r</i>=140 nm, <i>s</i>=300 nm) exposed to 6 different glucose-water mixtures. (c) The centroid </text>
+<text top="884" left="108" width="682" height="20" font="4">positions extracted from the extinction spectra in b as a function of the refractive index of the </text>
+<text top="925" left="108" width="682" height="20" font="4">glucose solutions. The real time centroid shifts during the sequential flow of varying glucose </text>
+<text top="967" left="108" width="682" height="20" font="4">concentrations  separated  by  rinsing  step.  (d)  Summary  of  the  BRIS  values  obtained  for </text>
+<text top="1008" left="108" width="681" height="20" font="4">different arrays with different radii and disk separations. The error bars are smaller than the </text>
+<text top="1050" left="108" width="165" height="20" font="4">data points in the plot.<b> </b></text>
+<text top="1106" left="108" width="5" height="20" font="17"><b> </b></text>
+<text top="351" left="182" width="0" height="18" font="18">%</text>
+<text top="338" left="182" width="0" height="18" font="18"> gluc</text>
+<text top="304" left="182" width="0" height="18" font="18">os</text>
+<text top="287" left="182" width="0" height="18" font="18">e</text>
+<text top="294" left="389" width="9" height="22" font="19">s</text>
+<text top="649" left="168" width="32" height="12" font="7">1.330</text>
+<text top="649" left="223" width="32" height="12" font="7">1.335</text>
+<text top="649" left="278" width="32" height="12" font="7">1.340</text>
+<text top="649" left="333" width="32" height="12" font="7">1.345</text>
+<text top="649" left="389" width="32" height="12" font="7">1.350</text>
+<text top="620" left="158" width="21" height="12" font="7">844</text>
+<text top="582" left="158" width="21" height="12" font="7">845</text>
+<text top="544" left="158" width="21" height="12" font="7">846</text>
+<text top="506" left="158" width="21" height="12" font="7">847</text>
+<text top="469" left="158" width="21" height="12" font="7">848</text>
+<text top="549" left="441" width="0" height="8" font="20"> </text>
+<text top="437" left="304" width="2" height="9" font="10"> </text>
+<text top="627" left="146" width="0" height="13" font="15">Ce</text>
+<text top="607" left="146" width="0" height="13" font="15">ntroi</text>
+<text top="578" left="146" width="0" height="13" font="15">d wa</text>
+<text top="545" left="146" width="0" height="13" font="15">vel</text>
+<text top="526" left="146" width="0" height="13" font="15">en</text>
+<text top="509" left="146" width="0" height="13" font="15">gth (nm)</text>
+<text top="669" left="259" width="102" height="14" font="21">Refractive index</text>
+<text top="411" left="493" width="22" height="13" font="7">650</text>
+<text top="411" left="529" width="22" height="13" font="7">700</text>
+<text top="411" left="564" width="22" height="13" font="7">750</text>
+<text top="411" left="600" width="22" height="13" font="7">800</text>
+<text top="411" left="636" width="22" height="13" font="7">850</text>
+<text top="411" left="672" width="22" height="13" font="7">900</text>
+<text top="411" left="707" width="22" height="13" font="7">950</text>
+<text top="400" left="464" width="18" height="13" font="7">0.0</text>
+<text top="336" left="464" width="18" height="13" font="7">0.1</text>
+<text top="273" left="464" width="18" height="13" font="7">0.2</text>
+<text top="209" left="464" width="18" height="13" font="7">0.3</text>
+<text top="198" left="610" width="2" height="9" font="10"> </text>
+<text top="311" left="750" width="0" height="8" font="20"> </text>
+<text top="337" left="458" width="0" height="14" font="15">Ext</text>
+<text top="315" left="458" width="0" height="14" font="15">in</text>
+<text top="303" left="458" width="0" height="14" font="15">ction</text>
+<text top="427" left="555" width="112" height="14" font="21">Wavelength (nm)</text>
+<text top="234" left="704" width="13" height="11" font="3"> 0 </text>
+<text top="249" left="704" width="29" height="11" font="3"> 0.75 </text>
+<text top="264" left="704" width="22" height="11" font="3"> 1.5 </text>
+<text top="278" left="704" width="13" height="11" font="3"> 3 </text>
+<text top="293" left="704" width="13" height="11" font="3"> 6 </text>
+<text top="308" left="704" width="19" height="11" font="3"> 12 </text>
+<text top="302" left="509" width="15" height="9" font="6">830</text>
+<text top="302" left="536" width="15" height="9" font="6">840</text>
+<text top="302" left="563" width="15" height="9" font="6">850</text>
+<text top="302" left="589" width="15" height="9" font="6">860</text>
+<text top="295" left="492" width="18" height="9" font="6">0.20</text>
+<text top="238" left="492" width="18" height="9" font="6">0.25</text>
+<text top="260" left="615" width="0" height="3" font="22"> </text>
+<text top="213" left="559" width="1" height="3" font="23"> </text>
+<text top="219" left="666" width="58" height="15" font="16">% glucose</text>
+<text top="541" left="343" width="78" height="16" font="24">227.0 ± 3.6 </text>
+<text top="560" left="343" width="52" height="16" font="24">nm/RIU</text>
+<text top="651" left="502" width="22" height="13" font="7">100</text>
+<text top="651" left="552" width="22" height="13" font="7">150</text>
+<text top="651" left="602" width="22" height="13" font="7">200</text>
+<text top="651" left="652" width="22" height="13" font="7">250</text>
+<text top="651" left="702" width="22" height="13" font="7">300</text>
+<text top="640" left="476" width="7" height="13" font="7">0</text>
+<text top="605" left="469" width="15" height="13" font="7">50</text>
+<text top="570" left="462" width="22" height="13" font="7">100</text>
+<text top="534" left="462" width="22" height="13" font="7">150</text>
+<text top="499" left="462" width="22" height="13" font="7">200</text>
+<text top="464" left="462" width="22" height="13" font="7">250</text>
+<text top="550" left="752" width="0" height="8" font="25"> </text>
+<text top="436" left="612" width="3" height="9" font="10"> </text>
+<text top="461" left="511" width="59" height="11" font="3"> r = 120 nm</text>
+<text top="476" left="511" width="59" height="11" font="3"> r = 140 nm</text>
+<text top="490" left="511" width="59" height="11" font="3"> r = 160 nm</text>
+<text top="505" left="511" width="59" height="11" font="3"> r = 180 nm</text>
+<text top="601" left="454" width="0" height="14" font="15">BRIS </text>
+<text top="560" left="454" width="0" height="14" font="15">(nm/RIU)</text>
+<text top="668" left="545" width="136" height="14" font="21">Disk separation (nm)</text>
+<text top="193" left="128" width="10" height="22" font="19">a</text>
+<text top="405" left="316" width="41" height="16" font="24">r (nm)</text>
+<text top="195" left="441" width="11" height="22" font="19">b</text>
+<text top="420" left="130" width="9" height="22" font="19">c</text>
+<text top="424" left="447" width="12" height="22" font="26">d</text>
+<text top="541" left="215" width="5" height="8" font="27">0</text>
+<text top="541" left="241" width="5" height="8" font="27">2</text>
+<text top="541" left="266" width="5" height="8" font="27">4</text>
+<text top="541" left="292" width="5" height="8" font="27">6</text>
+<text top="541" left="317" width="5" height="8" font="27">8</text>
+<text top="532" left="211" width="5" height="8" font="27">0</text>
+<text top="499" left="211" width="5" height="8" font="27">2</text>
+<text top="466" left="211" width="5" height="8" font="27">4</text>
+<text top="500" left="330" width="0" height="4" font="22"> </text>
+<text top="454" left="270" width="1" height="4" font="23"> </text>
+<text top="552" left="205" width="0" height="12" font="13">Centroi</text>
+<text top="512" left="205" width="0" height="12" font="13">d shi</text>
+<text top="485" left="205" width="0" height="12" font="13">ft (nm</text>
+<text top="453" left="205" width="0" height="12" font="13">)</text>
+<text top="552" left="240" width="60" height="12" font="3">Time (min)</text>
+<text top="604" left="347" width="64" height="15" font="16">r = 140 nm</text>
+<text top="621" left="347" width="64" height="15" font="16">s = 300 nm</text>
+<text top="366" left="499" width="64" height="15" font="16">r = 140 nm</text>
+<text top="384" left="499" width="64" height="15" font="16">s = 300 nm</text>
+</page>
+<page number="9" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="28" size="11" family="Times" color="#000000"/>
+	<fontspec id="29" size="8" family="Times" color="#990099"/>
+	<fontspec id="30" size="8" family="Times" color="#ffba56"/>
+	<fontspec id="31" size="8" family="Times" color="#ff00ff"/>
+	<fontspec id="32" size="8" family="Times" color="#6976ec"/>
+	<fontspec id="33" size="8" family="Times" color="#a164e4"/>
+	<fontspec id="34" size="8" family="Times" color="#0000ff"/>
+	<fontspec id="35" size="8" family="Times" color="#ff99ff"/>
+	<fontspec id="36" size="8" family="Times" color="#7e7e7e"/>
+	<fontspec id="37" size="15" family="Times" color="#000000"/>
+	<fontspec id="38" size="8" family="Times" color="#ffffff"/>
+<text top="108" left="123" width="666" height="20" font="4">For  the  target  analyte  sensing  proof  of  concept  experiments  we  selected  the  two  sensors </text>
+<text top="150" left="108" width="682" height="20" font="4">exhibiting the highest BRIS values (with radii of 140 and 160 nm and disk separations of 300 </text>
+<text top="191" left="108" width="682" height="20" font="4">and 250 nm, respectively). The experiment consists of flowing different concentrations of the </text>
+<text top="232" left="108" width="681" height="20" font="4">target  molecule  in  each  of  the  individual  channels  in  order  to  obtain  an  8-point  calibration </text>
+<text top="274" left="108" width="682" height="20" font="4">curve. We here focused on the detection of Prostate Specific Antigen (PSA). PSA is a 34 kDa </text>
+<text top="315" left="108" width="681" height="20" font="4">protein  whose  high  concentration  in  blood  (greater  than  4-10  ng/ml)  can  be  associated  to </text>
+<text top="357" left="108" width="306" height="20" font="4">prostate cancer or other prostate disorders.</text>
+<text top="354" left="414" width="27" height="13" font="3">34,35</text>
+<text top="357" left="441" width="5" height="20" font="4"> </text>
+<text top="1057" left="709" width="5" height="20" font="4"> </text>
+<text top="1088" left="108" width="681" height="20" font="5"><b>Figure  4:</b>  PSA  detection  (a)  Real  time  resonance  shifts  of  the  silicon  nanodisk  arrays </text>
+<text top="1129" left="108" width="682" height="20" font="4">(<i>r</i>=140nm, <i>s</i>=300nm) due to the detection of different concentration of PSA. The inset shows </text>
+<text top="597" left="348" width="6" height="11" font="14">0</text>
+<text top="597" left="384" width="13" height="11" font="14">15</text>
+<text top="597" left="422" width="13" height="11" font="14">30</text>
+<text top="597" left="461" width="13" height="11" font="14">45</text>
+<text top="597" left="499" width="13" height="11" font="14">60</text>
+<text top="597" left="538" width="13" height="11" font="14">75</text>
+<text top="577" left="319" width="16" height="11" font="14">0.0</text>
+<text top="525" left="319" width="16" height="11" font="14">0.5</text>
+<text top="473" left="319" width="16" height="11" font="14">1.0</text>
+<text top="421" left="319" width="16" height="11" font="14">1.5</text>
+<text top="510" left="572" width="0" height="7" font="11"> </text>
+<text top="412" left="448" width="2" height="8" font="27"> </text>
+<text top="567" left="313" width="0" height="12" font="28">Re</text>
+<text top="550" left="313" width="0" height="12" font="28">son</text>
+<text top="529" left="313" width="0" height="12" font="28">an</text>
+<text top="514" left="313" width="0" height="12" font="28">ce Shi</text>
+<text top="476" left="313" width="0" height="12" font="28">ft</text>
+<text top="469" left="313" width="0" height="12" font="28"> (nm)</text>
+<text top="611" left="420" width="58" height="12" font="7">time (min)</text>
+<text top="698" left="478" width="18" height="10" font="29">100</text>
+<text top="711" left="481" width="12" height="10" font="30">25</text>
+<text top="724" left="481" width="12" height="10" font="31">10</text>
+<text top="736" left="484" width="6" height="10" font="32">5</text>
+<text top="749" left="480" width="15" height="10" font="33">2.5</text>
+<text top="762" left="484" width="6" height="10" font="34">1</text>
+<text top="775" left="480" width="15" height="10" font="35">0.5</text>
+<text top="788" left="484" width="6" height="10" font="36">0</text>
+<text top="675" left="478" width="22" height="8" font="27">[PSA]</text>
+<text top="686" left="475" width="27" height="8" font="27">(ng/ml)</text>
+<text top="617" left="300" width="10" height="16" font="37">b</text>
+<text top="409" left="300" width="10" height="16" font="37">a</text>
+<text top="484" left="535" width="18" height="10" font="29">100</text>
+<text top="497" left="538" width="12" height="10" font="30">25</text>
+<text top="510" left="538" width="12" height="10" font="31">10</text>
+<text top="522" left="541" width="6" height="10" font="32">5</text>
+<text top="535" left="536" width="15" height="10" font="33">2.5</text>
+<text top="548" left="541" width="6" height="10" font="34">1</text>
+<text top="561" left="536" width="15" height="10" font="35">0.5</text>
+<text top="574" left="541" width="6" height="10" font="36">0</text>
+<text top="448" left="534" width="22" height="8" font="27">[PSA]</text>
+<text top="458" left="532" width="27" height="8" font="27">(ng/ml)</text>
+<text top="551" left="441" width="7" height="9" font="38">E</text>
+<text top="808" left="330" width="16" height="11" font="14">0.1</text>
+<text top="808" left="402" width="6" height="11" font="14">1</text>
+<text top="808" left="465" width="13" height="11" font="14">10</text>
+<text top="808" left="529" width="19" height="11" font="14">100</text>
+<text top="799" left="319" width="16" height="11" font="14">0.0</text>
+<text top="765" left="319" width="16" height="11" font="14">0.2</text>
+<text top="732" left="319" width="16" height="11" font="14">0.4</text>
+<text top="699" left="319" width="16" height="11" font="14">0.6</text>
+<text top="666" left="319" width="16" height="11" font="14">0.8</text>
+<text top="633" left="319" width="16" height="11" font="14">1.0</text>
+<text top="623" left="446" width="2" height="8" font="27"> </text>
+<text top="644" left="354" width="2" height="8" font="27"> </text>
+<text top="643" left="356" width="42" height="9" font="10">r=140 nm </text>
+<text top="655" left="336" width="62" height="9" font="10">        s=300 nm</text>
+<text top="667" left="354" width="45" height="9" font="10"> r=160 nm </text>
+<text top="679" left="336" width="62" height="9" font="10">        s=250 nm</text>
+<text top="779" left="314" width="0" height="12" font="13">Re</text>
+<text top="762" left="314" width="0" height="12" font="13">son</text>
+<text top="740" left="314" width="0" height="12" font="13">an</text>
+<text top="725" left="314" width="0" height="12" font="13">ce Shi</text>
+<text top="688" left="314" width="0" height="12" font="13">ft</text>
+<text top="681" left="314" width="0" height="12" font="13"> (nm)</text>
+<text top="822" left="409" width="75" height="12" font="7">[PSA] (ng/ml)</text>
+<text top="1023" left="330" width="16" height="11" font="14">0.1</text>
+<text top="1023" left="386" width="6" height="11" font="14">1</text>
+<text top="1023" left="433" width="13" height="11" font="14">10</text>
+<text top="1023" left="481" width="19" height="11" font="14">100</text>
+<text top="1023" left="527" width="29" height="11" font="14">1,000</text>
+<text top="998" left="318" width="16" height="11" font="14">0.0</text>
+<text top="968" left="318" width="16" height="11" font="14">0.2</text>
+<text top="939" left="318" width="16" height="11" font="14">0.4</text>
+<text top="909" left="318" width="16" height="11" font="14">0.6</text>
+<text top="879" left="318" width="16" height="11" font="14">0.8</text>
+<text top="849" left="318" width="16" height="11" font="14">1.0</text>
+<text top="986" left="510" width="40" height="9" font="10">r=140 nm</text>
+<text top="997" left="510" width="41" height="9" font="10">s=300 nm</text>
+<text top="937" left="569" width="0" height="7" font="11"> </text>
+<text top="839" left="446" width="2" height="7" font="27"> </text>
+<text top="1000" left="311" width="0" height="12" font="13">Re</text>
+<text top="983" left="311" width="0" height="12" font="13">son</text>
+<text top="962" left="311" width="0" height="12" font="13">an</text>
+<text top="947" left="311" width="0" height="12" font="13">ce Shi</text>
+<text top="910" left="311" width="0" height="12" font="13">ft</text>
+<text top="903" left="311" width="0" height="12" font="13"> (nm)</text>
+<text top="1042" left="409" width="76" height="12" font="7">[PSA] (ng/ml)</text>
+<text top="833" left="300" width="9" height="16" font="37">c</text>
+</page>
+<page number="10" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="682" height="20" font="4">the  calculated  near  field  distribution  for  one  nanodisk  from  an  infinite  array.  The  white </text>
+<text top="150" left="108" width="682" height="20" font="4">dashed line indicates the substrate-nanodisk interface. (b) Calibration curves for PSA in PBS </text>
+<text top="191" left="108" width="681" height="20" font="4">buffer with 1% BSA obtained using two different sensor arrays on the same chip (inset is a </text>
+<text top="232" left="108" width="681" height="20" font="4">diagram  showing  the  sensor  organization  in  the  channels).  The  shaded  areas  on  the </text>
+<text top="274" left="108" width="682" height="20" font="4">calibration curves represent the dynamic ranges of the curves (purple: <i>r</i>=140 nm, <i>s</i>=300 nm </text>
+<text top="315" left="108" width="681" height="20" font="4">array, orange: <i>r</i>=160 nm, <i>s</i>=250 nm array). The error bars indicate the standard deviation of </text>
+<text top="357" left="108" width="682" height="20" font="4">the  2  parallel  measurements  on  the  same  chip.  (c)  PSA  calibration  curve  obtained  in  50% </text>
+<text top="398" left="108" width="681" height="20" font="4">diluted human serum for sensor with <i>r</i>=140 nm and <i>s</i>=300 nm. The shaded area defines the </text>
+<text top="439" left="108" width="681" height="20" font="4">dynamic range and the error bars are the standard deviations of the 4 different measurements </text>
+<text top="481" left="108" width="130" height="20" font="4">on the same chip.<b> </b></text>
+<text top="537" left="108" width="5" height="20" font="4"> </text>
+<text top="573" left="123" width="666" height="20" font="4">For the detection of PSA, the capture antibody is first immobilized on the sensor surface by </text>
+<text top="614" left="108" width="682" height="20" font="4">passive  adsorption  by  flowing  the  antibody  solution  in  phosphate  buffer  through  all  8 </text>
+<text top="656" left="108" width="681" height="20" font="4">channels.  The binding kinetics of the antibody to the sensor surface is monitored by tracking </text>
+<text top="697" left="108" width="682" height="20" font="4">the peak centroid shifts of the silicon nanodisks. Once the signal saturation is observed, the </text>
+<text top="738" left="108" width="682" height="20" font="4">sensors are washed with PBS buffer. Then, different concentrations of PSA dissolved in the </text>
+<text top="780" left="108" width="681" height="20" font="4">assay  buffer  (PBS  with  1  %  BSA)  are  flowed  in  each  individual  channels.  After  another </text>
+<text top="821" left="108" width="682" height="20" font="4">washing step with PBS, the detection antibody for PSA is introduced on the sensor surface </text>
+<text top="863" left="108" width="165" height="20" font="4">for the detection step.  </text>
+<text top="904" left="123" width="666" height="20" font="4">Fig.  4a  shows  the  real  time  recorded  shifts  of  the  sensors  with  radius  of  140  nm  and </text>
+<text top="945" left="108" width="681" height="20" font="4">separation  of  300  nm  in  the  detection  step.  The  channels  are  washed  with  PBS  to  remove </text>
+<text top="987" left="108" width="681" height="20" font="4">unbound detection antibodies and reduce the bulk refractive index effect. This washing step is </text>
+<text top="1028" left="108" width="682" height="20" font="4">also  seen  in  Fig.  4a,  as  a  drop  of  signal  after  the  detection  antibody  binding  curves  have </text>
+<text top="1070" left="108" width="681" height="20" font="4">reached  the  plateau.  The  final  shifts  after  the  washing  step  are  extracted  to  obtain  the </text>
+<text top="1111" left="108" width="682" height="20" font="4">calibration curves for PSA (Fig. 4b). The standard curves were fitted using a four-parameter </text>
+</page>
+<page number="11" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="681" height="20" font="4">logistic  equation.  The  analytical  parameters  of  the  sandwich  assay  are  shown  in </text>
+<text top="150" left="108" width="181" height="20" font="4">Supplementary Table 1.  </text>
+<text top="191" left="123" width="666" height="20" font="4">The dynamic ranges of the sensors are shown by the shaded areas on the calibration curves </text>
+<text top="232" left="108" width="681" height="20" font="4">which cover the clinically relevant range for both of the sensors. The limit of detection (LOD, </text>
+<text top="274" left="108" width="246" height="20" font="4">estimated  as  the  conventional  IC</text>
+<text top="281" left="354" width="12" height="13" font="3">10</text>
+<text top="274" left="367" width="423" height="20" font="4">  value  of  the  four-parameter  logistic  curve  fit)  for  both </text>
+<text top="315" left="108" width="682" height="20" font="4">sensors are beyond the cut-off concentration for patients. The LOD for <i>r</i>=140 nm and <i>r</i>=160 </text>
+<text top="357" left="108" width="681" height="20" font="4">nm sensors are around 0.69 ng/ml and 0.74 ng/ml, respectively. The sensitivity of a sensor is </text>
+<text top="398" left="108" width="241" height="20" font="4">conventionally defined as the  IC</text>
+<text top="406" left="349" width="12" height="13" font="3">50</text>
+<text top="398" left="362" width="428" height="20" font="4"> value of the calibration curve which is found to be  2.45 </text>
+<text top="439" left="108" width="682" height="20" font="4">ng/ml and 3.24 ng/ml, respectively. We find that the sensors with higher BRIS (<i>r</i>=140 nm, </text>
+<text top="481" left="108" width="682" height="20" font="1"><i>s</i>=300  nm)  led  to  calibration  curves  with  slightly  better  sensitivity  and  lower  LOD  values </text>
+<text top="522" left="108" width="682" height="20" font="4">with a higher slope of the linear range of the sensors (Supplementary Table 1). The error bars </text>
+<text top="564" left="108" width="682" height="20" font="4">are representing the signal variations between the replicas on the same chip and the relative </text>
+<text top="605" left="108" width="681" height="20" font="4">standard  deviation  for  intrachip  reproducibility  is  found  to  be  varying  between  0.5%  and </text>
+<text top="646" left="108" width="311" height="20" font="4">5.1% for the working range of the sensors. </text>
+<text top="688" left="123" width="666" height="20" font="4">Finally,  to  demonstrate  the  clinical  relevance  of  our  sensing  platform,  we  performed  the </text>
+<text top="729" left="108" width="682" height="20" font="4">PSA calibration curve measurements in human serum (Fig. 4c). Serum was diluted in at 50% </text>
+<text top="771" left="108" width="425" height="20" font="4">in PBS in order to reduce the matrix effects. The LOD (IC</text>
+<text top="778" left="533" width="12" height="13" font="3">10</text>
+<text top="771" left="546" width="244" height="20" font="4">) is 1.6 ng/ml which is below the </text>
+<text top="812" left="108" width="681" height="20" font="4">cut-off  value  of  the  PSA  concentration  in  patients  and  the  dynamic  range  is  between  2.5 </text>
+<text top="853" left="108" width="682" height="20" font="4">ng/ml and 16.0 ng/ml which covers the clinically relevant range for cancer screening. Further </text>
+<text top="895" left="108" width="682" height="20" font="4">details  about  the  analysis  of  the  calibration  curve  can  be  found  in  Supplementary  Table  1. </text>
+<text top="936" left="108" width="682" height="20" font="4">This result suggests that the sensor performance is within the clinically relevant range and the </text>
+<text top="978" left="108" width="682" height="20" font="4">measurements are feasible even in a complex matrix such as human serum. Very low shifts of </text>
+<text top="1019" left="108" width="566" height="20" font="4">the control channel (0.005 ± 0.035 nm) indicates negligible unspecific signal.  </text>
+<text top="1061" left="123" width="666" height="20" font="4">In  order  to  compare  the  sensing  performance  of  our  silicon  nanoresonators  with  their </text>
+<text top="1102" left="108" width="172" height="20" font="4">plasmonic  counterparts</text>
+<text top="1099" left="280" width="30" height="13" font="3">11–13</text>
+<text top="1102" left="310" width="479" height="20" font="4">,  we  repeated  the  PSA  calibration  curve  experiment  with  the </text>
+</page>
+<page number="12" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="39" size="8" family="Times" color="#000000"/>
+	<fontspec id="40" size="15" family="Times" color="#000000"/>
+<text top="108" left="108" width="430" height="20" font="4">optimized gold nanorod array studied in our previous work</text>
+<text top="105" left="539" width="12" height="13" font="3">29</text>
+<text top="108" left="551" width="239" height="20" font="4">. The only significant difference </text>
+<text top="150" left="108" width="682" height="20" font="4">comes from the use of EDC/NHS based surface chemistry prior to antibody immobilization </text>
+<text top="191" left="108" width="681" height="20" font="4">on gold. Otherwise, both measurements were performed under the same conditions, such as </text>
+<text top="232" left="108" width="412" height="20" font="4">antibody concentrations, buffers and similar flow times.  </text>
+<text top="274" left="123" width="666" height="20" font="4">The normalized PSA calibration curves for the gold nanorods (100 nm x 200 nm) and the </text>
+<text top="315" left="108" width="681" height="20" font="4">silicon nanodisks (<i>r</i>=140 nm,<i> s</i>=300 nm) are compared in Fig. 5. The analytical parameters of </text>
+<text top="357" left="108" width="659" height="20" font="4">the sandwich assay on both sensors can be found in Supplementary Table 1. The LOD (IC</text>
+<text top="364" left="767" width="12" height="13" font="3">10</text>
+<text top="357" left="779" width="10" height="20" font="4">) </text>
+<text top="398" left="108" width="681" height="20" font="4">of the gold sensors is found to be around 0.87 ng/ml which is slightly higher than the LOD of </text>
+<text top="439" left="108" width="681" height="20" font="4">the  silicon  based  sensors.  Conversely,  the  dynamic  range  of  the  LSPR-based  sensors  is </text>
+<text top="481" left="108" width="682" height="20" font="4">broader  for  higher  concentrations,  giving  a  lower  slope,  which  leads  to  higher  limit  of </text>
+<text top="522" left="108" width="681" height="20" font="4">quantification. Besides, the assay time was much shorter for silicon based sensors since the </text>
+<text top="564" left="108" width="681" height="20" font="4">LSPR sensing protocol requires self-assembled monolayer preparation and activation as well </text>
+<text top="605" left="108" width="453" height="20" font="4">as blocking steps using ethanolamine (Supplementary Fig. 4).  </text>
+<text top="928" left="642" width="5" height="20" font="4"> </text>
+<text top="959" left="108" width="682" height="20" font="5"><b>Figure 5:</b> Comparison of the Si and Au platforms. PSA calibration curves for gold nanorod </text>
+<text top="1000" left="108" width="682" height="20" font="4">arrays (gold) and silicon nanodisk arrays (purple).  Both curves were normalized for clearer </text>
+<text top="1042" left="108" width="681" height="20" font="4">comparison. The error bars represent the standard deviation of 2 parallel measurements on the </text>
+<text top="1083" left="108" width="682" height="20" font="4">same  chip.  The  shaded  areas  are  the  respective  dynamic  ranges.  The  inset  shows  the </text>
+<text top="1125" left="108" width="604" height="20" font="4">experimental extinction spectra of gold nanorod arrays and silicon nanodisk arrays.<b> </b></text>
+<text top="896" left="318" width="22" height="14" font="21">0.1</text>
+<text top="896" left="397" width="9" height="14" font="21">1</text>
+<text top="896" left="466" width="17" height="14" font="21">10</text>
+<text top="896" left="535" width="26" height="14" font="21">100</text>
+<text top="896" left="602" width="39" height="14" font="21">1,000</text>
+<text top="866" left="302" width="22" height="14" font="21">0.0</text>
+<text top="831" left="302" width="22" height="14" font="21">0.2</text>
+<text top="795" left="302" width="22" height="14" font="21">0.4</text>
+<text top="760" left="302" width="22" height="14" font="21">0.6</text>
+<text top="725" left="302" width="22" height="14" font="21">0.8</text>
+<text top="689" left="302" width="22" height="14" font="21">1.0</text>
+<text top="785" left="642" width="0" height="10" font="39"> </text>
+<text top="659" left="475" width="3" height="10" font="6"> </text>
+<text top="854" left="542" width="81" height="12" font="7">Au nanorods </text>
+<text top="870" left="542" width="81" height="12" font="7">Si nanodisks </text>
+<text top="892" left="292" width="0" height="16" font="40">No</text>
+<text top="870" left="292" width="0" height="16" font="40">rmal</text>
+<text top="837" left="292" width="0" height="16" font="40">ize</text>
+<text top="815" left="292" width="0" height="16" font="40">d Re</text>
+<text top="778" left="292" width="0" height="16" font="40">son</text>
+<text top="751" left="292" width="0" height="16" font="40">an</text>
+<text top="732" left="292" width="0" height="16" font="40">ce Shi</text>
+<text top="684" left="292" width="0" height="16" font="40">ft</text>
+<text top="921" left="425" width="103" height="16" font="37">[PSA] (ng/ml)</text>
+<text top="821" left="531" width="14" height="8" font="27">700</text>
+<text top="821" left="559" width="14" height="8" font="27">800</text>
+<text top="821" left="588" width="14" height="8" font="27">900</text>
+<text top="812" left="511" width="12" height="8" font="27">0.0</text>
+<text top="795" left="511" width="12" height="8" font="27">0.2</text>
+<text top="779" left="511" width="12" height="8" font="27">0.4</text>
+<text top="763" left="511" width="12" height="8" font="27">0.6</text>
+<text top="787" left="613" width="0" height="3" font="22"> </text>
+<text top="807" left="506" width="0" height="9" font="39">Extin</text>
+<text top="784" left="506" width="0" height="9" font="39">cti</text>
+<text top="773" left="506" width="0" height="9" font="39">on</text>
+<text top="833" left="528" width="77" height="10" font="6">Wavelength (nm)</text>
+</page>
+<page number="13" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="123" width="666" height="20" font="4">We  have  studied  the  use  of  silicon  nanoresonators  integrated  in  a  state-of-the-art </text>
+<text top="150" left="108" width="682" height="20" font="4">microfluidic  architecture  for  biosensing.  We  demonstrated  that  the  resulting  platform  is </text>
+<text top="191" left="108" width="682" height="20" font="4">compatible  with  detection  of  small  biomolecules  in  complex  matrices  for  clinical </text>
+<text top="232" left="108" width="681" height="20" font="4">applications.  The  reported  sensing  performance  enables  us  to  detect  clinically  relevant </text>
+<text top="274" left="108" width="175" height="20" font="4">concentrations of PSA.  </text>
+<text top="315" left="123" width="666" height="20" font="4">We have also compared our platform with a well-developed LSPR-based sensing protocol </text>
+<text top="357" left="108" width="682" height="20" font="4">and  shown  that  the  sensitivity,  LOD  and  the  dynamic  ranges  are  comparable.  Besides  the </text>
+<text top="398" left="108" width="681" height="20" font="4">similar  sensing  performance,  one  of  the  advantages  of  the  silicon  based  sensors  is  the </text>
+<text top="439" left="108" width="682" height="20" font="4">significantly  longer  decay  length  of  the  surface  field  over  LSPR  modes  in  metal </text>
+<text top="481" left="108" width="681" height="20" font="4">nanoantennas  (Supplementary  Fig.  1),  which  can  be  beneficial  for  multilayer  assays </text>
+<text top="522" left="108" width="681" height="20" font="4">involving  detection  of  molecules  relatively  far  from  the  surface.  This  suggests  that  in </text>
+<text top="564" left="108" width="681" height="20" font="4">comparison with LSPR sensors, different assay types with multiple layers of antibodies can </text>
+<text top="605" left="108" width="682" height="20" font="4">be  efficiently  monitored  using  the  silicon  nanoresonators  which  in  practice  enables  more </text>
+<text top="646" left="108" width="364" height="20" font="4">practical and faster detection of the target analyte. </text>
+<text top="688" left="123" width="667" height="20" font="4">The  extinction  of  the  Si  nanoresonators  considered  here  is  much  lower  compared  to  the </text>
+<text top="729" left="108" width="681" height="20" font="4">extinction of the gold nanoantennas (inset Fig. 5). This suggests that for Si resonators there is </text>
+<text top="771" left="108" width="681" height="20" font="4">still  room  for  improvement  by  tailoring  the  shape,  size,  periodicity  and  height  of </text>
+<text top="812" left="108" width="681" height="20" font="4">nanoresonator  arrays  in  order  to  obtain  sharper,  stronger  and  potentially  more  sensitive </text>
+<text top="853" left="108" width="681" height="20" font="4">resonances.  We  thus  foresee  further  engineering  of  the  Si  nanoresonators  including </text>
+<text top="895" left="108" width="682" height="20" font="4">arrangement in dimers and oligomers, that could improve the sensing performance. However, </text>
+<text top="936" left="108" width="681" height="20" font="4">more  complex  nanostructuring  of  the  silicon  might  also  affect  the  local  sensitivity  to </text>
+<text top="978" left="108" width="681" height="20" font="4">molecular adsorption at the surface of the nanoresonators. While the location of the adsorbed </text>
+<text top="1019" left="108" width="682" height="20" font="4">antibodies is not controlled in the present study (see Supplementary Fig. 5 for a simulation of </text>
+<text top="1061" left="108" width="682" height="20" font="4">the comparison of various cases), this parameter can become important when studying more </text>
+<text top="1102" left="108" width="160" height="20" font="4">complicated designs.  </text>
+</page>
+<page number="14" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="123" width="666" height="20" font="4">Finally, the quality of the sandwich assay,  hence  the LOD and sensitivity,  can  further be </text>
+<text top="150" left="108" width="661" height="20" font="4">improved by additional optimizations of the capture and detection antibody concentrations. </text>
+<text top="191" left="123" width="9" height="20" font="4">  </text>
+<text top="233" left="122" width="205" height="20" font="4">ASSOCIATED CONTENT </text>
+<text top="289" left="122" width="175" height="20" font="4">Supporting Information </text>
+<text top="345" left="122" width="667" height="20" font="4">Sensor fabrication, Microfluidic chip fabrication, Measurements, Sandwich assay formation </text>
+<text top="387" left="108" width="498" height="20" font="4">on chip, Simulations, Supplementary Figures, Supplementary Table. </text>
+<text top="443" left="108" width="210" height="20" font="4">AUTHOR INFORMATION </text>
+<text top="485" left="108" width="181" height="20" font="5"><b>Corresponding Author </b></text>
+<text top="541" left="108" width="307" height="20" font="4">Romain Quidant, romain.quidant@icfo.es </text>
+<text top="598" left="108" width="173" height="20" font="5"><b>Author Contributions </b></text>
+<text top="654" left="108" width="681" height="20" font="4">R.Q.  proposed  the  idea  and  co-supervised  the  work  with  V.S.  O.Y.  designed  the  silicon </text>
+<text top="695" left="108" width="681" height="20" font="4">sensor arrays and fabricated the on-chip devices, carried out the measurements and processed </text>
+<text top="736" left="108" width="681" height="20" font="4">the data. M.S. carried out the FEM simulations and interpreted the resonance modes. P.D. and </text>
+<text top="778" left="108" width="681" height="20" font="4">V.S. supervised the sandwich assay chemistry. All authors analyzed the data and contributed </text>
+<text top="819" left="108" width="241" height="20" font="4">to the writing of the manuscript.  </text>
+<text top="876" left="108" width="48" height="20" font="5"><b>Notes </b></text>
+<text top="932" left="108" width="386" height="20" font="4">The authors declare no competing financial interests. </text>
+<text top="989" left="123" width="206" height="20" font="4">ACKNOWLEDGEMENTS </text>
+<text top="1045" left="123" width="666" height="20" font="4">T                                                                                S       </text>
+<text top="1086" left="108" width="681" height="20" font="4">           P                      Q    M                         P                          </text>
+<text top="1128" left="108" width="681" height="20" font="4">S       M                                                    ‘S      O      P         </text>
+</page>
+<page number="15" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="682" height="20" font="4">for  Centres  of  Excellence  in  R&amp;D  (SEV-2015-0522)  and  grant  FIS2013-46141-P  and </text>
+<text top="150" left="108" width="330" height="20" font="4">Swedish Research Council (637-2014-6894). </text>
+<text top="206" left="122" width="5" height="20" font="4"> </text>
+<text top="263" left="122" width="118" height="20" font="4">REFERENCES </text>
+<text top="319" left="108" width="514" height="20" font="4">(1)   Long, F.; Zhu, A.; Shi, H. <i>Sensors</i> <b>2013</b>, <i>13</i> (10), 13928–13948. </text>
+<text top="375" left="108" width="682" height="20" font="4">(2)   Gavela, A. F.; García, D. G.; Ramirez, J. C.; Lechuga, L. M. <i>Sensors</i> <b>2016</b>, <i>16</i> (285), </text>
+<text top="417" left="156" width="45" height="20" font="4">1–15. </text>
+<text top="473" left="108" width="682" height="20" font="4">(3)   P        V. M. N.; D    O      .;              B.; D  L           . <i>Sensors</i> <b>2007</b>, <i>7</i> </text>
+<text top="515" left="156" width="102" height="20" font="4">(4), 508–536. </text>
+<text top="571" left="108" width="548" height="20" font="4">(4)   Mukherji, S.; Punjabi, N. <i>J. Indian Inst. Sci.</i> <b>2012</b>, <i>92</i> (21), 254–293. </text>
+<text top="627" left="108" width="682" height="20" font="4">(5)   Barizuddin, S.; Bok, S.; Gangopadhyay, S. <i>J. Nanomedicine Nanotechnol.</i> <b>2016</b>, <i>7</i> (3), </text>
+<text top="669" left="156" width="72" height="20" font="4">1000373. </text>
+<text top="725" left="108" width="470" height="20" font="4">(6)   Homola, J. <i>Anal. Bioanal. Chem.</i> <b>2003</b>, <i>377</i> (3), 528–539. </text>
+<text top="782" left="108" width="630" height="20" font="4">(7)   Nguyen, H. H.; Park, J.; Kang, S.; Kim, M. <i>Sensors</i> <b>2015</b>, <i>15</i> (5), 10481–10510. </text>
+<text top="838" left="108" width="477" height="20" font="4">(8)   Singh, P. <i>Sensors Actuators, B Chem.</i> <b>2016</b>, <i>229</i>, 110–130. </text>
+<text top="894" left="108" width="682" height="20" font="4">(9)   Leung, A.; Shankar, P. M.; Mutharasan, R. <i>Sensors Actuators, B Chem.</i> <b>2007</b>, <i>125</i> (2), </text>
+<text top="936" left="156" width="72" height="20" font="4">688–703. </text>
+<text top="992" left="108" width="667" height="20" font="4">(10)   Caucheteur, C.; Guo, T.; Albert, J. <i>Anal. Bioanal. Chem.</i> <b>2015</b>, <i>407</i> (14), 3883–3897. </text>
+<text top="1049" left="108" width="655" height="20" font="4">(11)   Cao, J.; Sun, T.; Grattan, K. T. V. <i>Sensors Actuators, B Chem.</i> <b>2014</b>, <i>195</i>, 332–351. </text>
+<text top="1105" left="108" width="639" height="20" font="4">(12)   Hammond, J.; Bhalla, N.; Rafiee, S.; Estrela, P. <i>Biosensors</i> <b>2014</b>, <i>4</i> (2), 172–188. </text>
+</page>
+<page number="16" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="589" height="20" font="4">(13)   Unser, S.; Bruzas, I.; He, J.; Sagle, L. <i>Sensors</i> <b>2015</b>, <i>15</i> (7), 15684–15716. </text>
+<text top="165" left="108" width="681" height="20" font="4">(14)   Regmi, R.; Berthelot, J.; Winkler, P. M.; Mivelle, M.; Proust, J.; Bedu, F.; Ozerov, I.; </text>
+<text top="206" left="156" width="633" height="20" font="4">Begou,  T.;  Lumeau,  J.;  Rigneault,  H.;  Garcia-Parajo,  M.  F.;  Bidault,  S.;  Wenger,  J.; </text>
+<text top="248" left="156" width="347" height="20" font="4">Bonod, N. <i>Nano Lett.</i> <b>2016</b>, <i>16</i> (8), 5143–5151. </text>
+<text top="304" left="108" width="682" height="20" font="4">(15)   Krasnok, A.; Makarov, S.; Petrov, M.; Savelev, R.; Belov, P.; Kivshar, Y. <i>SPIE Opt. </i></text>
+<text top="345" left="156" width="295" height="20" font="1"><i>Optoelect.</i> <b>2015</b>, <i>9502</i>, 950203–950203. </text>
+<text top="402" left="108" width="682" height="20" font="4">(16)   Cambiasso, J.; Grinblat, G.; Li, Y.; Rakovich, A.; Cortés, E.; Maier, S. A. <i>Nano Lett.</i> </text>
+<text top="443" left="156" width="207" height="20" font="5"><b>2017</b>, acs.nanolett.6b05026. </text>
+<text top="499" left="108" width="682" height="20" font="4">(17)   Li, J.; Verellen, N.; Vercruysse, D.; Bearda, T.; Lagae, L.; Van Dorpe, P.  <i>Nano Lett.</i> </text>
+<text top="541" left="156" width="188" height="20" font="5"><b>2016</b>, <i>16</i> (7), 4396–4403. </text>
+<text top="597" left="108" width="681" height="20" font="4">(18)   Shalaev, M. I.; Sun, J.; Tsukernik, A.; Pandey, A.; Nikolskiy, K.; Litchinitser, N. M. </text>
+<text top="639" left="156" width="268" height="20" font="1"><i>Nano Lett.</i> <b>2015</b>, <i>15</i> (9), 6261–6266. </text>
+<text top="695" left="108" width="681" height="20" font="4">(19)   Shcherbakov, M. R.; Vabishchevich, P. P.; Shorokhov, A. S.; Chong, K. E.; Choi, D. </text>
+<text top="736" left="156" width="633" height="20" font="4">Y.; Staude, I.; Miroshnichenko, A. E.; Neshev, D. N.; Fedyanin, A. A.; Kivshar, Y. S. </text>
+<text top="778" left="156" width="277" height="20" font="1"><i>Nano Lett.</i> <b>2015</b>, <i>15</i> (10), 6985–6990. </text>
+<text top="834" left="108" width="681" height="20" font="4">(20)   Wu, A.; Li, H.; Du, J.; Ni, X.; Ye, Z.; Wang, Y.; Sheng, Z.; Zou, S.; Gan, F.; Zhang, </text>
+<text top="876" left="156" width="369" height="20" font="4">X.; Wang, X. <i>Nano Lett.</i> <b>2015</b>, <i>15</i> (3), 2055–2060. </text>
+<text top="932" left="108" width="677" height="20" font="4">(21)   Semouchkina, E.; Duan, R.; Semouchkin, G.; Pandey, R. <i>Sensors</i> <b>2015</b>, <i>15</i> (4), 9344–</text>
+<text top="974" left="156" width="45" height="20" font="4">9359. </text>
+<text top="1030" left="108" width="670" height="20" font="4">(22)   Yang, Y.; Kravchenko, I. I.; Briggs, D. P.; Valentine, J. <i>Nat. Commun.</i> <b>2014</b>, <i>5</i>, 5753. </text>
+<text top="1086" left="108" width="677" height="20" font="4">(23)   Zhang,  J.;  Liu,  W.;  Zhu,  Z.;  Yuan,  X.;  Qin,  S.  <i>Opt.  Express</i>  <b>2014</b>,  <i>22</i>  (25),  30889–</text>
+<text top="1128" left="156" width="54" height="20" font="4">30898. </text>
+</page>
+<page number="17" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="681" height="20" font="4">(24)   Evlyukhin,  A.  B.;  Novikov,  S.  M.;  Zywietz,  U.;  Eriksen,  R.  L.;  Reinhardt,  C.; </text>
+<text top="150" left="156" width="530" height="20" font="4">Bozhevolnyi, S. I.; Chichkov, B. N. <i>Nano Lett.</i> <b>2012</b>, <i>12</i> (7), 3749–3755. </text>
+<text top="206" left="108" width="681" height="20" font="4">(25)                .  B.;  R            .;  S         .;  L   Y         B.  S.;             B.  N. </text>
+<text top="248" left="156" width="471" height="20" font="1"><i>Phys. Rev. B - Condens. Matter Mater. Phys.</i> <b>2010</b>, <i>82</i> (4), 1–12. </text>
+<text top="304" left="108" width="681" height="20" font="4">(26)   Evlyukhin, A. B.; Eriksen, R. L.; Cheng, W.; Beermann, J.; Reinhardt, C.; Petrov, A.; </text>
+<text top="345" left="156" width="592" height="20" font="4">Prorok, S.; Eich, M.; Chichkov, B. N.; Bozhevolnyi, S. I. <i>Sci. Rep.</i> <b>2014</b>, <i>4</i>, 4126. </text>
+<text top="402" left="108" width="681" height="20" font="4">(27)   Habteyes,  T.  G.;  Staude,  I.;  Chong,  K.  E.;  Dominguez,  J.;  Decker,  M.; </text>
+<text top="443" left="156" width="568" height="20" font="4">Miroshnichenko, A.; Kivshar, Y.; Brener, I. <i>ACS Photonics</i> <b>2014</b>, <i>1</i>, 794–798. </text>
+<text top="500" left="108" width="563" height="20" font="4">(28)   Groep, J. Van De; Polman,  a. <i>Opt. Express</i> <b>2013</b>, <i>21</i> (22), 1253–1257. </text>
+<text top="556" left="108" width="681" height="20" font="4">(29)    ć     ć  S. S.; O       M.  .; S  z  V.; B          J.; G     -Cordero, J. L.; Renger, </text>
+<text top="597" left="156" width="594" height="20" font="4">J.; Maerkl, S. J.; Kreuzer, M. P.; Quidant, R. <i>Nano Lett.</i> <b>2014</b>, <i>14</i> (5), 2636–2641. </text>
+<text top="654" left="108" width="682" height="20" font="4">(30)   Unger, M.  a;  Chou, H.  P.;  Thorsen, T.; Scherer,  a;  Quake, S. R.  <i>Science</i> <b>2000</b>, <i>288</i> </text>
+<text top="695" left="156" width="129" height="20" font="4">(5463), 113–116. </text>
+<text top="751" left="108" width="677" height="20" font="4">(31)   Pei, X.; Zhang, B.; Tang, J.; Liu, B.; Lai, W.; Tang, D. <i>Anal. Chim. Acta</i> <b>2013</b>, <i>758</i>, 1–</text>
+<text top="793" left="156" width="27" height="20" font="4">18. </text>
+<text top="849" left="108" width="681" height="20" font="4">(32)   Miroshnichenko, A. E.; Evlyukhin, A. B.; Yu, Y. F.; Bakker, R. M.; Chipouline, A.; </text>
+<text top="891" left="156" width="634" height="20" font="4">K z          .  I.;  L             B.;             B.  N.;  K         Y.  S.  <i>Nat.  Commun.</i> </text>
+<text top="932" left="156" width="108" height="20" font="5"><b>2015</b>, <i>6</i>, 8069. </text>
+<text top="989" left="108" width="643" height="20" font="4">(33)   D        . B.; T           J. O.; Hǒǒ    . <i>Anal. Chem.</i> <b>2006</b>, <i>78</i> (13), 4416–4423. </text>
+<text top="1045" left="108" width="681" height="20" font="4">(34)   Catalona,  W.  J.,  J.  P.  Richie,  F.  R.  Ahmann,  M.  A.  Hudson,  P.  T.  Scardino,  R.  C. </text>
+<text top="1086" left="156" width="425" height="20" font="4">Flanigan, J. B. deKernion. <i>J. Urol.</i> <b>1994</b>, <i>151</i>, 1283–1290. </text>
+</page>
+<page number="18" position="absolute" top="0" left="0" height="1262" width="892">
+<text top="108" left="108" width="682" height="20" font="4">(35)   Brawer, MK. Chetner, MP. Beatie, J. Buchner, DM. Vessella, RL. Lange, P. <i>J. Urol.</i> </text>
+<text top="150" left="156" width="153" height="20" font="5"><b>1992</b>, <i>147</i>, 841–845. </text>
+<text top="206" left="122" width="5" height="20" font="4"> </text>
+</page>
+</pdf2xml>

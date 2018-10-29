@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="0" size="10" family="Times" color="#000000"/>
+	<fontspec id="1" size="10" family="Times" color="#ff0000"/>
+	<fontspec id="2" size="28" family="Times" color="#000000"/>
+	<fontspec id="3" size="16" family="Times" color="#000000"/>
+	<fontspec id="4" size="10" family="Times" color="#000000"/>
+	<fontspec id="5" size="12" family="Times" color="#000000"/>
+	<fontspec id="6" size="12" family="Times" color="#000000"/>
+	<fontspec id="7" size="12" family="Times" color="#000000"/>
+	<fontspec id="8" size="19" family="Times" color="#000000"/>
+	<fontspec id="9" size="7" family="Times" color="#000000"/>
+	<fontspec id="10" size="14" family="Times" color="#000000"/>
+	<fontspec id="11" size="7" family="Times" color="#000000"/>
+	<fontspec id="12" size="14" family="Times" color="#000000"/>
+	<fontspec id="13" size="15" family="Times" color="#000000"/>
+<text top="65" left="85" width="167" height="11" font="0">RADIOENGINEERING, VOL. 2</text>
+<text top="65" left="252" width="7" height="11" font="1">5</text>
+<text top="65" left="259" width="32" height="11" font="0">, NO. </text>
+<text top="65" left="291" width="7" height="11" font="1">1</text>
+<text top="65" left="297" width="7" height="11" font="0">, </text>
+<text top="65" left="304" width="75" height="11" font="1">SEPTEMBER</text>
+<text top="65" left="379" width="23" height="11" font="0"> 201</text>
+<text top="65" left="402" width="7" height="11" font="1">6</text>
+<text top="65" left="409" width="3" height="11" font="0"> </text>
+<text top="65" left="823" width="10" height="11" font="0">1 </text>
+<text top="1199" left="85" width="116" height="11" font="0">DOI: 10.13164/re.201</text>
+<text top="1199" left="201" width="40" height="11" font="1">6.0001 </text>
+<text top="1199" left="622" width="208" height="11" font="1">CATEGORY (ELECTROMAGNETICS)</text>
+<text top="1199" left="830" width="3" height="11" font="0"> </text>
+<text top="136" left="127" width="668" height="27" font="2"><b>A THz Slot Antenna Optimization Using Analytical </b></text>
+<text top="172" left="384" width="162" height="27" font="2"><b>Techniques  </b></text>
+<text top="230" left="317" width="281" height="16" font="3"><i>Shay ROZENBERG, Asher YAHALOM</i></text>
+<text top="227" left="598" width="3" height="11" font="4"><i> </i></text>
+<text top="230" left="601" width="5" height="16" font="3"><i> </i></text>
+<text top="269" left="141" width="636" height="13" font="5">Department of Electrical &amp; Electronic Engineering, Ariel University, Kiryat Hamada POB 3, Ariel, Israel </text>
+<text top="304" left="313" width="292" height="13" font="5">Shayrozenberg82@gmail.com,  asya@ariel.ac.il </text>
+<text top="339" left="358" width="102" height="11" font="0">Manuscript received </text>
+<text top="339" left="460" width="97" height="11" font="1">September 18, 2016</text>
+<text top="339" left="557" width="3" height="11" font="0"> </text>
+<text top="363" left="457" width="4" height="13" font="5"> </text>
+<text top="381" left="85" width="363" height="13" font="6"><b>Abstract.</b><i>  Slot  antennas  are  very  popular  microwave </i></text>
+<text top="399" left="85" width="363" height="13" font="7"><i>antennas  and  slotted  waveguides  are  used  for  high </i></text>
+<text top="416" left="85" width="363" height="13" font="7"><i>frequency  radar  systems.  A  thin  slot  in  an  infinite  ground </i></text>
+<text top="434" left="85" width="363" height="13" font="7"><i>plane is the complement to a dipole in free space. This was </i></text>
+<text top="452" left="85" width="363" height="13" font="7"><i>described  by  H.G.  Booker  [2]  who  extended  Babinet’s </i></text>
+<text top="469" left="85" width="363" height="13" font="7"><i>principle  from  optics  to  show  that  the  slot  will  have  the </i></text>
+<text top="487" left="85" width="363" height="13" font="7"><i>same  radiation  pattern  as  a  dipole  such  that  the  E  and  H </i></text>
+<text top="504" left="85" width="363" height="13" font="7"><i>fields are swapped. As a result, the polarization is rotated, </i></text>
+<text top="522" left="85" width="363" height="13" font="7"><i>so  that  radiation  from  vertical  slot  is  polarized </i></text>
+<text top="540" left="85" width="363" height="13" font="7"><i>horizontally.  In  this  work  we  show  how  analytical </i></text>
+<text top="557" left="85" width="363" height="13" font="7"><i>techniques  can  be  used  for  optimization  of  THz  slot </i></text>
+<text top="575" left="85" width="363" height="13" font="7"><i>antennas,  the  analysis  is  then  corroborated  by  using  a </i></text>
+<text top="593" left="85" width="363" height="13" font="7"><i>numerical  simulation  which  validates  the  performance </i></text>
+<text top="610" left="85" width="306" height="13" font="7"><i>parameters predicted by the analytical technique.  </i></text>
+<text top="675" left="85" width="97" height="19" font="8"><b>Keywords </b></text>
+<text top="707" left="117" width="238" height="13" font="5">THz, Slot Antenna. Babinet’s principle </text>
+<text top="762" left="85" width="152" height="19" font="8"><b>1.  Introduction </b></text>
+<text top="794" left="117" width="331" height="13" font="5">Slot  antennas  are  very  popular  microwave  antennas </text>
+<text top="812" left="85" width="363" height="13" font="5">and  slotted  waveguides  are  used  for  high  frequency  radar </text>
+<text top="830" left="85" width="363" height="13" font="5">systems  [1,2,3,4,5,6,7,8,9,10,11,12,13].  A  thin  slot  in  an </text>
+<text top="847" left="85" width="363" height="13" font="5">infinite ground plane is the complement to a dipole in free </text>
+<text top="865" left="85" width="363" height="13" font="5">space.  This  was  described  by  H.G.  Booker  [2]  who </text>
+<text top="879" left="85" width="363" height="17" font="5">extended  Babinet’s  principle  from  optics  to  show  that  the </text>
+<text top="900" left="85" width="363" height="13" font="5">slot  will  have  the  same  radiation  pattern  as  a  dipole  such </text>
+<text top="918" left="85" width="363" height="13" font="5">that  the  E  and  H  fields  are  swapped.  As  a  result,  the </text>
+<text top="935" left="85" width="363" height="13" font="5">polarization is rotated, so that radiation from vertical slot is </text>
+<text top="953" left="85" width="363" height="13" font="5">polarized  horizontally.  For  instance,  a  vertical  slot  has  the </text>
+<text top="971" left="85" width="363" height="13" font="5">same  pattern  as  a  horizontal  dipole  with  the  same </text>
+<text top="988" left="85" width="363" height="13" font="5">dimensions  and  we  are  able  to  calculate  the  radiation </text>
+<text top="1006" left="85" width="363" height="13" font="5">pattern  of  a  dipole.  Thus,  a  longitudinal  slot  in  the  broad </text>
+<text top="1024" left="85" width="363" height="13" font="5">wall  of  a  waveguide  radiates  just  like  a  dipole </text>
+<text top="1041" left="85" width="363" height="13" font="5">perpendicular to the slot. By using this principle, it is easier </text>
+<text top="1059" left="85" width="363" height="13" font="5">to  analyze  slots  antennas  using  the  theory  of  dipole </text>
+<text top="1077" left="85" width="363" height="13" font="5">antennas.  The  slots  are  typically  thin  and  0.5  wavelengths </text>
+<text top="1094" left="85" width="363" height="13" font="5">long.  The  position  of  the  slots  affects  the  intensity  of  the </text>
+<text top="1112" left="85" width="363" height="13" font="5">transmitted power by being a direct cause to the impedance </text>
+<text top="381" left="470" width="363" height="13" font="5">matching  of  the  antenna,  good  impedance  matching  will </text>
+<text top="398" left="470" width="329" height="13" font="5">cause maximum efficiency of the power transmission.  </text>
+<text top="425" left="502" width="331" height="13" font="5">In this paper an antenna based on a slotted waveguide </text>
+<text top="443" left="470" width="363" height="13" font="5">is  analyzed  analytically  and  designed  for  THz  band  (at </text>
+<text top="460" left="470" width="201" height="13" font="5">frequencies of about 330 GHz).   </text>
+<text top="487" left="502" width="331" height="13" font="5">In  section  2,  the  antenna  design  is  presented  and  the </text>
+<text top="505" left="470" width="363" height="13" font="5">waveguide  dimensions  and  the  operation  frequency  are </text>
+<text top="522" left="470" width="363" height="13" font="5">briefly  discussed.  First  we  describe  a  single  slot  on  a </text>
+<text top="540" left="470" width="363" height="13" font="5">rectangular  waveguide  and  it  is  shown  that  it  can  be </text>
+<text top="558" left="470" width="363" height="13" font="5">described  using  a  model  of  a  transmission  line.  By  using </text>
+<text top="575" left="470" width="363" height="13" font="5">this  model,  equations  that  relate  the  slot  position  to  the </text>
+<text top="593" left="470" width="363" height="13" font="5">transmitted  power  were  developed.  This  model  was </text>
+<text top="611" left="470" width="363" height="13" font="5">expanded  for  an  array  of  slots  on  a  rectangular  waveguide </text>
+<text top="628" left="470" width="363" height="13" font="5">in  order  to  design  the  slots  antenna.  In  section  3,  antenna </text>
+<text top="646" left="470" width="363" height="13" font="5">based  on  slotted  rectangular  waveguide  in  the  THz  band </text>
+<text top="663" left="470" width="363" height="13" font="5">was  designed  and  simulated.  The  conclusions  are  given  in </text>
+<text top="681" left="470" width="61" height="13" font="5">section 4. </text>
+<text top="737" left="470" width="318" height="19" font="8"><b>2.  Antenna Design and Operation </b></text>
+<text top="759" left="492" width="4" height="13" font="5"> </text>
+<text top="785" left="492" width="341" height="13" font="5">In  order  to  understand  the  slotted  waveguide  antenna, </text>
+<text top="801" left="470" width="363" height="13" font="5">we will need to understand the fields within the waveguides </text>
+<text top="818" left="470" width="363" height="13" font="5">first.  In  a  waveguide,  we  are  looking  for  solutions  of </text>
+<text top="832" left="470" width="363" height="17" font="5">Maxell’s  equations  that  are  propagating  along  the  guiding </text>
+<text top="852" left="470" width="363" height="13" font="5">direction  (the  z  direction).  Thus,  the  electric  and  magnetic </text>
+<text top="868" left="470" width="220" height="13" font="5">fields are assumed to have the form: </text>
+<text top="922" left="470" width="4" height="13" font="5"> </text>
+<text top="941" left="731" width="4" height="9" font="9"><i>z</i></text>
+<text top="941" left="716" width="3" height="9" font="9"><i>t</i></text>
+<text top="941" left="707" width="3" height="9" font="9"><i>i</i></text>
+<text top="910" left="726" width="4" height="9" font="9"><i>z</i></text>
+<text top="910" left="711" width="3" height="9" font="9"><i>t</i></text>
+<text top="910" left="702" width="3" height="9" font="9"><i>i</i></text>
+<text top="944" left="699" width="7" height="15" font="10"><i>e</i></text>
+<text top="944" left="686" width="7" height="15" font="10"><i>y</i></text>
+<text top="944" left="672" width="7" height="15" font="10"><i>x</i></text>
+<text top="944" left="651" width="12" height="15" font="10"><i>H</i></text>
+<text top="944" left="623" width="5" height="15" font="10"><i>t</i></text>
+<text top="944" left="611" width="6" height="15" font="10"><i>z</i></text>
+<text top="944" left="597" width="7" height="15" font="10"><i>y</i></text>
+<text top="944" left="583" width="7" height="15" font="10"><i>x</i></text>
+<text top="944" left="562" width="12" height="15" font="10"><i>H</i></text>
+<text top="912" left="694" width="7" height="15" font="10"><i>e</i></text>
+<text top="912" left="681" width="7" height="15" font="10"><i>y</i></text>
+<text top="912" left="666" width="7" height="15" font="10"><i>x</i></text>
+<text top="912" left="649" width="10" height="15" font="10"><i>E</i></text>
+<text top="912" left="621" width="5" height="15" font="10"><i>t</i></text>
+<text top="912" left="609" width="6" height="15" font="10"><i>z</i></text>
+<text top="912" left="595" width="7" height="15" font="10"><i>y</i></text>
+<text top="912" left="580" width="7" height="15" font="10"><i>x</i></text>
+<text top="912" left="562" width="10" height="15" font="10"><i>E</i></text>
+<text top="938" left="726" width="5" height="12" font="11"></text>
+<text top="938" left="710" width="6" height="12" font="11"></text>
+<text top="906" left="720" width="5" height="12" font="11"></text>
+<text top="906" left="705" width="6" height="12" font="11"></text>
+<text top="938" left="720" width="5" height="12" font="11"></text>
+<text top="907" left="715" width="5" height="12" font="11"></text>
+<text top="938" left="638" width="9" height="20" font="12"></text>
+<text top="907" left="636" width="9" height="20" font="12"></text>
+<text top="944" left="694" width="5" height="15" font="12">)</text>
+<text top="944" left="679" width="4" height="15" font="12">,</text>
+<text top="944" left="665" width="5" height="15" font="12">(</text>
+<text top="930" left="655" width="9" height="15" font="12">~</text>
+<text top="944" left="629" width="5" height="15" font="12">)</text>
+<text top="944" left="618" width="4" height="15" font="12">,</text>
+<text top="944" left="605" width="4" height="15" font="12">,</text>
+<text top="944" left="590" width="4" height="15" font="12">,</text>
+<text top="944" left="576" width="5" height="15" font="12">(</text>
+<text top="930" left="566" width="9" height="15" font="12">~</text>
+<text top="912" left="689" width="5" height="15" font="12">)</text>
+<text top="912" left="674" width="4" height="15" font="12">,</text>
+<text top="912" left="660" width="5" height="15" font="12">(</text>
+<text top="898" left="651" width="9" height="15" font="12">~</text>
+<text top="912" left="626" width="5" height="15" font="12">)</text>
+<text top="912" left="615" width="4" height="15" font="12">,</text>
+<text top="912" left="602" width="4" height="15" font="12">,</text>
+<text top="912" left="587" width="4" height="15" font="12">,</text>
+<text top="912" left="573" width="5" height="15" font="12">(</text>
+<text top="898" left="564" width="9" height="15" font="12">~</text>
+<text top="928" left="656" width="7" height="16" font="12"></text>
+<text top="928" left="567" width="7" height="16" font="12"></text>
+<text top="896" left="652" width="7" height="16" font="12"></text>
+<text top="896" left="565" width="7" height="16" font="12"></text>
+<text top="922" left="738" width="11" height="13" font="5">.  </text>
+<text top="922" left="812" width="21" height="13" font="5">(1) </text>
+<text top="966" left="492" width="44" height="13" font="5">Where </text>
+<text top="959" left="542" width="9" height="21" font="13"></text>
+<text top="966" left="555" width="277" height="13" font="5">  is  the  propagation  wavenumber  along  the </text>
+<text top="986" left="470" width="363" height="13" font="5">guide  direction.  The  corresponding  guide  wavelength,  is </text>
+<text top="1004" left="470" width="70" height="13" font="5">denoted by </text>
+<text top="1004" left="615" width="4" height="15" font="12">.</text>
+<text top="1004" left="597" width="5" height="15" font="12">/</text>
+<text top="1004" left="576" width="8" height="15" font="12">2</text>
+<text top="998" left="604" width="9" height="21" font="13"></text>
+<text top="998" left="583" width="9" height="21" font="13"></text>
+<text top="998" left="542" width="9" height="21" font="13"></text>
+<text top="999" left="563" width="9" height="20" font="12"></text>
+<text top="1013" left="552" width="5" height="9" font="9"><i>g</i></text>
+<text top="1004" left="620" width="4" height="13" font="5"> </text>
+<text top="1037" left="492" width="341" height="13" font="5">It is assumed that the reader is familiar with waveguide </text>
+<text top="1053" left="470" width="363" height="13" font="5">mode  theory  [1],  and  thus  it  will  be  stated  without  proof </text>
+<text top="1071" left="470" width="49" height="13" font="5">that the </text>
+<text top="1070" left="520" width="19" height="14" font="10"><i>TE</i></text>
+<text top="1071" left="543" width="290" height="13" font="5"> field components in rectangular guide have the </text>
+<text top="1087" left="470" width="37" height="13" font="5">form: </text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="14" size="8" family="Times" color="#000000"/>
+	<fontspec id="15" size="9" family="Times" color="#000000"/>
+	<fontspec id="16" size="8" family="Times" color="#000000"/>
+	<fontspec id="17" size="16" family="Times" color="#000000"/>
+	<fontspec id="18" size="4" family="Times" color="#000000"/>
+	<fontspec id="19" size="10" family="Times" color="#000000"/>
+	<fontspec id="20" size="22" family="Times" color="#000000"/>
+	<fontspec id="21" size="6" family="Times" color="#000000"/>
+	<fontspec id="22" size="6" family="Times" color="#000000"/>
+<text top="65" left="64" width="13" height="11" font="0">2  </text>
+<text top="65" left="208" width="604" height="11" font="0">S. ROZENBERG, A. YAHALOM, A THZ SLOT ANTENNA OPTIMIZATION USING ANALYTICAL TECHNIQUES </text>
+<text top="163" left="64" width="4" height="13" font="5"> </text>
+<text top="192" left="284" width="4" height="10" font="14"><i>z</i></text>
+<text top="192" left="275" width="3" height="10" font="14"><i>i</i></text>
+<text top="205" left="250" width="8" height="10" font="14"><i>at</i></text>
+<text top="205" left="209" width="3" height="10" font="14"><i>t</i></text>
+<text top="156" left="278" width="4" height="10" font="14"><i>z</i></text>
+<text top="156" left="269" width="3" height="10" font="14"><i>i</i></text>
+<text top="169" left="243" width="8" height="10" font="14"><i>at</i></text>
+<text top="169" left="206" width="3" height="10" font="14"><i>t</i></text>
+<text top="120" left="287" width="4" height="10" font="14"><i>z</i></text>
+<text top="120" left="278" width="3" height="10" font="14"><i>i</i></text>
+<text top="133" left="251" width="9" height="10" font="14"><i>az</i></text>
+<text top="133" left="210" width="4" height="10" font="14"><i>z</i></text>
+<text top="196" left="259" width="8" height="17" font="3"><i>e</i></text>
+<text top="196" left="234" width="13" height="17" font="3"><i>H</i></text>
+<text top="196" left="194" width="13" height="17" font="3"><i>H</i></text>
+<text top="159" left="253" width="8" height="17" font="3"><i>e</i></text>
+<text top="159" left="231" width="11" height="17" font="3"><i>E</i></text>
+<text top="159" left="194" width="11" height="17" font="3"><i>E</i></text>
+<text top="123" left="262" width="8" height="17" font="3"><i>e</i></text>
+<text top="123" left="236" width="13" height="17" font="3"><i>H</i></text>
+<text top="123" left="194" width="13" height="17" font="3"><i>H</i></text>
+<text top="188" left="278" width="6" height="14" font="15"></text>
+<text top="152" left="272" width="6" height="14" font="15"></text>
+<text top="116" left="281" width="6" height="14" font="15"></text>
+<text top="189" left="269" width="6" height="13" font="16"></text>
+<text top="153" left="262" width="6" height="13" font="16"></text>
+<text top="117" left="272" width="6" height="13" font="16"></text>
+<text top="190" left="219" width="10" height="23" font="17"></text>
+<text top="153" left="216" width="10" height="23" font="17"></text>
+<text top="117" left="221" width="10" height="23" font="17"></text>
+<text top="180" left="238" width="10" height="17" font="17">~</text>
+<text top="180" left="198" width="10" height="17" font="17">~</text>
+<text top="144" left="233" width="10" height="17" font="17">~</text>
+<text top="144" left="197" width="10" height="17" font="17">~</text>
+<text top="108" left="240" width="10" height="17" font="17">~</text>
+<text top="108" left="198" width="10" height="17" font="17">~</text>
+<text top="178" left="239" width="8" height="19" font="17"></text>
+<text top="178" left="199" width="8" height="19" font="17"></text>
+<text top="142" left="235" width="8" height="19" font="17"></text>
+<text top="142" left="198" width="8" height="19" font="17"></text>
+<text top="106" left="241" width="8" height="19" font="17"></text>
+<text top="106" left="199" width="8" height="19" font="17"></text>
+<text top="163" left="295" width="11" height="13" font="5">.  </text>
+<text top="163" left="406" width="21" height="13" font="5">(2) </text>
+<text top="220" left="86" width="44" height="13" font="5">Where </text>
+<text top="220" left="132" width="8" height="14" font="10"><i>a</i></text>
+<text top="220" left="143" width="205" height="13" font="5"> is shorthand for the double index </text>
+<text top="220" left="350" width="19" height="14" font="10"><i>mn</i></text>
+<text top="220" left="373" width="33" height="13" font="5"> and: </text>
+<text top="257" left="96" width="4" height="13" font="5"> </text>
+<text top="375" left="64" width="4" height="13" font="5"> </text>
+<text top="460" left="365" width="5" height="9" font="11">2</text>
+<text top="460" left="305" width="5" height="9" font="11">2</text>
+<text top="473" left="242" width="5" height="9" font="11">2</text>
+<text top="472" left="197" width="5" height="9" font="11">2</text>
+<text top="473" left="161" width="5" height="9" font="11">2</text>
+<text top="424" left="172" width="5" height="9" font="11">2</text>
+<text top="361" left="174" width="5" height="9" font="11">2</text>
+<text top="389" left="276" width="9" height="15" font="12">~</text>
+<text top="410" left="255" width="5" height="18" font="12">ˆ</text>
+<text top="389" left="215" width="9" height="15" font="12">~</text>
+<text top="410" left="195" width="5" height="18" font="12">ˆ</text>
+<text top="400" left="117" width="9" height="15" font="12">~</text>
+<text top="326" left="283" width="9" height="15" font="12">~</text>
+<text top="347" left="262" width="5" height="18" font="12">ˆ</text>
+<text top="326" left="222" width="9" height="15" font="12">~</text>
+<text top="347" left="202" width="5" height="18" font="12">ˆ</text>
+<text top="336" left="116" width="9" height="15" font="12">~</text>
+<text top="291" left="299" width="5" height="18" font="12">ˆ</text>
+<text top="295" left="230" width="22" height="15" font="12">cos</text>
+<text top="295" left="154" width="22" height="15" font="12">cos</text>
+<text top="281" left="117" width="9" height="15" font="12">~</text>
+<text top="472" left="357" width="6" height="20" font="12"></text>
+<text top="485" left="357" width="6" height="20" font="12"></text>
+<text top="462" left="357" width="6" height="20" font="12"></text>
+<text top="472" left="326" width="6" height="20" font="12"></text>
+<text top="485" left="326" width="6" height="20" font="12"></text>
+<text top="462" left="326" width="6" height="20" font="12"></text>
+<text top="471" left="315" width="9" height="20" font="12"></text>
+<text top="472" left="298" width="6" height="20" font="12"></text>
+<text top="485" left="298" width="6" height="20" font="12"></text>
+<text top="462" left="298" width="6" height="20" font="12"></text>
+<text top="472" left="263" width="6" height="20" font="12"></text>
+<text top="485" left="263" width="6" height="20" font="12"></text>
+<text top="462" left="263" width="6" height="20" font="12"></text>
+<text top="471" left="252" width="9" height="20" font="12"></text>
+<text top="471" left="209" width="9" height="20" font="12"></text>
+<text top="471" left="171" width="9" height="20" font="12"></text>
+<text top="471" left="128" width="9" height="20" font="12"></text>
+<text top="418" left="299" width="6" height="20" font="12"></text>
+<text top="402" left="299" width="6" height="20" font="12"></text>
+<text top="431" left="299" width="6" height="20" font="12"></text>
+<text top="392" left="299" width="6" height="20" font="12"></text>
+<text top="418" left="185" width="6" height="20" font="12"></text>
+<text top="402" left="185" width="6" height="20" font="12"></text>
+<text top="431" left="185" width="6" height="20" font="12"></text>
+<text top="392" left="185" width="6" height="20" font="12"></text>
+<text top="421" left="273" width="8" height="20" font="12"></text>
+<text top="398" left="265" width="8" height="20" font="12"></text>
+<text top="408" left="240" width="9" height="20" font="12"></text>
+<text top="421" left="212" width="8" height="20" font="12"></text>
+<text top="398" left="204" width="8" height="20" font="12"></text>
+<text top="398" left="155" width="9" height="20" font="12"></text>
+<text top="408" left="141" width="9" height="20" font="12"></text>
+<text top="355" left="306" width="6" height="20" font="12"></text>
+<text top="339" left="306" width="6" height="20" font="12"></text>
+<text top="368" left="306" width="6" height="20" font="12"></text>
+<text top="329" left="306" width="6" height="20" font="12"></text>
+<text top="355" left="192" width="6" height="20" font="12"></text>
+<text top="339" left="192" width="6" height="20" font="12"></text>
+<text top="368" left="192" width="6" height="20" font="12"></text>
+<text top="329" left="192" width="6" height="20" font="12"></text>
+<text top="358" left="280" width="8" height="20" font="12"></text>
+<text top="335" left="272" width="8" height="20" font="12"></text>
+<text top="345" left="248" width="9" height="20" font="12"></text>
+<text top="358" left="220" width="8" height="20" font="12"></text>
+<text top="335" left="211" width="8" height="20" font="12"></text>
+<text top="335" left="152" width="9" height="20" font="12"></text>
+<text top="345" left="138" width="9" height="20" font="12"></text>
+<text top="291" left="291" width="6" height="20" font="12"></text>
+<text top="305" left="291" width="6" height="20" font="12"></text>
+<text top="281" left="291" width="6" height="20" font="12"></text>
+<text top="291" left="251" width="6" height="20" font="12"></text>
+<text top="305" left="251" width="6" height="20" font="12"></text>
+<text top="281" left="251" width="6" height="20" font="12"></text>
+<text top="290" left="224" width="4" height="20" font="12"></text>
+<text top="291" left="215" width="6" height="20" font="12"></text>
+<text top="305" left="215" width="6" height="20" font="12"></text>
+<text top="281" left="215" width="6" height="20" font="12"></text>
+<text top="291" left="176" width="6" height="20" font="12"></text>
+<text top="305" left="176" width="6" height="20" font="12"></text>
+<text top="281" left="176" width="6" height="20" font="12"></text>
+<text top="290" left="142" width="9" height="20" font="12"></text>
+<text top="489" left="341" width="8" height="15" font="10"><i>b</i></text>
+<text top="466" left="335" width="8" height="15" font="10"><i>n</i></text>
+<text top="489" left="279" width="8" height="15" font="10"><i>a</i></text>
+<text top="466" left="272" width="12" height="15" font="10"><i>m</i></text>
+<text top="476" left="232" width="7" height="15" font="10"><i>k</i></text>
+<text top="476" left="183" width="7" height="15" font="10"><i>k</i></text>
+<text top="476" left="152" width="7" height="15" font="10"><i>k</i></text>
+<text top="426" left="281" width="7" height="15" font="10"><i>y</i></text>
+<text top="403" left="272" width="12" height="15" font="10"><i>H</i></text>
+<text top="414" left="254" width="7" height="15" font="10"><i>y</i></text>
+<text top="426" left="220" width="7" height="15" font="10"><i>x</i></text>
+<text top="403" left="212" width="12" height="15" font="10"><i>H</i></text>
+<text top="414" left="194" width="7" height="15" font="10"><i>x</i></text>
+<text top="428" left="158" width="7" height="15" font="10"><i>k</i></text>
+<text top="403" left="167" width="4" height="15" font="10"><i>i</i></text>
+<text top="414" left="114" width="12" height="15" font="10"><i>H</i></text>
+<text top="363" left="288" width="7" height="15" font="10"><i>x</i></text>
+<text top="340" left="279" width="12" height="15" font="10"><i>H</i></text>
+<text top="351" left="261" width="7" height="15" font="10"><i>y</i></text>
+<text top="363" left="227" width="7" height="15" font="10"><i>y</i></text>
+<text top="340" left="219" width="12" height="15" font="10"><i>H</i></text>
+<text top="351" left="201" width="7" height="15" font="10"><i>x</i></text>
+<text top="365" left="161" width="7" height="15" font="10"><i>k</i></text>
+<text top="340" left="164" width="4" height="15" font="10"><i>i</i></text>
+<text top="351" left="114" width="10" height="15" font="10"><i>E</i></text>
+<text top="295" left="298" width="6" height="15" font="10"><i>z</i></text>
+<text top="308" left="270" width="8" height="15" font="10"><i>b</i></text>
+<text top="285" left="280" width="7" height="15" font="10"><i>y</i></text>
+<text top="285" left="260" width="12" height="15" font="10"><i>m</i></text>
+<text top="308" left="195" width="8" height="15" font="10"><i>a</i></text>
+<text top="285" left="205" width="7" height="15" font="10"><i>x</i></text>
+<text top="285" left="185" width="12" height="15" font="10"><i>m</i></text>
+<text top="295" left="114" width="12" height="15" font="10"><i>H</i></text>
+<text top="485" left="191" width="4" height="9" font="9"><i>c</i></text>
+<text top="412" left="286" width="8" height="9" font="9"><i>az</i></text>
+<text top="412" left="225" width="8" height="9" font="9"><i>az</i></text>
+<text top="436" left="166" width="4" height="9" font="9"><i>c</i></text>
+<text top="422" left="127" width="7" height="9" font="9"><i>at</i></text>
+<text top="349" left="293" width="8" height="9" font="9"><i>az</i></text>
+<text top="349" left="233" width="8" height="9" font="9"><i>az</i></text>
+<text top="373" left="168" width="4" height="9" font="9"><i>c</i></text>
+<text top="359" left="124" width="7" height="9" font="9"><i>at</i></text>
+<text top="304" left="127" width="8" height="9" font="9"><i>az</i></text>
+<text top="460" left="343" width="9" height="21" font="13"></text>
+<text top="460" left="284" width="9" height="21" font="13"></text>
+<text top="470" left="113" width="9" height="21" font="13"></text>
+<text top="397" left="171" width="9" height="21" font="13"></text>
+<text top="334" left="168" width="21" height="21" font="13"></text>
+<text top="279" left="272" width="9" height="21" font="13"></text>
+<text top="279" left="197" width="9" height="21" font="13"></text>
+<text top="387" left="277" width="7" height="16" font="12"></text>
+<text top="387" left="216" width="7" height="16" font="12"></text>
+<text top="398" left="118" width="7" height="16" font="12"></text>
+<text top="324" left="284" width="7" height="16" font="12"></text>
+<text top="324" left="224" width="7" height="16" font="12"></text>
+<text top="335" left="117" width="7" height="16" font="12"></text>
+<text top="279" left="118" width="7" height="16" font="12"></text>
+<text top="375" left="375" width="11" height="13" font="5">.  </text>
+<text top="375" left="406" width="21" height="13" font="5">(3) </text>
+<text top="512" left="86" width="147" height="13" font="5">The cutoff frequency of </text>
+<text top="520" left="253" width="13" height="9" font="9"><i>m n</i></text>
+<text top="512" left="234" width="19" height="15" font="10"><i>TE</i></text>
+<text top="512" left="268" width="159" height="13" font="5"> mode is expressed by the </text>
+<text top="533" left="64" width="37" height="13" font="5">form: </text>
+<text top="586" left="64" width="4" height="13" font="5"> </text>
+<text top="573" left="341" width="5" height="9" font="11">2</text>
+<text top="573" left="281" width="5" height="9" font="11">2</text>
+<text top="602" left="176" width="8" height="15" font="12">2</text>
+<text top="578" left="197" width="8" height="15" font="12">1</text>
+<text top="584" left="333" width="6" height="20" font="12"></text>
+<text top="597" left="333" width="6" height="20" font="12"></text>
+<text top="574" left="333" width="6" height="20" font="12"></text>
+<text top="584" left="302" width="6" height="20" font="12"></text>
+<text top="597" left="302" width="6" height="20" font="12"></text>
+<text top="574" left="302" width="6" height="20" font="12"></text>
+<text top="583" left="291" width="9" height="20" font="12"></text>
+<text top="584" left="274" width="6" height="20" font="12"></text>
+<text top="597" left="274" width="6" height="20" font="12"></text>
+<text top="574" left="274" width="6" height="20" font="12"></text>
+<text top="584" left="239" width="6" height="20" font="12"></text>
+<text top="597" left="239" width="6" height="20" font="12"></text>
+<text top="574" left="239" width="6" height="20" font="12"></text>
+<text top="583" left="162" width="9" height="20" font="12"></text>
+<text top="601" left="317" width="8" height="15" font="10"><i>b</i></text>
+<text top="578" left="312" width="8" height="15" font="10"><i>n</i></text>
+<text top="601" left="256" width="8" height="15" font="10"><i>a</i></text>
+<text top="578" left="248" width="12" height="15" font="10"><i>m</i></text>
+<text top="588" left="139" width="5" height="15" font="10"><i>f</i></text>
+<text top="597" left="145" width="11" height="9" font="9"><i>mn</i></text>
+<text top="572" left="320" width="9" height="21" font="13"></text>
+<text top="572" left="260" width="9" height="21" font="13"></text>
+<text top="596" left="206" width="16" height="21" font="13"></text>
+<text top="596" left="183" width="9" height="21" font="13"></text>
+<text top="586" left="352" width="11" height="13" font="5">.  </text>
+<text top="586" left="406" width="21" height="13" font="5">(4) </text>
+<text top="625" left="86" width="185" height="13" font="5">And the dominant mode fields,</text>
+<text top="634" left="290" width="10" height="9" font="11">10</text>
+<text top="625" left="272" width="19" height="15" font="10"><i>TE</i></text>
+<text top="625" left="303" width="93" height="13" font="5">, are given by:  </text>
+<text top="719" left="64" width="4" height="13" font="5"> </text>
+<text top="771" left="274" width="4" height="9" font="9"><i>z</i></text>
+<text top="771" left="259" width="3" height="9" font="9"><i>i</i></text>
+<text top="783" left="180" width="4" height="9" font="9"><i>z</i></text>
+<text top="722" left="312" width="4" height="9" font="9"><i>z</i></text>
+<text top="722" left="297" width="3" height="9" font="9"><i>i</i></text>
+<text top="748" left="213" width="4" height="9" font="9"><i>c</i></text>
+<text top="734" left="180" width="4" height="9" font="9"><i>x</i></text>
+<text top="673" left="327" width="4" height="9" font="9"><i>z</i></text>
+<text top="673" left="311" width="3" height="9" font="9"><i>i</i></text>
+<text top="699" left="219" width="4" height="9" font="9"><i>c</i></text>
+<text top="685" left="178" width="4" height="9" font="9"><i>y</i></text>
+<text top="774" left="246" width="7" height="15" font="10"><i>e</i></text>
+<text top="787" left="231" width="8" height="15" font="10"><i>a</i></text>
+<text top="764" left="235" width="7" height="15" font="10"><i>x</i></text>
+<text top="774" left="155" width="12" height="15" font="10"><i>H</i></text>
+<text top="725" left="284" width="7" height="15" font="10"><i>e</i></text>
+<text top="738" left="269" width="8" height="15" font="10"><i>a</i></text>
+<text top="715" left="273" width="7" height="15" font="10"><i>x</i></text>
+<text top="738" left="231" width="8" height="15" font="10"><i>a</i></text>
+<text top="739" left="205" width="7" height="15" font="10"><i>k</i></text>
+<text top="715" left="207" width="4" height="15" font="10"><i>i</i></text>
+<text top="725" left="155" width="12" height="15" font="10"><i>H</i></text>
+<text top="676" left="298" width="7" height="15" font="10"><i>e</i></text>
+<text top="689" left="283" width="8" height="15" font="10"><i>a</i></text>
+<text top="666" left="287" width="7" height="15" font="10"><i>x</i></text>
+<text top="689" left="245" width="8" height="15" font="10"><i>a</i></text>
+<text top="690" left="211" width="7" height="15" font="10"><i>k</i></text>
+<text top="666" left="214" width="4" height="15" font="10"><i>i</i></text>
+<text top="676" left="155" width="10" height="15" font="10"><i>E</i></text>
+<text top="776" left="267" width="7" height="6" font="18">10</text>
+<text top="727" left="305" width="7" height="6" font="18">10</text>
+<text top="678" left="319" width="7" height="6" font="18">10</text>
+<text top="774" left="203" width="22" height="15" font="12">cos</text>
+<text top="760" left="158" width="9" height="15" font="12">~</text>
+<text top="725" left="243" width="18" height="15" font="12">sin</text>
+<text top="711" left="158" width="9" height="15" font="12">~</text>
+<text top="676" left="257" width="18" height="15" font="12">sin</text>
+<text top="662" left="157" width="9" height="15" font="12">~</text>
+<text top="783" left="177" width="2" height="9" font="11">,</text>
+<text top="783" left="167" width="9" height="9" font="11">10</text>
+<text top="736" left="219" width="5" height="9" font="11">2</text>
+<text top="734" left="177" width="2" height="9" font="11">,</text>
+<text top="734" left="167" width="9" height="9" font="11">10</text>
+<text top="687" left="224" width="5" height="9" font="11">2</text>
+<text top="685" left="174" width="2" height="9" font="11">,</text>
+<text top="685" left="164" width="9" height="9" font="11">10</text>
+<text top="768" left="262" width="5" height="12" font="11"></text>
+<text top="719" left="300" width="5" height="12" font="11"></text>
+<text top="670" left="314" width="5" height="12" font="11"></text>
+<text top="758" left="227" width="9" height="21" font="13"></text>
+<text top="709" left="265" width="9" height="21" font="13"></text>
+<text top="709" left="229" width="9" height="21" font="13"></text>
+<text top="709" left="212" width="9" height="21" font="13"></text>
+<text top="660" left="279" width="9" height="21" font="13"></text>
+<text top="660" left="243" width="9" height="21" font="13"></text>
+<text top="660" left="218" width="21" height="21" font="13"></text>
+<text top="768" left="254" width="5" height="12" font="11"></text>
+<text top="719" left="292" width="5" height="12" font="11"></text>
+<text top="670" left="306" width="5" height="12" font="11"></text>
+<text top="769" left="190" width="9" height="20" font="12"></text>
+<text top="720" left="191" width="9" height="20" font="12"></text>
+<text top="661" left="202" width="9" height="20" font="12"></text>
+<text top="671" left="188" width="9" height="20" font="12"></text>
+<text top="759" left="160" width="7" height="16" font="12"></text>
+<text top="710" left="160" width="7" height="16" font="12"></text>
+<text top="660" left="158" width="7" height="16" font="12"></text>
+<text top="719" left="333" width="11" height="13" font="5">.  </text>
+<text top="719" left="406" width="21" height="13" font="5">(5) </text>
+<text top="805" left="86" width="341" height="13" font="5">Figure  1  shows  the  waveguide  description,  the </text>
+<text top="821" left="64" width="363" height="13" font="5">waveguide  walls  are  perfectly  conducting  and  the </text>
+<text top="840" left="64" width="301" height="13" font="5">dimensions  are  chosen  so  that  all  modes  except </text>
+<text top="848" left="387" width="10" height="9" font="11">10</text>
+<text top="840" left="369" width="19" height="15" font="10"><i>TE</i></text>
+<text top="840" left="399" width="28" height="13" font="5">  are </text>
+<text top="861" left="64" width="47" height="13" font="5">cut off. </text>
+<text top="1056" left="421" width="4" height="13" font="5"> </text>
+<text top="1085" left="91" width="35" height="11" font="19"><b>Fig. 1.</b> </text>
+<text top="1085" left="140" width="136" height="11" font="0">The waveguide description. </text>
+<text top="113" left="470" width="341" height="13" font="5">This information needs to be applied to scattering off a </text>
+<text top="130" left="449" width="363" height="13" font="5">slot  cut  in  one  of  the  walls  of  the  waveguide.  If  the </text>
+<text top="148" left="449" width="323" height="13" font="5">waveguide  is  assumed  to  be  infinitely  long  and  a </text>
+<text top="157" left="796" width="10" height="9" font="11">10</text>
+<text top="148" left="777" width="19" height="15" font="10"><i>TE</i></text>
+<text top="148" left="808" width="4" height="13" font="5"> </text>
+<text top="170" left="449" width="142" height="13" font="5">mode is launched from </text>
+<text top="164" left="619" width="21" height="20" font="12"></text>
+<text top="164" left="606" width="9" height="20" font="12"></text>
+<text top="170" left="595" width="7" height="15" font="10"><i>z</i></text>
+<text top="170" left="641" width="167" height="13" font="5">, traveling in the positive z-</text>
+<text top="187" left="449" width="363" height="13" font="5">direction, the incidence of this mode on the slot will cause </text>
+<text top="203" left="449" width="363" height="13" font="5">backwards  and  forwards  scattering  of  this  mode  and </text>
+<text top="220" left="449" width="226" height="13" font="5">radiation into outer space is possible. </text>
+<text top="246" left="470" width="341" height="13" font="5">Figure  2  shows  the  geometry  of  the  slot  antenna.  It  is </text>
+<text top="263" left="449" width="363" height="13" font="5">assumed that the waveguide walls have negligible thickness </text>
+<text top="279" left="449" width="363" height="13" font="5">and  are  composed  of  perfect  conductor.  The  slot  is </text>
+<text top="297" left="449" width="142" height="13" font="5">rectangular with length </text>
+<text top="296" left="601" width="4" height="15" font="10"><i>l</i></text>
+<text top="296" left="593" width="8" height="15" font="12">2</text>
+<text top="297" left="609" width="67" height="13" font="5"> and width </text>
+<text top="296" left="678" width="10" height="15" font="10"><i>w</i></text>
+<text top="297" left="692" width="36" height="13" font="5">where</text>
+<text top="296" left="769" width="11" height="15" font="10"><i>w</i></text>
+<text top="296" left="738" width="28" height="15" font="10"><i>l </i></text>
+<text top="296" left="730" width="8" height="15" font="12">2</text>
+<text top="297" left="783" width="8" height="13" font="5">. </text>
+<text top="430" left="808" width="4" height="13" font="5"> </text>
+<text top="458" left="449" width="3" height="11" font="19"><b> </b></text>
+<text top="458" left="489" width="322" height="11" font="19"><b>Fig. 2.</b>  An  offset  longitudinal  slot  in  the  upper  broad  wall  of  a </text>
+<text top="472" left="449" width="115" height="11" font="0">rectangular waveguide. </text>
+<text top="502" left="470" width="341" height="13" font="5">The forward and backward scattering off this slot in the </text>
+<text top="529" left="468" width="10" height="9" font="11">10</text>
+<text top="520" left="450" width="19" height="15" font="10"><i>TE</i></text>
+<text top="520" left="481" width="111" height="13" font="5"> mode will be [1]: </text>
+<text top="620" left="449" width="4" height="13" font="5"> </text>
+<text top="688" left="652" width="17" height="15" font="10"><i>ab</i></text>
+<text top="651" left="727" width="15" height="15" font="10"><i>dz</i></text>
+<text top="651" left="698" width="7" height="15" font="10"><i>e</i></text>
+<text top="651" left="685" width="6" height="15" font="10"><i>z</i></text>
+<text top="651" left="666" width="10" height="15" font="10"><i>V</i></text>
+<text top="664" left="635" width="8" height="15" font="10"><i>a</i></text>
+<text top="641" left="637" width="7" height="15" font="10"><i>x</i></text>
+<text top="651" left="576" width="8" height="15" font="10"><i>a</i></text>
+<text top="675" left="498" width="11" height="15" font="10"><i>C</i></text>
+<text top="613" left="680" width="8" height="15" font="10"><i>a</i></text>
+<text top="613" left="631" width="17" height="15" font="10"><i>ab</i></text>
+<text top="575" left="740" width="15" height="15" font="10"><i>dz</i></text>
+<text top="575" left="705" width="7" height="15" font="10"><i>e</i></text>
+<text top="575" left="692" width="6" height="15" font="10"><i>z</i></text>
+<text top="575" left="663" width="10" height="15" font="10"><i>E</i></text>
+<text top="575" left="636" width="16" height="15" font="10"><i>dx</i></text>
+<text top="588" left="617" width="8" height="15" font="10"><i>a</i></text>
+<text top="565" left="621" width="7" height="15" font="10"><i>x</i></text>
+<text top="600" left="499" width="10" height="15" font="10"><i>B</i></text>
+<text top="637" left="660" width="3" height="9" font="9"><i>l</i></text>
+<text top="674" left="663" width="3" height="9" font="9"><i>l</i></text>
+<text top="648" left="722" width="4" height="9" font="9"><i>z</i></text>
+<text top="648" left="706" width="3" height="9" font="9"><i>i</i></text>
+<text top="561" left="565" width="6" height="9" font="9"><i>w</i></text>
+<text top="561" left="550" width="4" height="9" font="9"><i>x</i></text>
+<text top="598" left="565" width="6" height="9" font="9"><i>w</i></text>
+<text top="598" left="551" width="4" height="9" font="9"><i>x</i></text>
+<text top="561" left="655" width="3" height="9" font="9"><i>l</i></text>
+<text top="598" left="658" width="3" height="9" font="9"><i>l</i></text>
+<text top="572" left="734" width="4" height="9" font="9"><i>z</i></text>
+<text top="572" left="719" width="3" height="9" font="9"><i>i</i></text>
+<text top="585" left="678" width="4" height="9" font="9"><i>x</i></text>
+<text top="697" left="641" width="9" height="9" font="11">10</text>
+<text top="649" left="644" width="5" height="9" font="11">1</text>
+<text top="648" left="591" width="5" height="9" font="11">2</text>
+<text top="684" left="509" width="9" height="9" font="11">10</text>
+<text top="610" left="695" width="5" height="9" font="11">2</text>
+<text top="621" left="620" width="9" height="9" font="11">10</text>
+<text top="561" left="577" width="5" height="9" font="11">2</text>
+<text top="561" left="573" width="3" height="9" font="11">/</text>
+<text top="561" left="555" width="5" height="9" font="11">1</text>
+<text top="598" left="577" width="5" height="9" font="11">2</text>
+<text top="598" left="573" width="3" height="9" font="11">/</text>
+<text top="598" left="555" width="5" height="9" font="11">1</text>
+<text top="584" left="673" width="5" height="9" font="11">1</text>
+<text top="608" left="508" width="9" height="9" font="11">10</text>
+<text top="652" left="714" width="7" height="6" font="18">10</text>
+<text top="577" left="727" width="7" height="6" font="18">10</text>
+<text top="651" left="693" width="6" height="15" font="12">)</text>
+<text top="651" left="678" width="6" height="15" font="12">(</text>
+<text top="651" left="651" width="6" height="15" font="12">)</text>
+<text top="651" left="600" width="28" height="15" font="12">cos(</text>
+<text top="651" left="585" width="6" height="15" font="12">)</text>
+<text top="651" left="569" width="5" height="15" font="12">/</text>
+<text top="651" left="550" width="6" height="15" font="12">(</text>
+<text top="613" left="689" width="6" height="15" font="12">)</text>
+<text top="613" left="673" width="5" height="15" font="12">/</text>
+<text top="613" left="650" width="10" height="15" font="12">/(</text>
+<text top="575" left="699" width="6" height="15" font="12">)</text>
+<text top="575" left="685" width="6" height="15" font="12">(</text>
+<text top="575" left="630" width="6" height="15" font="12">)</text>
+<text top="575" left="584" width="28" height="15" font="12">cos(</text>
+<text top="682" left="611" width="31" height="21" font="13"></text>
+<text top="635" left="628" width="9" height="21" font="13"></text>
+<text top="645" left="555" width="9" height="21" font="13"></text>
+<text top="606" left="659" width="9" height="21" font="13"></text>
+<text top="606" left="590" width="31" height="21" font="13"></text>
+<text top="559" left="612" width="9" height="21" font="13"></text>
+<text top="645" left="709" width="5" height="12" font="16"></text>
+<text top="569" left="721" width="5" height="12" font="16"></text>
+<text top="644" left="658" width="7" height="30" font="20"></text>
+<text top="568" left="563" width="7" height="30" font="20"></text>
+<text top="568" left="653" width="7" height="30" font="20"></text>
+<text top="671" left="657" width="5" height="12" font="11"></text>
+<text top="558" left="559" width="5" height="12" font="11"></text>
+<text top="595" left="559" width="5" height="12" font="11"></text>
+<text top="595" left="653" width="5" height="12" font="11"></text>
+<text top="569" left="713" width="5" height="12" font="11"></text>
+<text top="646" left="539" width="9" height="20" font="12"></text>
+<text top="670" left="524" width="9" height="20" font="12"></text>
+<text top="570" left="538" width="9" height="20" font="12"></text>
+<text top="594" left="524" width="9" height="20" font="12"></text>
+<text top="620" left="759" width="11" height="13" font="5">.  </text>
+<text top="620" left="791" width="21" height="13" font="5">(6) </text>
+<text top="711" left="449" width="148" height="13" font="5">respectively.  In  which </text>
+<text top="713" left="699" width="5" height="13" font="5">)</text>
+<text top="713" left="687" width="5" height="13" font="5">(</text>
+<text top="713" left="628" width="5" height="13" font="5">)</text>
+<text top="713" left="615" width="5" height="13" font="5">(</text>
+<text top="721" left="675" width="4" height="8" font="21">1</text>
+<text top="713" left="693" width="6" height="13" font="7"><i>z</i></text>
+<text top="713" left="667" width="9" height="13" font="7"><i>E</i></text>
+<text top="713" left="649" width="10" height="13" font="7"><i>w</i></text>
+<text top="713" left="621" width="6" height="13" font="7"><i>z</i></text>
+<text top="713" left="604" width="9" height="13" font="7"><i>V</i></text>
+<text top="722" left="681" width="4" height="8" font="22"><i>x</i></text>
+<text top="708" left="660" width="4" height="18" font="5"></text>
+<text top="708" left="636" width="8" height="18" font="5"></text>
+<text top="711" left="706" width="106" height="13" font="5">  is  the  voltage </text>
+<text top="733" left="449" width="363" height="13" font="5">distribution in the slot. A slot in a large ground plane can be </text>
+<text top="750" left="449" width="363" height="13" font="5">described  as  a  two  wire  transmission  line  that  fed  at  the </text>
+<text top="763" left="449" width="259" height="17" font="5">central points, these “wires” are shorted at </text>
+<text top="768" left="742" width="4" height="13" font="7"><i>l</i></text>
+<text top="768" left="712" width="6" height="13" font="7"><i>z</i></text>
+<text top="763" left="734" width="8" height="18" font="5"></text>
+<text top="763" left="722" width="8" height="18" font="5"></text>
+<text top="767" left="749" width="63" height="13" font="5"> as shown </text>
+<text top="784" left="449" width="70" height="13" font="5">in figure 3. </text>
+<text top="1002" left="747" width="4" height="13" font="5"> </text>
+<text top="1031" left="449" width="3" height="11" font="19"><b> </b></text>
+<text top="1031" left="489" width="228" height="11" font="19"><b>Fig. 3.</b>  Center-fed slot in a large ground plane. </text>
+<text top="1060" left="470" width="341" height="13" font="5">Detailed  analysis  shows  that  the  voltage  distribution  in </text>
+<text top="1077" left="449" width="343" height="13" font="5">the slot will be a symmetrical standing wave of the form: </text>
+<text top="1112" left="449" width="4" height="13" font="5"> </text>
+<text top="1114" left="684" width="10" height="13" font="5">)]</text>
+<text top="1114" left="650" width="5" height="13" font="5">(</text>
+<text top="1114" left="620" width="21" height="13" font="5">sin[</text>
+<text top="1114" left="584" width="5" height="13" font="5">)</text>
+<text top="1114" left="571" width="5" height="13" font="5">(</text>
+<text top="1114" left="676" width="6" height="13" font="7"><i>z</i></text>
+<text top="1114" left="655" width="4" height="13" font="7"><i>l</i></text>
+<text top="1114" left="642" width="7" height="13" font="7"><i>k</i></text>
+<text top="1114" left="602" width="9" height="13" font="7"><i>V</i></text>
+<text top="1114" left="577" width="6" height="13" font="7"><i>z</i></text>
+<text top="1114" left="560" width="9" height="13" font="7"><i>V</i></text>
+<text top="1122" left="611" width="6" height="8" font="22"><i>m</i></text>
+<text top="1110" left="663" width="8" height="18" font="5"></text>
+<text top="1110" left="592" width="8" height="18" font="5"></text>
+<text top="1112" left="696" width="11" height="13" font="5">.  </text>
+<text top="1112" left="791" width="21" height="13" font="5">(7) </text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="23" size="18" family="Times" color="#000000"/>
+	<fontspec id="24" size="13" family="Times" color="#000000"/>
+	<fontspec id="25" size="13" family="Times" color="#000000"/>
+	<fontspec id="26" size="15" family="Times" color="#000000"/>
+	<fontspec id="27" size="20" family="Times" color="#000000"/>
+<text top="65" left="85" width="167" height="11" font="0">RADIOENGINEERING, VOL. 2</text>
+<text top="65" left="252" width="7" height="11" font="1">5</text>
+<text top="65" left="259" width="32" height="11" font="0">, NO. </text>
+<text top="65" left="291" width="7" height="11" font="1">1</text>
+<text top="65" left="297" width="7" height="11" font="0">, </text>
+<text top="65" left="304" width="75" height="11" font="1">SEPTEMBER</text>
+<text top="65" left="379" width="23" height="11" font="0"> 201</text>
+<text top="65" left="402" width="7" height="11" font="1">6</text>
+<text top="65" left="409" width="3" height="11" font="0"> </text>
+<text top="65" left="823" width="10" height="11" font="0">3 </text>
+<text top="1199" left="85" width="3" height="11" font="0"> </text>
+<text top="113" left="107" width="246" height="13" font="5">When inserting (7) in (6) we will obtain: </text>
+<text top="158" left="85" width="4" height="13" font="5"> </text>
+<text top="150" left="265" width="5" height="26" font="23"></text>
+<text top="150" left="367" width="5" height="26" font="23"></text>
+<text top="160" left="421" width="5" height="14" font="24">)</text>
+<text top="160" left="372" width="27" height="14" font="24">cos(</text>
+<text top="160" left="331" width="21" height="14" font="24">cos</text>
+<text top="160" left="270" width="21" height="14" font="24">cos</text>
+<text top="173" left="241" width="5" height="14" font="24">)</text>
+<text top="173" left="225" width="4" height="14" font="24">/</text>
+<text top="173" left="197" width="5" height="14" font="24">(</text>
+<text top="150" left="207" width="8" height="14" font="24">2</text>
+<text top="159" left="414" width="5" height="8" font="11">1</text>
+<text top="169" left="302" width="9" height="8" font="11">10</text>
+<text top="181" left="212" width="9" height="8" font="11">10</text>
+<text top="169" left="148" width="9" height="8" font="11">10</text>
+<text top="169" left="111" width="9" height="8" font="11">10</text>
+<text top="173" left="406" width="8" height="14" font="25"><i>a</i></text>
+<text top="150" left="407" width="7" height="14" font="25"><i>x</i></text>
+<text top="160" left="354" width="12" height="14" font="25"><i>kl</i></text>
+<text top="160" left="312" width="4" height="14" font="25"><i>l</i></text>
+<text top="173" left="246" width="16" height="14" font="25"><i>ab</i></text>
+<text top="173" left="232" width="7" height="14" font="25"><i>k</i></text>
+<text top="150" left="214" width="10" height="14" font="25"><i>V</i></text>
+<text top="160" left="138" width="11" height="14" font="25"><i>C</i></text>
+<text top="160" left="102" width="10" height="14" font="25"><i>B</i></text>
+<text top="158" left="223" width="7" height="8" font="9"><i>m</i></text>
+<text top="144" left="399" width="9" height="20" font="12"></text>
+<text top="154" left="293" width="9" height="20" font="12"></text>
+<text top="167" left="203" width="9" height="20" font="12"></text>
+<text top="167" left="176" width="21" height="20" font="12"></text>
+<text top="155" left="320" width="9" height="19" font="24"></text>
+<text top="155" left="163" width="9" height="19" font="24"></text>
+<text top="155" left="126" width="9" height="19" font="24"></text>
+<text top="158" left="429" width="29" height="13" font="5">. (8) </text>
+<text top="194" left="107" width="341" height="13" font="5">It is important to observe that the scattering off the slot </text>
+<text top="211" left="85" width="163" height="13" font="5">being  symmetrical,  that  is </text>
+<text top="212" left="310" width="4" height="14" font="12">.</text>
+<text top="220" left="299" width="10" height="8" font="11">10</text>
+<text top="220" left="262" width="10" height="8" font="11">10</text>
+<text top="212" left="289" width="11" height="14" font="10"><i>C</i></text>
+<text top="212" left="253" width="33" height="14" font="10"><i>B </i></text>
+<text top="211" left="316" width="132" height="13" font="5">  this  implies  that  the </text>
+<text top="233" left="85" width="363" height="13" font="5">slot  is  equivalent  to  shunt  obstacle  on  a  two  wire </text>
+<text top="250" left="85" width="363" height="13" font="5">transmission  line.  To  see  this,  consider  the  situation </text>
+<text top="266" left="85" width="363" height="13" font="5">suggested by figure 4. A transmission line of characteristic </text>
+<text top="284" left="85" width="69" height="13" font="5">admittance </text>
+<text top="293" left="169" width="5" height="8" font="11">0</text>
+<text top="285" left="157" width="11" height="14" font="10"><i>G</i></text>
+<text top="284" left="176" width="84" height="13" font="5"> is shunted at </text>
+<text top="284" left="286" width="8" height="14" font="24">0</text>
+<text top="279" left="274" width="9" height="19" font="24"></text>
+<text top="284" left="263" width="6" height="14" font="25"><i>z</i></text>
+<text top="284" left="297" width="152" height="13" font="5"> by a lumped admittance </text>
+<text top="306" left="97" width="4" height="14" font="24">.</text>
+<text top="306" left="87" width="9" height="14" font="25"><i>Y</i></text>
+<text top="306" left="102" width="8" height="13" font="5">  </text>
+<text top="458" left="397" width="4" height="13" font="5"> </text>
+<text top="486" left="85" width="3" height="11" font="19"><b> </b></text>
+<text top="486" left="125" width="277" height="11" font="19"><b>Fig. 4.</b>  A shunt obstacle on a two wire transmission line. </text>
+<text top="516" left="107" width="295" height="13" font="5">The voltage and current on the line are given by: </text>
+<text top="625" left="85" width="4" height="13" font="5"> </text>
+<text top="708" left="282" width="4" height="9" font="9"><i>z</i></text>
+<text top="708" left="274" width="3" height="9" font="9"><i>i</i></text>
+<text top="656" left="268" width="4" height="9" font="9"><i>z</i></text>
+<text top="656" left="260" width="3" height="9" font="9"><i>i</i></text>
+<text top="603" left="310" width="4" height="9" font="9"><i>z</i></text>
+<text top="603" left="302" width="3" height="9" font="9"><i>i</i></text>
+<text top="603" left="243" width="4" height="9" font="9"><i>z</i></text>
+<text top="603" left="235" width="3" height="9" font="9"><i>i</i></text>
+<text top="551" left="279" width="4" height="9" font="9"><i>z</i></text>
+<text top="551" left="270" width="3" height="9" font="9"><i>i</i></text>
+<text top="551" left="229" width="4" height="9" font="9"><i>z</i></text>
+<text top="551" left="221" width="3" height="9" font="9"><i>i</i></text>
+<text top="711" left="260" width="7" height="15" font="10"><i>e</i></text>
+<text top="711" left="242" width="12" height="15" font="10"><i>G</i></text>
+<text top="711" left="225" width="11" height="15" font="10"><i>C</i></text>
+<text top="711" left="199" width="10" height="15" font="10"><i>A</i></text>
+<text top="711" left="162" width="6" height="15" font="10"><i>z</i></text>
+<text top="711" left="148" width="6" height="15" font="10"><i>I</i></text>
+<text top="683" left="348" width="6" height="15" font="10"><i>z</i></text>
+<text top="659" left="246" width="7" height="15" font="10"><i>e</i></text>
+<text top="659" left="228" width="11" height="15" font="10"><i>C</i></text>
+<text top="659" left="203" width="10" height="15" font="10"><i>A</i></text>
+<text top="659" left="165" width="6" height="15" font="10"><i>z</i></text>
+<text top="659" left="146" width="10" height="15" font="10"><i>V</i></text>
+<text top="606" left="294" width="7" height="15" font="10"><i>e</i></text>
+<text top="606" left="266" width="22" height="15" font="10"><i>BG</i></text>
+<text top="606" left="221" width="7" height="15" font="10"><i>e</i></text>
+<text top="606" left="194" width="22" height="15" font="10"><i>AG</i></text>
+<text top="606" left="162" width="6" height="15" font="10"><i>z</i></text>
+<text top="606" left="148" width="6" height="15" font="10"><i>I</i></text>
+<text top="579" left="348" width="6" height="15" font="10"><i>z</i></text>
+<text top="554" left="252" width="18" height="15" font="10"><i>Be</i></text>
+<text top="554" left="197" width="18" height="15" font="10"><i>Ae</i></text>
+<text top="554" left="165" width="6" height="15" font="10"><i>z</i></text>
+<text top="554" left="146" width="10" height="15" font="10"><i>V</i></text>
+<text top="704" left="276" width="5" height="12" font="16"></text>
+<text top="652" left="262" width="5" height="12" font="16"></text>
+<text top="600" left="304" width="5" height="12" font="16"></text>
+<text top="600" left="238" width="5" height="12" font="16"></text>
+<text top="548" left="273" width="5" height="12" font="16"></text>
+<text top="548" left="224" width="5" height="12" font="16"></text>
+<text top="705" left="268" width="5" height="12" font="11"></text>
+<text top="653" left="254" width="5" height="12" font="11"></text>
+<text top="600" left="230" width="5" height="12" font="11"></text>
+<text top="548" left="215" width="5" height="12" font="11"></text>
+<text top="705" left="213" width="9" height="20" font="12"></text>
+<text top="705" left="179" width="9" height="20" font="12"></text>
+<text top="678" left="360" width="9" height="20" font="12"></text>
+<text top="653" left="216" width="9" height="20" font="12"></text>
+<text top="653" left="182" width="9" height="20" font="12"></text>
+<text top="601" left="253" width="9" height="20" font="12"></text>
+<text top="601" left="179" width="9" height="20" font="12"></text>
+<text top="574" left="359" width="9" height="20" font="12"></text>
+<text top="549" left="239" width="9" height="20" font="12"></text>
+<text top="549" left="182" width="9" height="20" font="12"></text>
+<text top="719" left="254" width="5" height="9" font="11">0</text>
+<text top="615" left="288" width="5" height="9" font="11">0</text>
+<text top="615" left="216" width="5" height="9" font="11">0</text>
+<text top="711" left="237" width="6" height="15" font="12">)</text>
+<text top="711" left="192" width="6" height="15" font="12">(</text>
+<text top="711" left="169" width="6" height="15" font="12">)</text>
+<text top="711" left="155" width="6" height="15" font="12">(</text>
+<text top="683" left="373" width="8" height="15" font="12">0</text>
+<text top="659" left="240" width="6" height="15" font="12">)</text>
+<text top="659" left="195" width="6" height="15" font="12">(</text>
+<text top="659" left="172" width="6" height="15" font="12">)</text>
+<text top="659" left="158" width="6" height="15" font="12">(</text>
+<text top="606" left="169" width="6" height="15" font="12">)</text>
+<text top="606" left="155" width="6" height="15" font="12">(</text>
+<text top="579" left="373" width="8" height="15" font="12">0</text>
+<text top="554" left="172" width="6" height="15" font="12">)</text>
+<text top="554" left="158" width="6" height="15" font="12">(</text>
+<text top="625" left="383" width="11" height="13" font="5">.  </text>
+<text top="625" left="427" width="21" height="13" font="5">(9) </text>
+<text top="733" left="107" width="4" height="13" font="5"> </text>
+<text top="759" left="107" width="180" height="13" font="5">The boundary conditions are: </text>
+<text top="814" left="85" width="4" height="13" font="5"> </text>
+<text top="828" left="339" width="6" height="16" font="17">)</text>
+<text top="828" left="320" width="9" height="16" font="17">0</text>
+<text top="828" left="313" width="6" height="16" font="17">(</text>
+<text top="828" left="270" width="6" height="16" font="17">)</text>
+<text top="828" left="261" width="9" height="16" font="17">0</text>
+<text top="828" left="255" width="6" height="16" font="17">(</text>
+<text top="828" left="217" width="6" height="16" font="17">)</text>
+<text top="828" left="198" width="9" height="16" font="17">0</text>
+<text top="828" left="192" width="6" height="16" font="17">(</text>
+<text top="798" left="336" width="6" height="16" font="17">)</text>
+<text top="798" left="317" width="9" height="16" font="17">0</text>
+<text top="798" left="311" width="6" height="16" font="17">(</text>
+<text top="798" left="273" width="6" height="16" font="17">)</text>
+<text top="798" left="264" width="9" height="16" font="17">0</text>
+<text top="798" left="258" width="6" height="16" font="17">(</text>
+<text top="798" left="221" width="6" height="16" font="17">)</text>
+<text top="798" left="202" width="9" height="16" font="17">0</text>
+<text top="798" left="196" width="6" height="16" font="17">(</text>
+<text top="821" left="330" width="6" height="13" font="16"></text>
+<text top="821" left="209" width="6" height="13" font="16"></text>
+<text top="792" left="327" width="6" height="13" font="16"></text>
+<text top="792" left="212" width="6" height="13" font="16"></text>
+<text top="822" left="291" width="10" height="22" font="17"></text>
+<text top="822" left="228" width="10" height="22" font="17"></text>
+<text top="792" left="284" width="10" height="22" font="17"></text>
+<text top="792" left="231" width="10" height="22" font="17"></text>
+<text top="828" left="305" width="6" height="16" font="3"><i>I</i></text>
+<text top="828" left="275" width="10" height="16" font="3"><i>Y</i></text>
+<text top="828" left="241" width="11" height="16" font="3"><i>V</i></text>
+<text top="828" left="184" width="6" height="16" font="3"><i>I</i></text>
+<text top="798" left="297" width="11" height="16" font="3"><i>V</i></text>
+<text top="798" left="244" width="11" height="16" font="3"><i>V</i></text>
+<text top="798" left="182" width="11" height="16" font="3"><i>V</i></text>
+<text top="814" left="347" width="11" height="13" font="5">.  </text>
+<text top="814" left="419" width="29" height="13" font="5">(10) </text>
+<text top="851" left="107" width="4" height="13" font="5"> </text>
+<text top="877" left="107" width="204" height="13" font="5">Which when inserted in (9), give: </text>
+<text top="941" left="85" width="4" height="13" font="5"> </text>
+<text top="965" left="298" width="11" height="16" font="26"><i>B</i></text>
+<text top="965" left="271" width="11" height="16" font="26"><i>A</i></text>
+<text top="940" left="289" width="11" height="16" font="26"><i>B</i></text>
+<text top="965" left="217" width="13" height="16" font="26"><i>G</i></text>
+<text top="940" left="220" width="10" height="16" font="26"><i>Y</i></text>
+<text top="913" left="245" width="12" height="16" font="26"><i>C</i></text>
+<text top="913" left="216" width="11" height="16" font="26"><i>B</i></text>
+<text top="959" left="285" width="10" height="22" font="13"></text>
+<text top="945" left="256" width="10" height="22" font="13"></text>
+<text top="945" left="243" width="10" height="22" font="13"></text>
+<text top="907" left="232" width="10" height="22" font="13"></text>
+<text top="940" left="279" width="9" height="16" font="13">2</text>
+<text top="974" left="230" width="5" height="9" font="16">0</text>
+<text top="941" left="315" width="11" height="13" font="5">.  </text>
+<text top="941" left="419" width="29" height="13" font="5">(11) </text>
+<text top="999" left="85" width="4" height="13" font="5"> </text>
+<text top="1016" left="107" width="341" height="13" font="5">The usefulness of (11) lies in the fact that, by analogy, if </text>
+<text top="1034" left="85" width="134" height="13" font="5">one can find the ratio </text>
+<text top="1034" left="335" width="6" height="15" font="12">)</text>
+<text top="1034" left="267" width="10" height="15" font="12">/(</text>
+<text top="1034" left="235" width="9" height="15" font="12">2</text>
+<text top="1043" left="324" width="10" height="9" font="11">10</text>
+<text top="1043" left="287" width="10" height="9" font="11">10</text>
+<text top="1043" left="253" width="10" height="9" font="11">10</text>
+<text top="1034" left="314" width="10" height="15" font="10"><i>B</i></text>
+<text top="1034" left="278" width="10" height="15" font="10"><i>A</i></text>
+<text top="1034" left="243" width="10" height="15" font="10"><i>B</i></text>
+<text top="1029" left="301" width="9" height="20" font="12"></text>
+<text top="1029" left="223" width="9" height="20" font="12"></text>
+<text top="1032" left="343" width="5" height="16" font="17"> </text>
+<text top="1034" left="348" width="100" height="13" font="5">for the slot, one </text>
+<text top="1056" left="85" width="363" height="13" font="5">can  then  say  that  the  slot  has  equivalent  normalized  shunt </text>
+<text top="1073" left="85" width="182" height="13" font="5">admittance equal to that ratio. </text>
+<text top="114" left="492" width="203" height="13" font="5">The slot is said to be resonant if </text>
+<text top="123" left="729" width="5" height="8" font="11">0</text>
+<text top="115" left="711" width="18" height="14" font="12">/ <i>G</i></text>
+<text top="115" left="698" width="9" height="14" font="10"><i>Y</i></text>
+<text top="114" left="737" width="96" height="13" font="5"> is pure real. If </text>
+<text top="137" left="470" width="52" height="13" font="5">we  take </text>
+<text top="146" left="537" width="10" height="8" font="11">10</text>
+<text top="137" left="529" width="10" height="14" font="25"><i>A</i></text>
+<text top="137" left="549" width="284" height="13" font="5">  to  be  pure  real,  it  follows  that  the  resonant </text>
+<text top="158" left="470" width="215" height="13" font="5">conductance of the slot is given by: </text>
+<text top="210" left="470" width="4" height="13" font="5"> </text>
+<text top="232" left="696" width="10" height="10" font="16">10</text>
+<text top="232" left="654" width="10" height="10" font="16">10</text>
+<text top="206" left="679" width="10" height="10" font="16">10</text>
+<text top="232" left="602" width="5" height="10" font="16">0</text>
+<text top="196" left="659" width="9" height="16" font="17">2</text>
+<text top="222" left="686" width="11" height="16" font="3"><i>B</i></text>
+<text top="222" left="644" width="11" height="16" font="3"><i>A</i></text>
+<text top="196" left="669" width="11" height="16" font="3"><i>B</i></text>
+<text top="222" left="588" width="13" height="16" font="3"><i>G</i></text>
+<text top="197" left="592" width="13" height="16" font="3"><i>G</i></text>
+<text top="217" left="671" width="10" height="22" font="17"></text>
+<text top="202" left="629" width="10" height="22" font="17"></text>
+<text top="202" left="615" width="10" height="22" font="17"></text>
+<text top="210" left="714" width="11" height="13" font="5">.  </text>
+<text top="210" left="804" width="29" height="13" font="5">(12) </text>
+<text top="246" left="492" width="4" height="13" font="5"> </text>
+<text top="273" left="492" width="44" height="13" font="5">Where </text>
+<text top="282" left="548" width="10" height="8" font="11">10</text>
+<text top="273" left="539" width="10" height="14" font="25"><i>B</i></text>
+<text top="273" left="560" width="273" height="13" font="5"> is perforce pure real also. What this implies </text>
+<text top="295" left="470" width="195" height="13" font="5">is that, for a given displacement </text>
+<text top="304" left="675" width="4" height="8" font="11">1</text>
+<text top="296" left="669" width="7" height="14" font="25"><i>x</i></text>
+<text top="295" left="681" width="152" height="13" font="5"> of the slot, it is assumed </text>
+<text top="316" left="470" width="139" height="13" font="5">in  (12)  that  the  length </text>
+<text top="316" left="621" width="4" height="14" font="25"><i>l</i></text>
+<text top="316" left="613" width="8" height="14" font="24">2</text>
+<text top="316" left="629" width="204" height="13" font="5">  of  the  slot  has  been  adjusted  so </text>
+<text top="334" left="470" width="26" height="13" font="5">that </text>
+<text top="344" left="508" width="10" height="8" font="11">10</text>
+<text top="335" left="499" width="10" height="14" font="25"><i>B</i></text>
+<text top="334" left="520" width="269" height="13" font="5"> is either in phase with, or out of phase with, </text>
+<text top="344" left="800" width="10" height="8" font="11">10</text>
+<text top="335" left="792" width="10" height="14" font="25"><i>A</i></text>
+<text top="334" left="812" width="8" height="13" font="5">. </text>
+<text top="365" left="492" width="193" height="13" font="5">The incident power is given by: </text>
+<text top="428" left="470" width="4" height="13" font="5"> </text>
+<text top="450" left="637" width="4" height="11" font="21"></text>
+<text top="405" left="721" width="4" height="11" font="21"></text>
+<text top="405" left="689" width="4" height="11" font="21"></text>
+<text top="452" left="533" width="8" height="19" font="24"></text>
+<text top="407" left="733" width="4" height="19" font="24"></text>
+<text top="407" left="662" width="8" height="19" font="24"></text>
+<text top="407" left="558" width="8" height="19" font="24"></text>
+<text top="404" left="602" width="6" height="28" font="27"></text>
+<text top="465" left="628" width="9" height="8" font="21">10</text>
+<text top="465" left="610" width="9" height="8" font="21">10</text>
+<text top="466" left="592" width="4" height="8" font="21">2</text>
+<text top="456" left="573" width="9" height="8" font="21">10</text>
+<text top="420" left="761" width="4" height="8" font="21">1</text>
+<text top="420" left="715" width="2" height="8" font="21">,</text>
+<text top="420" left="706" width="9" height="8" font="21">10</text>
+<text top="420" left="680" width="9" height="8" font="21">10</text>
+<text top="432" left="606" width="4" height="8" font="21">1</text>
+<text top="420" left="653" width="2" height="8" font="21">,</text>
+<text top="420" left="644" width="9" height="8" font="21">10</text>
+<text top="420" left="625" width="9" height="8" font="21">10</text>
+<text top="469" left="586" width="5" height="14" font="24">)</text>
+<text top="469" left="571" width="4" height="14" font="24">/</text>
+<text top="469" left="554" width="5" height="14" font="24">(</text>
+<text top="469" left="546" width="8" height="14" font="24">4</text>
+<text top="408" left="741" width="5" height="17" font="24">ˆ</text>
+<text top="411" left="726" width="5" height="14" font="24">)</text>
+<text top="398" left="698" width="8" height="14" font="24">~</text>
+<text top="398" left="637" width="8" height="14" font="24">~</text>
+<text top="411" left="611" width="5" height="14" font="24">(</text>
+<text top="411" left="582" width="17" height="14" font="24">Re</text>
+<text top="423" left="571" width="8" height="14" font="24">2</text>
+<text top="402" left="571" width="8" height="14" font="24">1</text>
+<text top="457" left="620" width="9" height="14" font="25"><i>A</i></text>
+<text top="457" left="602" width="9" height="14" font="25"><i>A</i></text>
+<text top="469" left="578" width="8" height="14" font="25"><i>a</i></text>
+<text top="447" left="582" width="15" height="14" font="25"><i>ab</i></text>
+<text top="411" left="746" width="15" height="14" font="25"><i>dS</i></text>
+<text top="411" left="740" width="6" height="14" font="25"><i>z</i></text>
+<text top="411" left="694" width="11" height="14" font="25"><i>H</i></text>
+<text top="411" left="673" width="9" height="14" font="25"><i>A</i></text>
+<text top="411" left="635" width="9" height="14" font="25"><i>E</i></text>
+<text top="411" left="618" width="9" height="14" font="25"><i>A</i></text>
+<text top="411" left="535" width="8" height="14" font="25"><i>p</i></text>
+<text top="420" left="717" width="2" height="8" font="22"><i>t</i></text>
+<text top="432" left="601" width="4" height="8" font="22"><i>S</i></text>
+<text top="420" left="655" width="2" height="8" font="22"><i>t</i></text>
+<text top="420" left="542" width="11" height="8" font="22"><i>inc</i></text>
+<text top="463" left="558" width="8" height="20" font="12"></text>
+<text top="442" left="546" width="28" height="20" font="12"></text>
+<text top="397" left="699" width="6" height="15" font="24"></text>
+<text top="397" left="638" width="6" height="15" font="24"></text>
+<text top="428" left="767" width="11" height="13" font="5">.  </text>
+<text top="428" left="804" width="29" height="13" font="5">(13) </text>
+<text top="489" left="492" width="4" height="13" font="5"> </text>
+<text top="515" left="492" width="341" height="13" font="5">In  like  manner,  one  finds  that  the  reflected  and </text>
+<text top="532" left="470" width="144" height="13" font="5">transmitted powers are: </text>
+<text top="609" left="470" width="4" height="13" font="5"> </text>
+<text top="625" left="777" width="5" height="13" font="16"></text>
+<text top="572" left="674" width="5" height="13" font="16"></text>
+<text top="626" left="733" width="10" height="22" font="13"></text>
+<text top="626" left="657" width="10" height="22" font="13"></text>
+<text top="626" left="542" width="10" height="22" font="13"></text>
+<text top="574" left="548" width="10" height="22" font="13"></text>
+<text top="632" left="770" width="6" height="16" font="13">)</text>
+<text top="632" left="694" width="12" height="16" font="13">)(</text>
+<text top="632" left="624" width="6" height="16" font="13">(</text>
+<text top="646" left="606" width="6" height="16" font="13">)</text>
+<text top="646" left="588" width="5" height="16" font="13">/</text>
+<text top="646" left="567" width="6" height="16" font="13">(</text>
+<text top="646" left="558" width="9" height="16" font="13">4</text>
+<text top="594" left="612" width="6" height="16" font="13">)</text>
+<text top="594" left="594" width="5" height="16" font="13">/</text>
+<text top="594" left="573" width="6" height="16" font="13">(</text>
+<text top="594" left="564" width="9" height="16" font="13">4</text>
+<text top="641" left="758" width="10" height="9" font="16">10</text>
+<text top="641" left="717" width="10" height="9" font="16">10</text>
+<text top="641" left="681" width="10" height="9" font="16">10</text>
+<text top="641" left="641" width="10" height="9" font="16">10</text>
+<text top="643" left="613" width="5" height="9" font="16">2</text>
+<text top="630" left="590" width="10" height="9" font="16">10</text>
+<text top="589" left="663" width="10" height="9" font="16">10</text>
+<text top="589" left="641" width="10" height="9" font="16">10</text>
+<text top="591" left="619" width="5" height="9" font="16">2</text>
+<text top="578" left="596" width="10" height="9" font="16">10</text>
+<text top="632" left="746" width="12" height="16" font="26"><i>C</i></text>
+<text top="632" left="708" width="11" height="16" font="26"><i>A</i></text>
+<text top="632" left="670" width="12" height="16" font="26"><i>C</i></text>
+<text top="632" left="632" width="11" height="16" font="26"><i>A</i></text>
+<text top="646" left="596" width="9" height="16" font="26"><i>a</i></text>
+<text top="620" left="601" width="18" height="16" font="26"><i>ab</i></text>
+<text top="632" left="518" width="9" height="16" font="26"><i>p</i></text>
+<text top="580" left="653" width="11" height="16" font="26"><i>B</i></text>
+<text top="580" left="631" width="11" height="16" font="26"><i>B</i></text>
+<text top="594" left="603" width="9" height="16" font="26"><i>a</i></text>
+<text top="568" left="608" width="18" height="16" font="26"><i>ab</i></text>
+<text top="580" left="518" width="9" height="16" font="26"><i>p</i></text>
+<text top="641" left="527" width="7" height="9" font="14"><i>tr</i></text>
+<text top="589" left="528" width="11" height="9" font="14"><i>ref</i></text>
+<text top="639" left="572" width="10" height="23" font="17"></text>
+<text top="613" left="557" width="33" height="23" font="17"></text>
+<text top="587" left="579" width="10" height="23" font="17"></text>
+<text top="562" left="564" width="33" height="23" font="17"></text>
+<text top="609" left="785" width="48" height="13" font="5">.   (14) </text>
+<text top="669" left="492" width="4" height="13" font="5"> </text>
+<text top="695" left="492" width="245" height="13" font="5">If  use  is  made  of  the  information  that </text>
+<text top="704" left="788" width="10" height="8" font="11">10</text>
+<text top="704" left="751" width="10" height="8" font="11">10</text>
+<text top="696" left="778" width="11" height="14" font="25"><i>C</i></text>
+<text top="696" left="743" width="33" height="14" font="25"><i>B </i></text>
+<text top="695" left="801" width="32" height="13" font="5">  and </text>
+<text top="717" left="470" width="363" height="13" font="5">that  all  three  amplitudes  are  pure  real,  then  we  can  find </text>
+<text top="734" left="470" width="207" height="13" font="5">expression to the power radiation: </text>
+<text top="790" left="470" width="4" height="13" font="5"> </text>
+<text top="806" left="783" width="5" height="14" font="24">)</text>
+<text top="806" left="721" width="5" height="14" font="24">(</text>
+<text top="819" left="685" width="5" height="14" font="24">)</text>
+<text top="819" left="669" width="4" height="14" font="24">/</text>
+<text top="819" left="651" width="5" height="14" font="24">(</text>
+<text top="819" left="644" width="8" height="14" font="24">2</text>
+<text top="814" left="772" width="9" height="8" font="11">10</text>
+<text top="814" left="736" width="9" height="8" font="11">10</text>
+<text top="814" left="710" width="9" height="8" font="11">10</text>
+<text top="816" left="691" width="5" height="8" font="11">2</text>
+<text top="804" left="671" width="9" height="8" font="11">10</text>
+<text top="806" left="763" width="10" height="14" font="25"><i>B</i></text>
+<text top="806" left="728" width="10" height="14" font="25"><i>A</i></text>
+<text top="806" left="701" width="10" height="14" font="25"><i>B</i></text>
+<text top="819" left="676" width="8" height="14" font="25"><i>a</i></text>
+<text top="796" left="682" width="16" height="14" font="25"><i>ab</i></text>
+<text top="806" left="556" width="61" height="14" font="25"><i>radiation</i></text>
+<text top="806" left="511" width="40" height="14" font="25"><i>power</i></text>
+<text top="770" left="705" width="10" height="14" font="25"><i>P</i></text>
+<text top="770" left="668" width="10" height="14" font="25"><i>P</i></text>
+<text top="770" left="632" width="10" height="14" font="25"><i>P</i></text>
+<text top="770" left="556" width="61" height="14" font="25"><i>radiation</i></text>
+<text top="770" left="511" width="40" height="14" font="25"><i>power</i></text>
+<text top="778" left="713" width="6" height="8" font="9"><i>tr</i></text>
+<text top="778" left="676" width="10" height="8" font="9"><i>ref</i></text>
+<text top="778" left="639" width="11" height="8" font="9"><i>inc</i></text>
+<text top="801" left="750" width="9" height="19" font="24"></text>
+<text top="801" left="632" width="9" height="19" font="24"></text>
+<text top="801" left="619" width="9" height="19" font="24"></text>
+<text top="765" left="693" width="9" height="19" font="24"></text>
+<text top="765" left="656" width="9" height="19" font="24"></text>
+<text top="765" left="619" width="9" height="19" font="24"></text>
+<text top="813" left="656" width="9" height="20" font="12"></text>
+<text top="790" left="643" width="29" height="20" font="12"></text>
+<text top="790" left="791" width="42" height="13" font="5">.   (15) </text>
+<text top="839" left="492" width="341" height="13" font="5">In  [2]  it  is  shown  that  the  impedance  relationship </text>
+<text top="856" left="470" width="259" height="13" font="5">between slot and complementary dipole is: </text>
+<text top="902" left="470" width="4" height="13" font="5"> </text>
+<text top="917" left="705" width="8" height="14" font="24">4</text>
+<text top="892" left="710" width="5" height="8" font="11">2</text>
+<text top="888" left="698" width="10" height="20" font="12"></text>
+<text top="899" left="686" width="9" height="19" font="24"></text>
+<text top="899" left="634" width="4" height="19" font="24"></text>
+<text top="900" left="666" width="13" height="8" font="9"><i>slot</i></text>
+<text top="913" left="651" width="13" height="8" font="9"><i>rad</i></text>
+<text top="900" left="606" width="23" height="8" font="9"><i>dipole</i></text>
+<text top="913" left="591" width="13" height="8" font="9"><i>rad</i></text>
+<text top="904" left="641" width="10" height="14" font="25"><i>R</i></text>
+<text top="904" left="581" width="10" height="14" font="25"><i>R</i></text>
+<text top="902" left="720" width="11" height="13" font="5">.  </text>
+<text top="902" left="804" width="29" height="13" font="5">(16) </text>
+<text top="934" left="492" width="4" height="13" font="5"> </text>
+<text top="963" left="492" width="44" height="13" font="5">Where </text>
+<text top="958" left="588" width="13" height="19" font="24"></text>
+<text top="958" left="553" width="36" height="19" font="24"> 377</text>
+<text top="957" left="539" width="10" height="21" font="12"></text>
+<text top="963" left="603" width="28" height="13" font="5">  and</text>
+<text top="958" left="719" width="13" height="19" font="24"></text>
+<text top="958" left="691" width="29" height="19" font="24"> 73</text>
+<text top="960" left="662" width="26" height="8" font="9"><i>dipole</i></text>
+<text top="972" left="647" width="14" height="8" font="9"><i>rad</i></text>
+<text top="963" left="637" width="10" height="14" font="25"><i>R</i></text>
+<text top="963" left="733" width="100" height="13" font="5">,  by  using  (16) </text>
+<text top="988" left="470" width="118" height="13" font="5">we  can  find  that</text>
+<text top="984" left="675" width="13" height="19" font="24"></text>
+<text top="984" left="639" width="37" height="19" font="24"> 486</text>
+<text top="985" left="619" width="14" height="8" font="9"><i>slot</i></text>
+<text top="997" left="604" width="14" height="8" font="9"><i>rad</i></text>
+<text top="989" left="594" width="10" height="14" font="25"><i>R</i></text>
+<text top="988" left="690" width="143" height="13" font="5">.  If  we  express  the </text>
+<text top="1019" left="470" width="199" height="13" font="5">radiation resistance of the slot by</text>
+<text top="1033" left="797" width="24" height="14" font="24">609</text>
+<text top="1033" left="794" width="4" height="14" font="24">.</text>
+<text top="1033" left="786" width="8" height="14" font="24">0</text>
+<text top="1011" left="813" width="8" height="14" font="24">4</text>
+<text top="1011" left="806" width="4" height="14" font="24">/</text>
+<text top="1021" left="732" width="24" height="14" font="24">486</text>
+<text top="1005" left="785" width="19" height="20" font="12"></text>
+<text top="1016" left="772" width="9" height="19" font="24"></text>
+<text top="1016" left="756" width="12" height="19" font="24"></text>
+<text top="1016" left="719" width="9" height="19" font="24"></text>
+<text top="1017" left="699" width="13" height="8" font="9"><i>slot</i></text>
+<text top="1029" left="684" width="13" height="8" font="9"><i>rad</i></text>
+<text top="1021" left="674" width="10" height="14" font="25"><i>R</i></text>
+<text top="1019" left="826" width="8" height="13" font="5">, </text>
+<text top="1049" left="470" width="103" height="13" font="5">we can find that: </text>
+<text top="1095" left="470" width="4" height="13" font="5"> </text>
+<text top="1104" left="704" width="18" height="20" font="12"></text>
+<text top="1088" left="725" width="8" height="14" font="24">2</text>
+<text top="1097" left="669" width="24" height="14" font="24">609</text>
+<text top="1097" left="665" width="4" height="14" font="24">.</text>
+<text top="1097" left="657" width="8" height="14" font="24">0</text>
+<text top="1110" left="602" width="8" height="14" font="24">2</text>
+<text top="1088" left="602" width="8" height="14" font="24">1</text>
+<text top="1084" left="711" width="5" height="8" font="11">2</text>
+<text top="1084" left="631" width="5" height="8" font="11">2</text>
+<text top="1083" left="719" width="4" height="19" font="24"></text>
+<text top="1092" left="644" width="9" height="19" font="24"></text>
+<text top="1092" left="588" width="9" height="19" font="24"></text>
+<text top="1096" left="703" width="7" height="8" font="9"><i>m</i></text>
+<text top="1118" left="624" width="13" height="8" font="9"><i>rad</i></text>
+<text top="1096" left="623" width="7" height="8" font="9"><i>m</i></text>
+<text top="1106" left="568" width="13" height="8" font="9"><i>rad</i></text>
+<text top="1088" left="694" width="10" height="14" font="25"><i>V</i></text>
+<text top="1110" left="614" width="10" height="14" font="25"><i>R</i></text>
+<text top="1088" left="614" width="10" height="14" font="25"><i>V</i></text>
+<text top="1097" left="561" width="10" height="14" font="25"><i>P</i></text>
+<text top="1095" left="740" width="11" height="13" font="5">.  </text>
+<text top="1095" left="804" width="29" height="13" font="5">(17) </text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="28" size="11" family="Times" color="#000000"/>
+	<fontspec id="29" size="11" family="Times" color="#000000"/>
+<text top="65" left="64" width="13" height="11" font="0">4  </text>
+<text top="65" left="208" width="604" height="11" font="0">S. ROZENBERG, A. YAHALOM, A THZ SLOT ANTENNA OPTIMIZATION USING ANALYTICAL TECHNIQUES </text>
+<text top="114" left="64" width="4" height="13" font="5"> </text>
+<text top="131" left="86" width="42" height="13" font="5">Thus:  </text>
+<text top="177" left="64" width="4" height="13" font="5"> </text>
+<text top="186" left="337" width="19" height="20" font="12"></text>
+<text top="186" left="152" width="9" height="20" font="12"></text>
+<text top="164" left="139" width="29" height="20" font="12"></text>
+<text top="166" left="352" width="5" height="8" font="11">2</text>
+<text top="188" left="265" width="9" height="8" font="11">10</text>
+<text top="188" left="231" width="9" height="8" font="11">10</text>
+<text top="188" left="205" width="9" height="8" font="11">10</text>
+<text top="189" left="187" width="5" height="8" font="11">2</text>
+<text top="178" left="167" width="9" height="8" font="11">10</text>
+<text top="179" left="309" width="24" height="14" font="24">609</text>
+<text top="179" left="305" width="4" height="14" font="24">.</text>
+<text top="179" left="297" width="8" height="14" font="24">0</text>
+<text top="179" left="276" width="5" height="14" font="24">)</text>
+<text top="179" left="216" width="5" height="14" font="24">(</text>
+<text top="191" left="181" width="5" height="14" font="24">)</text>
+<text top="191" left="165" width="4" height="14" font="24">/</text>
+<text top="191" left="147" width="5" height="14" font="24">(</text>
+<text top="191" left="139" width="8" height="14" font="24">2</text>
+<text top="178" left="344" width="7" height="8" font="9"><i>m</i></text>
+<text top="169" left="335" width="10" height="14" font="25"><i>V</i></text>
+<text top="179" left="257" width="10" height="14" font="25"><i>B</i></text>
+<text top="179" left="223" width="10" height="14" font="25"><i>A</i></text>
+<text top="179" left="197" width="10" height="14" font="25"><i>B</i></text>
+<text top="191" left="172" width="8" height="14" font="25"><i>a</i></text>
+<text top="169" left="177" width="16" height="14" font="25"><i>ab</i></text>
+<text top="174" left="285" width="9" height="19" font="24"></text>
+<text top="174" left="245" width="9" height="19" font="24"></text>
+<text top="174" left="126" width="9" height="19" font="24"></text>
+<text top="177" left="362" width="11" height="13" font="5">.  </text>
+<text top="177" left="398" width="29" height="13" font="5">(18) </text>
+<text top="211" left="86" width="4" height="13" font="5"> </text>
+<text top="238" left="86" width="80" height="13" font="5">If eliminated </text>
+<text top="247" left="176" width="7" height="8" font="9"><i>m</i></text>
+<text top="238" left="166" width="10" height="14" font="25"><i>V</i></text>
+<text top="238" left="185" width="196" height="13" font="5"> from (18) and (8), the result is:  </text>
+<text top="282" left="64" width="4" height="13" font="5"> </text>
+<text top="288" left="373" width="9" height="13" font="28">)]</text>
+<text top="288" left="348" width="5" height="13" font="28">(</text>
+<text top="288" left="322" width="19" height="13" font="28">cos</text>
+<text top="288" left="308" width="5" height="13" font="28">)</text>
+<text top="288" left="276" width="19" height="13" font="28">cos</text>
+<text top="288" left="215" width="23" height="13" font="28">(cos</text>
+<text top="299" left="208" width="5" height="13" font="28">)</text>
+<text top="299" left="194" width="4" height="13" font="28">/</text>
+<text top="299" left="168" width="5" height="13" font="28">(</text>
+<text top="279" left="202" width="5" height="13" font="28">)</text>
+<text top="279" left="188" width="4" height="13" font="28">/</text>
+<text top="279" left="174" width="5" height="13" font="28">(</text>
+<text top="288" left="151" width="14" height="13" font="28">09</text>
+<text top="288" left="147" width="4" height="13" font="28">.</text>
+<text top="288" left="141" width="7" height="13" font="28">2</text>
+<text top="288" left="136" width="5" height="13" font="28">[</text>
+<text top="286" left="367" width="4" height="7" font="21">1</text>
+<text top="286" left="342" width="4" height="7" font="21">2</text>
+<text top="286" left="314" width="4" height="7" font="21">2</text>
+<text top="296" left="249" width="8" height="7" font="21">10</text>
+<text top="307" left="181" width="8" height="7" font="21">10</text>
+<text top="307" left="115" width="4" height="7" font="21">0</text>
+<text top="299" left="359" width="7" height="13" font="29"><i>a</i></text>
+<text top="279" left="361" width="6" height="13" font="29"><i>x</i></text>
+<text top="288" left="297" width="10" height="13" font="29"><i>kl</i></text>
+<text top="288" left="258" width="4" height="13" font="29"><i>l</i></text>
+<text top="299" left="200" width="6" height="13" font="29"><i>k</i></text>
+<text top="279" left="195" width="7" height="13" font="29"><i>b</i></text>
+<text top="279" left="179" width="7" height="13" font="29"><i>a</i></text>
+<text top="299" left="105" width="10" height="13" font="29"><i>G</i></text>
+<text top="279" left="108" width="10" height="13" font="29"><i>G</i></text>
+<text top="274" left="353" width="8" height="18" font="5"></text>
+<text top="283" left="241" width="8" height="18" font="5"></text>
+<text top="294" left="173" width="8" height="18" font="5"></text>
+<text top="284" left="266" width="8" height="17" font="28"></text>
+<text top="284" left="126" width="8" height="17" font="28"></text>
+<text top="282" left="383" width="44" height="13" font="5">.   (19) </text>
+<text top="318" left="86" width="4" height="13" font="5"> </text>
+<text top="345" left="86" width="146" height="13" font="5">When  the  substitution </text>
+<text top="345" left="323" width="5" height="14" font="24">)</text>
+<text top="345" left="315" width="8" height="14" font="24">2</text>
+<text top="345" left="308" width="4" height="14" font="24">/</text>
+<text top="345" left="292" width="5" height="14" font="24">(</text>
+<text top="353" left="272" width="5" height="8" font="11">1</text>
+<text top="345" left="298" width="8" height="14" font="25"><i>a</i></text>
+<text top="345" left="265" width="7" height="14" font="25"><i>x</i></text>
+<text top="345" left="241" width="7" height="14" font="25"><i>x</i></text>
+<text top="340" left="281" width="9" height="19" font="24"></text>
+<text top="340" left="252" width="9" height="19" font="24"></text>
+<text top="345" left="331" width="96" height="13" font="5">  is  made  and </text>
+<text top="365" left="114" width="8" height="14" font="24">2</text>
+<text top="365" left="107" width="5" height="14" font="24">/</text>
+<text top="359" left="94" width="9" height="20" font="12"></text>
+<text top="360" left="82" width="9" height="19" font="24"></text>
+<text top="365" left="66" width="12" height="14" font="25"><i>kl</i></text>
+<text top="365" left="124" width="133" height="13" font="5"> is used, one obtains:  </text>
+<text top="409" left="64" width="4" height="13" font="5"> </text>
+<text top="413" left="368" width="5" height="13" font="5">]</text>
+<text top="413" left="312" width="17" height="13" font="5">sin</text>
+<text top="425" left="294" width="7" height="13" font="5">2</text>
+<text top="413" left="232" width="20" height="13" font="5">cos</text>
+<text top="425" left="224" width="5" height="13" font="5">)</text>
+<text top="425" left="209" width="4" height="13" font="5">/</text>
+<text top="425" left="181" width="5" height="13" font="5">(</text>
+<text top="404" left="217" width="5" height="13" font="5">)</text>
+<text top="404" left="203" width="4" height="13" font="5">/</text>
+<text top="404" left="188" width="5" height="13" font="5">(</text>
+<text top="413" left="163" width="15" height="13" font="5">09</text>
+<text top="413" left="160" width="4" height="13" font="5">.</text>
+<text top="413" left="152" width="7" height="13" font="5">2</text>
+<text top="413" left="147" width="5" height="13" font="5">[</text>
+<text top="411" left="331" width="4" height="8" font="21">2</text>
+<text top="411" left="277" width="8" height="8" font="21">10</text>
+<text top="411" left="253" width="4" height="8" font="21">2</text>
+<text top="433" left="196" width="8" height="8" font="21">10</text>
+<text top="433" left="126" width="4" height="8" font="21">0</text>
+<text top="410" left="362" width="6" height="18" font="5"></text>
+<text top="422" left="362" width="6" height="18" font="5"></text>
+<text top="400" left="362" width="6" height="18" font="5"></text>
+<text top="410" left="337" width="6" height="18" font="5"></text>
+<text top="422" left="337" width="6" height="18" font="5"></text>
+<text top="400" left="337" width="6" height="18" font="5"></text>
+<text top="409" left="304" width="6" height="18" font="5"></text>
+<text top="423" left="304" width="6" height="18" font="5"></text>
+<text top="400" left="304" width="6" height="18" font="5"></text>
+<text top="409" left="259" width="6" height="18" font="5"></text>
+<text top="423" left="259" width="6" height="18" font="5"></text>
+<text top="400" left="259" width="6" height="18" font="5"></text>
+<text top="409" left="137" width="8" height="18" font="5"></text>
+<text top="425" left="349" width="7" height="13" font="7"><i>a</i></text>
+<text top="404" left="353" width="7" height="13" font="7"><i>x</i></text>
+<text top="425" left="274" width="7" height="13" font="7"><i>k</i></text>
+<text top="425" left="216" width="7" height="13" font="7"><i>k</i></text>
+<text top="404" left="210" width="7" height="13" font="7"><i>b</i></text>
+<text top="404" left="193" width="7" height="13" font="7"><i>a</i></text>
+<text top="425" left="115" width="11" height="13" font="7"><i>G</i></text>
+<text top="404" left="118" width="11" height="13" font="7"><i>G</i></text>
+<text top="399" left="345" width="8" height="19" font="24"></text>
+<text top="399" left="292" width="8" height="19" font="24"></text>
+<text top="398" left="268" width="8" height="19" font="24"></text>
+<text top="419" left="187" width="8" height="19" font="24"></text>
+<text top="409" left="374" width="53" height="13" font="5">.   (20) </text>
+<text top="445" left="86" width="4" height="13" font="5"> </text>
+<text top="471" left="86" width="59" height="13" font="5">In  which </text>
+<text top="471" left="152" width="7" height="14" font="25"><i>x</i></text>
+<text top="471" left="161" width="265" height="13" font="5">  is  the  offset  from  the  center  line  of  the </text>
+<text top="488" left="64" width="363" height="13" font="5">broad  wall.  Equation  (20)  indicates  that  the  normalized </text>
+<text top="505" left="64" width="363" height="13" font="5">conductance  of  a  resonant  longitudinal  slot  in  the  broad </text>
+<text top="522" left="64" width="363" height="13" font="5">wall of a rectangular waveguide is approximately equal to a </text>
+<text top="539" left="64" width="363" height="13" font="5">constant  times  the  square  of  the  sine  of  an  angle </text>
+<text top="555" left="64" width="363" height="13" font="5">proportional  to  its  offset.  From  the  point  of  view  of  the </text>
+<text top="572" left="64" width="363" height="13" font="5">waveguide,  the  slot  is  shunt  impedance  across  the </text>
+<text top="589" left="64" width="363" height="13" font="5">transmission  line,  or  equivalent  admittance  loading  the </text>
+<text top="606" left="64" width="363" height="13" font="5">transmission  line.  When  the  admittance  of  the  slot  (or </text>
+<text top="622" left="64" width="363" height="13" font="5">combined  admittance  of  all  slots)  equals the admittance of </text>
+<text top="639" left="64" width="363" height="13" font="5">the  guide,  then  we  have  matched  transmission  line  and </text>
+<text top="656" left="64" width="164" height="13" font="5">maximum power radiated.  </text>
+<text top="682" left="86" width="341" height="13" font="5">In  like  manner,  the  circuit  model  of  slotted  waveguide </text>
+<text top="698" left="64" width="174" height="13" font="5">antenna depicted in figure 5. </text>
+<text top="800" left="423" width="4" height="13" font="5"> </text>
+<text top="829" left="64" width="3" height="11" font="19"><b> </b></text>
+<text top="829" left="104" width="253" height="11" font="19"><b>Fig. 5.</b>  Circuit model of slotted waveguide antenna. </text>
+<text top="858" left="86" width="168" height="13" font="5">The  last  slot  is  a  distance </text>
+<text top="858" left="259" width="8" height="14" font="25"><i>d</i></text>
+<text top="858" left="271" width="156" height="13" font="5">  from  the  end  (which  is </text>
+<text top="876" left="64" width="363" height="13" font="5">shorted-circuited, as seen in figure 5), and the slot elements </text>
+<text top="892" left="64" width="141" height="13" font="5">are  spaced  a  distance </text>
+<text top="892" left="212" width="9" height="14" font="25"><i>L</i></text>
+<text top="892" left="223" width="204" height="13" font="5">  from  each  other.  The  distance </text>
+<text top="909" left="64" width="220" height="13" font="5">between  the  last  slot  and  the  end: </text>
+<text top="909" left="290" width="8" height="14" font="25"><i>d</i></text>
+<text top="909" left="302" width="125" height="13" font="5">,  is  chosen  to  be  a </text>
+<text top="927" left="64" width="363" height="13" font="5">quarter-wavelength. Transmission line theory [1] states that </text>
+<text top="943" left="64" width="363" height="13" font="5">impedance  of  a  short  circuit  a  quarter-wavelength  down  a </text>
+<text top="960" left="64" width="363" height="13" font="5">transmission  line  is  an  open  circuit,  hence,  figure  5  then </text>
+<text top="977" left="64" width="69" height="13" font="5">reduces to: </text>
+<text top="1082" left="405" width="4" height="13" font="5"> </text>
+<text top="1111" left="64" width="3" height="11" font="19"><b> </b></text>
+<text top="1111" left="104" width="319" height="11" font="19"><b>Fig. 6.</b>  Circuit  model  of  slotted  waveguide  using  quarter-</text>
+<text top="1125" left="64" width="132" height="11" font="0">wavelength transformation </text>
+<text top="113" left="470" width="331" height="13" font="5">The input admittance for an N element slotted array is: </text>
+<text top="153" left="449" width="4" height="13" font="5"> </text>
+<text top="160" left="649" width="6" height="10" font="14"><i>S</i></text>
+<text top="151" left="628" width="23" height="16" font="3"><i>NY</i></text>
+<text top="151" left="597" width="27" height="16" font="3"><i>Y </i></text>
+<text top="153" left="660" width="11" height="13" font="5">.  </text>
+<text top="153" left="783" width="29" height="13" font="5">(21) </text>
+<text top="185" left="449" width="4" height="13" font="5"> </text>
+<text top="206" left="470" width="259" height="13" font="5">Sometimes  the  closed  end  is  spaced </text>
+<text top="215" left="771" width="4" height="8" font="9"><i>g</i></text>
+<text top="201" left="761" width="8" height="20" font="12"></text>
+<text top="215" left="751" width="8" height="14" font="24">4</text>
+<text top="203" left="741" width="8" height="14" font="24">3</text>
+<text top="206" left="779" width="33" height="13" font="5">  for </text>
+<text top="232" left="449" width="363" height="13" font="5">mechanical  reasons;  the  additional  half-wavelength  is </text>
+<text top="253" left="449" width="210" height="13" font="5">transparent.  Spacing  the  slots  at </text>
+<text top="263" left="696" width="5" height="8" font="9"><i>g</i></text>
+<text top="248" left="686" width="8" height="20" font="12"></text>
+<text top="262" left="676" width="8" height="14" font="24">2</text>
+<text top="250" left="667" width="8" height="14" font="24">1</text>
+<text top="253" left="704" width="108" height="13" font="5">  intervals  in  the </text>
+<text top="281" left="449" width="236" height="13" font="5">waveguide  is  an  electrical  spacing  of </text>
+<text top="278" left="713" width="4" height="9" font="11"></text>
+<text top="282" left="688" width="24" height="14" font="24">180</text>
+<text top="281" left="719" width="93" height="13" font="5">  -  each  slot  is </text>
+<text top="299" left="449" width="363" height="13" font="5">exactly  out  of  phase  with  its  neighbors,  so  their  radiation </text>
+<text top="316" left="449" width="363" height="13" font="5">will cancel each other. However, slots on opposite sides of </text>
+<text top="333" left="449" width="363" height="13" font="5">the  centerline  of  the guide will be out of phase, so we can </text>
+<text top="349" left="449" width="363" height="13" font="5">alternate  the  slot  displacement  around  the  centerline  and </text>
+<text top="368" left="449" width="192" height="13" font="5">have a total phase difference of </text>
+<text top="365" left="667" width="4" height="9" font="11"></text>
+<text top="369" left="643" width="24" height="14" font="24">360</text>
+<text top="368" left="674" width="138" height="13" font="5"> between slots, putting </text>
+<text top="386" left="449" width="126" height="13" font="5">them back in phase.  </text>
+<text top="412" left="470" width="341" height="13" font="5">A  photograph  of  a  complete  waveguide  slot  antenna  is </text>
+<text top="429" left="449" width="363" height="13" font="5">shown in figure 7. This example has 6 slots on each side for </text>
+<text top="445" left="449" width="363" height="13" font="5">a  total  of  12  slots.  The  slots  have  identical  length  and </text>
+<text top="462" left="449" width="363" height="13" font="5">spacing  along  the  waveguide.  Note  how  the  slot  position </text>
+<text top="479" left="449" width="363" height="13" font="5">alternates about the centerline of the guide. The far wall of </text>
+<text top="495" left="449" width="363" height="13" font="5">the waveguide has an identical slot pattern, so you can see </text>
+<text top="512" left="449" width="107" height="13" font="5">through the slots. </text>
+<text top="735" left="694" width="4" height="13" font="5"> </text>
+<text top="764" left="449" width="3" height="11" font="19"><b> </b></text>
+<text top="764" left="489" width="214" height="11" font="19"><b>Fig. 7.</b>  Example of waveguide slot antenna. </text>
+<text top="793" left="470" width="341" height="13" font="5">A  simple  way  to  estimate  the gain of slot antenna is to </text>
+<text top="810" left="449" width="363" height="13" font="5">remember that is an array of dipoles. Each time we double </text>
+<text top="826" left="449" width="363" height="13" font="5">the  number  of  dipoles,  we  double  the  gain,  or  add  3  dB. </text>
+<text top="843" left="449" width="27" height="13" font="5">The </text>
+<text top="843" left="503" width="78" height="13" font="5">approximate </text>
+<text top="843" left="609" width="29" height="13" font="5">gain </text>
+<text top="843" left="665" width="51" height="13" font="5">formula </text>
+<text top="843" left="743" width="14" height="13" font="5">is </text>
+<text top="843" left="783" width="28" height="13" font="5">thus </text>
+<text top="861" left="566" width="22" height="14" font="25"><i>dBi</i></text>
+<text top="861" left="541" width="11" height="14" font="25"><i>N</i></text>
+<text top="861" left="451" width="33" height="14" font="25"><i>Gain</i></text>
+<text top="861" left="553" width="6" height="14" font="24">)</text>
+<text top="861" left="515" width="24" height="14" font="24">log(</text>
+<text top="861" left="497" width="16" height="14" font="24">10</text>
+<text top="855" left="486" width="9" height="19" font="24"></text>
+<text top="860" left="591" width="221" height="13" font="5">  for  N  total  slots.  Ref  [3]  gives </text>
+<text top="881" left="449" width="274" height="13" font="5">better formulas for the gain and beam width:  </text>
+<text top="992" left="449" width="4" height="13" font="5"> </text>
+<text top="1033" left="748" width="6" height="16" font="13">]</text>
+<text top="1033" left="734" width="6" height="16" font="13">[</text>
+<text top="1066" left="701" width="9" height="16" font="13">2</text>
+<text top="1066" left="659" width="9" height="16" font="13">2</text>
+<text top="1033" left="623" width="9" height="16" font="13">7</text>
+<text top="1033" left="618" width="4" height="16" font="13">.</text>
+<text top="1033" left="600" width="18" height="16" font="13">50</text>
+<text top="939" left="661" width="9" height="16" font="13">2</text>
+<text top="946" left="581" width="22" height="16" font="13">log</text>
+<text top="946" left="560" width="18" height="16" font="13">10</text>
+<text top="1029" left="741" width="4" height="11" font="16"></text>
+<text top="1046" left="719" width="7" height="22" font="13"></text>
+<text top="1029" left="719" width="7" height="22" font="13"></text>
+<text top="1012" left="719" width="7" height="22" font="13"></text>
+<text top="1060" left="719" width="7" height="22" font="13"></text>
+<text top="1001" left="719" width="7" height="22" font="13"></text>
+<text top="1046" left="632" width="7" height="22" font="13"></text>
+<text top="1029" left="632" width="7" height="22" font="13"></text>
+<text top="1012" left="632" width="7" height="22" font="13"></text>
+<text top="1060" left="632" width="7" height="22" font="13"></text>
+<text top="1001" left="632" width="7" height="22" font="13"></text>
+<text top="1051" left="672" width="4" height="22" font="13"></text>
+<text top="1027" left="587" width="10" height="22" font="13"></text>
+<text top="960" left="679" width="7" height="22" font="13"></text>
+<text top="943" left="679" width="7" height="22" font="13"></text>
+<text top="925" left="679" width="7" height="22" font="13"></text>
+<text top="974" left="679" width="7" height="22" font="13"></text>
+<text top="914" left="679" width="7" height="22" font="13"></text>
+<text top="960" left="604" width="7" height="22" font="13"></text>
+<text top="943" left="604" width="7" height="22" font="13"></text>
+<text top="925" left="604" width="7" height="22" font="13"></text>
+<text top="974" left="604" width="7" height="22" font="13"></text>
+<text top="914" left="604" width="33" height="32" font="13"> </text>
+<text top="941" left="548" width="10" height="22" font="13"></text>
+<text top="1055" left="690" width="5" height="9" font="14"><i>g</i></text>
+<text top="928" left="650" width="5" height="9" font="14"><i>g</i></text>
+<text top="1052" left="643" width="12" height="16" font="26"><i>N</i></text>
+<text top="1033" left="502" width="83" height="16" font="26"><i>Beamwidth</i></text>
+<text top="946" left="695" width="25" height="16" font="26"><i>dBi</i></text>
+<text top="930" left="615" width="12" height="16" font="26"><i>N</i></text>
+<text top="946" left="501" width="42" height="16" font="26"><i>GAIN</i></text>
+<text top="1039" left="679" width="10" height="23" font="17"></text>
+<text top="1015" left="673" width="10" height="23" font="17"></text>
+<text top="954" left="639" width="10" height="23" font="17"></text>
+<text top="912" left="639" width="10" height="23" font="17"></text>
+<text top="992" left="757" width="11" height="13" font="5">.  </text>
+<text top="992" left="783" width="29" height="13" font="5">(22) </text>
+<text top="1096" left="449" width="4" height="13" font="5"> </text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="30" size="5" family="Times" color="#000000"/>
+	<fontspec id="31" size="5" family="Times" color="#000000"/>
+<text top="65" left="85" width="167" height="11" font="0">RADIOENGINEERING, VOL. 2</text>
+<text top="65" left="252" width="7" height="11" font="1">5</text>
+<text top="65" left="259" width="32" height="11" font="0">, NO. </text>
+<text top="65" left="291" width="7" height="11" font="1">1</text>
+<text top="65" left="297" width="7" height="11" font="0">, </text>
+<text top="65" left="304" width="75" height="11" font="1">SEPTEMBER</text>
+<text top="65" left="379" width="23" height="11" font="0"> 201</text>
+<text top="65" left="402" width="7" height="11" font="1">6</text>
+<text top="65" left="409" width="3" height="11" font="0"> </text>
+<text top="65" left="823" width="10" height="11" font="0">5 </text>
+<text top="1199" left="85" width="3" height="11" font="0"> </text>
+<text top="113" left="107" width="341" height="13" font="5">It is known from [4] that the slot width should be taken </text>
+<text top="139" left="85" width="16" height="13" font="5">as </text>
+<text top="149" left="152" width="16" height="14" font="24">20</text>
+<text top="139" left="142" width="5" height="8" font="9"><i>g</i></text>
+<text top="141" left="107" width="10" height="14" font="25"><i>w</i></text>
+<text top="125" left="133" width="9" height="20" font="12"></text>
+<text top="136" left="121" width="9" height="19" font="24"></text>
+<text top="139" left="171" width="277" height="13" font="5">.  But,  measurements  taken  by  Stegen  in  [5] </text>
+<text top="166" left="85" width="363" height="13" font="5">were  based  on  a  slot  width  of  1.5875  mm  in  WR-90 </text>
+<text top="182" left="85" width="363" height="13" font="5">waveguide.  For  other  waveguide  sizes,  the  slot  width </text>
+<text top="199" left="85" width="181" height="13" font="5">should be scaled accordingly. </text>
+<text top="236" left="151" width="248" height="19" font="8"><b>3. Slot Antenna Design and </b></text>
+<text top="261" left="215" width="104" height="19" font="8"><b>Simulation </b></text>
+<text top="289" left="107" width="341" height="13" font="5">We can summarize the design procedure for waveguide </text>
+<text top="306" left="85" width="144" height="13" font="5">slot antenna as follows: </text>
+<text top="332" left="107" width="341" height="13" font="5">1.  Choose  the  number  of  slots  required  for  the  desired </text>
+<text top="349" left="85" width="132" height="13" font="5">gain and beam width. </text>
+<text top="374" left="107" width="341" height="13" font="5">2.  Choose  a  waveguide  size  appropriated  for  the </text>
+<text top="391" left="85" width="127" height="13" font="5">operating frequency. </text>
+<text top="417" left="107" width="341" height="13" font="5">3.  Calculate  the  wavelength  in  the  waveguide  at  the </text>
+<text top="434" left="85" width="127" height="13" font="5">operating frequency. </text>
+<text top="459" left="107" width="341" height="13" font="5">4.  Determine  the  slot  dimensions,  length  and  width </text>
+<text top="476" left="85" width="250" height="13" font="5">appropriated for the operating frequency. </text>
+<text top="502" left="107" width="341" height="13" font="5">5.  Determine  the  slot  position  from  centerline  for </text>
+<text top="519" left="85" width="363" height="13" font="5">normalized  admittance  of  1/N,  where  N  is  the  number  of </text>
+<text top="535" left="85" width="222" height="13" font="5">slots in both walls of the waveguide. </text>
+<text top="565" left="107" width="63" height="13" font="5">6.    Space </text>
+<text top="575" left="206" width="4" height="8" font="9"><i>g</i></text>
+<text top="561" left="196" width="8" height="20" font="12"></text>
+<text top="575" left="186" width="8" height="14" font="24">4</text>
+<text top="563" left="177" width="8" height="14" font="24">1</text>
+<text top="565" left="214" width="22" height="13" font="5">  or </text>
+<text top="575" left="271" width="4" height="8" font="9"><i>g</i></text>
+<text top="561" left="262" width="8" height="20" font="12"></text>
+<text top="575" left="251" width="8" height="14" font="24">4</text>
+<text top="562" left="242" width="8" height="14" font="24">3</text>
+<text top="565" left="279" width="169" height="13" font="5">  between  the  center  of  the </text>
+<text top="591" left="85" width="233" height="13" font="5">last slot and the end of the waveguide. </text>
+<text top="617" left="107" width="341" height="13" font="5">For a THz slot antenna design at operation frequency of </text>
+<text top="634" left="85" width="363" height="13" font="5">330 GHz. The waveguide dimensions are chosen so that all </text>
+<text top="652" left="85" width="89" height="13" font="5">modes  except </text>
+<text top="661" left="197" width="10" height="9" font="11">10</text>
+<text top="652" left="179" width="19" height="15" font="10"><i>TE</i></text>
+<text top="652" left="209" width="239" height="13" font="5">  are  cut  off.  The  waveguide  is  WR3 </text>
+<text top="677" left="85" width="215" height="13" font="5">with the dimensions of 0.864x0.432</text>
+<text top="677" left="338" width="6" height="15" font="12">]</text>
+<text top="677" left="301" width="6" height="15" font="12">[</text>
+<text top="674" left="331" width="5" height="9" font="11">2</text>
+<text top="677" left="307" width="24" height="15" font="10"><i>mm</i></text>
+<text top="677" left="345" width="8" height="13" font="5">. </text>
+<text top="706" left="107" width="135" height="13" font="5">The wavelengths are:  </text>
+<text top="809" left="85" width="4" height="13" font="5"> </text>
+<text top="878" left="320" width="6" height="16" font="17">]</text>
+<text top="878" left="287" width="6" height="16" font="17">[</text>
+<text top="878" left="270" width="18" height="16" font="17">07</text>
+<text top="878" left="265" width="5" height="16" font="17">.</text>
+<text top="878" left="256" width="9" height="16" font="17">1</text>
+<text top="894" left="220" width="9" height="16" font="17">1</text>
+<text top="894" left="181" width="9" height="16" font="17">1</text>
+<text top="867" left="196" width="9" height="16" font="17">1</text>
+<text top="807" left="397" width="6" height="16" font="17">]</text>
+<text top="807" left="365" width="6" height="16" font="17">[</text>
+<text top="807" left="339" width="27" height="16" font="17">728</text>
+<text top="807" left="335" width="5" height="16" font="17">.</text>
+<text top="807" left="326" width="9" height="16" font="17">1</text>
+<text top="807" left="291" width="9" height="16" font="17">2</text>
+<text top="796" left="227" width="9" height="16" font="17">2</text>
+<text top="796" left="161" width="9" height="16" font="17">2</text>
+<text top="755" left="259" width="6" height="16" font="17">]</text>
+<text top="755" left="226" width="6" height="16" font="17">[</text>
+<text top="755" left="200" width="27" height="16" font="17">909</text>
+<text top="755" left="196" width="5" height="16" font="17">.</text>
+<text top="755" left="187" width="9" height="16" font="17">0</text>
+<text top="916" left="229" width="5" height="9" font="16">2</text>
+<text top="916" left="186" width="5" height="9" font="16">2</text>
+<text top="878" left="293" width="26" height="16" font="3"><i>mm</i></text>
+<text top="807" left="371" width="26" height="16" font="3"><i>mm</i></text>
+<text top="807" left="300" width="9" height="16" font="3"><i>a</i></text>
+<text top="844" left="255" width="9" height="16" font="3"><i>b</i></text>
+<text top="819" left="249" width="9" height="16" font="3"><i>n</i></text>
+<text top="844" left="212" width="9" height="16" font="3"><i>a</i></text>
+<text top="819" left="204" width="13" height="16" font="3"><i>m</i></text>
+<text top="821" left="164" width="8" height="16" font="3"><i>k</i></text>
+<text top="755" left="233" width="26" height="16" font="3"><i>mm</i></text>
+<text top="769" left="159" width="5" height="16" font="3"><i>f</i></text>
+<text top="744" left="157" width="8" height="16" font="3"><i>c</i></text>
+<text top="930" left="222" width="5" height="9" font="14"><i>c</i></text>
+<text top="888" left="135" width="5" height="9" font="14"><i>g</i></text>
+<text top="831" left="172" width="5" height="9" font="14"><i>c</i></text>
+<text top="816" left="135" width="5" height="9" font="14"><i>c</i></text>
+<text top="872" left="244" width="10" height="22" font="17"></text>
+<text top="899" left="198" width="10" height="22" font="17"></text>
+<text top="872" left="148" width="10" height="22" font="17"></text>
+<text top="801" left="314" width="10" height="22" font="17"></text>
+<text top="801" left="277" width="10" height="22" font="17"></text>
+<text top="824" left="234" width="10" height="22" font="17"></text>
+<text top="801" left="187" width="10" height="22" font="17"></text>
+<text top="801" left="146" width="10" height="22" font="17"></text>
+<text top="749" left="173" width="10" height="22" font="17"></text>
+<text top="749" left="140" width="10" height="22" font="17"></text>
+<text top="914" left="212" width="10" height="23" font="17"></text>
+<text top="912" left="176" width="10" height="23" font="17"></text>
+<text top="871" left="125" width="10" height="23" font="17"></text>
+<text top="812" left="258" width="10" height="23" font="17"></text>
+<text top="812" left="217" width="10" height="23" font="17"></text>
+<text top="789" left="235" width="10" height="23" font="17"></text>
+<text top="789" left="169" width="10" height="23" font="17"></text>
+<text top="800" left="125" width="10" height="23" font="17"></text>
+<text top="748" left="125" width="10" height="23" font="17"></text>
+<text top="809" left="406" width="42" height="13" font="5">.   (23) </text>
+<text top="945" left="444" width="4" height="13" font="5"> </text>
+<text top="971" left="107" width="233" height="13" font="5">By choosing 256 slots we will obtain:  </text>
+<text top="1035" left="85" width="4" height="13" font="5"> </text>
+<text top="1090" left="418" width="4" height="12" font="0">]</text>
+<text top="1090" left="408" width="4" height="12" font="0">[</text>
+<text top="1090" left="401" width="7" height="12" font="0">7</text>
+<text top="1090" left="398" width="3" height="12" font="0">.</text>
+<text top="1090" left="391" width="7" height="12" font="0">0</text>
+<text top="1108" left="366" width="7" height="12" font="0">2</text>
+<text top="1098" left="351" width="13" height="12" font="0">07</text>
+<text top="1098" left="348" width="3" height="12" font="0">.</text>
+<text top="1098" left="341" width="7" height="12" font="0">1</text>
+<text top="1108" left="329" width="7" height="12" font="0">2</text>
+<text top="1098" left="308" width="20" height="12" font="0">256</text>
+<text top="1082" left="335" width="20" height="12" font="0">909</text>
+<text top="1082" left="332" width="3" height="12" font="0">.</text>
+<text top="1082" left="326" width="7" height="12" font="0">0</text>
+<text top="1090" left="294" width="7" height="12" font="0">7</text>
+<text top="1090" left="291" width="3" height="12" font="0">.</text>
+<text top="1090" left="278" width="13" height="12" font="0">50</text>
+<text top="1113" left="249" width="7" height="12" font="0">2</text>
+<text top="1113" left="221" width="7" height="12" font="0">2</text>
+<text top="1090" left="194" width="7" height="12" font="0">7</text>
+<text top="1090" left="191" width="3" height="12" font="0">.</text>
+<text top="1090" left="178" width="13" height="12" font="0">50</text>
+<text top="1028" left="377" width="7" height="12" font="0">8</text>
+<text top="1028" left="373" width="3" height="12" font="0">.</text>
+<text top="1028" left="360" width="13" height="12" font="0">21</text>
+<text top="1038" left="309" width="20" height="12" font="0">909</text>
+<text top="1038" left="306" width="3" height="12" font="0">.</text>
+<text top="1038" left="299" width="7" height="12" font="0">0</text>
+<text top="1023" left="335" width="7" height="12" font="0">2</text>
+<text top="1013" left="320" width="13" height="12" font="0">07</text>
+<text top="1013" left="317" width="3" height="12" font="0">.</text>
+<text top="1013" left="310" width="7" height="12" font="0">1</text>
+<text top="1016" left="286" width="20" height="12" font="0">256</text>
+<text top="1028" left="261" width="16" height="12" font="0">log</text>
+<text top="1028" left="247" width="13" height="12" font="0">10</text>
+<text top="1023" left="220" width="7" height="12" font="0">2</text>
+<text top="1028" left="163" width="16" height="12" font="0">log</text>
+<text top="1028" left="149" width="13" height="12" font="0">10</text>
+<text top="1087" left="413" width="3" height="8" font="30"></text>
+<text top="1085" left="381" width="7" height="16" font="0"></text>
+<text top="1092" left="375" width="5" height="16" font="0"></text>
+<text top="1080" left="375" width="5" height="16" font="0"></text>
+<text top="1104" left="375" width="5" height="16" font="0"></text>
+<text top="1071" left="375" width="5" height="16" font="0"></text>
+<text top="1092" left="301" width="5" height="16" font="0"></text>
+<text top="1080" left="301" width="5" height="16" font="0"></text>
+<text top="1104" left="301" width="5" height="16" font="0"></text>
+<text top="1071" left="301" width="5" height="16" font="0"></text>
+<text top="1097" left="338" width="3" height="16" font="0"></text>
+<text top="1085" left="268" width="7" height="16" font="0"></text>
+<text top="1100" left="262" width="5" height="16" font="0"></text>
+<text top="1087" left="262" width="5" height="16" font="0"></text>
+<text top="1075" left="262" width="5" height="16" font="0"></text>
+<text top="1109" left="262" width="5" height="16" font="0"></text>
+<text top="1066" left="262" width="5" height="16" font="0"></text>
+<text top="1100" left="201" width="5" height="16" font="0"></text>
+<text top="1087" left="201" width="5" height="16" font="0"></text>
+<text top="1075" left="201" width="5" height="16" font="0"></text>
+<text top="1109" left="201" width="5" height="16" font="0"></text>
+<text top="1066" left="201" width="5" height="16" font="0"></text>
+<text top="1102" left="229" width="3" height="16" font="0"></text>
+<text top="1085" left="168" width="7" height="16" font="0"></text>
+<text top="1024" left="350" width="7" height="16" font="0"></text>
+<text top="1030" left="344" width="5" height="16" font="0"></text>
+<text top="1018" left="344" width="5" height="16" font="0"></text>
+<text top="1042" left="344" width="5" height="16" font="0"></text>
+<text top="1009" left="344" width="5" height="16" font="0"></text>
+<text top="1030" left="278" width="5" height="16" font="0"></text>
+<text top="1018" left="278" width="5" height="16" font="0"></text>
+<text top="1042" left="278" width="5" height="16" font="0"></text>
+<text top="1009" left="278" width="5" height="16" font="0"></text>
+<text top="1012" left="307" width="3" height="16" font="0"></text>
+<text top="1024" left="240" width="7" height="16" font="0"></text>
+<text top="1038" left="232" width="5" height="16" font="0"></text>
+<text top="1025" left="232" width="5" height="16" font="0"></text>
+<text top="1013" left="232" width="5" height="16" font="0"></text>
+<text top="1047" left="232" width="5" height="16" font="0"></text>
+<text top="1005" left="232" width="5" height="16" font="0"></text>
+<text top="1038" left="180" width="5" height="16" font="0"></text>
+<text top="1025" left="180" width="5" height="16" font="0"></text>
+<text top="1013" left="180" width="5" height="16" font="0"></text>
+<text top="1047" left="180" width="5" height="16" font="0"></text>
+<text top="1005" left="180" width="23" height="23" font="0"> </text>
+<text top="1024" left="141" width="7" height="16" font="0"></text>
+<text top="1105" left="242" width="4" height="7" font="31"><i>g</i></text>
+<text top="1015" left="212" width="4" height="7" font="31"><i>g</i></text>
+<text top="1103" left="209" width="9" height="12" font="4"><i>N</i></text>
+<text top="1090" left="107" width="60" height="12" font="4"><i>Beamwidth</i></text>
+<text top="1028" left="384" width="18" height="12" font="4"><i>dBi</i></text>
+<text top="1016" left="188" width="9" height="12" font="4"><i>N</i></text>
+<text top="1028" left="106" width="31" height="12" font="4"><i>GAIN</i></text>
+<text top="1093" left="234" width="7" height="17" font="28"></text>
+<text top="1077" left="230" width="7" height="17" font="28"></text>
+<text top="1033" left="205" width="7" height="17" font="28"></text>
+<text top="1003" left="204" width="7" height="17" font="28"></text>
+<text top="1035" left="424" width="36" height="13" font="5">. (24) </text>
+<text top="1130" left="444" width="4" height="13" font="5"> </text>
+<text top="113" left="492" width="241" height="13" font="5">So the resolution at 10 m is 11.74 [cm]. </text>
+<text top="139" left="492" width="150" height="13" font="5">The slot dimensions are: </text>
+<text top="194" left="470" width="4" height="13" font="5"> </text>
+<text top="225" left="747" width="5" height="13" font="5">]</text>
+<text top="225" left="722" width="5" height="13" font="5">[</text>
+<text top="225" left="694" width="29" height="13" font="5">0535</text>
+<text top="225" left="690" width="4" height="13" font="5">.</text>
+<text top="225" left="683" width="7" height="13" font="5">0</text>
+<text top="236" left="657" width="7" height="13" font="5">2</text>
+<text top="225" left="571" width="7" height="13" font="5">_</text>
+<text top="184" left="739" width="5" height="13" font="5">]</text>
+<text top="184" left="713" width="5" height="13" font="5">[</text>
+<text top="184" left="692" width="22" height="13" font="5">454</text>
+<text top="184" left="689" width="4" height="13" font="5">.</text>
+<text top="184" left="682" width="7" height="13" font="5">0</text>
+<text top="195" left="659" width="7" height="13" font="5">2</text>
+<text top="184" left="631" width="7" height="13" font="5">2</text>
+<text top="184" left="571" width="7" height="13" font="5">_</text>
+<text top="225" left="727" width="21" height="13" font="7"><i>mm</i></text>
+<text top="225" left="628" width="9" height="13" font="7"><i>w</i></text>
+<text top="225" left="582" width="33" height="13" font="7"><i>width</i></text>
+<text top="225" left="547" width="21" height="13" font="7"><i>slot</i></text>
+<text top="184" left="718" width="21" height="13" font="7"><i>mm</i></text>
+<text top="184" left="638" width="4" height="13" font="7"><i>l</i></text>
+<text top="184" left="581" width="36" height="13" font="7"><i>length</i></text>
+<text top="184" left="547" width="21" height="13" font="7"><i>slot</i></text>
+<text top="221" left="661" width="4" height="7" font="22"><i>g</i></text>
+<text top="220" left="672" width="8" height="17" font="5"></text>
+<text top="220" left="640" width="8" height="17" font="5"></text>
+<text top="220" left="617" width="8" height="17" font="5"></text>
+<text top="180" left="671" width="8" height="17" font="5"></text>
+<text top="180" left="646" width="8" height="17" font="5"></text>
+<text top="180" left="620" width="8" height="17" font="5"></text>
+<text top="208" left="652" width="8" height="18" font="24"></text>
+<text top="170" left="658" width="8" height="18" font="24"></text>
+<text top="194" left="753" width="11" height="13" font="5">.  </text>
+<text top="194" left="804" width="29" height="13" font="5">(25) </text>
+<text top="252" left="829" width="4" height="13" font="5"> </text>
+<text top="278" left="492" width="309" height="13" font="5">The offset from the center line of the broad wall is: </text>
+<text top="304" left="492" width="4" height="13" font="5"> </text>
+<text top="461" left="470" width="4" height="13" font="5"> </text>
+<text top="626" left="598" width="5" height="14" font="24">]</text>
+<text top="626" left="570" width="5" height="14" font="24">[</text>
+<text top="626" left="546" width="24" height="14" font="24">033</text>
+<text top="626" left="542" width="4" height="14" font="24">.</text>
+<text top="626" left="535" width="8" height="14" font="24">0</text>
+<text top="589" left="780" width="5" height="14" font="24">]</text>
+<text top="601" left="762" width="8" height="14" font="24">2</text>
+<text top="589" left="699" width="21" height="14" font="24">cos</text>
+<text top="601" left="691" width="5" height="14" font="24">)</text>
+<text top="601" left="676" width="4" height="14" font="24">/</text>
+<text top="601" left="648" width="5" height="14" font="24">(</text>
+<text top="579" left="685" width="5" height="14" font="24">)</text>
+<text top="579" left="670" width="4" height="14" font="24">/</text>
+<text top="579" left="654" width="5" height="14" font="24">(</text>
+<text top="589" left="630" width="16" height="14" font="24">09</text>
+<text top="589" left="626" width="4" height="14" font="24">.</text>
+<text top="589" left="618" width="8" height="14" font="24">2</text>
+<text top="589" left="612" width="5" height="14" font="24">[</text>
+<text top="554" left="683" width="8" height="14" font="24">1</text>
+<text top="564" left="549" width="37" height="14" font="24">arcsin</text>
+<text top="517" left="764" width="5" height="14" font="24">]</text>
+<text top="529" left="746" width="8" height="14" font="24">2</text>
+<text top="517" left="684" width="21" height="14" font="24">cos</text>
+<text top="529" left="675" width="5" height="14" font="24">)</text>
+<text top="529" left="660" width="4" height="14" font="24">/</text>
+<text top="529" left="633" width="5" height="14" font="24">(</text>
+<text top="507" left="669" width="5" height="14" font="24">)</text>
+<text top="507" left="655" width="4" height="14" font="24">/</text>
+<text top="507" left="639" width="5" height="14" font="24">(</text>
+<text top="517" left="614" width="16" height="14" font="24">09</text>
+<text top="517" left="610" width="4" height="14" font="24">.</text>
+<text top="517" left="603" width="8" height="14" font="24">2</text>
+<text top="517" left="597" width="5" height="14" font="24">[</text>
+<text top="482" left="668" width="8" height="14" font="24">1</text>
+<text top="492" left="552" width="5" height="14" font="24">)</text>
+<text top="492" left="511" width="23" height="14" font="24">sin(</text>
+<text top="446" left="772" width="8" height="14" font="24">1</text>
+<text top="446" left="748" width="11" height="14" font="24">)]</text>
+<text top="446" left="725" width="5" height="14" font="24">(</text>
+<text top="446" left="699" width="18" height="14" font="24">sin</text>
+<text top="458" left="680" width="8" height="14" font="24">2</text>
+<text top="446" left="617" width="21" height="14" font="24">cos</text>
+<text top="458" left="609" width="5" height="14" font="24">)</text>
+<text top="458" left="594" width="4" height="14" font="24">/</text>
+<text top="458" left="566" width="5" height="14" font="24">(</text>
+<text top="436" left="603" width="5" height="14" font="24">)</text>
+<text top="436" left="589" width="4" height="14" font="24">/</text>
+<text top="436" left="573" width="5" height="14" font="24">(</text>
+<text top="446" left="548" width="16" height="14" font="24">09</text>
+<text top="446" left="544" width="4" height="14" font="24">.</text>
+<text top="446" left="536" width="8" height="14" font="24">2</text>
+<text top="446" left="531" width="5" height="14" font="24">[</text>
+<text top="399" left="759" width="11" height="14" font="24">)]</text>
+<text top="399" left="736" width="5" height="14" font="24">(</text>
+<text top="399" left="709" width="18" height="14" font="24">sin</text>
+<text top="411" left="691" width="8" height="14" font="24">2</text>
+<text top="399" left="628" width="21" height="14" font="24">cos</text>
+<text top="411" left="620" width="5" height="14" font="24">)</text>
+<text top="411" left="605" width="4" height="14" font="24">/</text>
+<text top="411" left="577" width="5" height="14" font="24">(</text>
+<text top="389" left="613" width="5" height="14" font="24">)</text>
+<text top="389" left="599" width="4" height="14" font="24">/</text>
+<text top="389" left="583" width="5" height="14" font="24">(</text>
+<text top="399" left="559" width="16" height="14" font="24">09</text>
+<text top="399" left="555" width="4" height="14" font="24">.</text>
+<text top="399" left="547" width="8" height="14" font="24">2</text>
+<text top="399" left="541" width="5" height="14" font="24">[</text>
+<text top="389" left="515" width="8" height="14" font="24">1</text>
+<text top="351" left="763" width="11" height="14" font="24">)]</text>
+<text top="351" left="740" width="5" height="14" font="24">(</text>
+<text top="351" left="714" width="18" height="14" font="24">sin</text>
+<text top="363" left="695" width="8" height="14" font="24">2</text>
+<text top="351" left="632" width="21" height="14" font="24">cos</text>
+<text top="363" left="624" width="5" height="14" font="24">)</text>
+<text top="363" left="609" width="4" height="14" font="24">/</text>
+<text top="363" left="581" width="5" height="14" font="24">(</text>
+<text top="341" left="618" width="5" height="14" font="24">)</text>
+<text top="341" left="603" width="4" height="14" font="24">/</text>
+<text top="341" left="588" width="5" height="14" font="24">(</text>
+<text top="351" left="563" width="16" height="14" font="24">09</text>
+<text top="351" left="559" width="4" height="14" font="24">.</text>
+<text top="351" left="551" width="8" height="14" font="24">2</text>
+<text top="351" left="546" width="5" height="14" font="24">[</text>
+<text top="587" left="745" width="9" height="8" font="11">10</text>
+<text top="586" left="721" width="5" height="8" font="11">2</text>
+<text top="610" left="663" width="9" height="8" font="11">10</text>
+<text top="515" left="730" width="9" height="8" font="11">10</text>
+<text top="514" left="705" width="5" height="8" font="11">2</text>
+<text top="537" left="647" width="9" height="8" font="11">10</text>
+<text top="444" left="719" width="5" height="8" font="11">2</text>
+<text top="444" left="664" width="9" height="8" font="11">10</text>
+<text top="444" left="639" width="5" height="8" font="11">2</text>
+<text top="467" left="581" width="9" height="8" font="11">10</text>
+<text top="396" left="729" width="5" height="8" font="11">2</text>
+<text top="397" left="674" width="9" height="8" font="11">10</text>
+<text top="396" left="650" width="5" height="8" font="11">2</text>
+<text top="419" left="592" width="9" height="8" font="11">10</text>
+<text top="349" left="734" width="5" height="8" font="11">2</text>
+<text top="349" left="679" width="9" height="8" font="11">10</text>
+<text top="349" left="654" width="5" height="8" font="11">2</text>
+<text top="372" left="596" width="9" height="8" font="11">10</text>
+<text top="372" left="524" width="5" height="8" font="11">0</text>
+<text top="626" left="575" width="23" height="14" font="25"><i>mm</i></text>
+<text top="626" left="512" width="7" height="14" font="25"><i>x</i></text>
+<text top="601" left="742" width="7" height="14" font="25"><i>k</i></text>
+<text top="601" left="683" width="7" height="14" font="25"><i>k</i></text>
+<text top="579" left="676" width="8" height="14" font="25"><i>b</i></text>
+<text top="579" left="660" width="8" height="14" font="25"><i>a</i></text>
+<text top="589" left="601" width="10" height="14" font="25"><i>N</i></text>
+<text top="554" left="537" width="8" height="14" font="25"><i>a</i></text>
+<text top="564" left="512" width="7" height="14" font="25"><i>x</i></text>
+<text top="529" left="727" width="7" height="14" font="25"><i>k</i></text>
+<text top="529" left="667" width="7" height="14" font="25"><i>k</i></text>
+<text top="507" left="661" width="8" height="14" font="25"><i>b</i></text>
+<text top="507" left="645" width="8" height="14" font="25"><i>a</i></text>
+<text top="517" left="586" width="10" height="14" font="25"><i>N</i></text>
+<text top="504" left="539" width="8" height="14" font="25"><i>a</i></text>
+<text top="482" left="544" width="7" height="14" font="25"><i>x</i></text>
+<text top="458" left="736" width="8" height="14" font="25"><i>a</i></text>
+<text top="436" left="740" width="7" height="14" font="25"><i>x</i></text>
+<text top="458" left="661" width="7" height="14" font="25"><i>k</i></text>
+<text top="458" left="601" width="7" height="14" font="25"><i>k</i></text>
+<text top="436" left="595" width="8" height="14" font="25"><i>b</i></text>
+<text top="436" left="578" width="8" height="14" font="25"><i>a</i></text>
+<text top="446" left="512" width="10" height="14" font="25"><i>N</i></text>
+<text top="411" left="746" width="8" height="14" font="25"><i>a</i></text>
+<text top="389" left="750" width="7" height="14" font="25"><i>x</i></text>
+<text top="411" left="671" width="7" height="14" font="25"><i>k</i></text>
+<text top="411" left="611" width="7" height="14" font="25"><i>k</i></text>
+<text top="389" left="605" width="8" height="14" font="25"><i>b</i></text>
+<text top="389" left="589" width="8" height="14" font="25"><i>a</i></text>
+<text top="411" left="513" width="10" height="14" font="25"><i>N</i></text>
+<text top="363" left="751" width="8" height="14" font="25"><i>a</i></text>
+<text top="341" left="755" width="7" height="14" font="25"><i>x</i></text>
+<text top="363" left="675" width="7" height="14" font="25"><i>k</i></text>
+<text top="363" left="616" width="7" height="14" font="25"><i>k</i></text>
+<text top="341" left="610" width="8" height="14" font="25"><i>b</i></text>
+<text top="341" left="593" width="8" height="14" font="25"><i>a</i></text>
+<text top="363" left="512" width="11" height="14" font="25"><i>G</i></text>
+<text top="341" left="515" width="11" height="14" font="25"><i>G</i></text>
+<text top="621" left="523" width="9" height="19" font="24"></text>
+<text top="585" left="773" width="6" height="19" font="24"></text>
+<text top="598" left="773" width="6" height="19" font="24"></text>
+<text top="575" left="773" width="6" height="19" font="24"></text>
+<text top="585" left="727" width="6" height="19" font="24"></text>
+<text top="598" left="727" width="6" height="19" font="24"></text>
+<text top="575" left="727" width="6" height="19" font="24"></text>
+<text top="559" left="523" width="9" height="19" font="24"></text>
+<text top="513" left="758" width="6" height="19" font="24"></text>
+<text top="526" left="758" width="6" height="19" font="24"></text>
+<text top="503" left="758" width="6" height="19" font="24"></text>
+<text top="513" left="712" width="6" height="19" font="24"></text>
+<text top="526" left="712" width="6" height="19" font="24"></text>
+<text top="503" left="712" width="6" height="19" font="24"></text>
+<text top="487" left="561" width="9" height="19" font="24"></text>
+<text top="441" left="762" width="9" height="19" font="24"></text>
+<text top="442" left="692" width="6" height="19" font="24"></text>
+<text top="455" left="692" width="6" height="19" font="24"></text>
+<text top="432" left="692" width="6" height="19" font="24"></text>
+<text top="442" left="646" width="6" height="19" font="24"></text>
+<text top="455" left="646" width="6" height="19" font="24"></text>
+<text top="432" left="646" width="6" height="19" font="24"></text>
+<text top="441" left="526" width="4" height="19" font="24"></text>
+<text top="395" left="702" width="6" height="19" font="24"></text>
+<text top="408" left="702" width="6" height="19" font="24"></text>
+<text top="385" left="702" width="6" height="19" font="24"></text>
+<text top="395" left="656" width="6" height="19" font="24"></text>
+<text top="408" left="656" width="6" height="19" font="24"></text>
+<text top="385" left="656" width="6" height="19" font="24"></text>
+<text top="394" left="530" width="9" height="19" font="24"></text>
+<text top="347" left="707" width="6" height="19" font="24"></text>
+<text top="360" left="707" width="6" height="19" font="24"></text>
+<text top="337" left="707" width="6" height="19" font="24"></text>
+<text top="347" left="660" width="6" height="19" font="24"></text>
+<text top="360" left="660" width="6" height="19" font="24"></text>
+<text top="337" left="660" width="6" height="19" font="24"></text>
+<text top="346" left="535" width="9" height="19" font="24"></text>
+<text top="573" left="760" width="9" height="20" font="12"></text>
+<text top="573" left="737" width="9" height="20" font="12"></text>
+<text top="595" left="654" width="9" height="20" font="12"></text>
+<text top="570" left="535" width="9" height="20" font="12"></text>
+<text top="501" left="744" width="9" height="20" font="12"></text>
+<text top="501" left="721" width="9" height="20" font="12"></text>
+<text top="523" left="639" width="9" height="20" font="12"></text>
+<text top="476" left="535" width="9" height="20" font="12"></text>
+<text top="430" left="731" width="9" height="20" font="12"></text>
+<text top="430" left="678" width="9" height="20" font="12"></text>
+<text top="430" left="655" width="9" height="20" font="12"></text>
+<text top="452" left="572" width="9" height="20" font="12"></text>
+<text top="383" left="742" width="9" height="20" font="12"></text>
+<text top="383" left="689" width="9" height="20" font="12"></text>
+<text top="383" left="665" width="9" height="20" font="12"></text>
+<text top="405" left="583" width="9" height="20" font="12"></text>
+<text top="335" left="746" width="9" height="20" font="12"></text>
+<text top="335" left="693" width="9" height="20" font="12"></text>
+<text top="335" left="670" width="9" height="20" font="12"></text>
+<text top="357" left="587" width="9" height="20" font="12"></text>
+<text top="461" left="789" width="44" height="13" font="5">.   (26) </text>
+<text top="647" left="829" width="4" height="13" font="5"> </text>
+<text top="673" left="492" width="341" height="13" font="5">Figures  8  and  9  shows  a  model  performed  using  CST </text>
+<text top="690" left="470" width="363" height="13" font="5">Microwave  Studio  according  to  the  analytical  design,  the </text>
+<text top="706" left="470" width="363" height="13" font="5">simulation  result  for  the  radiation  pattern,  gain  and  beam </text>
+<text top="723" left="470" width="195" height="13" font="5">width depicted in figures 10-14. </text>
+<text top="963" left="823" width="4" height="13" font="5"> </text>
+<text top="992" left="470" width="286" height="11" font="19"><b>Fig. 8.</b>  Slot antenna model using CST Microwave Studio. </text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1263" width="892">
+<text top="65" left="64" width="13" height="11" font="0">6  </text>
+<text top="65" left="208" width="604" height="11" font="0">S. ROZENBERG, A. YAHALOM, A THZ SLOT ANTENNA OPTIMIZATION USING ANALYTICAL TECHNIQUES </text>
+<text top="339" left="402" width="3" height="11" font="0"> </text>
+<text top="372" left="64" width="347" height="11" font="19"><b>Fig. 9.</b>  Slot antenna model using CST Microwave Studio (zoomed in). </text>
+<text top="635" left="440" width="4" height="13" font="5"> </text>
+<text top="663" left="64" width="214" height="11" font="19"><b>Fig. 10.</b> Radiation pattern simulation result. </text>
+<text top="698" left="64" width="3" height="11" font="0"> </text>
+<text top="939" left="416" width="4" height="13" font="5"> </text>
+<text top="968" left="64" width="280" height="11" font="19"><b>Fig. 11.</b> Radiation pattern simulation result (x-axis view). </text>
+<text top="336" left="807" width="4" height="13" font="5"> </text>
+<text top="365" left="449" width="283" height="11" font="19"><b>Fig. 12.</b> Radiation pattern simulation result (z-axis view).  </text>
+<text top="626" left="821" width="4" height="13" font="5"> </text>
+<text top="654" left="449" width="255" height="11" font="19"><b>Fig. 13.</b> Azimuth radiation pattern simulation result. </text>
+<text top="905" left="791" width="3" height="11" font="0"> </text>
+<text top="938" left="449" width="259" height="11" font="19"><b>Fig. 14.</b> Elevation radiation pattern simulation result. </text>
+<text top="967" left="470" width="341" height="13" font="5">The  simulation  results  show  that  the  antenna  gain  is </text>
+<text top="987" left="449" width="249" height="13" font="5">18.4 dBi and the azimuth beam width is </text>
+<text top="983" left="721" width="4" height="10" font="11"></text>
+<text top="986" left="712" width="8" height="15" font="12">7</text>
+<text top="986" left="708" width="4" height="15" font="12">.</text>
+<text top="986" left="700" width="8" height="15" font="12">1</text>
+<text top="987" left="728" width="84" height="13" font="5"> compared to </text>
+<text top="1007" left="449" width="81" height="13" font="5">21.8 dBi and </text>
+<text top="1003" left="554" width="4" height="10" font="11"></text>
+<text top="1007" left="544" width="8" height="15" font="12">7</text>
+<text top="1007" left="540" width="4" height="15" font="12">.</text>
+<text top="1007" left="532" width="8" height="15" font="12">0</text>
+<text top="1007" left="561" width="149" height="13" font="5"> in the analytical design. </text>
+<text top="1034" left="470" width="341" height="13" font="5">There  is  a  small  difference  between  the  analytical  and </text>
+<text top="1051" left="449" width="363" height="13" font="5">simulation  results,  the  difference  is  due  to  the  simplifying </text>
+<text top="1068" left="449" width="363" height="13" font="5">assumptions  that  were  taken  in  the  analytical  design  (wall </text>
+<text top="1084" left="449" width="363" height="13" font="5">thickness  was  ignored;  waveguide  length  was  taken  as </text>
+<text top="1101" left="449" width="363" height="13" font="5">infinity etc.). Despite the difference between analytical and </text>
+<text top="1118" left="449" width="363" height="13" font="5">the  simulation  results,  good  approximation  of  antenna's </text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1263" width="892">
+	<fontspec id="32" size="10" family="Times" color="#0000ff"/>
+<text top="65" left="85" width="167" height="11" font="0">RADIOENGINEERING, VOL. 2</text>
+<text top="65" left="252" width="7" height="11" font="1">5</text>
+<text top="65" left="259" width="32" height="11" font="0">, NO. </text>
+<text top="65" left="291" width="7" height="11" font="1">1</text>
+<text top="65" left="297" width="7" height="11" font="0">, </text>
+<text top="65" left="304" width="75" height="11" font="1">SEPTEMBER</text>
+<text top="65" left="379" width="23" height="11" font="0"> 201</text>
+<text top="65" left="402" width="7" height="11" font="1">6</text>
+<text top="65" left="409" width="3" height="11" font="0"> </text>
+<text top="65" left="823" width="10" height="11" font="0">7 </text>
+<text top="1199" left="85" width="3" height="11" font="0"> </text>
+<text top="113" left="85" width="363" height="13" font="5">performance, antenna's pattern, beamwidth and gain can be </text>
+<text top="130" left="85" width="40" height="13" font="5">made. </text>
+<text top="167" left="212" width="127" height="19" font="8"><b>4. Conclusion </b></text>
+<text top="195" left="107" width="341" height="13" font="5">In  this  paper,  slot  antenna  based  on  rectangular </text>
+<text top="212" left="85" width="363" height="13" font="5">waveguide has been presented and investigated. It has been </text>
+<text top="229" left="85" width="363" height="13" font="5">shown that slot antenna in the high frequency regime can be </text>
+<text top="246" left="85" width="363" height="13" font="5">analyzed  and  optimized  by  an  analytical  model  this  was </text>
+<text top="262" left="85" width="363" height="13" font="5">verified using a simulation software. To optimize the design </text>
+<text top="279" left="85" width="363" height="13" font="5">and obtain the required antenna's pattern and performance it </text>
+<text top="296" left="85" width="363" height="13" font="5">is  first  recommended  to  use  an  analytical  model  of  the </text>
+<text top="313" left="85" width="363" height="13" font="5">antenna.  Using  the  analytical  design  information  one  can </text>
+<text top="329" left="85" width="363" height="13" font="5">perform  a  simulation.  Then,  according  to  the  simulation </text>
+<text top="346" left="85" width="363" height="13" font="5">results, modify the parameters until the optimum results are </text>
+<text top="363" left="85" width="59" height="13" font="5">obtained. </text>
+<text top="400" left="85" width="104" height="19" font="8"><b>References </b></text>
+<text top="432" left="85" width="4" height="13" font="5"> </text>
+<text top="448" left="85" width="351" height="11" font="0">[1]  COLLIN,  R.  E.,  <i>Foundations  for  Microwave  Engineering</i>,  2</text>
+<text top="447" left="437" width="8" height="7" font="21">nd</text>
+<text top="448" left="444" width="3" height="11" font="0"> </text>
+<text top="462" left="112" width="293" height="11" font="0">edition Mcgraw-Hill College, 1992. ISBN-10: 0070118116. </text>
+<text top="479" left="85" width="362" height="11" font="0">[2]  BOOKER, H. G., Slot Aerials and Their Relation to Complementary </text>
+<text top="493" left="112" width="332" height="11" font="0">Wire  Aerials.  <i>J.  IEE</i>,  1946,  pp.  620-626.  DOI:  10.1049/ji-3a-</text>
+<text top="506" left="112" width="64" height="11" font="0">1.1946.0150 </text>
+<text top="524" left="85" width="362" height="11" font="0">[3]  WADE, P., <i>The W1GHZ Online Microwave Antenna Book</i>, chapter </text>
+<text top="537" left="112" width="12" height="11" font="0"><a href="http://www.w1ghz.org/antbook/preface.htm">7. </a></text>
+<text top="537" left="124" width="211" height="11" font="32"><a href="http://www.w1ghz.org/antbook/preface.htm">http://www.w1ghz.org/antbook/preface.htm</a></text>
+<text top="537" left="336" width="6" height="11" font="0"><a href="http://www.w1ghz.org/antbook/preface.htm"> </a> </text>
+<text top="554" left="85" width="362" height="11" font="0">[4]  BELL,  S.,  KB7TRZ,  Slot  Antenna  Design.  In  <i>Proceedings  of  the </i></text>
+<text top="568" left="112" width="335" height="11" font="4"><i>40th  Annual  West  Coast  VHF/UHF  Conference</i>  held  on.  Cerritos, </text>
+<text top="581" left="112" width="98" height="11" font="0">CA, May 5-7 <a href="http://www.qsl.net/w6by/techtips/slot_ant.html">1995. </a></text>
+<text top="581" left="210" width="227" height="11" font="32"><a href="http://www.qsl.net/w6by/techtips/slot_ant.html">http://www.qsl.net/w6by/techtips/slot_ant.html</a></text>
+<text top="581" left="437" width="6" height="11" font="0"><a href="http://www.qsl.net/w6by/techtips/slot_ant.html">  </a></text>
+<text top="599" left="85" width="362" height="11" font="0">[5]  STEGEN,  R.  J.,  Longitudinal  Shunt  Slot  Characteristics,  Hughes </text>
+<text top="612" left="112" width="335" height="11" font="0">Technical  Memorandum  No.  261,  Culver  City,  CA,  November </text>
+<text top="626" left="112" width="31" height="11" font="0"><a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a800305.pdf">1951. </a></text>
+<text top="626" left="143" width="246" height="11" font="32"><a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a800305.pdf">http://www.dtic.mil/dtic/tr/fulltext/u2/a800305.pdf</a></text>
+<text top="626" left="389" width="6" height="11" font="0"><a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a800305.pdf">  </a></text>
+<text top="643" left="85" width="362" height="11" font="0">[6]  KRAUS,  J.,  <i>Antennas</i>,  McGraw-Hill,  1950,  pp. 624-642. ISBN-10: </text>
+<text top="656" left="112" width="67" height="11" font="0">007123201X </text>
+<text top="674" left="85" width="362" height="11" font="0">[7]  POZAR, D. M., <i>Microwave Engineering</i>, second edition, pp. 65-73. </text>
+<text top="687" left="112" width="305" height="11" font="0">Wiley; 4 edition (November 22, 2011). ISBN-10: 0470631554 </text>
+<text top="704" left="85" width="362" height="11" font="0">[8]  CHANG,  K.,  <i>Encyclopedia  of  RF  and  Microwave  Engineering</i>, </text>
+<text top="718" left="112" width="301" height="11" font="0">volume 1-6, pp. 4696-4702, 2005. ISBN: 978-0-471-27053-9 </text>
+<text top="735" left="85" width="362" height="11" font="0">[9]  ELLIOTT,  R. S., <i>Antenna Theory and Design</i>, Prentice-Hall, 1981, </text>
+<text top="749" left="112" width="295" height="11" font="0">pp. 39-41, 86-99, 336-344, 407-414. ISBN-10: 0471449962 </text>
+<text top="766" left="85" width="362" height="11" font="0">[10]  NELL,  O.,  SOLBACH,  K.,  &amp;  DREIER,  J.,  Omni  directional </text>
+<text top="780" left="112" width="335" height="11" font="0">Waveguide  Slot  Antenna  for  Horizontal  Polarization.  VHF </text>
+<text top="793" left="112" width="335" height="11" font="0">Communications,  4/1991,  pp.200-205  and  1/1992,  pp.  11-17. </text>
+<text top="807" left="112" width="189" height="11" font="32"><a href="http://www.vhfcomm.co.uk/index.html">http://www.vhfcomm.co.uk/index.html</a></text>
+<text top="807" left="301" width="6" height="11" font="0"><a href="http://www.vhfcomm.co.uk/index.html"> </a> </text>
+<text top="824" left="85" width="362" height="11" font="0">[11]  STEVENSON,  A.F.,  Theory  of  slots  in  rectangular  waveguides,  <i>J. </i></text>
+<text top="837" left="112" width="29" height="11" font="4"><i>Appl. </i></text>
+<text top="837" left="171" width="33" height="11" font="4"><i>Phys.</i>, </text>
+<text top="837" left="234" width="40" height="11" font="0">January </text>
+<text top="837" left="304" width="30" height="11" font="0">1948, </text>
+<text top="837" left="365" width="18" height="11" font="0">pp. </text>
+<text top="837" left="413" width="35" height="11" font="0">24-38. </text>
+<text top="851" left="112" width="177" height="11" font="32"><a href="http://dx.doi.org/10.1063/1.1697868">http://dx.doi.org/10.1063/1.1697868</a></text>
+<text top="851" left="290" width="6" height="11" font="0"><a href="http://dx.doi.org/10.1063/1.1697868">  </a></text>
+<text top="868" left="85" width="362" height="11" font="0">[12]  CROSWELL, W., <i>slots antenna</i>, chapter 8. in Antenna Engineering </text>
+<text top="882" left="112" width="96" height="11" font="0">Handbook  2007,  3</text>
+<text top="880" left="208" width="7" height="7" font="21">rd</text>
+<text top="882" left="215" width="232" height="11" font="0">  Edition,  eds.  R.  C  Johnson,  H.  Jasik,  New </text>
+<text top="895" left="112" width="236" height="11" font="0">York: McGraw Hill, Inc. ISBN-10: 0071475745 </text>
+<text top="912" left="85" width="362" height="11" font="0">[13]  GILBERT,  R.A.,.  <i>slot  antenna  arrays</i>,  chapter  9  in  Antenna </text>
+<text top="926" left="112" width="160" height="11" font="0">Engineering  Handbook  2007,  3</text>
+<text top="925" left="272" width="7" height="7" font="21">rd</text>
+<text top="926" left="279" width="168" height="11" font="0">  Edition,  eds.  R.  C  Johnson,  H. </text>
+<text top="939" left="112" width="292" height="11" font="0">Jasik, New York: McGraw Hill, Inc. ISBN-10: 0071475745 </text>
+<text top="1005" left="85" width="174" height="19" font="8"><b>About the Authors </b></text>
+<text top="1037" left="85" width="363" height="13" font="6"><b>Shay  ROZENBERG  </b>is  a  Radar  System  Engineer.  He </text>
+<text top="1055" left="85" width="363" height="13" font="5">studied  towards  his  BSc  degree  in  electrical  engineering </text>
+<text top="1072" left="85" width="363" height="13" font="5">during  2004  –  2006  in  Ariel  University.  During  the  years </text>
+<text top="1090" left="85" width="363" height="13" font="5">2009 – 2014 he studied toward an MSc in RF Engineering </text>
+<text top="1108" left="85" width="363" height="13" font="5">in  Ariel  University  under  the  supervision  of  Professor </text>
+<text top="1125" left="85" width="101" height="13" font="5">Asher Yahalom. </text>
+<text top="114" left="470" width="363" height="13" font="6"><b>Asher  YAHALOM</b>  is  a  Full  Professor  in  the  Faculty  of </text>
+<text top="132" left="470" width="363" height="13" font="5">Engineering  at  Ariel University and the Academic director </text>
+<text top="149" left="470" width="363" height="13" font="5">of the free electron laser user center which is located within </text>
+<text top="167" left="470" width="363" height="13" font="5">the  University  Center  campus.  He  was  born  in  Israel  on </text>
+<text top="185" left="470" width="363" height="13" font="5">November  15,  1968,  received  the  B.Sc.,  M.Sc.  and  Ph.D. </text>
+<text top="202" left="470" width="363" height="13" font="5">degrees  in  mathematics  and  physics  from  the  Hebrew </text>
+<text top="220" left="470" width="363" height="13" font="5">University  in  Jerusalem,  Israel  in  1990,  1991  and  1996 </text>
+<text top="238" left="470" width="363" height="13" font="5">respectively.  From  1994  to  1998  Asher  Yahalom  worked </text>
+<text top="255" left="470" width="363" height="13" font="5">with Direx Medical System on the development of a novel </text>
+<text top="273" left="470" width="363" height="13" font="5">MRI  machine  as  a  head  of  the  magneto-static  team. </text>
+<text top="290" left="470" width="363" height="13" font="5">Afterwards  he  consulted  the  company  in  various </text>
+<text top="308" left="470" width="363" height="13" font="5">mathematical  and  algorithmic  issues  related  to  the </text>
+<text top="326" left="470" width="363" height="13" font="5">development of the &#34;gamma knife&#34; - a radiation based head </text>
+<text top="343" left="470" width="363" height="13" font="5">surgery  system.  In  the  years  1998-1999  Asher  Yahalom </text>
+<text top="361" left="470" width="363" height="13" font="5">joined  the  Israeli  Free  Electron  Laser  Group  both  as </text>
+<text top="379" left="470" width="363" height="13" font="5">postdoctoral  fellow  and  as  a  project  manager,  he  is  a </text>
+<text top="396" left="470" width="363" height="13" font="5">member  of  the  group  ever  since.  In  1999  he  joined  the </text>
+<text top="414" left="470" width="363" height="13" font="5">College  of  Judea  &amp;  Samaria  which  became  at  2007  Ariel </text>
+<text top="432" left="470" width="363" height="13" font="5">University Center. During 2005-2006 on his first sabbatical </text>
+<text top="449" left="470" width="363" height="13" font="5">he  was  a  senior  academic  visitor  at  the  institute  of </text>
+<text top="467" left="470" width="363" height="13" font="5">astronomy  in  Cambridge.  During  his  second  sabbatical  in </text>
+<text top="485" left="470" width="363" height="13" font="5">the  years  2012-2013  he  was  a  visiting  fellow  of  the  Isaac </text>
+<text top="502" left="470" width="363" height="13" font="5">Newton  Institute  for  Mathematical  Sciences  also  in </text>
+<text top="520" left="470" width="363" height="13" font="5">Cambridge  UK.  Since  2013  Asher  Yahalom  is  a  full </text>
+<text top="537" left="470" width="363" height="13" font="5">professor  and  since  2014  he  is  the  head  of  the  department </text>
+<text top="555" left="470" width="363" height="13" font="5">of  electronic  &amp;  electrical  engineering.  Asher  Yahalom </text>
+<text top="573" left="470" width="363" height="13" font="5">works in a wide range of scientific &amp; technological subjects </text>
+<text top="590" left="470" width="363" height="13" font="5">ranging  from  the  foundations  of  quantum  mechanics  to </text>
+<text top="608" left="470" width="63" height="13" font="5">molecular </text>
+<text top="608" left="582" width="58" height="13" font="5">dynamic, </text>
+<text top="608" left="689" width="32" height="13" font="5">fluid </text>
+<text top="608" left="769" width="64" height="13" font="5">dynamics, </text>
+<text top="626" left="470" width="150" height="13" font="5">magnetohydrodynamics, </text>
+<text top="626" left="659" width="109" height="13" font="5">electromagnetism </text>
+<text top="626" left="808" width="25" height="13" font="5">and </text>
+<text top="643" left="470" width="106" height="13" font="5">communications. </text>
+</page>
+</pdf2xml>

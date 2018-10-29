@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="28" family="Times" color="#7f7f7f"/>
+	<fontspec id="1" size="15" family="Times" color="#000000"/>
+	<fontspec id="2" size="10" family="Times" color="#000000"/>
+<text top="770" left="48" width="0" height="27" font="0"><a href="http://arXiv.org/abs/astro-ph/9204001v1">arXiv:astro-ph/9204001v1  13 Apr 1992</a></text>
+<text top="113" left="186" width="524" height="18" font="1">GAMMA-RAY BURSTS AS THE DEATH THROES OF</text>
+<text top="160" left="318" width="260" height="18" font="1">MASSIVE BINARY STARS</text>
+<text top="236" left="218" width="135" height="18" font="1">Ramesh Narayan</text>
+<text top="235" left="353" width="7" height="11" font="2">1</text>
+<text top="236" left="361" width="136" height="18" font="1">, Bohdan Paczy´</text>
+<text top="236" left="487" width="31" height="18" font="1">nski</text>
+<text top="235" left="518" width="7" height="11" font="2">2</text>
+<text top="236" left="526" width="133" height="18" font="1">, and Tsvi Piran</text>
+<text top="235" left="659" width="7" height="11" font="2">1</text>
+<text top="234" left="667" width="11" height="13" font="2">,3</text>
+<text top="294" left="390" width="116" height="18" font="1">ABSTRACT</text>
+<text top="351" left="144" width="645" height="18" font="1">It is proposed that gamma-ray bursts are created in the mergers of double neutron</text>
+<text top="390" left="108" width="680" height="18" font="1">star binaries and black hole neutron star binaries at cosmological distances. Bursts with</text>
+<text top="429" left="108" width="680" height="18" font="1">complex profiles and relatively long durations are the result of magnetic flares gener-</text>
+<text top="467" left="108" width="680" height="18" font="1">ated by the Parker instability in a post-merger differentially-rotating disk. Some bursts</text>
+<text top="506" left="108" width="680" height="18" font="1">may also be produced through neutrino-antineutrino annihilation into electrons and</text>
+<text top="545" left="108" width="449" height="18" font="1">positrons. In both cases, an optically thick fireball of size</text>
+<text top="544" left="563" width="11" height="13" font="2">&lt;</text>
+<text top="554" left="563" width="11" height="9" font="2">∼</text>
+<text top="545" left="580" width="208" height="18" font="1">100 km is initially created,</text>
+<text top="583" left="108" width="680" height="18" font="1">which expands ultrarelativistically to large radii before radiating. Several previous ob-</text>
+<text top="622" left="108" width="681" height="18" font="1">jections to the cosmological merger model are eliminated. It is predicted that γ-ray</text>
+<text top="661" left="108" width="681" height="18" font="1">bursts will be accompanied by a burst of gravitational radiation from the spiraling-in</text>
+<text top="700" left="108" width="334" height="18" font="1">binary which could be detected by LIGO.</text>
+<text top="758" left="108" width="133" height="16" font="1">Subject Headings</text>
+<text top="757" left="241" width="547" height="18" font="1">: Accretion — Black Holes — Gamma Rays: Bursts — Gravitation</text>
+<text top="796" left="159" width="629" height="18" font="1">— Magnetic Fields — Neutrinos — Pulsars — Stars: Binaries — Stars: Neutron</text>
+<text top="834" left="159" width="326" height="18" font="1">— Stars: Supernovae — X-rays: Binaries</text>
+<text top="892" left="252" width="391" height="18" font="1">Submitted to Ap J (Lett.), March 24, 1992</text>
+<text top="947" left="108" width="7" height="11" font="2">1</text>
+<text top="949" left="123" width="553" height="18" font="1">Harvard-Smithsonian Center for Astrophysics, Cambridge, MA 02138</text>
+<text top="986" left="108" width="7" height="11" font="2">2</text>
+<text top="988" left="123" width="440" height="18" font="1">Princeton University Observatory, Princeton, NJ 08544</text>
+<text top="1025" left="108" width="7" height="11" font="2">3</text>
+<text top="1026" left="123" width="558" height="18" font="1">Racah Institute for Physics, The Hebrew University, Jerusalem, Israel</text>
+<text top="1073" left="444" width="9" height="18" font="1">1</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="351" width="194" height="18" font="1">1. INTRODUCTION</text>
+<text top="171" left="144" width="645" height="18" font="1">Recent results obtained with the Burst and Transient Source Experiment (BATSE)</text>
+<text top="210" left="108" width="680" height="18" font="1">on the Compton Gamma-Ray Observatory (Meegan et al. 1992) suggest strongly that</text>
+<text top="249" left="108" width="680" height="18" font="1">gamma-ray bursts (see Higdon &amp; Lingenfelter 1990 for a review) originate at cosmo-</text>
+<text top="288" left="108" width="680" height="18" font="1">logical distances. The 153 bursts reported so far appear to be isotropic in the sky and</text>
+<text top="327" left="108" width="243" height="18" font="1">to have a distribution of V /V</text>
+<text top="335" left="351" width="26" height="11" font="2">max</text>
+<text top="327" left="387" width="401" height="18" font="1">that is consistent with a cosmological population</text>
+<text top="367" left="108" width="680" height="20" font="1">extending to redshifts z ∼ 1 (Mao &amp; Paczy´nski 1992, Piran 1992). The required event</text>
+<text top="406" left="108" width="92" height="20" font="1">rate is ∼ 10</text>
+<text top="405" left="200" width="11" height="9" font="2">−</text>
+<text top="404" left="211" width="7" height="11" font="2">6</text>
+<text top="406" left="225" width="17" height="18" font="1">yr</text>
+<text top="405" left="242" width="11" height="9" font="2">−</text>
+<text top="404" left="253" width="7" height="11" font="2">1</text>
+<text top="406" left="267" width="44" height="18" font="1">per L</text>
+<text top="405" left="310" width="7" height="9" font="2">∗</text>
+<text top="406" left="325" width="448" height="20" font="1">galaxy, and the typical energy released in a burst is ∼ 10</text>
+<text top="404" left="773" width="14" height="11" font="2">51</text>
+<text top="444" left="108" width="523" height="20" font="1">erg. The short rise times observed imply a source size ∼ 100 km.</text>
+<text top="484" left="144" width="434" height="18" font="1">Based on these requirements, many authors (Paczy´</text>
+<text top="484" left="569" width="220" height="18" font="1">nski 1986, Goodman 1986,</text>
+<text top="523" left="108" width="556" height="18" font="1">Eichler et al. 1989, Piran 1990, Narayan, Piran &amp; Shemi 1991, Paczy´</text>
+<text top="523" left="655" width="133" height="18" font="1">nski 1991, Piran,</text>
+<text top="562" left="108" width="680" height="18" font="1">Narayan &amp; Shemi 1992) have suggested that γ-ray bursts arise in the merger of binaries</text>
+<text top="601" left="108" width="680" height="18" font="1">consisting of either two neutron stars (NS-NS) or a black hole and a neutron star (BH-</text>
+<text top="640" left="108" width="680" height="18" font="1">NS). This suggestion is attractive for a number of reasons. (1) The model employs</text>
+<text top="679" left="108" width="680" height="18" font="1">a known source population; four NS-NS radio pulars have been discovered in the</text>
+<text top="718" left="108" width="680" height="18" font="1">Galaxy, viz. PSR 1534+12, PSR 1913+16, PSR 2127+11C, and PSR 2303+46. (2)</text>
+<text top="757" left="108" width="680" height="18" font="1">The scenario invokes orbital decay through the emission of gravitational radiation, for</text>
+<text top="796" left="108" width="680" height="18" font="1">which we have direct observational evidence in the case of PSR1913+16 (Taylor &amp;</text>
+<text top="835" left="108" width="680" height="18" font="1">Weisberg 1989); moreover, three of the above four pulsars have merger times shorter</text>
+<text top="874" left="108" width="433" height="18" font="1">than the Hubble time. (3) In a merger, an energy &gt; 10</text>
+<text top="872" left="541" width="14" height="11" font="2">53</text>
+<text top="874" left="562" width="226" height="18" font="1">erg will be released in a time</text>
+<text top="917" left="108" width="680" height="15" font="1">∼ 1 ms and within a radius &lt; 100 km, satisfying the observational constraints. (4)</text>
+<text top="952" left="108" width="561" height="20" font="1">NS-NS and BH-NS mergers are estimated to occur at the rate of ∼ 10</text>
+<text top="951" left="669" width="11" height="9" font="2">−</text>
+<text top="950" left="680" width="7" height="11" font="2">6</text>
+<text top="957" left="691" width="35" height="15" font="1">− 10</text>
+<text top="951" left="727" width="11" height="9" font="2">−</text>
+<text top="950" left="738" width="7" height="11" font="2">5</text>
+<text top="952" left="753" width="17" height="18" font="1">yr</text>
+<text top="951" left="769" width="11" height="9" font="2">−</text>
+<text top="950" left="780" width="7" height="11" font="2">1</text>
+<text top="991" left="108" width="680" height="18" font="1">per galaxy (Narayan, Piran &amp; Shemi 1991, Phinney 1991), in good agreement with</text>
+<text top="1030" left="108" width="191" height="18" font="1">the observed burst rate.</text>
+<text top="1073" left="444" width="9" height="18" font="1">2</text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="144" width="644" height="18" font="1">Many arguments have been made against cosmological scenarios in general and</text>
+<text top="152" left="108" width="680" height="18" font="1">the merger model in particular. Among these, one objection appears at first sight to</text>
+<text top="192" left="108" width="181" height="18" font="1">be quite serious. If 10</text>
+<text top="191" left="289" width="14" height="11" font="2">51</text>
+<text top="192" left="313" width="476" height="18" font="1">erg of γ-rays are created in a volume of size 100 km, the</text>
+<text top="232" left="108" width="256" height="20" font="1">optical depth due to γ + γ → e</text>
+<text top="230" left="364" width="11" height="11" font="2">+</text>
+<text top="232" left="381" width="27" height="18" font="1">+ e</text>
+<text top="231" left="408" width="11" height="9" font="2">−</text>
+<text top="232" left="428" width="361" height="18" font="1">will be extremely large and the photons will</text>
+<text top="272" left="108" width="603" height="18" font="1">apparently be trapped (Schmidt 1978). This objection was refuted by Paczy´</text>
+<text top="272" left="702" width="87" height="18" font="1">nski (1986)</text>
+<text top="312" left="108" width="680" height="18" font="1">and Goodman (1986) who showed that an optically thick ball of energy, a “fireball,”</text>
+<text top="352" left="108" width="680" height="18" font="1">will expand relativistically and thereby radiate most of its energy when it becomes</text>
+<text top="392" left="108" width="680" height="18" font="1">optically thin. Because of relativistic beaming, a distant observer receives a burst of</text>
+<text top="432" left="108" width="680" height="18" font="1">radiation whose temperature and duration will be similar to the initial temperature</text>
+<text top="471" left="108" width="680" height="18" font="1">and initial light-crossing time of the fireball. Relativistic beaming also circumvents</text>
+<text top="511" left="108" width="680" height="18" font="1">the so-called “Ruderman limit” (Ruderman 1975), which sets an upper limit to the</text>
+<text top="551" left="108" width="680" height="18" font="1">distance of a source for a given source temperature, flux, and variability timescale.</text>
+<text top="591" left="108" width="592" height="18" font="1">(Beaming solves a related problem in the case of extragalactic radio jets).</text>
+<text top="631" left="144" width="644" height="18" font="1">Although the problems associated with the large optical depth and the Ruderman</text>
+<text top="671" left="108" width="680" height="18" font="1">limit have been solved, several other objections remain. (1) How is the energy converted</text>
+<text top="711" left="108" width="680" height="18" font="1">into γ-rays? (2) How can one avoid baryon contamination which will significantly</text>
+<text top="751" left="108" width="680" height="18" font="1">modify the evolution of the relativistic fireball? (3) How can one obtain bursts with a</text>
+<text top="791" left="108" width="453" height="20" font="1">median duration ∼ 10 s when the dynamical timescale is</text>
+<text top="790" left="568" width="11" height="13" font="2">&lt;</text>
+<text top="800" left="568" width="11" height="9" font="2">∼</text>
+<text top="791" left="587" width="202" height="18" font="1">1 ms? (4) Why are burst</text>
+<text top="831" left="108" width="680" height="18" font="1">profiles so complex and individually unique? (5) Why do some bursts have a precursor</text>
+<text top="871" left="108" width="680" height="18" font="1">several seconds before the primary burst (Murakami et al. 1991)? (6) What produces</text>
+<text top="910" left="108" width="680" height="18" font="1">the power-law γ-ray spectrum, which extends well beyond the pair creation limit of</text>
+<text top="950" left="108" width="680" height="18" font="1">511 keV and sometimes even up to a few hundred MeV? (7) How can one explain</text>
+<text top="990" left="108" width="681" height="18" font="1">the cyclotron absorption features seen in a few bursts? (8) What is the explanation</text>
+<text top="1030" left="108" width="680" height="18" font="1">for the redshifted electron-positron annihilation lines claimed in some bursts? (The</text>
+<text top="1073" left="444" width="9" height="18" font="1">3</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="680" height="18" font="1">evidence for these lines is not very strong, cf. Messina &amp; Share 1992.) (9) Why have</text>
+<text top="151" left="108" width="680" height="18" font="1">no galaxies been found in the vicinities of bright γ-ray bursts with well-determined</text>
+<text top="190" left="108" width="207" height="18" font="1">positions (Schaefer 1990)?</text>
+<text top="230" left="144" width="645" height="18" font="1">The aim of this paper is to describe a qualitative scenario for the production of</text>
+<text top="269" left="108" width="680" height="18" font="1">γ-ray bursts in mergers of NS-NS and BH-NS binaries, and to demonstrate that there</text>
+<text top="307" left="108" width="404" height="18" font="1">are plausible solutions to most of these objections.</text>
+<text top="386" left="330" width="236" height="18" font="1">2. MERGER SCENARIO</text>
+<text top="445" left="144" width="644" height="18" font="1">The progenitors of close NS-NS and BH-NS binaries must be massive X-ray binaries</text>
+<text top="484" left="108" width="680" height="18" font="1">consisting of an O or B main sequence star and a neutron star or a black hole (e.g. Vela</text>
+<text top="523" left="108" width="680" height="18" font="1">X-1, Cyg X-1, cf. Trimble 1991 for a review). When the main sequence star evolves,</text>
+<text top="562" left="108" width="680" height="18" font="1">the binary very likely undergoes a common envelope phase, after which one has a tight</text>
+<text top="601" left="108" width="680" height="18" font="1">binary consisting of the helium core of the OB star and its compact companion. Cyg</text>
+<text top="640" left="108" width="54" height="18" font="1">X-3 (P</text>
+<text top="648" left="162" width="8" height="11" font="2">b</text>
+<text top="640" left="171" width="617" height="18" font="1">=4.79 hr) appears to be an excellent example of this stage of evolution (van</text>
+<text top="679" left="108" width="174" height="18" font="1">Kerkwijk et al. 1992).</text>
+<text top="718" left="144" width="478" height="18" font="1">We are interested in Cyg X-3 like binaries with separations a</text>
+<text top="725" left="622" width="7" height="11" font="2">o</text>
+<text top="718" left="635" width="153" height="20" font="1">ranging from ∼ few</text>
+<text top="762" left="108" width="32" height="15" font="1">×10</text>
+<text top="755" left="140" width="14" height="11" font="2">10</text>
+<text top="757" left="161" width="627" height="18" font="1">cm, the radius of the helium core (assuming that it behaves like a helium main</text>
+<text top="796" left="108" width="242" height="20" font="1">sequence star), to ∼ few ×10</text>
+<text top="794" left="350" width="14" height="11" font="2">11</text>
+<text top="796" left="374" width="414" height="18" font="1">cm, the limit beyond which gravitational radiation</text>
+<text top="835" left="108" width="680" height="18" font="1">losses in the double degenerate binary phase are too slow to cause a merger within</text>
+<text top="874" left="108" width="680" height="18" font="1">the age of the universe. To make a NS-NS binary, the helium core needs to have a</text>
+<text top="913" left="108" width="64" height="18" font="1">mass M</text>
+<text top="921" left="172" width="17" height="11" font="2">He</text>
+<text top="913" left="199" width="135" height="20" font="1">between ∼ 2.5M</text>
+<text top="921" left="334" width="11" height="9" font="2">⊙</text>
+<text top="913" left="355" width="421" height="18" font="1">(in order to have a supernova explosion) and 4.2M</text>
+<text top="921" left="776" width="11" height="9" font="2">⊙</text>
+<text top="952" left="108" width="680" height="18" font="1">(in order to leave behind a bound NS-NS binary, assuming a symmetric supernova</text>
+<text top="991" left="108" width="341" height="18" font="1">explosion and a neutron star mass of 1.4M</text>
+<text top="999" left="449" width="11" height="9" font="2">⊙</text>
+<text top="991" left="461" width="327" height="18" font="1">). After the explosion, we are left behind</text>
+<text top="1030" left="108" width="481" height="18" font="1">with a NS-NS binary with an orbital eccentricity e = (M</text>
+<text top="1038" left="589" width="17" height="11" font="2">He</text>
+<text top="1030" left="607" width="181" height="20" font="1">/2.8) − 0.5, periastron</text>
+<text top="1073" left="444" width="9" height="18" font="1">4</text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="98" height="18" font="1">separation a</text>
+<text top="120" left="206" width="8" height="11" font="2">p</text>
+<text top="113" left="222" width="313" height="18" font="1">equal to the pre-explosion separation a</text>
+<text top="120" left="535" width="7" height="11" font="2">o</text>
+<text top="113" left="543" width="191" height="18" font="1">, and a recoil velocity v</text>
+<text top="120" left="734" width="34" height="11" font="2">recoil</text>
+<text top="113" left="774" width="14" height="18" font="1">=</text>
+<text top="152" left="108" width="51" height="18" font="1">180(M</text>
+<text top="160" left="159" width="17" height="11" font="2">He</text>
+<text top="157" left="178" width="69" height="15" font="1">−2.8)(M</text>
+<text top="160" left="247" width="17" height="11" font="2">He</text>
+<text top="152" left="265" width="45" height="18" font="1">+1.4)</text>
+<text top="152" left="310" width="11" height="9" font="2">−</text>
+<text top="151" left="321" width="7" height="11" font="2">1</text>
+<text top="150" left="328" width="15" height="13" font="2">/2</text>
+<text top="152" left="344" width="17" height="18" font="1">(a</text>
+<text top="160" left="360" width="8" height="11" font="2">p</text>
+<text top="152" left="369" width="27" height="18" font="1">/10</text>
+<text top="151" left="396" width="14" height="11" font="2">11</text>
+<text top="152" left="411" width="30" height="18" font="1">cm)</text>
+<text top="152" left="441" width="11" height="9" font="2">−</text>
+<text top="151" left="452" width="7" height="11" font="2">1</text>
+<text top="150" left="459" width="15" height="13" font="2">/2</text>
+<text top="152" left="482" width="39" height="18" font="1">km s</text>
+<text top="152" left="520" width="11" height="9" font="2">−</text>
+<text top="151" left="532" width="7" height="11" font="2">1</text>
+<text top="152" left="540" width="249" height="18" font="1">. Similar estimates for a BH-NS</text>
+<text top="192" left="108" width="557" height="18" font="1">binary give somewhat lower orbital eccentricities and space velocities.</text>
+<text top="232" left="144" width="644" height="18" font="1">For typical numbers, the recoil velocity of the binary is large enough for the system</text>
+<text top="272" left="108" width="525" height="18" font="1">to escape from a small galaxy (though probably not from an L</text>
+<text top="271" left="633" width="7" height="9" font="2">∗</text>
+<text top="272" left="650" width="139" height="18" font="1">galaxy). There is</text>
+<text top="312" left="108" width="680" height="18" font="1">growing evidence recently that the blue extragalactic light is dominated by faint dwarf</text>
+<text top="352" left="108" width="157" height="18" font="1">galaxies between 22</text>
+<text top="350" left="265" width="13" height="13" font="2">m</text>
+<text top="357" left="282" width="36" height="15" font="1">− 24</text>
+<text top="350" left="318" width="13" height="13" font="2">m</text>
+<text top="352" left="338" width="450" height="18" font="1">(Cowie 1991, and references therein). These galaxies are</text>
+<text top="392" left="108" width="680" height="20" font="1">at modest redshifts (z ∼ 0.2 − 0.4) and are very numerous (1 and 6 per square arcmin</text>
+<text top="432" left="108" width="41" height="18" font="1">at 22</text>
+<text top="429" left="149" width="13" height="13" font="2">m</text>
+<text top="432" left="170" width="54" height="18" font="1">and 24</text>
+<text top="429" left="224" width="13" height="13" font="2">m</text>
+<text top="432" left="238" width="550" height="18" font="1">). If supernovae are strongly correlated with the blue light, then the</text>
+<text top="472" left="108" width="680" height="18" font="1">majority of compact binaries are probably born in low-mass galaxies, escape from their</text>
+<text top="511" left="108" width="452" height="20" font="1">hosts, and move distances of up to 1 Mpc in a few ×10</text>
+<text top="510" left="560" width="7" height="11" font="2">9</text>
+<text top="511" left="575" width="213" height="18" font="1">yr before they merge. The</text>
+<text top="551" left="108" width="680" height="18" font="1">lack of obvious host galaxies associated with γ-ray bursts is then not surprising. The</text>
+<text top="591" left="108" width="680" height="18" font="1">burst positions are likely to be offset from that of their parent galaxies by up to an</text>
+<text top="631" left="108" width="680" height="18" font="1">arc minute, and at this separation the association will be confused by several other</text>
+<text top="671" left="108" width="204" height="18" font="1">faint galaxies in the field.</text>
+<text top="711" left="144" width="644" height="20" font="1">The typical duration of a γ-ray burst is ∼ 10 s, and the time delay between the</text>
+<text top="751" left="108" width="680" height="20" font="1">precursor and main pulse is also ∼ 10 s (Murakami et al. 1991). For a NS-NS binary</text>
+<text top="791" left="108" width="454" height="18" font="1">in a near-circular orbit, the time to merge is given by t</text>
+<text top="798" left="562" width="37" height="11" font="2">merge</text>
+<text top="791" left="606" width="90" height="18" font="1">= 38 (a/10</text>
+<text top="789" left="696" width="7" height="11" font="2">7</text>
+<text top="788" left="703" width="11" height="13" font="2">.5</text>
+<text top="791" left="715" width="30" height="18" font="1">cm)</text>
+<text top="789" left="745" width="7" height="11" font="2">4</text>
+<text top="791" left="761" width="27" height="18" font="1">s =</text>
+<text top="831" left="108" width="51" height="18" font="1">160 (P</text>
+<text top="838" left="159" width="8" height="11" font="2">b</text>
+<text top="831" left="168" width="46" height="18" font="1">/0.1s)</text>
+<text top="829" left="214" width="7" height="11" font="2">8</text>
+<text top="828" left="221" width="15" height="13" font="2">/3</text>
+<text top="831" left="243" width="546" height="18" font="1">s. Although the efficiency of tidal interactions and spin-up of the two</text>
+<text top="871" left="108" width="564" height="18" font="1">stars as they spiral towards each other is uncertain (Haensel, Paczy´</text>
+<text top="871" left="663" width="125" height="18" font="1">nski &amp; Amster-</text>
+<text top="910" left="108" width="680" height="18" font="1">damski 1991, Kochanek 1992), it is likely that there will be sufficient heating produced</text>
+<text top="950" left="108" width="680" height="18" font="1">by tidal dissipation to lead to a super-Eddington luminosity. This may produce some</text>
+<text top="990" left="108" width="680" height="18" font="1">of the precursors. The luminosity may also drive a wind from the surfaces of the two</text>
+<text top="1030" left="108" width="680" height="18" font="1">stars, creating slow-moving baryonic material which may block γ-ray emission from</text>
+<text top="1073" left="444" width="9" height="18" font="1">5</text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="680" height="18" font="1">the compact binary. On the other hand, a later-produced relativistically expanding</text>
+<text top="151" left="108" width="680" height="18" font="1">burst may be able to shock on the slow wind to produce non-thermal radiation. Yet</text>
+<text top="189" left="108" width="680" height="18" font="1">another possibility is that the precursors may in fact be due to the early phases of the</text>
+<text top="227" left="108" width="500" height="18" font="1">relativistic burst material plowing through the pre-burst wind.</text>
+<text top="265" left="144" width="405" height="20" font="1">Once the two stars merge, there will be ∼ few ×10</text>
+<text top="264" left="549" width="14" height="11" font="2">53</text>
+<text top="265" left="570" width="218" height="18" font="1">erg of energy divided more-</text>
+<text top="304" left="108" width="680" height="18" font="1">or-less equally into three forms: (1) thermal energy, (2) ordered rotational energy, and</text>
+<text top="342" left="108" width="680" height="18" font="1">(3) “non-uniform” kinetic energy (either chaotic motions or differential rotation). The</text>
+<text top="380" left="108" width="680" height="18" font="1">third form of energy may be quite significant, and may be located quite far from the</text>
+<text top="418" left="108" width="681" height="18" font="1">center, if there is strong splashback during the merger as may happen if the rotations</text>
+<text top="457" left="108" width="680" height="18" font="1">of the two stars are not synchronized with the orbit. Each of the three energy forms</text>
+<text top="495" left="108" width="351" height="18" font="1">will be released through a different channel.</text>
+<text top="533" left="144" width="645" height="18" font="1">The thermal energy is radiated mostly as neutrinos and antineutrinos. Goodman</text>
+<text top="572" left="108" width="39" height="16" font="1">et al.</text>
+<text top="571" left="153" width="635" height="18" font="1">(1987) showed that in Type II supernovae the finite cross-section associated with</text>
+<text top="610" left="108" width="138" height="18" font="1">the reaction, ν+¯</text>
+<text top="610" left="236" width="46" height="20" font="1">ν → e</text>
+<text top="608" left="283" width="11" height="11" font="2">+</text>
+<text top="610" left="295" width="23" height="18" font="1">+e</text>
+<text top="609" left="318" width="11" height="9" font="2">−</text>
+<text top="610" left="330" width="123" height="20" font="1">, results in ∼ 10</text>
+<text top="608" left="454" width="14" height="11" font="2">51</text>
+<text top="610" left="474" width="314" height="18" font="1">erg being converted into electromagnetic</text>
+<text top="648" left="108" width="680" height="18" font="1">energy. Eichler et al. (1989) proposed that this mechanism may produce γ-ray bursts</text>
+<text top="686" left="108" width="680" height="20" font="1">in binary mergers. The timescale of the process is the neutrino cooling time, ∼ few</text>
+<text top="724" left="108" width="64" height="18" font="1">seconds.</text>
+<text top="762" left="144" width="644" height="18" font="1">Although modest variability may be expected in neutrino emission because of the</text>
+<text top="801" left="108" width="680" height="18" font="1">chaotic (possibly convective) flows in the post-merger fluid, the complicated and highly</text>
+<text top="839" left="108" width="680" height="18" font="1">variable time structure observed in some bursts may be too extreme to be explained by</text>
+<text top="877" left="108" width="680" height="18" font="1">the neutrino process alone. We suggest that the neutrino mechanism produces the sub-</text>
+<text top="915" left="108" width="680" height="20" font="1">class of bursts with relatively smooth profiles and time durations ∼ few seconds (e.g.</text>
+<text top="954" left="108" width="680" height="18" font="1">GB830801b, Fig. 2 in Higdon &amp; Lingenfelter 1990), and possibly also some precursors.</text>
+<text top="992" left="144" width="644" height="18" font="1">The rapid rotation of the post-merger object will almost certainly cause the fluid</text>
+<text top="1030" left="108" width="680" height="18" font="1">to be dynamically unstable, leading to rapid loss of energy and angular momentum</text>
+<text top="1073" left="444" width="9" height="18" font="1">6</text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="680" height="18" font="1">on a timescale of a few msec. This instability dies down when the ratio of kinetic to</text>
+<text top="151" left="108" width="680" height="20" font="1">gravitational energy falls below ∼ 0.27. At this stage the rotating system will collapse</text>
+<text top="189" left="108" width="680" height="18" font="1">directly to a black hole if the total mass is greater than the maximum mass of a neutron</text>
+<text top="227" left="108" width="680" height="18" font="1">star (note that some stiff equations of state permit neutron stars more massive than</text>
+<text top="265" left="108" width="23" height="18" font="1">2.8</text>
+<text top="274" left="131" width="11" height="9" font="2">⊙</text>
+<text top="265" left="143" width="466" height="18" font="1">), and if the angular momentum J is smaller than GM</text>
+<text top="264" left="611" width="7" height="11" font="2">2</text>
+<text top="265" left="620" width="112" height="18" font="1">/c. If Jc/GM</text>
+<text top="264" left="734" width="7" height="11" font="2">2</text>
+<text top="265" left="751" width="37" height="18" font="1">&gt; 1,</text>
+<text top="304" left="108" width="680" height="18" font="1">collapse is temporarily prevented, but the system will continue to exhibit a secular</text>
+<text top="342" left="108" width="680" height="18" font="1">instability through which it will lose angular momentum on a timescale of a few seconds</text>
+<text top="380" left="108" width="136" height="18" font="1">(Friedman 1983).</text>
+<text top="418" left="144" width="645" height="18" font="1">Most of the energy released during the first dynamical stage will be in the form of</text>
+<text top="457" left="108" width="681" height="18" font="1">gravitational radiation, which could be of importance to future gravitational radiation</text>
+<text top="495" left="108" width="680" height="18" font="1">detectors, but we do not expect any direct electromagnetic signal. During the second</text>
+<text top="533" left="108" width="680" height="18" font="1">secular phase there may be coherent emission of gravitational radiation that could</text>
+<text top="571" left="108" width="680" height="18" font="1">be detected by LIGO, but other processes like neutrino cooling and build up of the</text>
+<text top="610" left="108" width="275" height="18" font="1">magnetic field will also take place.</text>
+<text top="648" left="144" width="644" height="18" font="1">A fraction of the original mass will not participate directly in the central insta-</text>
+<text top="686" left="108" width="680" height="18" font="1">bility and collapse, but will form a surrounding disk/torus which may itself undergo</text>
+<text top="724" left="108" width="680" height="18" font="1">dynamical instabilities (e.g. Narayan &amp; Goodman 1989). We consider it likely that</text>
+<text top="762" left="108" width="498" height="18" font="1">after this phase a significant amount of residual kinetic energy,</text>
+<text top="762" left="612" width="11" height="13" font="2">&lt;</text>
+<text top="772" left="612" width="11" height="9" font="2">∼</text>
+<text top="762" left="630" width="18" height="18" font="1">10</text>
+<text top="761" left="648" width="14" height="11" font="2">52</text>
+<text top="762" left="663" width="126" height="18" font="1">erg, will survive</text>
+<text top="801" left="108" width="680" height="18" font="1">in a relatively long-lived differentially-rotating disk, and we believe that this energy</text>
+<text top="839" left="108" width="521" height="18" font="1">can be tapped almost entirely through electromagnetic processes.</text>
+<text top="877" left="144" width="645" height="18" font="1">In the merger of a BH-NS binary, the neutron star will be tidally disrupted, with</text>
+<text top="915" left="108" width="680" height="18" font="1">some of the matter being swallowed by the black hole, and the remainder forming a</text>
+<text top="954" left="108" width="680" height="18" font="1">torus, generating heat and neutrinos in the process. Subsequent evolution may proceed</text>
+<text top="992" left="108" width="680" height="18" font="1">in a similar fashion in both the BH-NS and NS-NS scenarios, and it is not clear at</text>
+<text top="1030" left="108" width="501" height="18" font="1">this time which of the two is more efficient as a γ-ray burster.</text>
+<text top="1073" left="444" width="9" height="18" font="1">7</text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="144" width="644" height="18" font="1">The mechanism we propose to produce γ-ray bursts similar to GB820331 and</text>
+<text top="152" left="108" width="680" height="18" font="1">GB841215 (Fig. 2 in Higdon &amp; Lingfelter 1990), which have complex time profiles, is</text>
+<text top="192" left="108" width="680" height="18" font="1">based on magnetic fields. Immediately after the merger the field strength is probably</text>
+<text top="237" left="108" width="37" height="15" font="1">∼ 10</text>
+<text top="230" left="145" width="14" height="11" font="2">12</text>
+<text top="232" left="168" width="620" height="18" font="1">G, but instabilities such as the Balbus &amp; Hawley (1991) mode will cause the</text>
+<text top="272" left="108" width="580" height="20" font="1">field to build up quickly to something like an equipartition value ∼ 10</text>
+<text top="270" left="689" width="14" height="11" font="2">16</text>
+<text top="277" left="709" width="37" height="15" font="1">− 10</text>
+<text top="270" left="746" width="14" height="11" font="2">17</text>
+<text top="272" left="769" width="19" height="18" font="1">G.</text>
+<text top="312" left="108" width="680" height="18" font="1">Even if there is no instability, the shearing action of the differential rotation will lead</text>
+<text top="352" left="108" width="371" height="20" font="1">to field build-up on a slower timescale ∼ 10</text>
+<text top="350" left="479" width="7" height="11" font="2">4</text>
+<text top="352" left="496" width="292" height="18" font="1">rotations. (Note that, while electric</text>
+<text top="392" left="108" width="416" height="20" font="1">fields are limited to a maximum strength of ∼ 10</text>
+<text top="390" left="524" width="14" height="11" font="2">13</text>
+<text top="392" left="548" width="46" height="18" font="1">V cm</text>
+<text top="391" left="594" width="11" height="9" font="2">−</text>
+<text top="390" left="605" width="7" height="11" font="2">1</text>
+<text top="392" left="623" width="166" height="18" font="1">by the pair creation</text>
+<text top="432" left="108" width="680" height="18" font="1">threshold, magnetic fields can build up to much higher strengths.) Once the field</text>
+<text top="471" left="108" width="680" height="18" font="1">achieves equipartition, it will tend to exhibit the Parker (1966) instability in which</text>
+<text top="511" left="108" width="680" height="18" font="1">the field will float up and break out of the disk (relativistically in our case) on a</text>
+<text top="551" left="108" width="680" height="18" font="1">dynamical time, leaving the matter behind. Particularly near the top of the magnetic</text>
+<text top="591" left="108" width="680" height="18" font="1">loop, the baryonic contamination may be quite low, making the conditions favorable</text>
+<text top="631" left="108" width="680" height="18" font="1">for a gamma-ray burst. The burst itself will probably be created as a series of explosive</text>
+<text top="671" left="108" width="680" height="18" font="1">reconnection events in the rising magnetic field, just as in solar flares. For the assumed</text>
+<text top="711" left="108" width="501" height="20" font="1">field strength, the temperature of the flare will be ∼ few ×10</text>
+<text top="709" left="609" width="14" height="11" font="2">11</text>
+<text top="711" left="632" width="157" height="18" font="1">K, the photons will</text>
+<text top="750" left="108" width="680" height="20" font="1">have characteristic energies ∼ 10 MeV, and the total energy in a single burst will be</text>
+<text top="795" left="108" width="39" height="15" font="1">∼ 10</text>
+<text top="789" left="147" width="14" height="11" font="2">50</text>
+<text top="790" left="170" width="618" height="20" font="1">erg for linear dimensions ∼ 1 − 10 km. The resulting optically thick fireball</text>
+<text top="830" left="108" width="398" height="18" font="1">will expand relativistically as described by Paczy´</text>
+<text top="830" left="496" width="292" height="18" font="1">nski (1986), Goodman (1986), Shemi</text>
+<text top="870" left="108" width="225" height="18" font="1">&amp; Piran (1990), and Paczy´</text>
+<text top="870" left="324" width="94" height="18" font="1">nski (1990).</text>
+<text top="910" left="144" width="645" height="18" font="1">A very important feature of the model is that the rate of energy release is not</text>
+<text top="950" left="108" width="680" height="18" font="1">limited by the Eddington luminosity, but by the efficiency with which the Parker</text>
+<text top="990" left="108" width="680" height="18" font="1">instability can separate magnetic fields from matter. The energy dissipation occurs</text>
+<text top="1030" left="108" width="681" height="18" font="1">above the disk, and, because of the relativistic outward motion of the flare, very little</text>
+<text top="1073" left="444" width="9" height="18" font="1">8</text>
+</page>
+<page number="9" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="680" height="18" font="1">energy returns to the disk. If this aspect of the scenario works efficiently (which needs</text>
+<text top="152" left="108" width="680" height="18" font="1">to be demonstrated), then we have a viable solution to the problem of how to separate</text>
+<text top="192" left="108" width="601" height="18" font="1">the photons from the baryons (how to “separate light from the darkness”).</text>
+<text top="232" left="144" width="644" height="18" font="1">The flare activity will make the burst profile quite complex, with many sub-</text>
+<text top="272" left="108" width="680" height="18" font="1">bursts. Also, the total duration over which the successive sub-bursts occur will be</text>
+<text top="312" left="108" width="680" height="18" font="1">quite variable from one object to another, depending on the details of the post-merger</text>
+<text top="352" left="108" width="680" height="18" font="1">fluid configuration. These features eliminate some of the strongest objections to the</text>
+<text top="392" left="108" width="680" height="18" font="1">merger scenario. The important point is that the model has two distinctly different</text>
+<text top="432" left="108" width="352" height="20" font="1">timescales: firstly, a dynamical time, ∼ 10</text>
+<text top="431" left="460" width="11" height="9" font="2">−</text>
+<text top="430" left="472" width="7" height="11" font="2">3</text>
+<text top="432" left="489" width="299" height="18" font="1">s, which may be related to the rise</text>
+<text top="472" left="108" width="680" height="18" font="1">times of individual flares (because the Parker instability, once it gets going, operates</text>
+<text top="511" left="108" width="681" height="18" font="1">essentially on a dynamical time), and, secondly, an accretion (or magnetic “viscosity”)</text>
+<text top="551" left="108" width="680" height="20" font="1">time, ∼ 1−100 s, related to the duration of the whole γ-ray burst. We cannot calculate</text>
+<text top="591" left="108" width="680" height="18" font="1">the second timescale from fundamental theory, but we note that in other objects with</text>
+<text top="631" left="108" width="681" height="18" font="1">disks, such as cataclysmic variables and X-ray binaries, the accretion time is typically</text>
+<text top="671" left="108" width="474" height="18" font="1">many orders of magnitude longer than the dynamical time.</text>
+<text top="711" left="144" width="645" height="18" font="1">A generic problem with any cosmological model is that the huge initial optical</text>
+<text top="751" left="108" width="414" height="18" font="1">depth leads to themalization of the fireball (Paczy´</text>
+<text top="751" left="512" width="276" height="18" font="1">nski 1990) and a black body spec-</text>
+<text top="791" left="108" width="680" height="18" font="1">trum. This is in clear conflict with the observed spectra of γ-ray bursts, which have a</text>
+<text top="831" left="108" width="680" height="18" font="1">significant excess of X-rays and very hard γ-rays compared to any Planck spectrum.</text>
+<text top="871" left="108" width="680" height="18" font="1">There are at least two possible solutions to this problem, both related to the flare-</text>
+<text top="910" left="108" width="680" height="18" font="1">like energy release and rapid variability. First, while the instanteneous spectrum of a</text>
+<text top="950" left="108" width="680" height="18" font="1">local flare may be Planckian, the superposition of many Planck curves with a wide</text>
+<text top="990" left="108" width="680" height="18" font="1">range of temperatures and intensities may appear as a very broad broken power law.</text>
+<text top="1030" left="108" width="680" height="18" font="1">Second, it is likely that the flares will eject some mass due to imperfect separation of</text>
+<text top="1073" left="444" width="9" height="18" font="1">9</text>
+</page>
+<page number="10" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="680" height="18" font="1">energy and matter. These relativistic ejecta may collide with each other, as well as</text>
+<text top="151" left="108" width="681" height="18" font="1">with the pre-merger wind, at a fairly large radius and at low optical depths, giving</text>
+<text top="189" left="108" width="680" height="18" font="1">a non-Planckian spectrum through various non-thermal processes. For instance, given</text>
+<text top="227" left="108" width="680" height="18" font="1">the strong magnetic fields, synchrotron processes might naturally produce the observed</text>
+<text top="265" left="108" width="501" height="18" font="1">power-law spectrum if enough relativistic particles are present.</text>
+<text top="304" left="144" width="523" height="18" font="1">An important point to note is that the observed photon energy hν</text>
+<text top="311" left="667" width="21" height="11" font="2">obs</text>
+<text top="304" left="694" width="94" height="18" font="1">is related to</text>
+<text top="342" left="108" width="470" height="18" font="1">the emitted energy in the frame of the radiating fireball hν</text>
+<text top="349" left="578" width="18" height="11" font="2">em</text>
+<text top="342" left="604" width="185" height="18" font="1">by the large relativistic</text>
+<text top="380" left="108" width="52" height="20" font="1">γ ∼ 10</text>
+<text top="378" left="160" width="7" height="11" font="2">2</text>
+<text top="385" left="172" width="36" height="15" font="1">− 10</text>
+<text top="378" left="208" width="7" height="11" font="2">3</text>
+<text top="380" left="223" width="201" height="18" font="1">of the expansion (Paczy´</text>
+<text top="380" left="414" width="374" height="18" font="1">nski 1986, Goodman 1986). Therefore, there is</text>
+<text top="418" left="108" width="680" height="18" font="1">no difficulty in producing very hard spectra. In particular, note that a cut-off at 511</text>
+<text top="457" left="108" width="680" height="20" font="1">keV in the emitter frame translates to a cut-off at γ × 511 keV for the observer, which</text>
+<text top="495" left="108" width="324" height="18" font="1">can correspond to several hundred MeV.</text>
+<text top="533" left="144" width="645" height="18" font="1">The fact that the energy release in the model is predominantly through a magnetic</text>
+<text top="571" left="108" width="680" height="18" font="1">process may solve another potential problem, the cyclotron absorption lines that have</text>
+<text top="610" left="108" width="585" height="18" font="1">been claimed in some bursts. In very rough terms, an initial field of 10</text>
+<text top="608" left="693" width="14" height="11" font="2">16</text>
+<text top="610" left="717" width="72" height="18" font="1">G at the</text>
+<text top="648" left="108" width="544" height="20" font="1">point of initiation of the burst will be diluted to a field strength ∼ 10</text>
+<text top="646" left="652" width="14" height="11" font="2">10</text>
+<text top="648" left="673" width="116" height="18" font="1">G in the frame</text>
+<text top="686" left="108" width="409" height="20" font="1">of the emitting fluid if the expansion factor is ∼ 10</text>
+<text top="684" left="517" width="7" height="11" font="2">3</text>
+<text top="686" left="525" width="263" height="18" font="1">. However, because of relativistic</text>
+<text top="724" left="108" width="665" height="20" font="1">beaming, the observed cyclotron line will appear as if it is emitted in a field ∼ γ ×10</text>
+<text top="723" left="773" width="14" height="11" font="2">10</text>
+<text top="762" left="108" width="57" height="20" font="1">G ∼ 10</text>
+<text top="761" left="165" width="14" height="11" font="2">13</text>
+<text top="762" left="186" width="603" height="18" font="1">G, which is roughly consistent with the claimed field strengths (Murakami et</text>
+<text top="801" left="108" width="680" height="18" font="1">al. 1988, Fenimore et al. 1988). The narrowness of the observed lines requires a stable</text>
+<text top="839" left="108" width="681" height="18" font="1">value of the Lorentz γ for the duration of the line. This will be difficult to maintain</text>
+<text top="877" left="108" width="680" height="18" font="1">for any length of time in our highly erratic burster, in qualitative accordance with the</text>
+<text top="915" left="108" width="521" height="18" font="1">“now you see them, now you don’t” nature of the reported lines.</text>
+<text top="954" left="144" width="645" height="18" font="1">Another interesting possibility should be finally mentioned. As the disk cools</text>
+<text top="992" left="108" width="680" height="18" font="1">through neutrino emission, it might at some point make a transition to a supercon-</text>
+<text top="1030" left="108" width="680" height="18" font="1">ducting superfluid state. Plasma processes in a degenerate superconducting superfluid</text>
+<text top="1073" left="439" width="18" height="18" font="1">10</text>
+</page>
+<page number="11" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="680" height="18" font="1">have been hardly studied at all. It is conceivable that the separation of the field and</text>
+<text top="151" left="108" width="680" height="18" font="1">the baryons may be particularly efficient in a magnetic superfluid. This problem merits</text>
+<text top="190" left="108" width="166" height="18" font="1">further investigation.</text>
+<text top="269" left="360" width="177" height="18" font="1">3. CONCLUSIONS</text>
+<text top="328" left="144" width="645" height="18" font="1">We propose a scenario for gamma-ray bursts involving merging NS-NS and BH-NS</text>
+<text top="367" left="108" width="680" height="18" font="1">binaries at cosmological distances. In our picture, complex main bursts with highly</text>
+<text top="406" left="108" width="680" height="18" font="1">variable time profiles are produced through many successive magnetic flares and re-</text>
+<text top="445" left="108" width="680" height="18" font="1">connection events tapping the free energy in differential rotation in a post-merger disk.</text>
+<text top="484" left="108" width="680" height="18" font="1">Less variable bursts may be produced by neutrinos converting a fraction of their en-</text>
+<text top="523" left="108" width="680" height="18" font="1">ergy into electromagnetic radiation. The precursors of the bursts may be produced by</text>
+<text top="562" left="108" width="681" height="18" font="1">the neutrino mechanism, or by the initial phases of the post-merger ultra-relativistic</text>
+<text top="601" left="108" width="680" height="18" font="1">burst ejecta plowing through the slow wind created in the pre-merger tidal heating</text>
+<text top="640" left="108" width="680" height="18" font="1">phase, or even possibly by the pre-merger heating itself. This scenario is capable of</text>
+<text top="679" left="108" width="680" height="18" font="1">explaining the qualitative features of most of the observations, and circumvents many</text>
+<text top="718" left="108" width="627" height="18" font="1">of the arguments against the cosmological merger model of gamma-ray bursts.</text>
+<text top="757" left="144" width="645" height="18" font="1">The model employs two kinds of objects, NS-NS and BH-NS binaries, and two</text>
+<text top="796" left="108" width="680" height="18" font="1">distinct mechanisms, magnetic flares and neutrino interactions. Different combinations</text>
+<text top="835" left="108" width="680" height="18" font="1">of these may have distinct observational signatures which could be potentially identified</text>
+<text top="874" left="108" width="522" height="18" font="1">in the large database of burst profiles being acquired by BATSE.</text>
+<text top="913" left="144" width="644" height="20" font="1">Apart from γ-rays, it is likely that the bursts in our scenario will also eject ∼</text>
+<text top="952" left="108" width="18" height="18" font="1">10</text>
+<text top="950" left="126" width="14" height="11" font="2">51</text>
+<text top="952" left="149" width="639" height="18" font="1">erg of energy in ultra-relativistic ejecta, i.e. cosmic rays, with little or no non-</text>
+<text top="991" left="108" width="680" height="18" font="1">relativistic matter. These ejecta should create a supernova-like remnant far from the</text>
+<text top="1030" left="108" width="544" height="18" font="1">parent galaxy, where the density of diffuse matter may be very low.</text>
+<text top="1073" left="439" width="18" height="18" font="1">11</text>
+</page>
+<page number="12" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="144" width="645" height="18" font="1">The scenario makes a definite prediction. If and when LIGO is commissioned (Vogt</text>
+<text top="152" left="108" width="680" height="18" font="1">1992), strong γ-ray bursts should be accompanied by gravity wave detections (though</text>
+<text top="191" left="108" width="680" height="18" font="1">the reverse need not necessarily be true, particularly if the γ-rays are beamed). Since</text>
+<text top="231" left="108" width="680" height="18" font="1">the strength of the gravitational radiation signal from a pre-merger binary can be</text>
+<text top="270" left="108" width="680" height="18" font="1">calculated accurately (Lincoln &amp; Will 1990) except for the unknown inclination, LIGO</text>
+<text top="310" left="108" width="680" height="18" font="1">should provide good distance estimates to individual bursts and also pinpoint the exact</text>
+<text top="349" left="108" width="680" height="18" font="1">time of the merger. This information will permit more detailed interpretation of the</text>
+<text top="389" left="108" width="198" height="18" font="1">γ-ray burst observations.</text>
+<text top="428" left="144" width="645" height="18" font="1">The scenario we have presented in this paper is at this point no more than a</text>
+<text top="468" left="108" width="680" height="18" font="1">qualitative sketch of some likely possibilities. The purpose here is merely to show that</text>
+<text top="507" left="108" width="680" height="18" font="1">none of the many arguments against the merger model are necessarily fatal. More</text>
+<text top="547" left="108" width="454" height="18" font="1">detailed analyses of the individual ideas are needed now.</text>
+<text top="586" left="144" width="644" height="18" font="1">One other point worth emphasizing is that the scenario is in a real sense the</text>
+<text top="625" left="108" width="680" height="18" font="1">most conservative one possible at the present time. Based purely on the observations,</text>
+<text top="665" left="108" width="680" height="18" font="1">a cosmological location for γ-ray bursts is the most reasonable hypothesis; all other</text>
+<text top="704" left="108" width="680" height="18" font="1">proposals need coincidences at some level in the properties of the associated source</text>
+<text top="744" left="108" width="680" height="18" font="1">population. Within the cosmological framework, our scenario employs the most obvious</text>
+<text top="783" left="108" width="680" height="18" font="1">source population that we can think of, double compact binaries. This population is</text>
+<text top="823" left="108" width="680" height="18" font="1">definitely known to exist, we know its members will merge, and we can be certain that</text>
+<text top="862" left="108" width="680" height="18" font="1">huge quantities of energy will be released. However, even if this particular model turns</text>
+<text top="901" left="108" width="680" height="18" font="1">out to be incorrect, the cosmological hypothesis itself will survive, given the observed</text>
+<text top="941" left="108" width="365" height="18" font="1">distribution of burst positions and intensities.</text>
+<text top="981" left="144" width="644" height="18" font="1">We thank Roger Blandford and John Friedman for discussions and comments.</text>
+<text top="1020" left="108" width="593" height="18" font="1">This work was supported by NASA grants NAG 5-1901 and NAG 5-1904.</text>
+<text top="1073" left="439" width="18" height="18" font="1">12</text>
+</page>
+<page number="13" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="378" width="141" height="18" font="1">REFERENCES</text>
+<text top="171" left="108" width="407" height="18" font="1">Balbus, S. A. &amp; Hawley, J. F. 1991, ApJ, 376, 214</text>
+<text top="210" left="108" width="680" height="18" font="1">Cowie, L. L. 1991, in Primordial Nucleosynthesis and Evolution of Early Universe,</text>
+<text top="249" left="159" width="629" height="18" font="1">Astrophysics &amp; Science Library, Vol. 169, p. 425 (Eds.: K. Sato &amp; J. Audouze,</text>
+<text top="288" left="159" width="235" height="18" font="1">Kluwer Academic Publishers)</text>
+<text top="327" left="108" width="602" height="18" font="1">Eichler, D., Livio, M., Piran, T. &amp; Schramm, D. N. 1989, Nature, 340, 126</text>
+<text top="367" left="108" width="344" height="18" font="1">Fenimore, E. E. et al. 1988, ApJ, 335, L71</text>
+<text top="406" left="108" width="351" height="18" font="1">Friedman, J. 1983, Phys. Rev. Lett., 51, 11</text>
+<text top="444" left="108" width="271" height="18" font="1">Goodman, J. 1986, ApJ, 308, L47</text>
+<text top="484" left="108" width="547" height="18" font="1">Goodman, J., Dar, A., &amp; Nussinov, S. 1987, Ap. J. Letters, 314, L7</text>
+<text top="523" left="108" width="156" height="18" font="1">Haensel, P., Paczy´</text>
+<text top="523" left="255" width="401" height="18" font="1">nski, B., &amp; Amsterdamski, P. 1991, ApJ, 375, 209</text>
+<text top="562" left="108" width="462" height="18" font="1">Higdon, J. C. &amp; Lingenfelter, R. E. 1990, ARAA, 28, 401</text>
+<text top="601" left="108" width="308" height="18" font="1">Kochanek, C. S. 1992, ApJ, submitted</text>
+<text top="640" left="108" width="474" height="18" font="1">Lincoln, C. W. &amp; Will, C. M. 1990, Phys. Rev., D42, 1123</text>
+<text top="679" left="108" width="418" height="18" font="1">Mao, S. &amp; Paczynski, B. 1992, ApJ (Lett.), in press</text>
+<text top="718" left="108" width="352" height="18" font="1">Meegan, C. A. et al. 1992, Nature, 355, 143</text>
+<text top="757" left="108" width="680" height="18" font="1">Messina, D. C. &amp; Share, G. H. 1992, Proc. Huntsville GRO Meeting, eds. W. S.</text>
+<text top="796" left="159" width="281" height="18" font="1">Paciesas &amp; G. J. Fishman, in press</text>
+<text top="835" left="108" width="353" height="18" font="1">Murakami, T., et al. 1988, Nature, 335, 234</text>
+<text top="874" left="108" width="353" height="18" font="1">Murakami, T., et al. 1991, Nature, 350, 592</text>
+<text top="913" left="108" width="680" height="18" font="1">Narayan, R. &amp; Goodman, J. 1989, Proc. NATO Advanced Research Workshop on</text>
+<text top="952" left="159" width="629" height="18" font="1">“Theory of Accretion Disks”, eds. F. Meyer, W. J. Duschl, J. Frank &amp; E. Meyer-</text>
+<text top="991" left="159" width="148" height="18" font="1">Hofmeister, p. 231</text>
+<text top="1030" left="108" width="457" height="18" font="1">Narayan, R., Piran, T. &amp; Shemi, A. 1991, ApJ, 379, L17</text>
+<text top="1073" left="439" width="18" height="18" font="1">13</text>
+</page>
+<page number="14" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="56" height="18" font="1">Paczy´</text>
+<text top="113" left="154" width="229" height="18" font="1">nski, B. 1986, ApJ, 308, L51</text>
+<text top="152" left="108" width="56" height="18" font="1">Paczy´</text>
+<text top="152" left="154" width="227" height="18" font="1">nski, B. 1990, ApJ, 363, 218</text>
+<text top="191" left="108" width="56" height="18" font="1">Paczy´</text>
+<text top="191" left="154" width="289" height="18" font="1">nski, B. 1991, Acta Astron., 41, 257</text>
+<text top="231" left="108" width="273" height="18" font="1">Parker, E. N. 1966, ApJ, 145, 811</text>
+<text top="270" left="108" width="283" height="18" font="1">Phinney, E. S. 1991, ApJ, 380, L17</text>
+<text top="310" left="108" width="681" height="18" font="1">Piran, T. 1990, in Supernovae, eds. J. C. Wheeler, T. Piran &amp; S. Weinberg, World</text>
+<text top="349" left="159" width="169" height="18" font="1">Sci. Publ., Singapore</text>
+<text top="389" left="108" width="294" height="18" font="1">Piran, T. 1992, ApJ (Lett.), in press</text>
+<text top="428" left="108" width="680" height="18" font="1">Piran, T., Narayan, R. &amp; Shemi, A. 1992, Proc. Huntsville GRO Meeting, eds. W. S.</text>
+<text top="468" left="159" width="281" height="18" font="1">Paciesas &amp; G. J. Fishman, in press</text>
+<text top="507" left="108" width="445" height="18" font="1">Ruderman, M. A. 1975, Ann. N Y Acad. Sci., 262, 164</text>
+<text top="547" left="108" width="680" height="18" font="1">Schaefer, B. E. 1990, Los Alamos Workshop on Gamma-Ray Bursts, July 29 - Aug.</text>
+<text top="586" left="159" width="57" height="18" font="1">3, 1990</text>
+<text top="625" left="108" width="339" height="18" font="1">Schmidt, W. K. H. 1978, Nature, 271, 525</text>
+<text top="665" left="108" width="348" height="18" font="1">Shemi, A. &amp; Piran, T. 1990, ApJ, 365, L55</text>
+<text top="704" left="108" width="427" height="18" font="1">Taylor, J. H. &amp; Weisberg, R. M. 1989, ApJ, 345, 434</text>
+<text top="744" left="108" width="311" height="18" font="1">Trimble, V. 1991, Cont. Phys., 32, 103</text>
+<text top="783" left="108" width="400" height="18" font="1">van Kerkwijk, M. H. et al. 1992, Nature, 355, 703</text>
+<text top="823" left="108" width="680" height="18" font="1">Vogt, R. 1992, in Proc. MG6, eds. K. Sata &amp; T. Nakamura, World Sci. Publ., Singa-</text>
+<text top="862" left="159" width="108" height="18" font="1">pore, in press</text>
+<text top="1073" left="439" width="18" height="18" font="1">14</text>
+</page>
+</pdf2xml>

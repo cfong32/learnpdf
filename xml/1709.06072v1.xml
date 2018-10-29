@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="10" family="Times" color="#000000"/>
+	<fontspec id="1" size="33" family="Times" color="#000000"/>
+	<fontspec id="2" size="14" family="Times" color="#000000"/>
+	<fontspec id="3" size="11" family="Times" color="#000000"/>
+	<fontspec id="4" size="12" family="Times" color="#000000"/>
+	<fontspec id="5" size="9" family="Times" color="#000000"/>
+	<fontspec id="6" size="8" family="Times" color="#000000"/>
+	<fontspec id="7" size="2" family="Times" color="#000000"/>
+	<fontspec id="8" size="1" family="Times" color="#000000"/>
+	<fontspec id="9" size="1" family="Times" color="#000000"/>
+	<fontspec id="10" size="28" family="Times" color="#7f7f7f"/>
+<text top="29" left="248" width="421" height="11" font="0">2017 International Conference on Sampling Theory and Applications (SampTA)</text>
+<text top="83" left="153" width="613" height="32" font="1">Bounds on Discrete Fourier Transform of</text>
+<text top="124" left="352" width="214" height="32" font="1">Random Mask</text>
+<text top="185" left="317" width="283" height="15" font="2">Nematollah Zarmehi and Farokh Marvasti</text>
+<text top="205" left="307" width="304" height="15" font="2">Advanced Communication Research Institute</text>
+<text top="225" left="333" width="252" height="15" font="2">Department of Electrical Engineering</text>
+<text top="245" left="305" width="308" height="15" font="2">Sharif University of Technology, Tehran, Iran</text>
+<text top="265" left="265" width="389" height="15" font="2">Email: <a href="http://zarmehi.ir/contact.html">http://zarmehi.ir/contact.html, </a>marvasti@sharif.edu</text>
+<text top="330" left="88" width="362" height="12" font="3">Abstract—This paper proposes some bounds on the maximum</text>
+<text top="345" left="73" width="377" height="12" font="3">of magnitude of a random mask in Fourier domain. The random</text>
+<text top="360" left="73" width="377" height="12" font="3">mask is used in random sampling scheme. Having a bound on</text>
+<text top="375" left="73" width="377" height="12" font="3">the maximum value of a random mask in Fourier domain is very</text>
+<text top="390" left="73" width="377" height="12" font="3">useful for some iterative recovery methods that use thresholding</text>
+<text top="405" left="73" width="377" height="12" font="3">operator. In this paper, we propose some different bounds and</text>
+<text top="420" left="73" width="258" height="12" font="3">compare them with the empirical examples.</text>
+<text top="449" left="203" width="23" height="13" font="4">I. I</text>
+<text top="451" left="227" width="93" height="11" font="5">NTRODUCTION</text>
+<text top="472" left="88" width="362" height="13" font="4">There are different sampling schemes in the field of digital</text>
+<text top="490" left="73" width="377" height="13" font="4">signal processing. The primary sampling theorem known as</text>
+<text top="508" left="73" width="377" height="13" font="4">Nyquist-Shannon theorem states that a band-limited signal can</text>
+<text top="526" left="73" width="377" height="13" font="4">be recovered from its uniform samples under certain condition</text>
+<text top="544" left="73" width="377" height="13" font="4"><a href="xml/1709.06072v1.html#4">[1]–[3]. </a>The uniform sampling was used for some decades.</text>
+<text top="562" left="73" width="377" height="13" font="4">Later, other sampling methods such as non-uniform sampling</text>
+<text top="580" left="73" width="377" height="13" font="4"><a href="xml/1709.06072v1.html#4">[4], [5], </a>periodic non-uniform sampling <a href="xml/1709.06072v1.html#4">[6], [7], </a>and random</text>
+<text top="598" left="73" width="202" height="13" font="4">sampling <a href="xml/1709.06072v1.html#4">[8], [9] </a>were proposed.</text>
+<text top="616" left="88" width="362" height="13" font="4">In random sampling, the sampler picks up the samples of the</text>
+<text top="634" left="73" width="377" height="13" font="4">original signal at random. It is like that the original signal is</text>
+<text top="652" left="73" width="377" height="13" font="4">multiplied by a random mask containing i.i.d Bernoulli random</text>
+<text top="670" left="73" width="377" height="13" font="4">variables with parameter p. Here, p is the sampling rate. There</text>
+<text top="688" left="73" width="377" height="13" font="4">is a major difference between random and uniform sampling</text>
+<text top="706" left="73" width="377" height="13" font="4">in the frequency domain. In uniform sampling scheme, we see</text>
+<text top="724" left="73" width="377" height="13" font="4">that the spectrum of the original signal is repeated by a period</text>
+<text top="742" left="73" width="377" height="13" font="4">equal to the sampling frequency while in random sampling</text>
+<text top="759" left="73" width="377" height="13" font="4">scheme, we see a spectrum similar to the original that does not</text>
+<text top="777" left="73" width="327" height="13" font="4">have periodicity. Let x[n] be the original signal and x</text>
+<text top="783" left="400" width="6" height="9" font="6">r</text>
+<text top="777" left="407" width="43" height="14" font="4">[n] and</text>
+<text top="795" left="73" width="9" height="13" font="4">x</text>
+<text top="800" left="82" width="7" height="9" font="6">u</text>
+<text top="795" left="90" width="360" height="14" font="4">[n] be the random sampled and uniform sampled versions</text>
+<text top="813" left="73" width="377" height="13" font="4">of x[n] with sampling rate 0.5. Fig. <a href="xml/1709.06072v1.html#1">1 </a>shows an example of</text>
+<text top="831" left="73" width="377" height="13" font="4">discrete signal and its Fourier transform and Fig. <a href="xml/1709.06072v1.html#1">2 </a>shows the</text>
+<text top="849" left="73" width="224" height="13" font="4">magnitude of Fourier transform of x</text>
+<text top="854" left="298" width="7" height="9" font="6">u</text>
+<text top="849" left="305" width="58" height="14" font="4">[n] and x</text>
+<text top="854" left="363" width="6" height="9" font="6">r</text>
+<text top="849" left="370" width="80" height="14" font="4">[n]. It can be</text>
+<text top="867" left="73" width="377" height="13" font="4">seen that in random sampling scheme, we have no periodicity.</text>
+<text top="885" left="73" width="78" height="13" font="4">Moreover, X</text>
+<text top="890" left="152" width="6" height="9" font="6">r</text>
+<text top="885" left="158" width="292" height="14" font="4">[k] is very similar to X[k] and there are aliasing</text>
+<text top="903" left="73" width="377" height="13" font="4">components that are produced due to convolving the original</text>
+<text top="921" left="73" width="171" height="13" font="4">signal by the random mask.</text>
+<text top="939" left="88" width="362" height="13" font="4">In this paper, we aim to bound the magnitude of Fourier</text>
+<text top="957" left="73" width="377" height="13" font="4">transform of a random mask. The results are very useful</text>
+<text top="975" left="73" width="377" height="13" font="4">for some iterative recovery methods such as IMAT (Iterative</text>
+<text top="993" left="73" width="377" height="13" font="4">Method with Adaptive Thresholding <a href="xml/1709.06072v1.html#4">[10], [11]) </a>that use a</text>
+<text top="1011" left="73" width="377" height="13" font="4">thresholding operator. We propose some bounds on the mag-</text>
+<text top="1029" left="73" width="377" height="13" font="4">nitude of Fourier transform of a random mask in Section <a href="xml/1709.06072v1.html#1">II.</a></text>
+<text top="1047" left="73" width="377" height="13" font="4">In Section <a href="xml/1709.06072v1.html#3">III, </a>some numerical examples are presented and</text>
+<text top="1065" left="73" width="243" height="13" font="4">Finally Section <a href="xml/1709.06072v1.html#4">IV </a>concludes the paper.</text>
+<text top="418" left="551" width="12" height="4" font="7"><b>−0.02</b></text>
+<text top="404" left="561" width="3" height="4" font="7"><b>0</b></text>
+<text top="390" left="554" width="9" height="4" font="7"><b>0.02</b></text>
+<text top="376" left="554" width="9" height="4" font="7"><b>0.04</b></text>
+<text top="361" left="554" width="9" height="4" font="7"><b>0.06</b></text>
+<text top="347" left="554" width="9" height="4" font="7"><b>0.08</b></text>
+<text top="333" left="557" width="7" height="4" font="7"><b>0.1</b></text>
+<text top="420" left="562" width="1" height="5" font="8"> </text>
+<text top="335" left="755" width="1" height="5" font="8"> </text>
+<text top="340" left="663" width="9" height="4" font="7"><b>x[n]</b></text>
+<text top="439" left="635" width="43" height="13" font="4">a) x[n]</text>
+<text top="555" left="561" width="3" height="4" font="7"><b>0</b></text>
+<text top="538" left="557" width="7" height="4" font="7"><b>0.2</b></text>
+<text top="521" left="557" width="7" height="4" font="7"><b>0.4</b></text>
+<text top="504" left="557" width="7" height="4" font="7"><b>0.6</b></text>
+<text top="487" left="557" width="7" height="4" font="7"><b>0.8</b></text>
+<text top="470" left="561" width="3" height="4" font="7"><b>1</b></text>
+<text top="554" left="564" width="1" height="5" font="8"> </text>
+<text top="469" left="757" width="1" height="5" font="8"> </text>
+<text top="475" left="745" width="9" height="4" font="7"><b>X[k]</b></text>
+<text top="576" left="628" width="56" height="13" font="4">b) |X[k]|</text>
+<text top="617" left="468" width="377" height="11" font="5">Fig. 1. An example of band-limited signal: a) x[n] in time domain and b)</text>
+<text top="631" left="468" width="134" height="11" font="5">X[k] in frequency domain.</text>
+<text top="757" left="561" width="3" height="4" font="7"><b>0</b></text>
+<text top="740" left="557" width="7" height="4" font="7"><b>0.1</b></text>
+<text top="723" left="557" width="7" height="4" font="7"><b>0.2</b></text>
+<text top="706" left="557" width="7" height="4" font="7"><b>0.3</b></text>
+<text top="688" left="557" width="7" height="4" font="7"><b>0.4</b></text>
+<text top="671" left="557" width="7" height="4" font="7"><b>0.5</b></text>
+<text top="756" left="564" width="1" height="5" font="8"> </text>
+<text top="671" left="757" width="1" height="5" font="8"> </text>
+<text top="679" left="718" width="3" height="4" font="7"><b>X</b></text>
+<text top="682" left="721" width="2" height="3" font="9"><b>u</b></text>
+<text top="679" left="723" width="6" height="4" font="7"><b>[k]</b></text>
+<text top="778" left="625" width="33" height="13" font="4">a) |X</text>
+<text top="783" left="659" width="7" height="9" font="6">u</text>
+<text top="777" left="667" width="21" height="13" font="4">[k]|</text>
+<text top="893" left="561" width="3" height="4" font="7"><b>0</b></text>
+<text top="883" left="557" width="7" height="4" font="7"><b>0.1</b></text>
+<text top="872" left="557" width="7" height="4" font="7"><b>0.2</b></text>
+<text top="861" left="557" width="7" height="4" font="7"><b>0.3</b></text>
+<text top="851" left="557" width="7" height="4" font="7"><b>0.4</b></text>
+<text top="840" left="557" width="7" height="4" font="7"><b>0.5</b></text>
+<text top="829" left="557" width="7" height="4" font="7"><b>0.6</b></text>
+<text top="819" left="557" width="7" height="4" font="7"><b>0.7</b></text>
+<text top="808" left="557" width="7" height="4" font="7"><b>0.8</b></text>
+<text top="893" left="564" width="1" height="5" font="8"> </text>
+<text top="807" left="757" width="1" height="5" font="8"> </text>
+<text top="814" left="743" width="3" height="4" font="7"><b>X</b></text>
+<text top="817" left="746" width="1" height="3" font="9"><b>r</b></text>
+<text top="814" left="748" width="6" height="4" font="7"><b>[k]</b></text>
+<text top="914" left="625" width="34" height="13" font="4">b) |X</text>
+<text top="919" left="660" width="6" height="9" font="6">r</text>
+<text top="914" left="666" width="21" height="13" font="4">[k]|</text>
+<text top="956" left="468" width="377" height="11" font="5">Fig. 2. Fourier transform of uniform and random sampled versions of x[n]</text>
+<text top="969" left="468" width="112" height="11" font="5">that is shown in Fig. <a href="xml/1709.06072v1.html#1">1</a></text>
+<text top="1018" left="581" width="32" height="13" font="4">II. P</text>
+<text top="1020" left="614" width="58" height="11" font="5">ROPOSED</text>
+<text top="1018" left="677" width="10" height="13" font="4">B</text>
+<text top="1020" left="687" width="44" height="11" font="5">OUNDS</text>
+<text top="1047" left="483" width="362" height="13" font="4">Suppose that a is a sequence of N i.i.d Bernoulli random</text>
+<text top="1065" left="468" width="377" height="13" font="4">variables with parameter p. We aim to find an upper bound</text>
+<text top="1125" left="455" width="7" height="13" font="4">1</text>
+<text top="827" left="48" width="0" height="27" font="10">arXiv:1709.06072v1  [eess.SP]  6 Aug 2017</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="11" size="5" family="Times" color="#000000"/>
+	<fontspec id="12" size="6" family="Times" color="#000000"/>
+<text top="29" left="248" width="421" height="11" font="0">2017 International Conference on Sampling Theory and Applications (SampTA)</text>
+<text top="78" left="73" width="161" height="13" font="4">for absolute value of {A}</text>
+<text top="75" left="234" width="26" height="9" font="6">N −1</text>
+<text top="86" left="234" width="22" height="9" font="6">k=0</text>
+<text top="78" left="266" width="105" height="13" font="4">as the DFT of a:</text>
+<text top="119" left="92" width="13" height="13" font="4">A</text>
+<text top="125" left="105" width="6" height="9" font="6">k</text>
+<text top="119" left="117" width="12" height="13" font="4">=</text>
+<text top="104" left="132" width="26" height="9" font="6">N −1</text>
+<text top="115" left="135" width="22" height="7" font="4">X</text>
+<text top="140" left="134" width="23" height="9" font="6">n=1</text>
+<text top="119" left="161" width="8" height="13" font="4">a</text>
+<text top="125" left="169" width="7" height="9" font="6">n</text>
+<text top="119" left="177" width="7" height="13" font="4">e</text>
+<text top="113" left="186" width="29" height="7" font="11">j2πkn</text>
+<text top="122" left="196" width="8" height="7" font="11">N</text>
+<text top="119" left="247" width="18" height="13" font="4">for</text>
+<text top="119" left="295" width="119" height="13" font="4">k = 0, 1, ..., N − 1.</text>
+<text top="120" left="433" width="17" height="13" font="4">(1)</text>
+<text top="158" left="73" width="117" height="13" font="4">A. The Worst Case</text>
+<text top="181" left="88" width="362" height="13" font="4">We know that the average number of ones in a is N p.</text>
+<text top="198" left="73" width="321" height="13" font="4">Therefore, on average, N p is an upper bound for A</text>
+<text top="204" left="394" width="6" height="9" font="6">0</text>
+<text top="198" left="401" width="49" height="13" font="4">. Define</text>
+<text top="216" left="73" width="186" height="13" font="4">the support set P such that a</text>
+<text top="221" left="259" width="4" height="9" font="6">i</text>
+<text top="216" left="270" width="180" height="14" font="4">= 1, ∀i ∈ P. It is clear that</text>
+<text top="233" left="73" width="236" height="16" font="4">P ⊂ {0, 1, ..., N − 1} and |P| , N</text>
+<text top="239" left="310" width="6" height="9" font="6">p</text>
+<text top="233" left="324" width="126" height="14" font="4">≈ dN pe. Moreover,</text>
+<text top="252" left="73" width="216" height="13" font="4">suppose that N is prime. We have:</text>
+<text top="309" left="99" width="15" height="14" font="4">|A</text>
+<text top="315" left="114" width="6" height="9" font="6">k</text>
+<text top="309" left="122" width="20" height="14" font="4">| =</text>
+<text top="294" left="146" width="5" height="7" font="4"></text>
+<text top="302" left="146" width="5" height="7" font="4"></text>
+<text top="311" left="146" width="5" height="7" font="4"></text>
+<text top="320" left="146" width="5" height="7" font="4"></text>
+<text top="329" left="146" width="5" height="7" font="4"></text>
+<text top="294" left="151" width="26" height="9" font="6">N −1</text>
+<text top="305" left="153" width="22" height="7" font="4">X</text>
+<text top="330" left="152" width="23" height="9" font="6">n=1</text>
+<text top="310" left="179" width="8" height="13" font="4">a</text>
+<text top="315" left="187" width="7" height="9" font="6">n</text>
+<text top="310" left="196" width="7" height="13" font="4">e</text>
+<text top="304" left="204" width="29" height="7" font="11">j2πkn</text>
+<text top="313" left="214" width="8" height="7" font="11">N</text>
+<text top="294" left="236" width="5" height="7" font="4"></text>
+<text top="302" left="236" width="5" height="7" font="4"></text>
+<text top="311" left="236" width="5" height="7" font="4"></text>
+<text top="320" left="236" width="5" height="7" font="4"></text>
+<text top="329" left="236" width="5" height="7" font="4"></text>
+<text top="310" left="245" width="12" height="13" font="4">=</text>
+<text top="289" left="260" width="5" height="7" font="4"></text>
+<text top="298" left="260" width="5" height="7" font="4"></text>
+<text top="307" left="260" width="5" height="7" font="4"></text>
+<text top="316" left="260" width="5" height="7" font="4"></text>
+<text top="325" left="260" width="5" height="7" font="4"></text>
+<text top="334" left="260" width="5" height="7" font="4"></text>
+<text top="305" left="278" width="22" height="7" font="4">X</text>
+<text top="331" left="265" width="6" height="9" font="6">θ</text>
+<text top="335" left="271" width="16" height="7" font="11">k,n</text>
+<text top="330" left="288" width="17" height="10" font="6">∈Θ</text>
+<text top="335" left="305" width="6" height="7" font="11">k</text>
+<text top="310" left="314" width="7" height="13" font="4">e</text>
+<text top="307" left="321" width="11" height="9" font="6">jθ</text>
+<text top="310" left="332" width="16" height="7" font="11">k,n</text>
+<text top="289" left="349" width="5" height="7" font="4"></text>
+<text top="298" left="349" width="5" height="7" font="4"></text>
+<text top="307" left="349" width="5" height="7" font="4"></text>
+<text top="316" left="349" width="5" height="7" font="4"></text>
+<text top="325" left="349" width="5" height="7" font="4"></text>
+<text top="334" left="349" width="5" height="7" font="4"></text>
+<text top="368" left="130" width="12" height="13" font="4">=</text>
+<text top="347" left="146" width="5" height="7" font="4"></text>
+<text top="356" left="146" width="5" height="7" font="4"></text>
+<text top="365" left="146" width="5" height="7" font="4"></text>
+<text top="374" left="146" width="5" height="7" font="4"></text>
+<text top="383" left="146" width="5" height="7" font="4"></text>
+<text top="392" left="146" width="5" height="7" font="4"></text>
+<text top="364" left="163" width="22" height="7" font="4">X</text>
+<text top="389" left="151" width="6" height="9" font="6">θ</text>
+<text top="393" left="156" width="16" height="7" font="11">k,n</text>
+<text top="389" left="173" width="17" height="10" font="6">∈Θ</text>
+<text top="393" left="190" width="6" height="7" font="11">k</text>
+<text top="368" left="199" width="37" height="13" font="4">[cos(θ</text>
+<text top="374" left="236" width="18" height="9" font="6">k,n</text>
+<text top="368" left="254" width="65" height="13" font="4">) + j sin(θ</text>
+<text top="374" left="319" width="18" height="9" font="6">k,n</text>
+<text top="368" left="337" width="10" height="13" font="4">)]</text>
+<text top="347" left="347" width="5" height="7" font="4"></text>
+<text top="356" left="347" width="5" height="7" font="4"></text>
+<text top="365" left="347" width="5" height="7" font="4"></text>
+<text top="374" left="347" width="5" height="7" font="4"></text>
+<text top="383" left="347" width="5" height="7" font="4"></text>
+<text top="392" left="347" width="5" height="7" font="4"></text>
+<text top="422" left="130" width="12" height="13" font="4">=</text>
+<text top="406" left="146" width="5" height="7" font="4"></text>
+<text top="415" left="146" width="5" height="7" font="4"></text>
+<text top="424" left="146" width="5" height="7" font="4"></text>
+<text top="432" left="146" width="5" height="7" font="4"></text>
+<text top="441" left="146" width="5" height="7" font="4"></text>
+<text top="418" left="152" width="22" height="7" font="4">X</text>
+<text top="443" left="151" width="24" height="9" font="6">n∈P</text>
+<text top="422" left="178" width="33" height="13" font="4">cos(θ</text>
+<text top="427" left="211" width="18" height="9" font="6">k,n</text>
+<text top="422" left="229" width="30" height="13" font="4">) + j</text>
+<text top="418" left="264" width="22" height="7" font="4">X</text>
+<text top="443" left="263" width="24" height="9" font="6">n∈P</text>
+<text top="422" left="290" width="31" height="13" font="4">sin(θ</text>
+<text top="427" left="321" width="18" height="9" font="6">k,n</text>
+<text top="422" left="339" width="6" height="13" font="4">)</text>
+<text top="406" left="345" width="5" height="7" font="4"></text>
+<text top="415" left="345" width="5" height="7" font="4"></text>
+<text top="424" left="345" width="5" height="7" font="4"></text>
+<text top="432" left="345" width="5" height="7" font="4"></text>
+<text top="441" left="345" width="5" height="7" font="4"></text>
+<text top="480" left="130" width="12" height="13" font="4">=</text>
+<text top="458" left="146" width="16" height="7" font="4">v</text>
+<text top="466" left="146" width="16" height="7" font="4">u</text>
+<text top="475" left="146" width="16" height="7" font="4">u</text>
+<text top="484" left="146" width="16" height="7" font="4">t</text>
+<text top="464" left="161" width="12" height="7" font="4"> </text>
+<text top="476" left="175" width="22" height="7" font="4">X</text>
+<text top="501" left="173" width="24" height="9" font="6">n∈P</text>
+<text top="480" left="201" width="33" height="13" font="4">cos(θ</text>
+<text top="485" left="233" width="18" height="9" font="6">k,n</text>
+<text top="480" left="252" width="6" height="13" font="4">)</text>
+<text top="464" left="257" width="12" height="7" font="4">!</text>
+<text top="461" left="269" width="6" height="9" font="6">2</text>
+<text top="480" left="279" width="12" height="13" font="4">+</text>
+<text top="464" left="294" width="12" height="7" font="4"> </text>
+<text top="476" left="308" width="22" height="7" font="4">X</text>
+<text top="501" left="306" width="24" height="9" font="6">n∈P</text>
+<text top="480" left="333" width="31" height="13" font="4">sin(θ</text>
+<text top="485" left="365" width="18" height="9" font="6">k,n</text>
+<text top="480" left="383" width="6" height="13" font="4">)</text>
+<text top="464" left="389" width="12" height="7" font="4">!</text>
+<text top="461" left="400" width="6" height="9" font="6">2</text>
+<text top="531" left="130" width="12" height="13" font="4">=</text>
+<text top="516" left="146" width="16" height="7" font="4">v</text>
+<text top="525" left="146" width="16" height="7" font="4">u</text>
+<text top="534" left="146" width="16" height="7" font="4">u</text>
+<text top="543" left="146" width="16" height="7" font="4">t</text>
+<text top="531" left="161" width="12" height="13" font="4">N</text>
+<text top="536" left="173" width="6" height="9" font="6">p</text>
+<text top="531" left="184" width="27" height="13" font="4">+ 2.</text>
+<text top="526" left="221" width="22" height="7" font="4">X</text>
+<text top="552" left="215" width="34" height="7" font="11">m,n∈P</text>
+<text top="560" left="220" width="23" height="7" font="11">m6=n</text>
+<text top="531" left="253" width="33" height="13" font="4">cos(θ</text>
+<text top="536" left="286" width="21" height="9" font="6">k,m</text>
+<text top="530" left="311" width="22" height="14" font="4">− θ</text>
+<text top="536" left="333" width="18" height="9" font="6">k,n</text>
+<text top="531" left="351" width="10" height="13" font="4">),</text>
+<text top="424" left="433" width="17" height="13" font="4">(2)</text>
+<text top="583" left="73" width="55" height="13" font="4">where Θ</text>
+<text top="588" left="128" width="6" height="9" font="6">k</text>
+<text top="582" left="143" width="12" height="13" font="4">=</text>
+<text top="580" left="162" width="16" height="16" font="4">θ</text>
+<text top="588" left="177" width="18" height="9" font="6">k,n</text>
+<text top="582" left="200" width="12" height="13" font="4">=</text>
+<text top="580" left="217" width="27" height="9" font="6">2kπn</text>
+<text top="591" left="226" width="9" height="9" font="6">N</text>
+<text top="582" left="257" width="52" height="14" font="4">| n ∈ P</text>
+<text top="580" left="310" width="9" height="7" font="4"></text>
+<text top="583" left="326" width="124" height="13" font="4">for all k ∈ K. The</text>
+<text top="605" left="73" width="249" height="13" font="4">expression in <a href="xml/1709.06072v1.html#2">(2) </a>will be maximized if θ</text>
+<text top="610" left="322" width="21" height="9" font="6">k,m</text>
+<text top="599" left="349" width="13" height="9" font="6">2π</text>
+<text top="604" left="350" width="25" height="13" font="4">= θ</text>
+<text top="610" left="374" width="18" height="9" font="6">k,n</text>
+<text top="605" left="393" width="57" height="13" font="4">. But this</text>
+<text top="623" left="73" width="137" height="13" font="4">is impossible because:</text>
+<text top="660" left="144" width="21" height="12" font="4">@ θ</text>
+<text top="662" left="165" width="21" height="9" font="6">k,m</text>
+<text top="657" left="186" width="14" height="13" font="4">, θ</text>
+<text top="662" left="200" width="18" height="9" font="6">k,n</text>
+<text top="656" left="222" width="26" height="14" font="4">∈ Θ</text>
+<text top="662" left="248" width="6" height="9" font="6">k</text>
+<text top="657" left="259" width="4" height="13" font="4">:</text>
+<text top="657" left="298" width="7" height="13" font="4">θ</text>
+<text top="662" left="305" width="21" height="9" font="6">k,m</text>
+<text top="646" left="331" width="13" height="9" font="6">2π</text>
+<text top="656" left="332" width="25" height="14" font="4">6= θ</text>
+<text top="662" left="357" width="18" height="9" font="6">k,n</text>
+<text top="657" left="375" width="4" height="13" font="4">.</text>
+<text top="657" left="433" width="17" height="13" font="4">(3)</text>
+<text top="684" left="73" width="355" height="13" font="4">Hence, the presented expression will be maximized when θ</text>
+<text top="689" left="429" width="21" height="9" font="6">k,m</text>
+<text top="702" left="73" width="101" height="13" font="4">is very close to θ</text>
+<text top="707" left="175" width="18" height="9" font="6">k,n</text>
+<text top="702" left="193" width="210" height="13" font="4">. The minimum distance between θ</text>
+<text top="707" left="403" width="21" height="9" font="6">k,m</text>
+<text top="702" left="428" width="22" height="13" font="4">and</text>
+<text top="720" left="73" width="7" height="13" font="4">θ</text>
+<text top="725" left="80" width="18" height="9" font="6">k,n</text>
+<text top="720" left="105" width="346" height="13" font="4">is equal to 2π/N . In other words, maximum value will</text>
+<text top="738" left="73" width="377" height="13" font="4">be achieved when a contains an all-one vector u = [1, 1, ..., 1]</text>
+<text top="756" left="73" width="72" height="13" font="4">of length N</text>
+<text top="761" left="146" width="6" height="9" font="6">p</text>
+<text top="756" left="153" width="4" height="13" font="4">.</text>
+<text top="774" left="88" width="362" height="13" font="4">After some mathematical computations, we can get the</text>
+<text top="792" left="73" width="144" height="13" font="4">maximum value of {|A</text>
+<text top="797" left="217" width="6" height="9" font="6">k</text>
+<text top="791" left="224" width="12" height="14" font="4">|}</text>
+<text top="788" left="236" width="26" height="9" font="6">N −1</text>
+<text top="799" left="236" width="22" height="9" font="6">k=1</text>
+<text top="792" left="268" width="66" height="13" font="4">as follows:</text>
+<text top="838" left="113" width="15" height="14" font="4">|A</text>
+<text top="845" left="128" width="6" height="9" font="6">k</text>
+<text top="838" left="135" width="4" height="14" font="4">|</text>
+<text top="845" left="140" width="24" height="9" font="6">max</text>
+<text top="839" left="168" width="12" height="13" font="4">=</text>
+<text top="816" left="184" width="16" height="7" font="4">v</text>
+<text top="825" left="184" width="16" height="7" font="4">u</text>
+<text top="834" left="184" width="16" height="7" font="4">u</text>
+<text top="843" left="184" width="16" height="7" font="4">t</text>
+<text top="839" left="200" width="12" height="13" font="4">N</text>
+<text top="845" left="212" width="6" height="9" font="6">p</text>
+<text top="839" left="222" width="27" height="13" font="4">+ 2.</text>
+<text top="822" left="251" width="9" height="9" font="6">N</text>
+<text top="826" left="261" width="6" height="7" font="11">p</text>
+<text top="822" left="267" width="15" height="10" font="6">−1</text>
+<text top="835" left="256" width="22" height="7" font="4">X</text>
+<text top="860" left="257" width="19" height="9" font="6">i=1</text>
+<text top="839" left="282" width="18" height="13" font="4">(N</text>
+<text top="845" left="300" width="6" height="9" font="6">p</text>
+<text top="838" left="310" width="47" height="14" font="4">− i)cos</text>
+<text top="828" left="359" width="29" height="14" font="4"> 2π</text>
+<text top="850" left="374" width="12" height="13" font="4">N</text>
+<text top="839" left="390" width="5" height="13" font="4">i</text>
+<text top="828" left="396" width="11" height="7" font="4"></text>
+<text top="839" left="407" width="4" height="13" font="4">.</text>
+<text top="840" left="433" width="17" height="13" font="4">(4)</text>
+<text top="885" left="88" width="255" height="13" font="4">Table <a href="xml/1709.06072v1.html#3">I </a>shows the upper bounds for |A</text>
+<text top="890" left="343" width="6" height="9" font="6">k</text>
+<text top="883" left="350" width="8" height="14" font="4">|,</text>
+<text top="880" left="367" width="13" height="10" font="6">|A</text>
+<text top="884" left="380" width="6" height="7" font="11">k</text>
+<text top="880" left="386" width="4" height="10" font="6">|</text>
+<text top="893" left="371" width="9" height="9" font="6">N</text>
+<text top="896" left="380" width="6" height="7" font="11">p</text>
+<text top="885" left="392" width="58" height="13" font="4">, and the</text>
+<text top="903" left="73" width="377" height="13" font="4">maximum values obtained by simulation for different values</text>
+<text top="921" left="73" width="75" height="13" font="4">of N and p.</text>
+<text top="939" left="88" width="207" height="13" font="4">According to Table <a href="xml/1709.06072v1.html#3">I, </a>the ratio |A</text>
+<text top="944" left="295" width="6" height="9" font="6">k</text>
+<text top="937" left="302" width="23" height="14" font="4">|/N</text>
+<text top="944" left="325" width="6" height="9" font="6">p</text>
+<text top="939" left="337" width="113" height="13" font="4">is almost constant.</text>
+<text top="956" left="73" width="146" height="13" font="4">We can approximate |A</text>
+<text top="962" left="219" width="6" height="9" font="6">k</text>
+<text top="955" left="227" width="23" height="14" font="4">|/N</text>
+<text top="962" left="250" width="6" height="9" font="6">p</text>
+<text top="956" left="262" width="119" height="13" font="4">as shown in Fig. <a href="xml/1709.06072v1.html#3">3.</a></text>
+<text top="974" left="88" width="122" height="13" font="4">The upper bound of</text>
+<text top="971" left="217" width="9" height="9" font="6">A</text>
+<text top="975" left="226" width="6" height="7" font="11">k</text>
+<text top="982" left="217" width="9" height="9" font="6">N</text>
+<text top="986" left="226" width="6" height="7" font="11">p</text>
+<text top="974" left="239" width="211" height="13" font="4">and its approximation are depicted</text>
+<text top="993" left="73" width="377" height="13" font="4">in Fig. <a href="xml/1709.06072v1.html#3">4. </a>It can be seen that the original curve has been</text>
+<text top="1010" left="73" width="293" height="13" font="4">followed very well by the approximation curve.</text>
+<text top="1029" left="88" width="245" height="13" font="4">Fig. <a href="xml/1709.06072v1.html#3">5 </a>shows the maximum noise ratio</text>
+<text top="1024" left="342" width="13" height="10" font="6">|A</text>
+<text top="1028" left="355" width="6" height="7" font="11">k</text>
+<text top="1024" left="361" width="4" height="10" font="6">|</text>
+<text top="1037" left="345" width="17" height="9" font="6">N p</text>
+<text top="1029" left="373" width="77" height="13" font="4">versus k for</text>
+<text top="1047" left="73" width="377" height="13" font="4">different values of p. As expected, when the sampling rate is</text>
+<text top="1065" left="73" width="166" height="13" font="4">high the noise level is low.</text>
+<text top="78" left="468" width="171" height="13" font="4">B. Gaussian Approximation</text>
+<text top="103" left="483" width="362" height="13" font="4">In this Subsection, we approximate a Bernoulli distribution</text>
+<text top="121" left="468" width="377" height="13" font="4">with parameter p by a Gaussian distribution with mean p and</text>
+<text top="139" left="468" width="335" height="13" font="4">variance p(1−p). We want to be sure that almost all {A</text>
+<text top="144" left="803" width="6" height="9" font="6">k</text>
+<text top="138" left="810" width="7" height="14" font="4">}</text>
+<text top="135" left="818" width="26" height="9" font="6">N −1</text>
+<text top="146" left="818" width="22" height="9" font="6">k=1</text>
+<text top="157" left="468" width="376" height="13" font="4">are below than a threshold T , i.e., for an arbitrary positive :</text>
+<text top="194" left="559" width="10" height="13" font="4">P</text>
+<text top="183" left="570" width="11" height="7" font="4"></text>
+<text top="193" left="581" width="89" height="14" font="4">∃ k 6= 0 : |A</text>
+<text top="200" left="671" width="6" height="9" font="6">k</text>
+<text top="193" left="678" width="33" height="14" font="4">| &gt; T</text>
+<text top="183" left="713" width="11" height="7" font="4"></text>
+<text top="193" left="728" width="26" height="14" font="4">≤ .</text>
+<text top="194" left="827" width="17" height="13" font="4">(6)</text>
+<text top="232" left="468" width="197" height="13" font="4">From the union bound we have:</text>
+<text top="272" left="482" width="10" height="13" font="4">P</text>
+<text top="260" left="494" width="11" height="7" font="4"></text>
+<text top="271" left="505" width="89" height="14" font="4">∃ k 6= 0 : |A</text>
+<text top="277" left="594" width="6" height="9" font="6">k</text>
+<text top="271" left="602" width="33" height="14" font="4">| &gt; T</text>
+<text top="260" left="636" width="11" height="7" font="4"></text>
+<text top="271" left="652" width="25" height="14" font="4">≤ P</text>
+<text top="256" left="681" width="12" height="7" font="4"> </text>
+<text top="256" left="693" width="26" height="9" font="6">N −1</text>
+<text top="267" left="698" width="17" height="7" font="4">[</text>
+<text top="293" left="695" width="22" height="9" font="6">k=1</text>
+<text top="272" left="722" width="33" height="16" font="4">1 [|A</text>
+<text top="277" left="755" width="6" height="9" font="6">k</text>
+<text top="271" left="762" width="39" height="14" font="4">| &gt; T ]</text>
+<text top="256" left="801" width="12" height="7" font="4">!</text>
+<text top="322" left="652" width="12" height="14" font="4">≤</text>
+<text top="307" left="667" width="26" height="9" font="6">N −1</text>
+<text top="318" left="669" width="22" height="7" font="4">X</text>
+<text top="344" left="669" width="22" height="9" font="6">k=1</text>
+<text top="323" left="696" width="10" height="13" font="4">P</text>
+<text top="312" left="707" width="11" height="7" font="4"></text>
+<text top="322" left="718" width="17" height="14" font="4">|A</text>
+<text top="328" left="736" width="6" height="9" font="6">k</text>
+<text top="322" left="743" width="33" height="14" font="4">| &gt; T</text>
+<text top="312" left="778" width="11" height="7" font="4"></text>
+<text top="323" left="789" width="4" height="13" font="4">,</text>
+<text top="297" left="827" width="17" height="13" font="4">(7)</text>
+<text top="367" left="468" width="37" height="13" font="4">where</text>
+<text top="366" left="510" width="33" height="16" font="4">1 [|A</text>
+<text top="372" left="543" width="6" height="9" font="6">k</text>
+<text top="365" left="550" width="148" height="14" font="4">| &gt; T ] indicates that |A</text>
+<text top="372" left="698" width="6" height="9" font="6">k</text>
+<text top="365" left="706" width="139" height="14" font="4">| &gt; T with probability</text>
+<text top="385" left="468" width="29" height="13" font="4">of 1.</text>
+<text top="403" left="483" width="362" height="13" font="4">It is not to difficult to verify the fact that the real and</text>
+<text top="421" left="468" width="135" height="13" font="4">imaginary parts of A</text>
+<text top="426" left="603" width="6" height="9" font="6">k</text>
+<text top="421" left="617" width="227" height="13" font="4">can be approximated by a Gaussian</text>
+<text top="439" left="468" width="186" height="13" font="4">distribution N (0, p(1 − p)N ).</text>
+<text top="465" left="483" width="63" height="13" font="4">Therefore,</text>
+<text top="465" left="561" width="10" height="13" font="4">P</text>
+<text top="453" left="572" width="11" height="7" font="4"></text>
+<text top="464" left="583" width="17" height="14" font="4">|A</text>
+<text top="470" left="600" width="6" height="9" font="6">k</text>
+<text top="464" left="608" width="33" height="14" font="4">| &gt; T</text>
+<text top="453" left="643" width="11" height="7" font="4"></text>
+<text top="464" left="676" width="12" height="14" font="4">≤</text>
+<text top="465" left="710" width="6" height="13" font="4"></text>
+<text top="465" left="731" width="10" height="13" font="4">is</text>
+<text top="465" left="756" width="62" height="13" font="4">equivalent</text>
+<text top="465" left="833" width="12" height="13" font="4">to</text>
+<text top="501" left="468" width="10" height="13" font="4">P</text>
+<text top="489" left="480" width="11" height="7" font="4"></text>
+<text top="501" left="491" width="45" height="13" font="4">(Re{A</text>
+<text top="506" left="535" width="6" height="9" font="6">k</text>
+<text top="500" left="543" width="13" height="14" font="4">})</text>
+<text top="498" left="556" width="6" height="9" font="6">2</text>
+<text top="501" left="566" width="70" height="13" font="4">+ (Img{A</text>
+<text top="506" left="636" width="6" height="9" font="6">k</text>
+<text top="500" left="643" width="13" height="14" font="4">})</text>
+<text top="498" left="656" width="6" height="9" font="6">2</text>
+<text top="501" left="667" width="25" height="13" font="4">&gt; T</text>
+<text top="498" left="694" width="6" height="9" font="6">2</text>
+<text top="489" left="701" width="11" height="7" font="4"></text>
+<text top="500" left="716" width="108" height="14" font="4">≤  and we have:</text>
+<text top="549" left="468" width="9" height="12" font="3">P</text>
+<text top="539" left="479" width="10" height="6" font="3"></text>
+<text top="549" left="489" width="41" height="12" font="3">(Re{A</text>
+<text top="553" left="530" width="6" height="8" font="12">k</text>
+<text top="548" left="537" width="12" height="13" font="3">})</text>
+<text top="545" left="549" width="5" height="8" font="12">2</text>
+<text top="549" left="559" width="64" height="12" font="3">+ (Img{A</text>
+<text top="553" left="623" width="6" height="8" font="12">k</text>
+<text top="548" left="630" width="12" height="13" font="3">})</text>
+<text top="545" left="642" width="5" height="8" font="12">2</text>
+<text top="549" left="652" width="23" height="12" font="3">&gt; T</text>
+<text top="545" left="677" width="5" height="8" font="12">2</text>
+<text top="539" left="683" width="10" height="6" font="3"></text>
+<text top="548" left="697" width="23" height="13" font="3">≤ P</text>
+<text top="539" left="722" width="10" height="6" font="3"></text>
+<text top="549" left="733" width="41" height="12" font="3">(Re{A</text>
+<text top="553" left="774" width="6" height="8" font="12">k</text>
+<text top="548" left="781" width="12" height="13" font="3">})</text>
+<text top="545" left="793" width="5" height="8" font="12">2</text>
+<text top="549" left="803" width="11" height="12" font="3">&gt;</text>
+<text top="540" left="819" width="8" height="12" font="3">T</text>
+<text top="537" left="829" width="5" height="8" font="12">2</text>
+<text top="558" left="824" width="7" height="12" font="3">2</text>
+<text top="539" left="837" width="10" height="6" font="3"></text>
+<text top="586" left="696" width="23" height="12" font="3">+ P</text>
+<text top="576" left="721" width="10" height="6" font="3"></text>
+<text top="586" left="731" width="41" height="12" font="3">(Re{A</text>
+<text top="591" left="772" width="6" height="8" font="12">k</text>
+<text top="585" left="779" width="12" height="13" font="3">})</text>
+<text top="583" left="792" width="5" height="8" font="12">2</text>
+<text top="586" left="802" width="11" height="12" font="3">&gt;</text>
+<text top="577" left="818" width="8" height="12" font="3">T</text>
+<text top="575" left="828" width="5" height="8" font="12">2</text>
+<text top="595" left="823" width="7" height="12" font="3">2</text>
+<text top="576" left="836" width="10" height="6" font="3"></text>
+<text top="586" left="846" width="4" height="12" font="3">.</text>
+<text top="610" left="829" width="16" height="12" font="3">(8)</text>
+<text top="636" left="473" width="372" height="13" font="4">Hence, we are interested to calculate the following probabil-</text>
+<text top="654" left="468" width="20" height="13" font="4">ity:</text>
+<text top="681" left="570" width="10" height="13" font="4">P</text>
+<text top="670" left="584" width="11" height="7" font="4"></text>
+<text top="680" left="595" width="43" height="14" font="4">|Re{A</text>
+<text top="687" left="638" width="6" height="9" font="6">k</text>
+<text top="680" left="646" width="27" height="14" font="4">}| &gt;</text>
+<text top="671" left="683" width="9" height="13" font="4">T</text>
+<text top="680" left="679" width="12" height="14" font="4">√</text>
+<text top="693" left="691" width="7" height="13" font="4">2</text>
+<text top="670" left="701" width="11" height="7" font="4"></text>
+<text top="680" left="716" width="12" height="14" font="4">≤</text>
+<text top="671" left="734" width="6" height="13" font="4"></text>
+<text top="692" left="733" width="7" height="13" font="4">2</text>
+<text top="682" left="827" width="17" height="13" font="4">(9)</text>
+<text top="726" left="468" width="76" height="13" font="4">Since Re{A</text>
+<text top="731" left="544" width="6" height="9" font="6">k</text>
+<text top="725" left="552" width="153" height="14" font="4">} ≈ N (o, p(1 − p)N ), P</text>
+<text top="719" left="710" width="9" height="7" font="4"></text>
+<text top="725" left="719" width="43" height="14" font="4">|Re{A</text>
+<text top="731" left="762" width="6" height="9" font="6">k</text>
+<text top="725" left="769" width="27" height="14" font="4">}| &gt;</text>
+<text top="723" left="806" width="7" height="9" font="6">T</text>
+<text top="726" left="802" width="10" height="10" font="6">√</text>
+<text top="735" left="812" width="6" height="9" font="6">2</text>
+<text top="719" left="820" width="9" height="7" font="4"></text>
+<text top="725" left="833" width="12" height="13" font="4">=</text>
+<text top="757" left="468" width="12" height="13" font="4">Q</text>
+<text top="746" left="482" width="11" height="7" font="4"></text>
+<text top="754" left="524" width="7" height="9" font="6">T</text>
+<text top="754" left="495" width="12" height="14" font="4">√</text>
+<text top="768" left="508" width="52" height="9" font="6">2p(1−p)N</text>
+<text top="746" left="563" width="11" height="7" font="4"></text>
+<text top="757" left="574" width="271" height="13" font="4">. Hence, we can calculate the maximum of</text>
+<text top="784" left="468" width="19" height="14" font="4">{A</text>
+<text top="790" left="487" width="6" height="9" font="6">k</text>
+<text top="784" left="494" width="7" height="14" font="4">}</text>
+<text top="781" left="501" width="26" height="9" font="6">N −1</text>
+<text top="792" left="501" width="22" height="9" font="6">k=1</text>
+<text top="785" left="533" width="66" height="13" font="4">as follows:</text>
+<text top="828" left="468" width="12" height="13" font="4">Q</text>
+<text top="812" left="482" width="12" height="7" font="4"> </text>
+<text top="818" left="535" width="9" height="13" font="4">T</text>
+<text top="837" left="496" width="87" height="16" font="4">p2p(1 − p)N</text>
+<text top="812" left="586" width="12" height="7" font="4">!</text>
+<text top="827" left="602" width="12" height="14" font="4">≤</text>
+<text top="818" left="620" width="6" height="13" font="4"></text>
+<text top="838" left="620" width="7" height="13" font="4">2</text>
+<text top="828" left="640" width="62" height="13" font="4">=⇒ T ≤</text>
+<text top="824" left="706" width="15" height="7" font="4">p</text>
+<text top="828" left="721" width="85" height="13" font="4">2p(1 − p)N Q</text>
+<text top="824" left="806" width="15" height="10" font="6">−1</text>
+<text top="821" left="825" width="9" height="7" font="4"></text>
+<text top="818" left="836" width="6" height="13" font="4"></text>
+<text top="838" left="835" width="7" height="13" font="4">2</text>
+<text top="821" left="845" width="9" height="7" font="4"></text>
+<text top="857" left="820" width="25" height="13" font="4">(10)</text>
+<text top="875" left="468" width="377" height="13" font="4">One of the most common approximations for Q-function is as</text>
+<text top="893" left="468" width="49" height="13" font="4">follows:</text>
+<text top="915" left="607" width="48" height="13" font="4">Q(x) ≈</text>
+<text top="905" left="660" width="7" height="13" font="4">1</text>
+<text top="926" left="660" width="7" height="13" font="4">2</text>
+<text top="915" left="669" width="7" height="13" font="4">e</text>
+<text top="912" left="676" width="9" height="10" font="6">−</text>
+<text top="910" left="688" width="11" height="7" font="11">x2</text>
+<text top="918" left="691" width="5" height="7" font="11">2</text>
+<text top="915" left="702" width="4" height="13" font="4">.</text>
+<text top="916" left="820" width="25" height="13" font="4">(11)</text>
+<text top="949" left="468" width="377" height="13" font="4">If we use above approximation for Q-function, we can approx-</text>
+<text top="967" left="468" width="112" height="13" font="4">imate T as below:</text>
+<text top="997" left="577" width="38" height="13" font="4">T ≤ 2</text>
+<text top="993" left="615" width="15" height="7" font="4">p</text>
+<text top="997" left="630" width="106" height="13" font="4">p(p − 1)N log()</text>
+<text top="997" left="820" width="25" height="13" font="4">(12)</text>
+<text top="1029" left="483" width="362" height="13" font="4">Fig. <a href="xml/1709.06072v1.html#4">6 </a>shows the threshold levels for different values of . It</text>
+<text top="1047" left="468" width="377" height="13" font="4">can be seen that as  is small the threshold levels obtained by</text>
+<text top="1065" left="468" width="367" height="13" font="4">the Gaussian approximation is very close to the worst case.</text>
+<text top="1125" left="455" width="7" height="13" font="4">2</text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="13" size="7" family="Times" color="#000000"/>
+	<fontspec id="14" size="5" family="Times" color="#000000"/>
+	<fontspec id="15" size="6" family="Times" color="#000000"/>
+	<fontspec id="16" size="6" family="Times" color="#000000"/>
+	<fontspec id="17" size="3" family="Times" color="#000000"/>
+	<fontspec id="18" size="4" family="Times" color="#000000"/>
+	<fontspec id="19" size="3" family="Times" color="#000000"/>
+<text top="29" left="248" width="421" height="11" font="0">2017 International Conference on Sampling Theory and Applications (SampTA)</text>
+<text top="80" left="436" width="46" height="11" font="5">TABLE I</text>
+<text top="94" left="177" width="8" height="11" font="5">C</text>
+<text top="95" left="186" width="552" height="9" font="13">OMPARISON BETWEEN THE PROPOSED UPPER BOUND AND THE MAXIMUM VALUE ACHIEVED BY SIMULATION</text>
+<text top="94" left="738" width="3" height="11" font="5">.</text>
+<text top="122" left="227" width="11" height="12" font="3">N</text>
+<text top="122" left="276" width="7" height="12" font="3">p</text>
+<text top="122" left="317" width="11" height="12" font="3">N</text>
+<text top="127" left="328" width="6" height="8" font="12">p</text>
+<text top="121" left="364" width="14" height="13" font="3">|A</text>
+<text top="127" left="378" width="6" height="8" font="12">k</text>
+<text top="121" left="385" width="4" height="13" font="3">|</text>
+<text top="127" left="389" width="22" height="8" font="12">max</text>
+<text top="122" left="417" width="34" height="12" font="3">(Sim.)</text>
+<text top="118" left="475" width="12" height="8" font="12">|A</text>
+<text top="122" left="487" width="6" height="7" font="11">k</text>
+<text top="118" left="493" width="3" height="8" font="12">|</text>
+<text top="130" left="478" width="9" height="8" font="12">N</text>
+<text top="132" left="487" width="6" height="7" font="11">p</text>
+<text top="133" left="499" width="22" height="8" font="12">max</text>
+<text top="122" left="526" width="34" height="12" font="3">(Sim.)</text>
+<text top="121" left="585" width="14" height="13" font="3">|A</text>
+<text top="127" left="599" width="6" height="8" font="12">k</text>
+<text top="121" left="606" width="4" height="13" font="3">|</text>
+<text top="127" left="610" width="22" height="8" font="12">max</text>
+<text top="118" left="659" width="12" height="8" font="12">|A</text>
+<text top="122" left="671" width="6" height="7" font="11">k</text>
+<text top="118" left="677" width="3" height="8" font="12">|</text>
+<text top="130" left="662" width="9" height="8" font="12">N</text>
+<text top="132" left="671" width="6" height="7" font="11">p</text>
+<text top="133" left="682" width="22" height="8" font="12">max</text>
+<text top="145" left="223" width="20" height="12" font="3">127</text>
+<text top="145" left="271" width="17" height="12" font="3">0.5</text>
+<text top="145" left="319" width="13" height="12" font="3">64</text>
+<text top="145" left="392" width="30" height="12" font="3">11.55</text>
+<text top="145" left="499" width="30" height="12" font="3">0.182</text>
+<text top="145" left="590" width="37" height="12" font="3">40.426</text>
+<text top="145" left="666" width="30" height="12" font="3">0.637</text>
+<text top="160" left="223" width="20" height="12" font="3">127</text>
+<text top="160" left="271" width="17" height="12" font="3">0.8</text>
+<text top="160" left="316" width="20" height="12" font="3">102</text>
+<text top="160" left="401" width="13" height="12" font="3">12</text>
+<text top="160" left="499" width="30" height="12" font="3">0.118</text>
+<text top="160" left="590" width="37" height="12" font="3">23.439</text>
+<text top="160" left="666" width="30" height="12" font="3">0.231</text>
+<text top="176" left="223" width="20" height="12" font="3">127</text>
+<text top="176" left="271" width="17" height="12" font="3">0.1</text>
+<text top="176" left="319" width="13" height="12" font="3">13</text>
+<text top="176" left="392" width="30" height="12" font="3">7.705</text>
+<text top="176" left="499" width="30" height="12" font="3">0.607</text>
+<text top="176" left="590" width="37" height="12" font="3">12.778</text>
+<text top="176" left="666" width="30" height="12" font="3">1.006</text>
+<text top="191" left="220" width="27" height="12" font="3">1543</text>
+<text top="191" left="271" width="17" height="12" font="3">0.5</text>
+<text top="191" left="316" width="20" height="12" font="3">772</text>
+<text top="191" left="389" width="37" height="12" font="3">52.383</text>
+<text top="191" left="499" width="30" height="12" font="3">0.068</text>
+<text top="191" left="587" width="44" height="12" font="3">491.152</text>
+<text top="191" left="666" width="30" height="12" font="3">0.637</text>
+<text top="207" left="223" width="20" height="12" font="3">127</text>
+<text top="207" left="271" width="17" height="12" font="3">0.8</text>
+<text top="207" left="313" width="27" height="12" font="3">1235</text>
+<text top="207" left="392" width="30" height="12" font="3">617.2</text>
+<text top="207" left="499" width="30" height="12" font="3">0.033</text>
+<text top="207" left="587" width="44" height="12" font="3">288.207</text>
+<text top="207" left="666" width="30" height="12" font="3">0.233</text>
+<text top="222" left="223" width="20" height="12" font="3">127</text>
+<text top="222" left="271" width="17" height="12" font="3">0.1</text>
+<text top="222" left="316" width="20" height="12" font="3">155</text>
+<text top="222" left="389" width="37" height="12" font="3">38.628</text>
+<text top="222" left="503" width="24" height="12" font="3">0.25</text>
+<text top="222" left="590" width="37" height="12" font="3">152.44</text>
+<text top="222" left="666" width="30" height="12" font="3">0.988</text>
+<text top="239" left="213" width="40" height="12" font="3">131071</text>
+<text top="239" left="271" width="17" height="12" font="3">0.5</text>
+<text top="239" left="309" width="34" height="12" font="3">65535</text>
+<text top="239" left="386" width="44" height="12" font="3">618.651</text>
+<text top="239" left="496" width="37" height="12" font="3">0.0094</text>
+<text top="239" left="578" width="55" height="12" font="3">4.172×10</text>
+<text top="236" left="633" width="5" height="8" font="12">4</text>
+<text top="239" left="666" width="30" height="12" font="3">0.637</text>
+<text top="255" left="213" width="40" height="12" font="3">131071</text>
+<text top="255" left="271" width="17" height="12" font="3">0.8</text>
+<text top="255" left="306" width="40" height="12" font="3">104856</text>
+<text top="255" left="386" width="44" height="12" font="3">471.001</text>
+<text top="255" left="496" width="37" height="12" font="3">0.0045</text>
+<text top="255" left="578" width="55" height="12" font="3">2.452×10</text>
+<text top="253" left="633" width="5" height="8" font="12">4</text>
+<text top="255" left="666" width="30" height="12" font="3">0.234</text>
+<text top="272" left="213" width="40" height="12" font="3">131071</text>
+<text top="272" left="271" width="17" height="12" font="3">0.1</text>
+<text top="272" left="309" width="34" height="12" font="3">13107</text>
+<text top="272" left="386" width="44" height="12" font="3">344.254</text>
+<text top="272" left="499" width="30" height="12" font="3">0.026</text>
+<text top="272" left="578" width="55" height="12" font="3">1.289×10</text>
+<text top="269" left="633" width="5" height="8" font="12">4</text>
+<text top="272" left="666" width="30" height="12" font="3">0.984</text>
+<text top="322" left="183" width="11" height="13" font="4">A</text>
+<text top="328" left="194" width="6" height="9" font="6">k</text>
+<text top="343" left="182" width="12" height="13" font="4">N</text>
+<text top="348" left="194" width="6" height="9" font="6">p</text>
+<text top="332" left="207" width="12" height="13" font="4">=</text>
+<text top="322" left="231" width="7" height="13" font="4">1</text>
+<text top="343" left="225" width="12" height="13" font="4">N</text>
+<text top="348" left="237" width="6" height="9" font="6">p</text>
+<text top="310" left="246" width="16" height="7" font="4">v</text>
+<text top="318" left="246" width="16" height="7" font="4">u</text>
+<text top="327" left="246" width="16" height="7" font="4">u</text>
+<text top="336" left="246" width="16" height="7" font="4">t</text>
+<text top="332" left="261" width="12" height="13" font="4">N</text>
+<text top="338" left="273" width="6" height="9" font="6">p</text>
+<text top="332" left="284" width="22" height="13" font="4">+ 2</text>
+<text top="315" left="309" width="9" height="9" font="6">N</text>
+<text top="319" left="318" width="6" height="7" font="11">p</text>
+<text top="315" left="324" width="15" height="10" font="6">−1</text>
+<text top="328" left="313" width="22" height="7" font="4">X</text>
+<text top="353" left="314" width="19" height="9" font="6">i=1</text>
+<text top="332" left="342" width="28" height="13" font="4">i cos</text>
+<text top="321" left="372" width="11" height="7" font="4"></text>
+<text top="332" left="383" width="18" height="13" font="4">(N</text>
+<text top="338" left="401" width="6" height="9" font="6">p</text>
+<text top="332" left="411" width="26" height="14" font="4">− i)</text>
+<text top="322" left="441" width="22" height="13" font="4">2πi</text>
+<text top="343" left="445" width="12" height="13" font="4">N</text>
+<text top="321" left="465" width="11" height="7" font="4"></text>
+<text top="395" left="207" width="12" height="13" font="4">=</text>
+<text top="384" left="231" width="7" height="13" font="4">1</text>
+<text top="405" left="225" width="12" height="13" font="4">N</text>
+<text top="410" left="237" width="6" height="9" font="6">p</text>
+<text top="368" left="246" width="16" height="7" font="4">v</text>
+<text top="377" left="246" width="16" height="7" font="4">u</text>
+<text top="386" left="246" width="16" height="7" font="4">u</text>
+<text top="395" left="246" width="16" height="7" font="4">u</text>
+<text top="404" left="246" width="28" height="7" font="4">tN</text>
+<text top="400" left="273" width="6" height="9" font="6">p</text>
+<text top="395" left="284" width="22" height="13" font="4">+ 2</text>
+<text top="374" left="309" width="10" height="7" font="4"></text>
+<text top="401" left="309" width="10" height="7" font="4"></text>
+<text top="395" left="319" width="20" height="13" font="4">cos</text>
+<text top="383" left="341" width="11" height="7" font="4"></text>
+<text top="395" left="352" width="12" height="13" font="4">N</text>
+<text top="400" left="364" width="6" height="9" font="6">p</text>
+<text top="384" left="373" width="16" height="13" font="4">2π</text>
+<text top="405" left="374" width="12" height="13" font="4">N</text>
+<text top="383" left="391" width="11" height="7" font="4"></text>
+<text top="377" left="405" width="9" height="9" font="6">N</text>
+<text top="381" left="414" width="6" height="7" font="11">p</text>
+<text top="377" left="420" width="15" height="10" font="6">−1</text>
+<text top="390" left="409" width="22" height="7" font="4">X</text>
+<text top="415" left="410" width="19" height="9" font="6">i=1</text>
+<text top="395" left="438" width="28" height="13" font="4">i cos</text>
+<text top="383" left="468" width="34" height="14" font="4"> 2πi</text>
+<text top="405" left="485" width="12" height="13" font="4">N</text>
+<text top="383" left="504" width="11" height="7" font="4"></text>
+<text top="395" left="519" width="33" height="13" font="4">+ sin</text>
+<text top="383" left="555" width="11" height="7" font="4"></text>
+<text top="395" left="566" width="12" height="13" font="4">N</text>
+<text top="400" left="578" width="6" height="9" font="6">p</text>
+<text top="384" left="586" width="16" height="13" font="4">2π</text>
+<text top="405" left="588" width="12" height="13" font="4">N</text>
+<text top="383" left="605" width="11" height="7" font="4"></text>
+<text top="377" left="618" width="9" height="9" font="6">N</text>
+<text top="381" left="628" width="6" height="7" font="11">p</text>
+<text top="377" left="634" width="15" height="10" font="6">−1</text>
+<text top="390" left="623" width="22" height="7" font="4">X</text>
+<text top="415" left="624" width="19" height="9" font="6">i=1</text>
+<text top="395" left="652" width="26" height="13" font="4">i sin</text>
+<text top="383" left="680" width="34" height="14" font="4"> 2πi</text>
+<text top="405" left="697" width="12" height="13" font="4">N</text>
+<text top="383" left="716" width="11" height="7" font="4"></text>
+<text top="374" left="727" width="10" height="7" font="4"></text>
+<text top="401" left="727" width="10" height="7" font="4"></text>
+<text top="461" left="100" width="9" height="9" font="6">=</text>
+<text top="453" left="119" width="6" height="9" font="6">1</text>
+<text top="469" left="114" width="9" height="9" font="6">N</text>
+<text top="472" left="124" width="6" height="7" font="11">p</text>
+<text top="442" left="132" width="12" height="5" font="6">v</text>
+<text top="448" left="132" width="12" height="5" font="6">u</text>
+<text top="454" left="132" width="12" height="5" font="6">u</text>
+<text top="460" left="132" width="12" height="5" font="6">u</text>
+<text top="466" left="132" width="22" height="5" font="6">tN</text>
+<text top="465" left="154" width="6" height="7" font="11">p</text>
+<text top="461" left="163" width="18" height="9" font="6">+ 2</text>
+<text top="447" left="183" width="8" height="5" font="6"></text>
+<text top="466" left="183" width="8" height="5" font="6"></text>
+<text top="453" left="193" width="9" height="9" font="6">N</text>
+<text top="457" left="202" width="6" height="7" font="11">p</text>
+<text top="469" left="198" width="6" height="9" font="6">2</text>
+<text top="450" left="212" width="15" height="9" font="6">sin</text>
+<text top="445" left="229" width="7" height="5" font="6"></text>
+<text top="446" left="238" width="27" height="8" font="11">Np−1</text>
+<text top="456" left="247" width="8" height="7" font="11">N</text>
+<text top="450" left="267" width="7" height="9" font="6">π</text>
+<text top="445" left="274" width="7" height="5" font="6"></text>
+<text top="450" left="284" width="16" height="9" font="6">cos</text>
+<text top="445" left="302" width="7" height="5" font="6"></text>
+<text top="446" left="311" width="14" height="8" font="11">Np</text>
+<text top="456" left="314" width="8" height="7" font="11">N</text>
+<text top="450" left="327" width="7" height="9" font="6">π</text>
+<text top="445" left="334" width="7" height="5" font="6"></text>
+<text top="469" left="256" width="15" height="9" font="6">sin</text>
+<text top="467" left="282" width="6" height="7" font="11">π</text>
+<text top="475" left="281" width="8" height="7" font="11">N</text>
+<text top="467" left="291" width="6" height="5" font="6"></text>
+<text top="461" left="346" width="9" height="9" font="6">+</text>
+<text top="453" left="360" width="6" height="9" font="6">1</text>
+<text top="469" left="360" width="6" height="9" font="6">2</text>
+<text top="450" left="369" width="15" height="9" font="6">sin</text>
+<text top="445" left="386" width="7" height="5" font="6"></text>
+<text top="446" left="395" width="27" height="8" font="11">Np−1</text>
+<text top="456" left="404" width="8" height="7" font="11">N</text>
+<text top="450" left="424" width="7" height="9" font="6">π</text>
+<text top="445" left="432" width="7" height="5" font="6"></text>
+<text top="450" left="441" width="16" height="9" font="6">cos</text>
+<text top="445" left="459" width="7" height="5" font="6"></text>
+<text top="446" left="468" width="14" height="8" font="11">Np</text>
+<text top="456" left="471" width="8" height="7" font="11">N</text>
+<text top="450" left="484" width="7" height="9" font="6">π</text>
+<text top="445" left="492" width="7" height="5" font="6"></text>
+<text top="450" left="501" width="16" height="9" font="6">cos</text>
+<text top="448" left="527" width="6" height="7" font="11">π</text>
+<text top="456" left="526" width="8" height="7" font="11">N</text>
+<text top="448" left="537" width="22" height="11" font="6"> sin</text>
+<text top="445" left="561" width="7" height="5" font="6"></text>
+<text top="446" left="570" width="14" height="8" font="11">Np</text>
+<text top="456" left="573" width="8" height="7" font="11">N</text>
+<text top="450" left="587" width="7" height="9" font="6">π</text>
+<text top="445" left="594" width="7" height="5" font="6"></text>
+<text top="469" left="462" width="15" height="9" font="6">sin</text>
+<text top="468" left="477" width="5" height="7" font="11">2</text>
+<text top="467" left="493" width="6" height="7" font="11">π</text>
+<text top="475" left="492" width="8" height="7" font="11">N</text>
+<text top="467" left="503" width="6" height="5" font="6"></text>
+<text top="460" left="606" width="9" height="10" font="6">−</text>
+<text top="453" left="618" width="20" height="10" font="6"> N</text>
+<text top="457" left="638" width="6" height="7" font="11">p</text>
+<text top="453" left="647" width="18" height="10" font="6">− 1</text>
+<text top="469" left="644" width="6" height="9" font="6">2</text>
+<text top="453" left="667" width="9" height="5" font="6"></text>
+<text top="450" left="679" width="16" height="9" font="6">cos</text>
+<text top="445" left="697" width="7" height="5" font="6"></text>
+<text top="446" left="706" width="27" height="8" font="11">Np−1</text>
+<text top="456" left="716" width="8" height="7" font="11">N</text>
+<text top="450" left="736" width="7" height="9" font="6">π</text>
+<text top="445" left="743" width="7" height="5" font="6"></text>
+<text top="450" left="752" width="17" height="9" font="6">sin</text>
+<text top="445" left="772" width="7" height="5" font="6"></text>
+<text top="446" left="781" width="14" height="8" font="11">Np</text>
+<text top="456" left="783" width="8" height="7" font="11">N</text>
+<text top="450" left="797" width="7" height="9" font="6">π</text>
+<text top="445" left="804" width="7" height="5" font="6"></text>
+<text top="469" left="725" width="15" height="9" font="6">sin</text>
+<text top="467" left="751" width="6" height="7" font="11">π</text>
+<text top="475" left="749" width="8" height="7" font="11">N</text>
+<text top="467" left="760" width="6" height="5" font="6"></text>
+<text top="447" left="813" width="8" height="5" font="6"></text>
+<text top="466" left="813" width="8" height="5" font="6"></text>
+<text top="531" left="210" width="12" height="14" font="4">≈</text>
+<text top="522" left="234" width="7" height="13" font="4">1</text>
+<text top="542" left="227" width="21" height="13" font="4">N p</text>
+<text top="515" left="250" width="15" height="7" font="4">s</text>
+<text top="532" left="265" width="36" height="13" font="4">N p +</text>
+<text top="522" left="306" width="12" height="13" font="4">N</text>
+<text top="521" left="320" width="6" height="9" font="6">2</text>
+<text top="542" left="309" width="9" height="13" font="4">π</text>
+<text top="541" left="318" width="6" height="9" font="6">2</text>
+<text top="532" left="328" width="18" height="13" font="4">sin</text>
+<text top="529" left="347" width="6" height="9" font="6">2</text>
+<text top="532" left="356" width="58" height="13" font="4">(pπ) − N</text>
+<text top="521" left="419" width="8" height="7" font="4"></text>
+<text top="532" left="426" width="64" height="13" font="4">sin (pπ) −</text>
+<text top="522" left="500" width="7" height="13" font="4">1</text>
+<text top="542" left="496" width="16" height="13" font="4">2π</text>
+<text top="532" left="516" width="57" height="13" font="4">sin (2pπ)</text>
+<text top="521" left="573" width="8" height="7" font="4"></text>
+<text top="532" left="827" width="17" height="13" font="4">(5)</text>
+<text top="583" left="373" width="147" height="11" font="5">Fig. 3. The approximation of</text>
+<text top="579" left="526" width="8" height="8" font="12">A</text>
+<text top="582" left="534" width="6" height="7" font="11">k</text>
+<text top="589" left="526" width="9" height="8" font="12">N</text>
+<text top="592" left="534" width="6" height="7" font="11">p</text>
+<text top="583" left="542" width="3" height="11" font="5">.</text>
+<text top="832" left="133" width="4" height="7" font="14"><b>0</b></text>
+<text top="832" left="156" width="10" height="7" font="14"><b>0.1</b></text>
+<text top="832" left="183" width="10" height="7" font="14"><b>0.2</b></text>
+<text top="832" left="210" width="10" height="7" font="14"><b>0.3</b></text>
+<text top="832" left="236" width="10" height="7" font="14"><b>0.4</b></text>
+<text top="832" left="263" width="10" height="7" font="14"><b>0.5</b></text>
+<text top="832" left="289" width="10" height="7" font="14"><b>0.6</b></text>
+<text top="832" left="316" width="10" height="7" font="14"><b>0.7</b></text>
+<text top="832" left="343" width="10" height="7" font="14"><b>0.8</b></text>
+<text top="832" left="369" width="10" height="7" font="14"><b>0.9</b></text>
+<text top="832" left="399" width="4" height="7" font="14"><b>1</b></text>
+<text top="826" left="129" width="4" height="7" font="14"><b>0</b></text>
+<text top="808" left="123" width="10" height="7" font="14"><b>0.1</b></text>
+<text top="790" left="123" width="10" height="7" font="14"><b>0.2</b></text>
+<text top="772" left="123" width="10" height="7" font="14"><b>0.3</b></text>
+<text top="754" left="123" width="10" height="7" font="14"><b>0.4</b></text>
+<text top="736" left="123" width="10" height="7" font="14"><b>0.5</b></text>
+<text top="718" left="123" width="10" height="7" font="14"><b>0.6</b></text>
+<text top="700" left="123" width="10" height="7" font="14"><b>0.7</b></text>
+<text top="682" left="123" width="10" height="7" font="14"><b>0.8</b></text>
+<text top="664" left="123" width="10" height="7" font="14"><b>0.9</b></text>
+<text top="646" left="129" width="4" height="7" font="14"><b>1</b></text>
+<text top="841" left="241" width="54" height="8" font="15"><b>Probability (p)</b></text>
+<text top="745" left="114" width="0" height="8" font="16"><b>|A</b></text>
+<text top="738" left="118" width="0" height="6" font="17"><b>k</b></text>
+<text top="734" left="114" width="0" height="8" font="16"><b>|/N</b></text>
+<text top="725" left="118" width="0" height="6" font="17"><b>p</b></text>
+<text top="824" left="134" width="2" height="9" font="11"> </text>
+<text top="644" left="400" width="2" height="9" font="11"> </text>
+<text top="655" left="278" width="55" height="8" font="15"><b>Upper bound</b></text>
+<text top="666" left="278" width="118" height="8" font="15"><b>Approximated upper−bound</b></text>
+<text top="872" left="153" width="218" height="11" font="5">Fig. 4. Upper bound and its approximation.</text>
+<text top="925" left="73" width="209" height="13" font="4">C. Three and Four Sigma Bounds</text>
+<text top="957" left="88" width="362" height="13" font="4">From probability and statistical analysis, we know that a</text>
+<text top="975" left="73" width="377" height="13" font="4">sequence of numbers is within about three or four standard de-</text>
+<text top="993" left="73" width="377" height="13" font="4">viations from the mean. In Subsection <a href="xml/1709.06072v1.html#2">II-B, </a>we approximated</text>
+<text top="1011" left="73" width="376" height="13" font="4">the random mask with a Gaussian distribution. Therefore, 3−σ</text>
+<text top="1029" left="73" width="377" height="13" font="4">and 4 − σ bounds for the magnitude of Fourier transform</text>
+<text top="1047" left="73" width="165" height="13" font="4">of a random mask are 3</text>
+<text top="1043" left="238" width="127" height="17" font="4">pp(1 − p)N and 4</text>
+<text top="1043" left="365" width="85" height="17" font="4">pp(1 − p)N ,</text>
+<text top="1065" left="73" width="74" height="13" font="4">respectively.</text>
+<text top="820" left="528" width="4" height="7" font="14"><b>0</b></text>
+<text top="820" left="554" width="16" height="7" font="14"><b>1000</b></text>
+<text top="820" left="586" width="16" height="7" font="14"><b>2000</b></text>
+<text top="820" left="619" width="16" height="7" font="14"><b>3000</b></text>
+<text top="820" left="651" width="16" height="7" font="14"><b>4000</b></text>
+<text top="820" left="684" width="16" height="7" font="14"><b>5000</b></text>
+<text top="820" left="716" width="16" height="7" font="14"><b>6000</b></text>
+<text top="820" left="749" width="16" height="7" font="14"><b>7000</b></text>
+<text top="820" left="781" width="16" height="7" font="14"><b>8000</b></text>
+<text top="812" left="513" width="14" height="7" font="14"><b>0.01</b></text>
+<text top="795" left="513" width="14" height="7" font="14"><b>0.02</b></text>
+<text top="779" left="513" width="14" height="7" font="14"><b>0.03</b></text>
+<text top="762" left="513" width="14" height="7" font="14"><b>0.04</b></text>
+<text top="745" left="513" width="14" height="7" font="14"><b>0.05</b></text>
+<text top="728" left="513" width="14" height="7" font="14"><b>0.06</b></text>
+<text top="712" left="513" width="14" height="7" font="14"><b>0.07</b></text>
+<text top="695" left="513" width="14" height="7" font="14"><b>0.08</b></text>
+<text top="678" left="513" width="14" height="7" font="14"><b>0.09</b></text>
+<text top="661" left="517" width="10" height="7" font="14"><b>0.1</b></text>
+<text top="645" left="513" width="14" height="7" font="14"><b>0.11</b></text>
+<text top="829" left="614" width="97" height="8" font="15"><b>Frequency (k = 1 : N−1)</b></text>
+<text top="740" left="504" width="0" height="8" font="16"><b>|A</b></text>
+<text top="733" left="508" width="0" height="6" font="18"><b>k</b></text>
+<text top="727" left="504" width="0" height="8" font="16"><b>|/Np</b></text>
+<text top="651" left="536" width="18" height="6" font="19"><b>p = 0.1</b></text>
+<text top="709" left="535" width="18" height="6" font="19"><b>p = 0.2</b></text>
+<text top="742" left="535" width="18" height="6" font="19"><b>p = 0.3</b></text>
+<text top="757" left="535" width="18" height="6" font="19"><b>p = 0.4</b></text>
+<text top="772" left="535" width="18" height="6" font="19"><b>p = 0.5</b></text>
+<text top="781" left="536" width="18" height="6" font="19"><b>p = 0.6</b></text>
+<text top="789" left="535" width="18" height="6" font="19"><b>p = 0.7</b></text>
+<text top="799" left="536" width="18" height="6" font="19"><b>p = 0.8</b></text>
+<text top="807" left="536" width="18" height="6" font="19"><b>p = 0.9</b></text>
+<text top="858" left="568" width="140" height="11" font="5">Fig. 5. Noise Ratio, N = 2</text>
+<text top="856" left="708" width="11" height="8" font="12">13</text>
+<text top="857" left="723" width="22" height="12" font="5">− 1.</text>
+<text top="908" left="565" width="40" height="13" font="4">III. N</text>
+<text top="910" left="606" width="68" height="11" font="5">UMERICAL</text>
+<text top="908" left="678" width="9" height="13" font="4">E</text>
+<text top="910" left="687" width="60" height="11" font="5">XAMPLES</text>
+<text top="939" left="483" width="362" height="13" font="4">In this section, we generate random masks with different</text>
+<text top="957" left="468" width="377" height="13" font="4">sizes and calculate maximum and average of their DFT coef-</text>
+<text top="975" left="468" width="238" height="13" font="4">ficients. Each experiment is repeated 10</text>
+<text top="972" left="706" width="6" height="9" font="6">5</text>
+<text top="975" left="717" width="128" height="13" font="4">times. The maximum</text>
+<text top="993" left="468" width="377" height="13" font="4">and average values along with the proposed bounds are shown</text>
+<text top="1011" left="468" width="377" height="13" font="4">in Figs. <a href="xml/1709.06072v1.html#4">7-9. </a>According to the results, the 4 − σ bound follows</text>
+<text top="1029" left="468" width="377" height="13" font="4">the maximum value of DFT very well. However, in some</text>
+<text top="1047" left="468" width="377" height="13" font="4">cases, it is placed under the maximum curve. The bound</text>
+<text top="1065" left="468" width="377" height="13" font="4">obtained by the Gaussian approximation is a confident bound</text>
+<text top="1125" left="455" width="7" height="13" font="4">3</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="20" size="4" family="Times" color="#000000"/>
+	<fontspec id="21" size="7" family="Times" color="#000000"/>
+	<fontspec id="22" size="7" family="Times" color="#000000"/>
+	<fontspec id="23" size="4" family="Times" color="#000000"/>
+<text top="29" left="248" width="421" height="11" font="0">2017 International Conference on Sampling Theory and Applications (SampTA)</text>
+<text top="366" left="73" width="33" height="11" font="5">Fig. 6.</text>
+<text top="366" left="118" width="164" height="11" font="5">Threshold levels for (a)  = 10</text>
+<text top="364" left="282" width="14" height="8" font="12">−1</text>
+<text top="366" left="297" width="67" height="11" font="5">, (b)  = 10</text>
+<text top="364" left="364" width="14" height="8" font="12">−6</text>
+<text top="366" left="379" width="71" height="11" font="5">, and (c)  =</text>
+<text top="380" left="73" width="13" height="11" font="5">10</text>
+<text top="377" left="86" width="25" height="8" font="12">−100</text>
+<text top="380" left="112" width="3" height="11" font="5">.</text>
+<text top="423" left="73" width="377" height="13" font="4">that we are assured that it is placed on top of the maximum</text>
+<text top="440" left="73" width="191" height="13" font="4">value curve. We use  = 10</text>
+<text top="437" left="265" width="15" height="10" font="6">−4</text>
+<text top="440" left="289" width="161" height="13" font="4">for this bound. However,</text>
+<text top="458" left="73" width="377" height="13" font="4">the worst-case bound is useful only for small N because the</text>
+<text top="476" left="73" width="377" height="13" font="4">probability of occurrence of the worst-case is very small for</text>
+<text top="494" left="73" width="377" height="13" font="4">large N . For example, when N = 1000 and the sampling rate</text>
+<text top="512" left="73" width="164" height="13" font="4">is 0.5, this probability is 2</text>
+<text top="509" left="237" width="27" height="10" font="6">−500</text>
+<text top="512" left="265" width="4" height="13" font="4">.</text>
+<text top="736" left="133" width="4" height="6" font="20"><b>0</b></text>
+<text top="736" left="165" width="7" height="6" font="20"><b>50</b></text>
+<text top="736" left="196" width="11" height="6" font="20"><b>100</b></text>
+<text top="736" left="229" width="11" height="6" font="20"><b>150</b></text>
+<text top="736" left="262" width="11" height="6" font="20"><b>200</b></text>
+<text top="736" left="296" width="11" height="6" font="20"><b>250</b></text>
+<text top="736" left="329" width="11" height="6" font="20"><b>300</b></text>
+<text top="736" left="362" width="11" height="6" font="20"><b>350</b></text>
+<text top="736" left="395" width="11" height="6" font="20"><b>400</b></text>
+<text top="730" left="130" width="4" height="6" font="20"><b>0</b></text>
+<text top="711" left="126" width="7" height="6" font="20"><b>10</b></text>
+<text top="692" left="126" width="7" height="6" font="20"><b>20</b></text>
+<text top="673" left="126" width="7" height="6" font="20"><b>30</b></text>
+<text top="654" left="126" width="7" height="6" font="20"><b>40</b></text>
+<text top="635" left="126" width="7" height="6" font="20"><b>50</b></text>
+<text top="616" left="126" width="7" height="6" font="20"><b>60</b></text>
+<text top="597" left="126" width="7" height="6" font="20"><b>70</b></text>
+<text top="578" left="126" width="7" height="6" font="20"><b>80</b></text>
+<text top="559" left="126" width="7" height="6" font="20"><b>90</b></text>
+<text top="744" left="264" width="6" height="9" font="21"><b>N</b></text>
+<text top="676" left="121" width="0" height="9" font="22"><b>Different bounds</b></text>
+<text top="729" left="134" width="2" height="8" font="23"> </text>
+<text top="557" left="400" width="2" height="8" font="23"> </text>
+<text top="567" left="163" width="48" height="6" font="20"><b>The worst−case</b></text>
+<text top="576" left="163" width="135" height="6" font="20"><b>Bound obtained by Gaussian approximation</b></text>
+<text top="584" left="163" width="88" height="6" font="20"><b>Maximum of DFT of real data</b></text>
+<text top="592" left="163" width="7" height="6" font="20"><b>4</b>σ</text>
+<text top="601" left="163" width="7" height="6" font="20"><b>3</b>σ</text>
+<text top="609" left="163" width="84" height="6" font="20"><b>Average of DFT of real data</b></text>
+<text top="775" left="123" width="278" height="11" font="5">Fig. 7. Proposed bounds when the sampling rate is 0.2.</text>
+<text top="1010" left="133" width="4" height="6" font="20"><b>0</b></text>
+<text top="1010" left="165" width="7" height="6" font="20"><b>50</b></text>
+<text top="1010" left="196" width="11" height="6" font="20"><b>100</b></text>
+<text top="1010" left="229" width="11" height="6" font="20"><b>150</b></text>
+<text top="1010" left="262" width="11" height="6" font="20"><b>200</b></text>
+<text top="1010" left="296" width="11" height="6" font="20"><b>250</b></text>
+<text top="1010" left="329" width="11" height="6" font="20"><b>300</b></text>
+<text top="1010" left="362" width="11" height="6" font="20"><b>350</b></text>
+<text top="1010" left="395" width="11" height="6" font="20"><b>400</b></text>
+<text top="1005" left="130" width="4" height="6" font="20"><b>0</b></text>
+<text top="980" left="126" width="7" height="6" font="20"><b>20</b></text>
+<text top="956" left="126" width="7" height="6" font="20"><b>40</b></text>
+<text top="931" left="126" width="7" height="6" font="20"><b>60</b></text>
+<text top="907" left="126" width="7" height="6" font="20"><b>80</b></text>
+<text top="883" left="122" width="11" height="6" font="20"><b>100</b></text>
+<text top="858" left="122" width="11" height="6" font="20"><b>120</b></text>
+<text top="834" left="122" width="11" height="6" font="20"><b>140</b></text>
+<text top="1018" left="264" width="6" height="9" font="21"><b>N</b></text>
+<text top="951" left="117" width="0" height="9" font="22"><b>Different bounds</b></text>
+<text top="1003" left="134" width="2" height="8" font="23"> </text>
+<text top="832" left="400" width="2" height="8" font="23"> </text>
+<text top="842" left="163" width="48" height="6" font="20"><b>The worst−case</b></text>
+<text top="850" left="163" width="135" height="6" font="20"><b>Bound obtained by Gaussian approximation</b></text>
+<text top="859" left="163" width="88" height="6" font="20"><b>Maximum of DFT of real data</b></text>
+<text top="867" left="163" width="7" height="6" font="20"><b>4</b>σ</text>
+<text top="875" left="163" width="7" height="6" font="20"><b>3</b>σ</text>
+<text top="884" left="163" width="84" height="6" font="20"><b>Average of DFT of real data</b></text>
+<text top="1049" left="123" width="278" height="11" font="5">Fig. 8. Proposed bounds when the sampling rate is 0.5.</text>
+<text top="266" left="528" width="4" height="6" font="20"><b>0</b></text>
+<text top="266" left="559" width="7" height="6" font="20"><b>50</b></text>
+<text top="266" left="591" width="11" height="6" font="20"><b>100</b></text>
+<text top="266" left="624" width="11" height="6" font="20"><b>150</b></text>
+<text top="266" left="657" width="11" height="6" font="20"><b>200</b></text>
+<text top="266" left="690" width="11" height="6" font="20"><b>250</b></text>
+<text top="266" left="723" width="11" height="6" font="20"><b>300</b></text>
+<text top="266" left="757" width="11" height="6" font="20"><b>350</b></text>
+<text top="266" left="790" width="11" height="6" font="20"><b>400</b></text>
+<text top="261" left="524" width="4" height="6" font="20"><b>0</b></text>
+<text top="239" left="520" width="7" height="6" font="20"><b>10</b></text>
+<text top="218" left="520" width="7" height="6" font="20"><b>20</b></text>
+<text top="196" left="520" width="7" height="6" font="20"><b>30</b></text>
+<text top="175" left="520" width="7" height="6" font="20"><b>40</b></text>
+<text top="154" left="520" width="7" height="6" font="20"><b>50</b></text>
+<text top="132" left="520" width="7" height="6" font="20"><b>60</b></text>
+<text top="111" left="520" width="7" height="6" font="20"><b>70</b></text>
+<text top="89" left="520" width="7" height="6" font="20"><b>80</b></text>
+<text top="274" left="659" width="6" height="9" font="21"><b>N</b></text>
+<text top="207" left="516" width="0" height="9" font="22"><b>Different bounds</b></text>
+<text top="259" left="529" width="2" height="8" font="23"> </text>
+<text top="88" left="794" width="2" height="8" font="23"> </text>
+<text top="98" left="558" width="48" height="6" font="20"><b>The worst−case</b></text>
+<text top="106" left="558" width="135" height="6" font="20"><b>Bound obtained by Gaussian approximation</b></text>
+<text top="114" left="558" width="88" height="6" font="20"><b>Maximum of DFT of real data</b></text>
+<text top="122" left="558" width="7" height="6" font="20"><b>4</b>σ</text>
+<text top="131" left="558" width="7" height="6" font="20"><b>3</b>σ</text>
+<text top="139" left="558" width="84" height="6" font="20"><b>Average of DFT of real data</b></text>
+<text top="305" left="517" width="278" height="11" font="5">Fig. 9. Proposed bounds when the sampling rate is 0.8.</text>
+<text top="351" left="600" width="37" height="13" font="4">IV. C</text>
+<text top="353" left="638" width="75" height="11" font="5">ONCLUSION</text>
+<text top="374" left="483" width="362" height="13" font="4">In this paper, we proposed some bounds on the maximum</text>
+<text top="392" left="468" width="377" height="13" font="4">of magnitude of a random mask in Fourier domain. First, we</text>
+<text top="410" left="468" width="377" height="13" font="4">showed that when the worst case occurs. Then, we proposed</text>
+<text top="428" left="468" width="377" height="13" font="4">other bound thanks to approximating the random mask with a</text>
+<text top="446" left="468" width="377" height="13" font="4">Gaussian distribution. Moreover, based on this approximation,</text>
+<text top="463" left="468" width="377" height="13" font="4">the 3−σ and 4−σ bounds were also proposed. The numerical</text>
+<text top="481" left="468" width="377" height="13" font="4">examples showed that the bound proposed based on the</text>
+<text top="499" left="468" width="377" height="13" font="4">Gaussian approximation is a confident bound. Moreover, the</text>
+<text top="517" left="468" width="377" height="14" font="4">4 − σ bound is also a good bound that on average is very close</text>
+<text top="535" left="468" width="81" height="13" font="4">to the reality.</text>
+<text top="563" left="591" width="11" height="13" font="4">A</text>
+<text top="565" left="602" width="119" height="11" font="5">CKNOWLEDGMENT</text>
+<text top="586" left="483" width="362" height="13" font="4">The author would like to thank Dr. Amin Aminzadeh Gohari</text>
+<text top="604" left="468" width="377" height="13" font="4">for his valuable comments, helps, and suggestions to improve</text>
+<text top="622" left="468" width="60" height="13" font="4">the paper.</text>
+<text top="650" left="614" width="10" height="13" font="4">R</text>
+<text top="652" left="625" width="73" height="11" font="5">EFERENCES</text>
+<text top="674" left="474" width="371" height="11" font="5">[1] C. E. Shannon, “Communication in the presence of noise,” Proc. IRE,</text>
+<text top="687" left="495" width="166" height="11" font="5">vol. 37, pp. 10–21, January 1949.</text>
+<text top="701" left="474" width="371" height="11" font="5">[2] H. J. Landau, “Necessary density conditions for sampling and interpo-</text>
+<text top="714" left="495" width="349" height="11" font="5">lation of certain entire functions,” Acta Mathematica, vol. 117, no. 1,</text>
+<text top="728" left="495" width="83" height="11" font="5">pp. 37–52, 1967.</text>
+<text top="741" left="474" width="310" height="11" font="5">[3] F. Marvasti, Nonuniform Sampling: Theory and Practice.</text>
+<text top="741" left="801" width="44" height="11" font="5">Springer,</text>
+<text top="755" left="495" width="262" height="11" font="5">formerly Kluwer Academic/Plenum Publishers, 2001.</text>
+<text top="768" left="474" width="371" height="11" font="5">[4] A. J. Jerri, “The shannon sampling theorem: Its various extensions and</text>
+<text top="782" left="495" width="349" height="11" font="5">applications: A tutorial review,” Proceedings of the IEEE, vol. 65, no. 11,</text>
+<text top="795" left="495" width="132" height="11" font="5">pp. 1565–1596, Nov 1977.</text>
+<text top="808" left="474" width="371" height="11" font="5">[5] F. Marvasti, “Spectrum of nonuniform samples,” Electronics Letters,</text>
+<text top="822" left="495" width="217" height="11" font="5">vol. 20, no. 21, pp. 896–897, October 1984.</text>
+<text top="835" left="474" width="371" height="11" font="5">[6] J. L. Yen, “On nonuniform sampling of bandwidth-limited signals,” IRE</text>
+<text top="849" left="495" width="146" height="10" font="5">Transaction on Circuit Theory</text>
+<text top="849" left="641" width="203" height="11" font="5">, vol. CT-3, pp. 251–257, December 1956.</text>
+<text top="862" left="474" width="164" height="11" font="5">[7] A. Papoulis, Signal Analysis.</text>
+<text top="862" left="650" width="156" height="11" font="5">New York: McGraw-Hill, 1997.</text>
+<text top="876" left="474" width="371" height="11" font="5">[8] E. Masry, “Random sampling and reconstruction of spectra,” Inf. Contr.,</text>
+<text top="889" left="495" width="136" height="11" font="5">vol. 19, pp. 275–288, 1971.</text>
+<text top="903" left="474" width="371" height="11" font="5">[9] F. Marvasti, “Spectral analysis of random sampling and error free</text>
+<text top="916" left="495" width="349" height="11" font="5">recovery by an iterative method,” IECE Transaction of Inst. Electron.</text>
+<text top="930" left="495" width="110" height="10" font="5">Commun. Engs. Japan</text>
+<text top="929" left="606" width="119" height="11" font="5">, vol. E 69, no. 2, 1986.</text>
+<text top="943" left="468" width="377" height="11" font="5">[10] F. Marvasti, A. Amini, F. Haddadi, M. Soltanolkotabi, B. Khalaj,</text>
+<text top="956" left="495" width="349" height="11" font="5">A. Aldroubi, S. Sanei, and J. Chambers, “A unified approach to sparse</text>
+<text top="970" left="495" width="349" height="11" font="5">signal processing,” EURASIP Journal on Advances in Signal Processing,</text>
+<text top="983" left="495" width="27" height="11" font="5">2012.</text>
+<text top="997" left="468" width="377" height="11" font="5">[11] IMAT algorithm, “Iterative method with adaptive thresholding algorithm</text>
+<text top="1010" left="495" width="349" height="11" font="5">for sparse signal reconstruction,” 2017, [Online]. Available: <a href="http://ee.sharif.ir/$\sim $imat">http://ee.</a></text>
+<text top="1024" left="495" width="254" height="11" font="5"><a href="http://ee.sharif.ir/$\sim $imat">sharif.ir/$\sim$imat. </a>[Accessed: 07- January-2017].</text>
+<text top="1125" left="455" width="7" height="13" font="4">4</text>
+</page>
+<outline>
+<item page="1">I Introduction</item>
+<item page="1">II Proposed Bounds</item>
+<outline>
+<item page="2">II-A The Worst Case</item>
+<item page="2">II-B Gaussian Approximation</item>
+<item page="3">II-C Three and Four Sigma Bounds</item>
+</outline>
+<item page="3">III Numerical Examples</item>
+<item page="4">IV Conclusion</item>
+<item page="4">References</item>
+</outline>
+</pdf2xml>

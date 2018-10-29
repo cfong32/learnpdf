@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.68.0">
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="28" family="Times" color="#7f7f7f"/>
+	<fontspec id="1" size="28" family="Times" color="#000000"/>
+	<fontspec id="2" size="19" family="Times" color="#000000"/>
+	<fontspec id="3" size="12" family="Times" color="#000000"/>
+	<fontspec id="4" size="14" family="Times" color="#000000"/>
+	<fontspec id="5" size="15" family="Times" color="#000000"/>
+	<fontspec id="6" size="23" family="Times" color="#000000"/>
+	<fontspec id="7" size="8" family="Times" color="#000000"/>
+<text top="817" left="48" width="0" height="27" font="0"><a href="http://arxiv.org/abs/math/0111152v1">arXiv:math/0111152v1  [math.ST]  13 Nov 2001</a></text>
+<text top="257" left="206" width="503" height="28" font="1">Approximating distribution functions by</text>
+<text top="295" left="302" width="312" height="28" font="1">iterated function systems</text>
+<text top="354" left="290" width="155" height="22" font="2">Stefano M. Iacus</text>
+<text top="350" left="445" width="7" height="15" font="3">∗</text>
+<text top="354" left="474" width="152" height="22" font="2">Davide La Torre</text>
+<text top="380" left="310" width="296" height="22" font="2">Universit`a degli Studi di Milano</text>
+<text top="407" left="240" width="435" height="22" font="2">Dipartimento di Economia Politica e Aziendale</text>
+<text top="434" left="286" width="343" height="22" font="2">Via Conservatorio 7 - I-20122 Milano</text>
+<text top="525" left="422" width="72" height="12" font="4">Abstract</text>
+<text top="555" left="235" width="471" height="15" font="4">In this paper an iterated function system on the space of distribu-</text>
+<text top="575" left="210" width="495" height="15" font="4">tion functions is built. The inverse problem is introduced and studied</text>
+<text top="596" left="210" width="495" height="15" font="4">by convex optimization problems. Some applications of this method</text>
+<text top="616" left="210" width="495" height="15" font="4">to approximation of distribution functions and to estimation theory</text>
+<text top="636" left="210" width="69" height="15" font="4">are given.</text>
+<text top="675" left="166" width="81" height="16" font="5">keywords</text>
+<text top="674" left="255" width="494" height="18" font="5">: iterated function systems, optimization, distribution function</text>
+<text top="696" left="166" width="85" height="18" font="5">estimation.</text>
+<text top="719" left="166" width="45" height="16" font="5">MSC</text>
+<text top="718" left="217" width="158" height="18" font="5">: 62E17, 62H10, 37H</text>
+<text top="773" left="166" width="15" height="23" font="6">1</text>
+<text top="773" left="210" width="160" height="23" font="6">Introduction</text>
+<text top="817" left="166" width="582" height="18" font="5">The Iterated Function Systems (IFSs) were born in mid eighties (Hutchinson</text>
+<text top="839" left="166" width="583" height="18" font="5">1981, Barnsley and Demko, 1985) as applications of the theory of discrete</text>
+<text top="860" left="166" width="583" height="18" font="5">dynamical systems and as useful tools to build fractals and other similar</text>
+<text top="882" left="166" width="582" height="18" font="5">sets. Some possible applications of IFSs can be found in image processing</text>
+<text top="904" left="166" width="583" height="18" font="5">theory (Forte and Vrscay, 1994), in the theory of stochastic growth models</text>
+<text top="925" left="166" width="582" height="18" font="5">(Montrucchio and Privileggi, 1999) and in the theory of random dynamical</text>
+<text top="947" left="166" width="583" height="18" font="5">systems (Arnold and Crauel 1992, Elton and Piccioni 1992, Kwiecinska and</text>
+<text top="979" left="186" width="6" height="9" font="7">∗</text>
+<text top="978" left="193" width="556" height="14" font="3">Address for correspondance: Stefano M. Iacus, Dipartimento di Economia e Politica</text>
+<text top="996" left="166" width="560" height="14" font="3">Aziendale, Via Conservatorio 7, I-20122 Milano, Italy. E-mail: stefano.iacus@unimi.it</text>
+<text top="1040" left="453" width="9" height="18" font="5">1</text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="8" size="15" family="Times" color="#000000"/>
+	<fontspec id="9" size="9" family="Times" color="#000000"/>
+	<fontspec id="10" size="6" family="Times" color="#000000"/>
+<text top="193" left="166" width="583" height="18" font="5">Slomczynski, 2000). The fundamental result (Barnsley and Demko, 1985) on</text>
+<text top="215" left="166" width="392" height="18" font="5">which the IFS method is based is Banach theorem.</text>
+<text top="237" left="193" width="557" height="18" font="5">In practical applications a crucial problem is the so-called <i>inverse problem</i>.</text>
+<text top="258" left="166" width="583" height="18" font="5">This can be formulated as follows: given f in some metric space (S, d), find</text>
+<text top="280" left="166" width="470" height="18" font="5">a contraction T : S → S that admits a unique fixed point ˜</text>
+<text top="280" left="624" width="9" height="18" font="5">f</text>
+<text top="279" left="640" width="109" height="18" font="5">∈ S such that</text>
+<text top="302" left="166" width="46" height="18" font="5">d(f, ˜</text>
+<text top="302" left="200" width="549" height="18" font="5">f ) is small enough. In fact if one is able to solve the inverse problem</text>
+<text top="323" left="166" width="582" height="18" font="5">with arbitrary precision, it is possible to identify f with the operator T which</text>
+<text top="345" left="166" width="158" height="18" font="5">has it as fixed point.</text>
+<text top="367" left="193" width="557" height="18" font="5">The paper is organized as follows: Section <a href="xml/0111152v1.html#2">2 </a>is devoted to introduce a</text>
+<text top="388" left="166" width="583" height="18" font="5">contractive operator T on the space of distribution functions while, in Section</text>
+<text top="410" left="166" width="583" height="18" font="5"><a href="xml/0111152v1.html#5">3, </a>the inverse problem for T is studied in details. Section <a href="xml/0111152v1.html#7">4 </a>is divided into</text>
+<text top="432" left="166" width="583" height="18" font="5">two parts: in the first some examples of inverse problems are analyzed and</text>
+<text top="453" left="166" width="583" height="18" font="5">explicit solutions are given. In the second one, we introduce an estimator of</text>
+<text top="475" left="166" width="382" height="18" font="5">the unknown distribution function based on IFSs.</text>
+<text top="530" left="166" width="15" height="23" font="6">2</text>
+<text top="530" left="210" width="540" height="23" font="6">A contraction on the space of distribution</text>
+<text top="563" left="210" width="116" height="23" font="6">functions</text>
+<text top="607" left="166" width="583" height="18" font="5">Let us denote by the space of distribution functions F on [0, 1] by F ([0, 1])</text>
+<text top="629" left="166" width="583" height="18" font="5">and by B([0, 1]) the space of bounded functions on [0, 1]. Let us further</text>
+<text top="650" left="166" width="231" height="18" font="5">define, for F, G ∈ B([0, 1]), d</text>
+<text top="658" left="397" width="20" height="11" font="9">sup</text>
+<text top="650" left="418" width="103" height="18" font="5">(F, G) = sup</text>
+<text top="660" left="521" width="7" height="11" font="9">x</text>
+<text top="659" left="528" width="32" height="12" font="9">∈[0,1]</text>
+<text top="650" left="564" width="186" height="18" font="5">|F (x) − G(x)|. So that</text>
+<text top="672" left="166" width="88" height="18" font="5">(F ([0, 1]), d</text>
+<text top="680" left="254" width="20" height="11" font="9">sup</text>
+<text top="672" left="274" width="145" height="18" font="5">) is a metric space.</text>
+<text top="710" left="166" width="103" height="16" font="5">Lemma 2.1.</text>
+<text top="709" left="278" width="162" height="18" font="8"><i>The space </i>(F ([0, 1], d</text>
+<text top="716" left="440" width="20" height="11" font="9">sup</text>
+<text top="709" left="460" width="220" height="18" font="5">) <i>is a complete metric space.</i></text>
+<text top="745" left="166" width="98" height="18" font="8"><i>Proof. </i>Let F</text>
+<text top="753" left="264" width="8" height="11" font="9">n</text>
+<text top="745" left="279" width="341" height="18" font="5">be a Cauchy’s sequence in F ([0, 1]). Then F</text>
+<text top="753" left="620" width="8" height="11" font="9">n</text>
+<text top="745" left="635" width="112" height="18" font="5">converges to F</text>
+<text top="767" left="166" width="106" height="18" font="5">in (B([0, 1]), d</text>
+<text top="775" left="273" width="20" height="11" font="9">sup</text>
+<text top="767" left="293" width="332" height="18" font="5">). Furthermore it is true that F (0) = lim</text>
+<text top="783" left="591" width="8" height="11" font="9">n</text>
+<text top="782" left="599" width="35" height="12" font="9">→+∞</text>
+<text top="767" left="637" width="11" height="18" font="5">F</text>
+<text top="775" left="649" width="8" height="11" font="9">n</text>
+<text top="767" left="657" width="92" height="18" font="5">(0) = 0 and</text>
+<text top="796" left="166" width="93" height="18" font="5">F (1) = lim</text>
+<text top="811" left="226" width="8" height="11" font="9">n</text>
+<text top="811" left="234" width="35" height="12" font="9">→+∞</text>
+<text top="796" left="272" width="11" height="18" font="5">F</text>
+<text top="803" left="284" width="8" height="11" font="9">n</text>
+<text top="796" left="292" width="159" height="18" font="5">(1) = 1 and that if x</text>
+<text top="803" left="451" width="6" height="12" font="9">1</text>
+<text top="795" left="463" width="29" height="18" font="5">≥ x</text>
+<text top="803" left="492" width="6" height="12" font="9">2</text>
+<text top="796" left="505" width="39" height="18" font="5">then:</text>
+<text top="842" left="279" width="31" height="18" font="5">F (x</text>
+<text top="850" left="309" width="6" height="12" font="9">1</text>
+<text top="842" left="316" width="64" height="18" font="5">) = lim</text>
+<text top="858" left="347" width="8" height="11" font="9">n</text>
+<text top="858" left="354" width="35" height="12" font="9">→+∞</text>
+<text top="842" left="393" width="11" height="18" font="5">F</text>
+<text top="850" left="404" width="8" height="11" font="9">n</text>
+<text top="842" left="413" width="17" height="18" font="5">(x</text>
+<text top="850" left="429" width="6" height="12" font="9">1</text>
+<text top="842" left="437" width="64" height="18" font="5">) ≥ lim</text>
+<text top="858" left="467" width="8" height="11" font="9">n</text>
+<text top="858" left="475" width="35" height="12" font="9">→+∞</text>
+<text top="842" left="513" width="11" height="18" font="5">F</text>
+<text top="850" left="525" width="8" height="11" font="9">n</text>
+<text top="842" left="533" width="17" height="18" font="5">(x</text>
+<text top="850" left="550" width="6" height="12" font="9">2</text>
+<text top="842" left="557" width="61" height="18" font="5">) = F (x</text>
+<text top="850" left="618" width="6" height="12" font="9">2</text>
+<text top="842" left="625" width="12" height="18" font="5">).</text>
+<text top="888" left="166" width="553" height="18" font="5">To prove the right continuity of F we use the uniform convergence of F</text>
+<text top="896" left="719" width="8" height="11" font="9">n</text>
+<text top="888" left="734" width="16" height="18" font="5">to</text>
+<text top="910" left="166" width="102" height="18" font="5">F , obtaining:</text>
+<text top="949" left="241" width="24" height="18" font="5">lim</text>
+<text top="966" left="235" width="7" height="11" font="9">x</text>
+<text top="966" left="242" width="20" height="12" font="9">→a</text>
+<text top="965" left="262" width="8" height="7" font="10">+</text>
+<text top="949" left="274" width="91" height="18" font="5">F (x) = lim</text>
+<text top="966" left="335" width="7" height="11" font="9">x</text>
+<text top="966" left="342" width="20" height="12" font="9">→a</text>
+<text top="965" left="362" width="8" height="7" font="10">+</text>
+<text top="949" left="383" width="24" height="18" font="5">lim</text>
+<text top="965" left="374" width="8" height="11" font="9">n</text>
+<text top="965" left="381" width="35" height="12" font="9">→+∞</text>
+<text top="949" left="420" width="11" height="18" font="5">F</text>
+<text top="957" left="431" width="8" height="11" font="9">n</text>
+<text top="949" left="440" width="81" height="18" font="5">(x) = lim</text>
+<text top="965" left="487" width="8" height="11" font="9">n</text>
+<text top="965" left="494" width="35" height="12" font="9">→+∞</text>
+<text top="949" left="538" width="24" height="18" font="5">lim</text>
+<text top="966" left="533" width="7" height="11" font="9">x</text>
+<text top="966" left="540" width="20" height="12" font="9">→a</text>
+<text top="965" left="559" width="8" height="7" font="10">+</text>
+<text top="949" left="572" width="11" height="18" font="5">F</text>
+<text top="957" left="583" width="8" height="11" font="9">n</text>
+<text top="949" left="591" width="89" height="18" font="5">(x) = F (a).</text>
+<text top="1040" left="453" width="9" height="18" font="5">2</text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="110" height="18" font="5">On (F ([0, 1], d</text>
+<text top="201" left="276" width="20" height="11" font="9">sup</text>
+<text top="193" left="296" width="344" height="18" font="5">) we define an operator in the following way:</text>
+<text top="240" left="233" width="83" height="18" font="5">T F (x) = p</text>
+<text top="247" left="316" width="4" height="11" font="9">i</text>
+<text top="240" left="321" width="33" height="18" font="5">F (w</text>
+<text top="237" left="355" width="16" height="12" font="9">−1</text>
+<text top="249" left="354" width="4" height="11" font="9">i</text>
+<text top="240" left="372" width="48" height="18" font="5">(x)) +</text>
+<text top="222" left="427" width="4" height="11" font="9">i</text>
+<text top="222" left="431" width="16" height="12" font="9">−1</text>
+<text top="235" left="424" width="26" height="8" font="5">X</text>
+<text top="265" left="426" width="5" height="11" font="9">j</text>
+<text top="265" left="432" width="16" height="12" font="9">=1</text>
+<text top="240" left="453" width="9" height="18" font="5">p</text>
+<text top="247" left="462" width="5" height="11" font="9">j</text>
+<text top="240" left="472" width="14" height="18" font="5">+</text>
+<text top="222" left="492" width="4" height="11" font="9">i</text>
+<text top="222" left="497" width="16" height="12" font="9">−1</text>
+<text top="235" left="490" width="26" height="8" font="5">X</text>
+<text top="265" left="492" width="5" height="11" font="9">j</text>
+<text top="265" left="498" width="16" height="12" font="9">=1</text>
+<text top="240" left="519" width="8" height="18" font="5">δ</text>
+<text top="247" left="526" width="5" height="11" font="9">j</text>
+<text top="240" left="536" width="5" height="18" font="5">,</text>
+<text top="240" left="561" width="44" height="18" font="5">x ∈ w</text>
+<text top="247" left="606" width="4" height="11" font="9">i</text>
+<text top="240" left="611" width="21" height="18" font="5">([a</text>
+<text top="247" left="632" width="4" height="11" font="9">i</text>
+<text top="240" left="637" width="15" height="18" font="5">, b</text>
+<text top="247" left="652" width="4" height="11" font="9">i</text>
+<text top="240" left="657" width="22" height="18" font="5">)) ,</text>
+<text top="240" left="727" width="22" height="18" font="5">(1)</text>
+<text top="287" left="166" width="304" height="18" font="5">where F ∈ F ([0, 1]), k ∈ N is fixed and:</text>
+<text top="315" left="175" width="29" height="18" font="5">i) w</text>
+<text top="323" left="204" width="4" height="11" font="9">i</text>
+<text top="315" left="214" width="24" height="18" font="5">: [a</text>
+<text top="323" left="238" width="4" height="11" font="9">i</text>
+<text top="315" left="243" width="15" height="18" font="5">, b</text>
+<text top="323" left="258" width="4" height="11" font="9">i</text>
+<text top="315" left="264" width="47" height="18" font="5">) → [c</text>
+<text top="323" left="311" width="4" height="11" font="9">i</text>
+<text top="315" left="316" width="17" height="18" font="5">, d</text>
+<text top="323" left="333" width="4" height="11" font="9">i</text>
+<text top="315" left="338" width="43" height="18" font="5">) = w</text>
+<text top="323" left="381" width="4" height="11" font="9">i</text>
+<text top="315" left="386" width="21" height="18" font="5">([a</text>
+<text top="323" left="407" width="4" height="11" font="9">i</text>
+<text top="315" left="412" width="15" height="18" font="5">, b</text>
+<text top="323" left="427" width="4" height="11" font="9">i</text>
+<text top="315" left="432" width="162" height="18" font="5">)), i = 1, . . . , k −1, w</text>
+<text top="323" left="595" width="7" height="11" font="9">k</text>
+<text top="315" left="607" width="24" height="18" font="5">: [a</text>
+<text top="323" left="631" width="7" height="11" font="9">k</text>
+<text top="315" left="639" width="15" height="18" font="5">, b</text>
+<text top="323" left="654" width="7" height="11" font="9">k</text>
+<text top="315" left="662" width="45" height="18" font="5">] → [c</text>
+<text top="323" left="707" width="7" height="11" font="9">k</text>
+<text top="315" left="715" width="17" height="18" font="5">, d</text>
+<text top="323" left="732" width="7" height="11" font="9">k</text>
+<text top="315" left="739" width="10" height="18" font="5">],</text>
+<text top="337" left="210" width="49" height="18" font="5">with a</text>
+<text top="344" left="259" width="6" height="12" font="9">1</text>
+<text top="337" left="271" width="26" height="18" font="5">= c</text>
+<text top="344" left="298" width="6" height="12" font="9">1</text>
+<text top="337" left="310" width="75" height="18" font="5">= 0 and b</text>
+<text top="344" left="384" width="7" height="11" font="9">k</text>
+<text top="337" left="397" width="28" height="18" font="5">= d</text>
+<text top="344" left="425" width="7" height="11" font="9">k</text>
+<text top="337" left="438" width="32" height="18" font="5">= 1;</text>
+<text top="370" left="175" width="40" height="18" font="5">iii) w</text>
+<text top="378" left="215" width="4" height="11" font="9">i</text>
+<text top="370" left="220" width="328" height="18" font="5">, i = 1 . . . k, are increasing and continuous;</text>
+<text top="416" left="175" width="17" height="18" font="5">ii)</text>
+<text top="403" left="204" width="7" height="11" font="9">k</text>
+<text top="415" left="200" width="15" height="8" font="5">S</text>
+<text top="436" left="197" width="4" height="11" font="9">i</text>
+<text top="435" left="202" width="16" height="12" font="9">=1</text>
+<text top="416" left="221" width="13" height="18" font="5">w</text>
+<text top="423" left="234" width="4" height="11" font="9">i</text>
+<text top="416" left="239" width="21" height="18" font="5">([a</text>
+<text top="423" left="260" width="4" height="11" font="9">i</text>
+<text top="416" left="265" width="15" height="18" font="5">, b</text>
+<text top="423" left="280" width="4" height="11" font="9">i</text>
+<text top="416" left="285" width="79" height="18" font="5">)) = [0, 1);</text>
+<text top="473" left="175" width="36" height="18" font="5">iii) p</text>
+<text top="481" left="211" width="4" height="11" font="9">i</text>
+<text top="473" left="221" width="147" height="18" font="5">≥ 0, i = 1, . . . , k, δ</text>
+<text top="481" left="369" width="4" height="11" font="9">i</text>
+<text top="473" left="379" width="149" height="18" font="5">≥ 0, i = 1 . . . k − 1,</text>
+<text top="461" left="540" width="7" height="11" font="9">k</text>
+<text top="473" left="534" width="19" height="8" font="5">P</text>
+<text top="494" left="533" width="4" height="11" font="9">i</text>
+<text top="493" left="538" width="16" height="12" font="9">=1</text>
+<text top="473" left="557" width="9" height="18" font="5">p</text>
+<text top="481" left="566" width="4" height="11" font="9">i</text>
+<text top="473" left="575" width="14" height="18" font="5">+</text>
+<text top="461" left="592" width="7" height="11" font="9">k</text>
+<text top="461" left="599" width="16" height="12" font="9">−1</text>
+<text top="473" left="594" width="19" height="8" font="5">P</text>
+<text top="494" left="594" width="4" height="11" font="9">i</text>
+<text top="493" left="598" width="16" height="12" font="9">=1</text>
+<text top="473" left="618" width="8" height="18" font="5">δ</text>
+<text top="481" left="626" width="4" height="11" font="9">i</text>
+<text top="473" left="636" width="32" height="18" font="5">= 1;</text>
+<text top="518" left="175" width="139" height="18" font="5">iv) if i 6= j then w</text>
+<text top="525" left="314" width="4" height="11" font="9">i</text>
+<text top="518" left="319" width="21" height="18" font="5">([a</text>
+<text top="525" left="340" width="4" height="11" font="9">i</text>
+<text top="518" left="345" width="15" height="18" font="5">, b</text>
+<text top="525" left="361" width="4" height="11" font="9">i</text>
+<text top="518" left="366" width="46" height="18" font="5">)) ∩ w</text>
+<text top="525" left="412" width="5" height="11" font="9">j</text>
+<text top="518" left="418" width="21" height="18" font="5">([a</text>
+<text top="525" left="439" width="5" height="11" font="9">j</text>
+<text top="518" left="446" width="15" height="18" font="5">, b</text>
+<text top="525" left="461" width="5" height="11" font="9">j</text>
+<text top="518" left="468" width="51" height="18" font="5">)) = ∅.</text>
+<text top="545" left="166" width="583" height="18" font="5">A similar approach has been discussed in La Torre and Rocca (1999) but</text>
+<text top="567" left="166" width="583" height="18" font="5">here a more general operator is defined. In the following we will think that</text>
+<text top="589" left="166" width="91" height="18" font="5">the maps w</text>
+<text top="596" left="257" width="4" height="11" font="9">i</text>
+<text top="589" left="269" width="167" height="18" font="5">and the parameters δ</text>
+<text top="596" left="436" width="5" height="11" font="9">j</text>
+<text top="589" left="449" width="253" height="18" font="5">are fixed while the parameters p</text>
+<text top="596" left="702" width="4" height="11" font="9">i</text>
+<text top="589" left="714" width="34" height="18" font="5">have</text>
+<text top="611" left="166" width="583" height="18" font="5">to be chosen. To put in evidence the dependence of the operator T on the</text>
+<text top="632" left="166" width="101" height="18" font="5">vector p = (p</text>
+<text top="639" left="267" width="6" height="12" font="9">1</text>
+<text top="632" left="274" width="51" height="18" font="5">, . . . , p</text>
+<text top="640" left="325" width="7" height="11" font="9">k</text>
+<text top="632" left="333" width="126" height="18" font="5">) we will write T</text>
+<text top="640" left="459" width="6" height="11" font="9">p</text>
+<text top="632" left="472" width="277" height="18" font="5">instead of T . In many pratical cases</text>
+<text top="654" left="166" width="13" height="18" font="5">w</text>
+<text top="661" left="179" width="4" height="11" font="9">i</text>
+<text top="654" left="190" width="559" height="18" font="5">are affine maps. In Corollary <a href="xml/0111152v1.html#4">2.1 </a>the hypothesis iii) will be weakened to</text>
+<text top="676" left="166" width="238" height="18" font="5">allow more general functionals.</text>
+<text top="704" left="166" width="117" height="16" font="5">Theorem 2.1.</text>
+<text top="703" left="292" width="10" height="18" font="5">T</text>
+<text top="711" left="302" width="6" height="11" font="9">p</text>
+<text top="703" left="316" width="287" height="18" font="8"><i>is an operator from </i>F ([0, 1]) <i>to itself.</i></text>
+<text top="731" left="166" width="190" height="18" font="8"><i>Proof. </i>It is trivial that T</text>
+<text top="739" left="356" width="6" height="11" font="9">p</text>
+<text top="731" left="364" width="118" height="18" font="5">F (0) = 0 and T</text>
+<text top="739" left="481" width="6" height="11" font="9">p</text>
+<text top="731" left="489" width="208" height="18" font="5">F (1) = 1. Furthermore if x</text>
+<text top="739" left="696" width="6" height="12" font="9">1</text>
+<text top="731" left="708" width="29" height="18" font="5">&gt; x</text>
+<text top="739" left="737" width="6" height="12" font="9">2</text>
+<text top="731" left="744" width="5" height="18" font="5">,</text>
+<text top="753" left="166" width="437" height="18" font="5">without loss of generality, we will consider the two cases:</text>
+<text top="781" left="175" width="27" height="18" font="5">i) x</text>
+<text top="788" left="202" width="6" height="12" font="9">1</text>
+<text top="781" left="210" width="18" height="18" font="5">, x</text>
+<text top="788" left="228" width="6" height="12" font="9">2</text>
+<text top="780" left="240" width="29" height="18" font="5">∈ w</text>
+<text top="789" left="269" width="4" height="11" font="9">i</text>
+<text top="781" left="274" width="21" height="18" font="5">([a</text>
+<text top="789" left="295" width="4" height="11" font="9">i</text>
+<text top="781" left="300" width="15" height="18" font="5">, b</text>
+<text top="789" left="316" width="4" height="11" font="9">i</text>
+<text top="781" left="321" width="19" height="18" font="5">));</text>
+<text top="815" left="175" width="32" height="18" font="5">ii) x</text>
+<text top="822" left="207" width="6" height="12" font="9">1</text>
+<text top="814" left="220" width="29" height="18" font="5">∈ w</text>
+<text top="822" left="249" width="4" height="11" font="9">i</text>
+<text top="822" left="253" width="16" height="12" font="9">+1</text>
+<text top="815" left="270" width="21" height="18" font="5">([a</text>
+<text top="822" left="291" width="4" height="11" font="9">i</text>
+<text top="822" left="296" width="16" height="12" font="9">+1</text>
+<text top="815" left="313" width="15" height="18" font="5">, b</text>
+<text top="822" left="328" width="4" height="11" font="9">i</text>
+<text top="822" left="332" width="16" height="12" font="9">+1</text>
+<text top="815" left="349" width="64" height="18" font="5">)) and x</text>
+<text top="822" left="413" width="6" height="12" font="9">2</text>
+<text top="814" left="425" width="29" height="18" font="5">∈ w</text>
+<text top="822" left="454" width="4" height="11" font="9">i</text>
+<text top="815" left="460" width="21" height="18" font="5">([a</text>
+<text top="822" left="480" width="4" height="11" font="9">i</text>
+<text top="815" left="485" width="15" height="18" font="5">, b</text>
+<text top="822" left="501" width="4" height="11" font="9">i</text>
+<text top="815" left="506" width="19" height="18" font="5">)).</text>
+<text top="842" left="166" width="204" height="18" font="5">In case i), recalling that w</text>
+<text top="850" left="370" width="4" height="11" font="9">i</text>
+<text top="842" left="381" width="227" height="18" font="5">are increasing maps, we have:</text>
+<text top="888" left="300" width="10" height="18" font="5">T</text>
+<text top="896" left="310" width="6" height="11" font="9">p</text>
+<text top="888" left="317" width="31" height="18" font="5">F (x</text>
+<text top="896" left="348" width="6" height="12" font="9">1</text>
+<text top="888" left="355" width="39" height="18" font="5">) = p</text>
+<text top="896" left="394" width="4" height="11" font="9">i</text>
+<text top="888" left="399" width="33" height="18" font="5">F (w</text>
+<text top="885" left="433" width="16" height="12" font="9">−1</text>
+<text top="898" left="433" width="4" height="11" font="9">i</text>
+<text top="888" left="450" width="17" height="18" font="5">(x</text>
+<text top="896" left="467" width="6" height="12" font="9">1</text>
+<text top="888" left="474" width="31" height="18" font="5">)) +</text>
+<text top="871" left="512" width="4" height="11" font="9">i</text>
+<text top="871" left="516" width="16" height="12" font="9">−1</text>
+<text top="884" left="509" width="26" height="8" font="5">X</text>
+<text top="914" left="511" width="5" height="11" font="9">j</text>
+<text top="914" left="517" width="16" height="12" font="9">=1</text>
+<text top="888" left="538" width="9" height="18" font="5">p</text>
+<text top="896" left="547" width="5" height="11" font="9">j</text>
+<text top="888" left="557" width="14" height="18" font="5">+</text>
+<text top="871" left="578" width="4" height="11" font="9">i</text>
+<text top="871" left="582" width="16" height="12" font="9">−1</text>
+<text top="884" left="575" width="26" height="8" font="5">X</text>
+<text top="914" left="577" width="5" height="11" font="9">j</text>
+<text top="914" left="583" width="16" height="12" font="9">=1</text>
+<text top="888" left="604" width="8" height="18" font="5">δ</text>
+<text top="896" left="612" width="5" height="11" font="9">j</text>
+<text top="951" left="367" width="28" height="18" font="5">≥ p</text>
+<text top="959" left="395" width="4" height="11" font="9">i</text>
+<text top="951" left="400" width="33" height="18" font="5">F (w</text>
+<text top="948" left="433" width="16" height="12" font="9">−1</text>
+<text top="961" left="433" width="4" height="11" font="9">i</text>
+<text top="951" left="450" width="17" height="18" font="5">(x</text>
+<text top="959" left="467" width="6" height="12" font="9">2</text>
+<text top="951" left="474" width="31" height="18" font="5">)) +</text>
+<text top="934" left="512" width="4" height="11" font="9">i</text>
+<text top="934" left="516" width="16" height="12" font="9">−1</text>
+<text top="947" left="509" width="26" height="8" font="5">X</text>
+<text top="977" left="511" width="5" height="11" font="9">j</text>
+<text top="977" left="517" width="16" height="12" font="9">=1</text>
+<text top="951" left="538" width="9" height="18" font="5">p</text>
+<text top="959" left="547" width="5" height="11" font="9">j</text>
+<text top="951" left="558" width="14" height="18" font="5">+</text>
+<text top="934" left="578" width="4" height="11" font="9">i</text>
+<text top="934" left="582" width="16" height="12" font="9">−1</text>
+<text top="947" left="575" width="26" height="8" font="5">X</text>
+<text top="977" left="577" width="5" height="11" font="9">j</text>
+<text top="977" left="583" width="16" height="12" font="9">=1</text>
+<text top="951" left="604" width="8" height="18" font="5">δ</text>
+<text top="959" left="612" width="5" height="11" font="9">j</text>
+<text top="997" left="367" width="29" height="18" font="5">= T</text>
+<text top="1005" left="396" width="6" height="11" font="9">p</text>
+<text top="997" left="403" width="31" height="18" font="5">F (x</text>
+<text top="1005" left="433" width="6" height="12" font="9">2</text>
+<text top="997" left="440" width="7" height="18" font="5">)</text>
+<text top="1040" left="453" width="9" height="18" font="5">3</text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="163" height="18" font="5">In case ii) we obtain:</text>
+<text top="230" left="197" width="10" height="18" font="5">T</text>
+<text top="238" left="208" width="6" height="11" font="9">p</text>
+<text top="230" left="215" width="31" height="18" font="5">F (x</text>
+<text top="238" left="246" width="6" height="12" font="9">1</text>
+<text top="230" left="253" width="39" height="18" font="5">) − T</text>
+<text top="238" left="292" width="6" height="11" font="9">p</text>
+<text top="230" left="299" width="31" height="18" font="5">F (x</text>
+<text top="238" left="329" width="6" height="12" font="9">2</text>
+<text top="230" left="336" width="39" height="18" font="5">) = p</text>
+<text top="238" left="376" width="4" height="11" font="9">i</text>
+<text top="230" left="385" width="25" height="18" font="5">+ δ</text>
+<text top="238" left="410" width="4" height="11" font="9">i</text>
+<text top="238" left="415" width="16" height="12" font="9">−1</text>
+<text top="230" left="435" width="26" height="18" font="5">+ p</text>
+<text top="238" left="462" width="4" height="11" font="9">i</text>
+<text top="238" left="466" width="16" height="12" font="9">+1</text>
+<text top="230" left="483" width="33" height="18" font="5">F (w</text>
+<text top="228" left="517" width="16" height="12" font="9">−1</text>
+<text top="240" left="517" width="4" height="11" font="9">i</text>
+<text top="240" left="521" width="16" height="12" font="9">+1</text>
+<text top="230" left="538" width="17" height="18" font="5">(x</text>
+<text top="238" left="554" width="6" height="12" font="9">1</text>
+<text top="230" left="562" width="44" height="18" font="5">)) − p</text>
+<text top="238" left="606" width="4" height="11" font="9">i</text>
+<text top="230" left="611" width="33" height="18" font="5">F (w</text>
+<text top="228" left="645" width="16" height="12" font="9">−1</text>
+<text top="240" left="644" width="4" height="11" font="9">i</text>
+<text top="230" left="662" width="17" height="18" font="5">(x</text>
+<text top="238" left="678" width="6" height="12" font="9">2</text>
+<text top="230" left="686" width="32" height="18" font="5">)) =</text>
+<text top="268" left="262" width="28" height="18" font="5">= p</text>
+<text top="276" left="289" width="4" height="11" font="9">i</text>
+<text top="268" left="294" width="71" height="18" font="5">(1 − F (w</text>
+<text top="265" left="365" width="16" height="12" font="9">−1</text>
+<text top="277" left="365" width="4" height="11" font="9">i</text>
+<text top="268" left="382" width="17" height="18" font="5">(x</text>
+<text top="275" left="399" width="6" height="12" font="9">2</text>
+<text top="268" left="406" width="51" height="18" font="5">))) + p</text>
+<text top="276" left="457" width="4" height="11" font="9">i</text>
+<text top="275" left="461" width="16" height="12" font="9">+1</text>
+<text top="268" left="478" width="33" height="18" font="5">F (w</text>
+<text top="265" left="512" width="16" height="12" font="9">−1</text>
+<text top="277" left="512" width="4" height="11" font="9">i</text>
+<text top="277" left="516" width="16" height="12" font="9">+1</text>
+<text top="268" left="533" width="17" height="18" font="5">(x</text>
+<text top="275" left="550" width="6" height="12" font="9">1</text>
+<text top="268" left="557" width="43" height="18" font="5">)) + δ</text>
+<text top="276" left="600" width="4" height="11" font="9">i</text>
+<text top="275" left="604" width="16" height="12" font="9">−1</text>
+<text top="267" left="626" width="28" height="18" font="5">≥ 0</text>
+<text top="298" left="166" width="54" height="18" font="5">since p</text>
+<text top="306" left="220" width="4" height="11" font="9">i</text>
+<text top="298" left="234" width="52" height="18" font="5">≥ 0, δ</text>
+<text top="306" left="286" width="4" height="11" font="9">i</text>
+<text top="298" left="299" width="450" height="18" font="5">≥ 0 and 0 ≤ f (y) ≤ 1. Finally, one can prove without</text>
+<text top="320" left="166" width="270" height="18" font="5">difficulties the right continuity of T</text>
+<text top="328" left="436" width="6" height="11" font="9">p</text>
+<text top="320" left="443" width="15" height="18" font="5">f .</text>
+<text top="354" left="166" width="583" height="18" font="5">The following corollary to the previous result will be useful for the applica-</text>
+<text top="376" left="166" width="139" height="18" font="5">tions in Section <a href="xml/0111152v1.html#7">4</a>.</text>
+<text top="412" left="166" width="121" height="16" font="5">Corollary 2.1.</text>
+<text top="411" left="296" width="120" height="18" font="8"><i>Suppose that </i>w</text>
+<text top="418" left="416" width="4" height="11" font="9">i</text>
+<text top="411" left="431" width="28" height="18" font="5">: [a</text>
+<text top="418" left="459" width="4" height="11" font="9">i</text>
+<text top="411" left="464" width="15" height="18" font="5">, b</text>
+<text top="418" left="480" width="4" height="11" font="9">i</text>
+<text top="411" left="485" width="58" height="18" font="5">) → [a</text>
+<text top="418" left="543" width="4" height="11" font="9">i</text>
+<text top="411" left="548" width="15" height="18" font="5">, b</text>
+<text top="418" left="563" width="4" height="11" font="9">i</text>
+<text top="411" left="568" width="34" height="18" font="5">)<i>, </i>w</text>
+<text top="418" left="602" width="4" height="11" font="9">i</text>
+<text top="411" left="607" width="90" height="18" font="5">(x) = x<i>, </i>p</text>
+<text top="418" left="697" width="4" height="11" font="9">i</text>
+<text top="411" left="712" width="37" height="18" font="5">= p<i>,</i></text>
+<text top="432" left="166" width="8" height="18" font="5">δ</text>
+<text top="440" left="174" width="4" height="11" font="9">i</text>
+<text top="432" left="184" width="213" height="18" font="5">≥ −p<i>, </i>i = 1, . . . , k<i>. Then </i>T</text>
+<text top="440" left="397" width="6" height="11" font="9">p</text>
+<text top="432" left="410" width="170" height="18" font="5">: F ([0, 1]) → F ([0, 1])<i>.</i></text>
+<text top="467" left="166" width="583" height="18" font="8"><i>Proof. </i>Looking at the proof of previous theorem one sees that it is only</text>
+<text top="489" left="166" width="193" height="18" font="5">necessary to prove that T</text>
+<text top="496" left="360" width="6" height="11" font="9">p</text>
+<text top="489" left="372" width="377" height="18" font="5">is a non decreasing function. Case i) is analogous</text>
+<text top="510" left="166" width="215" height="18" font="5">whistl for case ii), chosing x</text>
+<text top="518" left="381" width="6" height="12" font="9">1</text>
+<text top="510" left="393" width="29" height="18" font="5">&gt; x</text>
+<text top="518" left="422" width="6" height="12" font="9">2</text>
+<text top="510" left="435" width="65" height="18" font="5">we have:</text>
+<text top="547" left="259" width="10" height="18" font="5">T</text>
+<text top="555" left="269" width="6" height="11" font="9">p</text>
+<text top="547" left="276" width="31" height="18" font="5">F (x</text>
+<text top="554" left="307" width="6" height="12" font="9">1</text>
+<text top="547" left="314" width="39" height="18" font="5">) − T</text>
+<text top="555" left="353" width="6" height="11" font="9">p</text>
+<text top="547" left="360" width="31" height="18" font="5">F (x</text>
+<text top="554" left="391" width="6" height="12" font="9">2</text>
+<text top="547" left="398" width="107" height="18" font="5">) = p(1 − F (x</text>
+<text top="554" left="505" width="6" height="12" font="9">2</text>
+<text top="547" left="512" width="75" height="18" font="5">)) + pF (x</text>
+<text top="554" left="587" width="6" height="12" font="9">1</text>
+<text top="547" left="594" width="36" height="18" font="5">) + δ</text>
+<text top="555" left="630" width="4" height="11" font="9">i</text>
+<text top="573" left="410" width="65" height="18" font="5">= p(F (x</text>
+<text top="581" left="475" width="6" height="12" font="9">1</text>
+<text top="573" left="482" width="59" height="18" font="5">) − F (x</text>
+<text top="581" left="541" width="6" height="12" font="9">2</text>
+<text top="573" left="548" width="73" height="18" font="5">)) + p + δ</text>
+<text top="581" left="622" width="4" height="11" font="9">i</text>
+<text top="573" left="632" width="28" height="18" font="5">≥ 0</text>
+<text top="657" left="166" width="117" height="16" font="5">Theorem 2.2.</text>
+<text top="656" left="292" width="88" height="18" font="8"><i>If </i>c = max</text>
+<text top="673" left="340" width="4" height="11" font="9">i</text>
+<text top="672" left="344" width="43" height="12" font="9">=1,... ,k</text>
+<text top="656" left="390" width="9" height="18" font="5">p</text>
+<text top="664" left="399" width="4" height="11" font="9">i</text>
+<text top="656" left="409" width="85" height="18" font="5">&lt; 1<i>, then </i>T</text>
+<text top="664" left="494" width="6" height="11" font="9">p</text>
+<text top="656" left="506" width="231" height="18" font="8"><i>is a contraction on </i>(F ([0, 1]), d</text>
+<text top="664" left="737" width="20" height="11" font="9">sup</text>
+<text top="656" left="757" width="7" height="18" font="5">)</text>
+<text top="686" left="166" width="222" height="18" font="8"><i>with contractivity constant </i>c<i>.</i></text>
+<text top="720" left="166" width="229" height="18" font="8"><i>Proof. </i>Let F, G ∈ (F ([0, 1]), d</text>
+<text top="728" left="396" width="20" height="11" font="9">sup</text>
+<text top="720" left="416" width="158" height="18" font="5">) and let it be x ∈ w</text>
+<text top="728" left="574" width="4" height="11" font="9">i</text>
+<text top="720" left="579" width="21" height="18" font="5">([a</text>
+<text top="728" left="600" width="4" height="11" font="9">i</text>
+<text top="720" left="605" width="15" height="18" font="5">, b</text>
+<text top="728" left="620" width="4" height="11" font="9">i</text>
+<text top="720" left="625" width="91" height="18" font="5">)). We have</text>
+<text top="757" left="209" width="15" height="18" font="5">|T</text>
+<text top="765" left="224" width="6" height="11" font="9">p</text>
+<text top="758" left="231" width="70" height="18" font="5">F (x) − T</text>
+<text top="765" left="301" width="6" height="11" font="9">p</text>
+<text top="758" left="308" width="75" height="18" font="5">G(x)| ≤ p</text>
+<text top="765" left="383" width="4" height="11" font="9">i</text>
+<text top="755" left="391" width="6" height="8" font="5"></text>
+<text top="766" left="391" width="6" height="8" font="5"></text>
+<text top="758" left="397" width="33" height="18" font="5">F (w</text>
+<text top="755" left="431" width="16" height="12" font="9">−1</text>
+<text top="767" left="431" width="4" height="11" font="9">i</text>
+<text top="758" left="448" width="86" height="18" font="5">(x)) − G(w</text>
+<text top="755" left="534" width="16" height="12" font="9">−1</text>
+<text top="767" left="534" width="4" height="11" font="9">i</text>
+<text top="758" left="551" width="30" height="18" font="5">(x))</text>
+<text top="755" left="581" width="6" height="8" font="5"></text>
+<text top="766" left="581" width="6" height="8" font="5"></text>
+<text top="757" left="592" width="39" height="18" font="5">≤ c d</text>
+<text top="765" left="631" width="20" height="11" font="9">sup</text>
+<text top="758" left="651" width="55" height="18" font="5">(F, G) .</text>
+<text top="795" left="166" width="109" height="18" font="5">This implies d</text>
+<text top="802" left="275" width="13" height="12" font="9">∞</text>
+<text top="795" left="289" width="17" height="18" font="5">(T</text>
+<text top="803" left="306" width="6" height="11" font="9">p</text>
+<text top="795" left="313" width="30" height="18" font="5">F, T</text>
+<text top="803" left="343" width="6" height="11" font="9">p</text>
+<text top="795" left="350" width="64" height="18" font="5">G) ≤ c d</text>
+<text top="802" left="414" width="13" height="12" font="9">∞</text>
+<text top="795" left="428" width="52" height="18" font="5">(F, G).</text>
+<text top="829" left="166" width="578" height="18" font="5">The following theorem states that small perturbations of the parameters p</text>
+<text top="837" left="744" width="4" height="11" font="9">i</text>
+<text top="851" left="166" width="456" height="18" font="5">produce small variations on the fixed point of the operator.</text>
+<text top="887" left="166" width="117" height="16" font="5">Theorem 2.3.</text>
+<text top="886" left="292" width="60" height="18" font="8"><i>Let </i>p<i>, </i>p</text>
+<text top="884" left="352" width="6" height="12" font="9">∗</text>
+<text top="885" left="364" width="30" height="18" font="5">∈ R</text>
+<text top="884" left="393" width="7" height="11" font="9">k</text>
+<text top="886" left="408" width="86" height="18" font="8"><i>such that </i>T</text>
+<text top="893" left="493" width="6" height="11" font="9">p</text>
+<text top="886" left="501" width="11" height="18" font="5">F</text>
+<text top="893" left="512" width="6" height="12" font="9">1</text>
+<text top="886" left="524" width="30" height="18" font="5">= F</text>
+<text top="893" left="554" width="6" height="12" font="9">1</text>
+<text top="886" left="568" width="44" height="18" font="8"><i>and </i>T</text>
+<text top="893" left="612" width="6" height="11" font="9">p</text>
+<text top="894" left="618" width="6" height="7" font="10">∗</text>
+<text top="886" left="625" width="11" height="18" font="5">F</text>
+<text top="893" left="637" width="6" height="12" font="9">2</text>
+<text top="886" left="649" width="30" height="18" font="5">= F</text>
+<text top="893" left="679" width="6" height="12" font="9">2</text>
+<text top="886" left="686" width="53" height="18" font="8"><i>. Then</i></text>
+<text top="940" left="336" width="9" height="18" font="5">d</text>
+<text top="948" left="345" width="13" height="12" font="9">∞</text>
+<text top="940" left="358" width="18" height="18" font="5">(F</text>
+<text top="948" left="377" width="6" height="12" font="9">1</text>
+<text top="940" left="384" width="19" height="18" font="5">, F</text>
+<text top="948" left="403" width="6" height="12" font="9">2</text>
+<text top="940" left="410" width="26" height="18" font="5">) ≤</text>
+<text top="928" left="457" width="9" height="18" font="5">1</text>
+<text top="953" left="442" width="38" height="18" font="5">1 − c</text>
+<text top="923" left="495" width="7" height="11" font="9">k</text>
+<text top="936" left="485" width="26" height="8" font="5">X</text>
+<text top="966" left="487" width="5" height="11" font="9">j</text>
+<text top="966" left="493" width="16" height="12" font="9">=1</text>
+<text top="938" left="514" width="6" height="8" font="5"></text>
+<text top="949" left="514" width="6" height="8" font="5"></text>
+<text top="940" left="520" width="9" height="18" font="5">p</text>
+<text top="948" left="529" width="5" height="11" font="9">j</text>
+<text top="940" left="540" width="27" height="18" font="5">− p</text>
+<text top="937" left="566" width="6" height="12" font="9">∗</text>
+<text top="950" left="566" width="5" height="11" font="9">j</text>
+<text top="938" left="574" width="6" height="8" font="5"></text>
+<text top="949" left="574" width="6" height="8" font="5"></text>
+<text top="995" left="166" width="313" height="18" font="8"><i>where </i>c <i>is the contractivity constant of </i>T</text>
+<text top="1003" left="479" width="6" height="11" font="9">p</text>
+<text top="995" left="486" width="5" height="18" font="8"><i>.</i></text>
+<text top="1040" left="453" width="9" height="18" font="5">4</text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="172" height="18" font="8"><i>Proof. </i>In fact we have</text>
+<text top="223" left="182" width="9" height="18" font="5">d</text>
+<text top="231" left="191" width="13" height="12" font="9">∞</text>
+<text top="223" left="205" width="18" height="18" font="5">(F</text>
+<text top="231" left="223" width="6" height="12" font="9">1</text>
+<text top="223" left="230" width="19" height="18" font="5">, F</text>
+<text top="231" left="249" width="6" height="12" font="9">2</text>
+<text top="223" left="256" width="40" height="18" font="5">) = d</text>
+<text top="231" left="296" width="13" height="12" font="9">∞</text>
+<text top="223" left="309" width="17" height="18" font="5">(T</text>
+<text top="231" left="326" width="6" height="11" font="9">p</text>
+<text top="223" left="334" width="11" height="18" font="5">F</text>
+<text top="231" left="345" width="6" height="12" font="9">1</text>
+<text top="223" left="352" width="18" height="18" font="5">, T</text>
+<text top="231" left="370" width="6" height="11" font="9">p</text>
+<text top="223" left="377" width="11" height="18" font="5">F</text>
+<text top="231" left="389" width="6" height="12" font="9">2</text>
+<text top="223" left="396" width="7" height="18" font="5">)</text>
+<text top="268" left="268" width="59" height="18" font="5">= max</text>
+<text top="284" left="287" width="4" height="11" font="9">i</text>
+<text top="284" left="291" width="43" height="12" font="9">=1,... ,k</text>
+<text top="250" left="337" width="20" height="8" font="5">(</text>
+<text top="260" left="351" width="6" height="8" font="5"></text>
+<text top="271" left="351" width="6" height="8" font="5"></text>
+<text top="282" left="351" width="6" height="8" font="5"></text>
+<text top="293" left="351" width="6" height="8" font="5"></text>
+<text top="268" left="357" width="9" height="18" font="5">p</text>
+<text top="276" left="366" width="4" height="11" font="9">i</text>
+<text top="268" left="371" width="11" height="18" font="5">F</text>
+<text top="275" left="382" width="6" height="12" font="9">1</text>
+<text top="268" left="390" width="19" height="18" font="5">(w</text>
+<text top="265" left="410" width="16" height="12" font="9">−1</text>
+<text top="277" left="409" width="4" height="11" font="9">i</text>
+<text top="268" left="427" width="48" height="18" font="5">(x)) +</text>
+<text top="250" left="481" width="4" height="11" font="9">i</text>
+<text top="250" left="486" width="16" height="12" font="9">−1</text>
+<text top="264" left="479" width="26" height="8" font="5">X</text>
+<text top="294" left="481" width="5" height="11" font="9">j</text>
+<text top="293" left="487" width="16" height="12" font="9">=1</text>
+<text top="268" left="507" width="9" height="18" font="5">p</text>
+<text top="276" left="516" width="5" height="11" font="9">j</text>
+<text top="268" left="527" width="27" height="18" font="5">− p</text>
+<text top="265" left="554" width="6" height="12" font="9">∗</text>
+<text top="277" left="554" width="4" height="11" font="9">i</text>
+<text top="268" left="561" width="11" height="18" font="5">F</text>
+<text top="275" left="572" width="6" height="12" font="9">2</text>
+<text top="268" left="579" width="19" height="18" font="5">(w</text>
+<text top="265" left="599" width="16" height="12" font="9">−1</text>
+<text top="277" left="599" width="4" height="11" font="9">i</text>
+<text top="268" left="616" width="48" height="18" font="5">(x)) +</text>
+<text top="250" left="671" width="4" height="11" font="9">i</text>
+<text top="250" left="675" width="16" height="12" font="9">−1</text>
+<text top="264" left="668" width="26" height="8" font="5">X</text>
+<text top="294" left="670" width="5" height="11" font="9">j</text>
+<text top="293" left="676" width="16" height="12" font="9">=1</text>
+<text top="268" left="697" width="9" height="18" font="5">p</text>
+<text top="265" left="706" width="6" height="12" font="9">∗</text>
+<text top="277" left="706" width="5" height="11" font="9">j</text>
+<text top="249" left="713" width="6" height="8" font="5"></text>
+<text top="260" left="713" width="6" height="8" font="5"></text>
+<text top="271" left="713" width="6" height="8" font="5"></text>
+<text top="282" left="713" width="6" height="8" font="5"></text>
+<text top="293" left="713" width="6" height="8" font="5"></text>
+<text top="250" left="719" width="14" height="8" font="5">)</text>
+<text top="331" left="268" width="14" height="18" font="5">≤</text>
+<text top="314" left="296" width="7" height="11" font="9">k</text>
+<text top="327" left="287" width="26" height="8" font="5">X</text>
+<text top="357" left="290" width="4" height="11" font="9">i</text>
+<text top="357" left="294" width="16" height="12" font="9">=1</text>
+<text top="331" left="316" width="14" height="18" font="5">|p</text>
+<text top="339" left="330" width="4" height="11" font="9">i</text>
+<text top="331" left="339" width="27" height="18" font="5">− p</text>
+<text top="329" left="365" width="6" height="12" font="9">∗</text>
+<text top="341" left="365" width="4" height="11" font="9">i</text>
+<text top="331" left="373" width="46" height="18" font="5">| + c d</text>
+<text top="339" left="419" width="13" height="12" font="9">∞</text>
+<text top="331" left="432" width="18" height="18" font="5">(F</text>
+<text top="339" left="451" width="6" height="12" font="9">1</text>
+<text top="331" left="458" width="19" height="18" font="5">, F</text>
+<text top="339" left="477" width="6" height="12" font="9">2</text>
+<text top="331" left="484" width="15" height="18" font="5">) ,</text>
+<text top="378" left="166" width="37" height="18" font="5">since</text>
+<text top="392" left="275" width="6" height="8" font="5"></text>
+<text top="403" left="275" width="6" height="8" font="5"></text>
+<text top="414" left="275" width="6" height="8" font="5"></text>
+<text top="425" left="275" width="6" height="8" font="5"></text>
+<text top="435" left="275" width="6" height="8" font="5"></text>
+<text top="411" left="281" width="9" height="18" font="5">p</text>
+<text top="419" left="290" width="4" height="11" font="9">i</text>
+<text top="411" left="295" width="11" height="18" font="5">F</text>
+<text top="418" left="307" width="6" height="12" font="9">1</text>
+<text top="411" left="314" width="19" height="18" font="5">(w</text>
+<text top="408" left="334" width="16" height="12" font="9">−1</text>
+<text top="421" left="333" width="4" height="11" font="9">i</text>
+<text top="411" left="351" width="48" height="18" font="5">(x)) +</text>
+<text top="394" left="405" width="4" height="11" font="9">i</text>
+<text top="393" left="410" width="16" height="12" font="9">−1</text>
+<text top="407" left="403" width="26" height="8" font="5">X</text>
+<text top="437" left="405" width="5" height="11" font="9">j</text>
+<text top="436" left="411" width="16" height="12" font="9">=1</text>
+<text top="411" left="432" width="9" height="18" font="5">p</text>
+<text top="419" left="440" width="5" height="11" font="9">j</text>
+<text top="411" left="451" width="27" height="18" font="5">− p</text>
+<text top="408" left="478" width="6" height="12" font="9">∗</text>
+<text top="420" left="478" width="4" height="11" font="9">i</text>
+<text top="411" left="485" width="11" height="18" font="5">F</text>
+<text top="418" left="496" width="6" height="12" font="9">2</text>
+<text top="411" left="503" width="19" height="18" font="5">(w</text>
+<text top="408" left="523" width="16" height="12" font="9">−1</text>
+<text top="421" left="523" width="4" height="11" font="9">i</text>
+<text top="411" left="540" width="48" height="18" font="5">(x)) +</text>
+<text top="394" left="595" width="4" height="11" font="9">i</text>
+<text top="393" left="599" width="16" height="12" font="9">−1</text>
+<text top="407" left="592" width="26" height="8" font="5">X</text>
+<text top="437" left="594" width="5" height="11" font="9">j</text>
+<text top="436" left="600" width="16" height="12" font="9">=1</text>
+<text top="411" left="621" width="9" height="18" font="5">p</text>
+<text top="408" left="630" width="6" height="12" font="9">∗</text>
+<text top="420" left="630" width="5" height="11" font="9">j</text>
+<text top="392" left="637" width="6" height="8" font="5"></text>
+<text top="403" left="637" width="6" height="8" font="5"></text>
+<text top="414" left="637" width="6" height="8" font="5"></text>
+<text top="425" left="637" width="6" height="8" font="5"></text>
+<text top="435" left="637" width="6" height="8" font="5"></text>
+<text top="474" left="277" width="14" height="18" font="5">≤</text>
+<text top="457" left="299" width="4" height="11" font="9">i</text>
+<text top="456" left="303" width="16" height="12" font="9">−1</text>
+<text top="470" left="296" width="26" height="8" font="5">X</text>
+<text top="500" left="298" width="5" height="11" font="9">j</text>
+<text top="499" left="304" width="16" height="12" font="9">=1</text>
+<text top="474" left="325" width="14" height="18" font="5">|p</text>
+<text top="482" left="339" width="5" height="11" font="9">j</text>
+<text top="474" left="350" width="27" height="18" font="5">− p</text>
+<text top="471" left="376" width="6" height="12" font="9">∗</text>
+<text top="483" left="376" width="5" height="11" font="9">j</text>
+<text top="474" left="383" width="40" height="18" font="5">| + |p</text>
+<text top="482" left="424" width="4" height="11" font="9">i</text>
+<text top="474" left="429" width="11" height="18" font="5">F</text>
+<text top="481" left="440" width="6" height="12" font="9">1</text>
+<text top="474" left="447" width="19" height="18" font="5">(w</text>
+<text top="471" left="467" width="16" height="12" font="9">−1</text>
+<text top="484" left="467" width="4" height="11" font="9">i</text>
+<text top="474" left="484" width="61" height="18" font="5">(x)) − p</text>
+<text top="482" left="545" width="4" height="11" font="9">i</text>
+<text top="474" left="550" width="11" height="18" font="5">F</text>
+<text top="481" left="562" width="6" height="12" font="9">2</text>
+<text top="474" left="569" width="19" height="18" font="5">(w</text>
+<text top="471" left="589" width="16" height="12" font="9">−1</text>
+<text top="484" left="588" width="4" height="11" font="9">i</text>
+<text top="474" left="606" width="35" height="18" font="5">(x))|</text>
+<text top="520" left="293" width="32" height="18" font="5">+ |p</text>
+<text top="528" left="325" width="4" height="11" font="9">i</text>
+<text top="520" left="329" width="11" height="18" font="5">F</text>
+<text top="527" left="341" width="6" height="12" font="9">2</text>
+<text top="520" left="348" width="19" height="18" font="5">(w</text>
+<text top="517" left="368" width="16" height="12" font="9">−1</text>
+<text top="530" left="367" width="4" height="11" font="9">i</text>
+<text top="520" left="385" width="61" height="18" font="5">(x)) − p</text>
+<text top="517" left="446" width="6" height="12" font="9">∗</text>
+<text top="529" left="446" width="4" height="11" font="9">i</text>
+<text top="520" left="453" width="11" height="18" font="5">F</text>
+<text top="527" left="464" width="6" height="12" font="9">2</text>
+<text top="520" left="472" width="19" height="18" font="5">(w</text>
+<text top="517" left="492" width="16" height="12" font="9">−1</text>
+<text top="530" left="491" width="4" height="11" font="9">i</text>
+<text top="520" left="508" width="35" height="18" font="5">(x))|</text>
+<text top="564" left="277" width="14" height="18" font="5">≤</text>
+<text top="547" left="299" width="4" height="11" font="9">i</text>
+<text top="547" left="303" width="16" height="12" font="9">−1</text>
+<text top="560" left="296" width="26" height="8" font="5">X</text>
+<text top="590" left="298" width="5" height="11" font="9">j</text>
+<text top="590" left="304" width="16" height="12" font="9">=1</text>
+<text top="564" left="325" width="14" height="18" font="5">|p</text>
+<text top="572" left="339" width="5" height="11" font="9">j</text>
+<text top="564" left="350" width="27" height="18" font="5">− p</text>
+<text top="562" left="376" width="6" height="12" font="9">∗</text>
+<text top="574" left="376" width="5" height="11" font="9">j</text>
+<text top="564" left="383" width="35" height="18" font="5">| + p</text>
+<text top="572" left="419" width="4" height="11" font="9">i</text>
+<text top="565" left="424" width="9" height="18" font="5">d</text>
+<text top="572" left="433" width="13" height="12" font="9">∞</text>
+<text top="565" left="446" width="18" height="18" font="5">(F</text>
+<text top="572" left="465" width="6" height="12" font="9">1</text>
+<text top="565" left="472" width="19" height="18" font="5">, F</text>
+<text top="572" left="491" width="6" height="12" font="9">2</text>
+<text top="565" left="498" width="42" height="18" font="5">) + |p</text>
+<text top="572" left="540" width="4" height="11" font="9">i</text>
+<text top="564" left="549" width="27" height="18" font="5">− p</text>
+<text top="562" left="576" width="6" height="12" font="9">∗</text>
+<text top="574" left="576" width="4" height="11" font="9">i</text>
+<text top="564" left="583" width="5" height="18" font="5">|</text>
+<text top="628" left="277" width="39" height="18" font="5">≤ c d</text>
+<text top="635" left="316" width="13" height="12" font="9">∞</text>
+<text top="628" left="329" width="18" height="18" font="5">(F</text>
+<text top="635" left="348" width="6" height="12" font="9">1</text>
+<text top="628" left="355" width="19" height="18" font="5">, F</text>
+<text top="635" left="374" width="6" height="12" font="9">2</text>
+<text top="628" left="381" width="24" height="18" font="5">) +</text>
+<text top="610" left="419" width="7" height="11" font="9">k</text>
+<text top="624" left="410" width="26" height="8" font="5">X</text>
+<text top="654" left="411" width="5" height="11" font="9">j</text>
+<text top="653" left="417" width="16" height="12" font="9">=1</text>
+<text top="628" left="438" width="14" height="18" font="5">|p</text>
+<text top="636" left="452" width="5" height="11" font="9">j</text>
+<text top="628" left="463" width="27" height="18" font="5">− p</text>
+<text top="625" left="490" width="6" height="12" font="9">∗</text>
+<text top="637" left="490" width="5" height="11" font="9">j</text>
+<text top="628" left="497" width="13" height="18" font="5">| .</text>
+<text top="727" left="166" width="15" height="23" font="6">3</text>
+<text top="727" left="210" width="552" height="23" font="6">The inverse problem as a convex constrained</text>
+<text top="760" left="210" width="273" height="23" font="6">optimization problem</text>
+<text top="804" left="166" width="183" height="18" font="5">Choose F ∈ (F ([0, 1]), d</text>
+<text top="811" left="349" width="20" height="11" font="9">sup</text>
+<text top="804" left="369" width="380" height="18" font="5">). The aim of solving the inverse problem is to find</text>
+<text top="825" left="166" width="583" height="18" font="5">a contractive map T : F ([0, 1]) → F ([0, 1]) which has a fixed point “near”</text>
+<text top="847" left="166" width="583" height="18" font="5">to F . In fact if it is possible to solve the inverse problem with an arbitrary</text>
+<text top="869" left="166" width="582" height="18" font="5">precision one can identify the operator T with its fixed point. With a fixed</text>
+<text top="890" left="166" width="138" height="18" font="5">system of maps w</text>
+<text top="898" left="304" width="4" height="11" font="9">i</text>
+<text top="890" left="315" width="133" height="18" font="5">and parameters δ</text>
+<text top="898" left="449" width="5" height="11" font="9">j</text>
+<text top="890" left="455" width="294" height="18" font="5">, the inverse problem can be solved, if</text>
+<text top="912" left="166" width="316" height="18" font="5">it is possible, by using the parameters p</text>
+<text top="920" left="482" width="4" height="11" font="9">i</text>
+<text top="912" left="487" width="262" height="18" font="5">. These have to be choose in the</text>
+<text top="934" left="166" width="158" height="18" font="5">following convex set:</text>
+<text top="981" left="242" width="32" height="18" font="5">C =</text>
+<text top="963" left="279" width="14" height="8" font="5">(</text>
+<text top="981" left="294" width="44" height="18" font="5">p ∈ R</text>
+<text top="979" left="337" width="7" height="11" font="9">k</text>
+<text top="981" left="350" width="19" height="18" font="5">: p</text>
+<text top="989" left="369" width="4" height="11" font="9">i</text>
+<text top="981" left="379" width="131" height="18" font="5">≥ 0, i = 1, . . . , k,</text>
+<text top="964" left="522" width="7" height="11" font="9">k</text>
+<text top="977" left="512" width="26" height="8" font="5">X</text>
+<text top="1007" left="515" width="4" height="11" font="9">i</text>
+<text top="1007" left="519" width="16" height="12" font="9">=1</text>
+<text top="981" left="541" width="9" height="18" font="5">p</text>
+<text top="989" left="550" width="4" height="11" font="9">i</text>
+<text top="981" left="560" width="45" height="18" font="5">= 1 −</text>
+<text top="964" left="611" width="7" height="11" font="9">k</text>
+<text top="963" left="618" width="16" height="12" font="9">−1</text>
+<text top="977" left="610" width="26" height="8" font="5">X</text>
+<text top="1007" left="612" width="4" height="11" font="9">i</text>
+<text top="1007" left="617" width="16" height="12" font="9">=1</text>
+<text top="981" left="638" width="8" height="18" font="5">δ</text>
+<text top="989" left="646" width="4" height="11" font="9">i</text>
+<text top="963" left="651" width="14" height="8" font="5">)</text>
+<text top="981" left="669" width="5" height="18" font="5">,</text>
+<text top="1040" left="453" width="9" height="18" font="5">5</text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="223" height="18" font="5">We have the following result.</text>
+<text top="224" left="166" width="117" height="16" font="5">Theorem 3.1.</text>
+<text top="223" left="292" width="273" height="18" font="8"><i>Choose </i>ǫ &gt; 0 <i>and </i>p ∈ C <i>such that </i>p</text>
+<text top="231" left="564" width="4" height="11" font="9">i</text>
+<text top="222" left="572" width="17" height="18" font="5">· p</text>
+<text top="231" left="589" width="5" height="11" font="9">j</text>
+<text top="223" left="601" width="148" height="18" font="5">&gt; 0 <i>for some </i>i 6= j<i>.</i></text>
+<text top="244" left="166" width="27" height="18" font="8"><i>If </i>d</text>
+<text top="252" left="194" width="20" height="11" font="9">sup</text>
+<text top="244" left="214" width="17" height="18" font="5">(T</text>
+<text top="252" left="231" width="6" height="11" font="9">p</text>
+<text top="244" left="238" width="121" height="18" font="5">F, F ) ≤ ǫ<i>, then:</i></text>
+<text top="281" left="384" width="9" height="18" font="5">d</text>
+<text top="288" left="393" width="20" height="11" font="9">sup</text>
+<text top="281" left="413" width="39" height="18" font="5">(F, ˜</text>
+<text top="281" left="440" width="39" height="18" font="5">F ) ≤</text>
+<text top="268" left="502" width="7" height="18" font="5">ǫ</text>
+<text top="293" left="486" width="38" height="18" font="5">1 − c</text>
+<text top="281" left="527" width="5" height="18" font="5">,</text>
+<text top="322" left="166" width="62" height="18" font="8"><i>where </i>˜</text>
+<text top="322" left="215" width="182" height="18" font="5">F <i>is the fixed point of </i>T</text>
+<text top="330" left="397" width="6" height="11" font="9">p</text>
+<text top="322" left="411" width="199" height="18" font="8"><i>on </i>F ([0, 1]) <i>and </i>c = max</text>
+<text top="338" left="570" width="4" height="11" font="9">i</text>
+<text top="338" left="574" width="43" height="12" font="9">=1,... ,k</text>
+<text top="322" left="620" width="9" height="18" font="5">p</text>
+<text top="330" left="629" width="4" height="11" font="9">i</text>
+<text top="322" left="640" width="109" height="18" font="8"><i>is the contrac-</i></text>
+<text top="352" left="166" width="146" height="18" font="8"><i>tivity constant of </i>T</text>
+<text top="359" left="312" width="6" height="11" font="9">p</text>
+<text top="352" left="319" width="5" height="18" font="8"><i>.</i></text>
+<text top="381" left="166" width="382" height="18" font="8"><i>Proof. </i>The assumptions imply c &lt; 1. So we have:</text>
+<text top="413" left="224" width="9" height="18" font="5">d</text>
+<text top="420" left="233" width="20" height="11" font="9">sup</text>
+<text top="413" left="253" width="39" height="18" font="5">(F, ˜</text>
+<text top="413" left="280" width="54" height="18" font="5">F ) ≤ d</text>
+<text top="420" left="334" width="20" height="11" font="9">sup</text>
+<text top="413" left="354" width="37" height="18" font="5">(F, T</text>
+<text top="420" left="391" width="6" height="11" font="9">p</text>
+<text top="413" left="398" width="51" height="18" font="5">F ) + d</text>
+<text top="420" left="449" width="20" height="11" font="9">sup</text>
+<text top="413" left="470" width="17" height="18" font="5">(T</text>
+<text top="420" left="487" width="6" height="11" font="9">p</text>
+<text top="413" left="494" width="30" height="18" font="5">F, T</text>
+<text top="420" left="524" width="6" height="11" font="9">p</text>
+<text top="408" left="535" width="9" height="18" font="5">˜</text>
+<text top="413" left="531" width="93" height="18" font="5">F ) ≤ ǫ + c d</text>
+<text top="420" left="624" width="20" height="11" font="9">sup</text>
+<text top="413" left="644" width="39" height="18" font="5">(F, ˜</text>
+<text top="413" left="671" width="20" height="18" font="5">F )</text>
+<text top="444" left="166" width="189" height="18" font="5">and so we get the thesis.</text>
+<text top="477" left="193" width="556" height="18" font="5">If we wish to find an approximated solution of the inverse problem, we</text>
+<text top="498" left="166" width="473" height="18" font="5">have to solve the following constrained optimization problem:</text>
+<text top="530" left="166" width="27" height="18" font="5">(P)</text>
+<text top="530" left="395" width="29" height="18" font="5">min</text>
+<text top="546" left="397" width="6" height="11" font="9">p</text>
+<text top="546" left="403" width="18" height="12" font="9">∈C</text>
+<text top="530" left="427" width="9" height="18" font="5">d</text>
+<text top="538" left="436" width="20" height="11" font="9">sup</text>
+<text top="530" left="456" width="17" height="18" font="5">(T</text>
+<text top="538" left="473" width="6" height="11" font="9">p</text>
+<text top="530" left="481" width="40" height="18" font="5">F, F )</text>
+<text top="570" left="193" width="474" height="18" font="5">It is clear that the ideal solution of (P) consists of finding a p</text>
+<text top="568" left="667" width="6" height="12" font="9">∗</text>
+<text top="570" left="679" width="70" height="18" font="5">∈ C such</text>
+<text top="592" left="166" width="46" height="18" font="5">that d</text>
+<text top="599" left="213" width="20" height="11" font="9">sup</text>
+<text top="592" left="233" width="17" height="18" font="5">(T</text>
+<text top="599" left="250" width="6" height="11" font="9">p</text>
+<text top="600" left="256" width="6" height="7" font="10">∗</text>
+<text top="592" left="264" width="485" height="18" font="5">F, F ) = 0. In fact this means that, given a distribution function</text>
+<text top="613" left="166" width="297" height="18" font="5">F , we have found a contractive map T</text>
+<text top="621" left="463" width="6" height="11" font="9">p</text>
+<text top="613" left="476" width="273" height="18" font="5">which has exactly F as fixed point.</text>
+<text top="635" left="166" width="583" height="18" font="5">Indeed the use of Theorem <a href="xml/0111152v1.html#6">3.1 </a>gives us only an approximation of F . This can</text>
+<text top="657" left="166" width="282" height="18" font="5">be improved, once fixed the maps w</text>
+<text top="664" left="448" width="4" height="11" font="9">i</text>
+<text top="657" left="453" width="296" height="18" font="5">, increasing the number of parameters</text>
+<text top="678" left="166" width="9" height="18" font="5">p</text>
+<text top="686" left="175" width="4" height="11" font="9">i</text>
+<text top="678" left="180" width="5" height="18" font="5">.</text>
+<text top="700" left="193" width="493" height="18" font="5">The following result proves the convexity of the function D(p) = d</text>
+<text top="708" left="686" width="20" height="11" font="9">sup</text>
+<text top="700" left="706" width="17" height="18" font="5">(T</text>
+<text top="708" left="723" width="6" height="11" font="9">p</text>
+<text top="700" left="731" width="31" height="18" font="5">F, F</text>
+<text top="700" left="764" width="12" height="18" font="5">),</text>
+<text top="722" left="166" width="44" height="18" font="5">p ∈ R</text>
+<text top="720" left="210" width="7" height="11" font="9">k</text>
+<text top="722" left="218" width="5" height="18" font="5">.</text>
+<text top="752" left="166" width="117" height="16" font="5">Theorem 3.2.</text>
+<text top="751" left="292" width="170" height="18" font="8"><i>The function </i>D(p) : R</text>
+<text top="750" left="462" width="7" height="11" font="9">k</text>
+<text top="751" left="475" width="117" height="18" font="5">→ R <i>is convex.</i></text>
+<text top="781" left="166" width="163" height="18" font="8"><i>Proof. </i>If we choose p</text>
+<text top="788" left="329" width="6" height="12" font="9">1</text>
+<text top="781" left="336" width="17" height="18" font="5">, p</text>
+<text top="788" left="353" width="6" height="12" font="9">2</text>
+<text top="780" left="365" width="30" height="18" font="5">∈ R</text>
+<text top="779" left="395" width="7" height="11" font="9">k</text>
+<text top="781" left="408" width="146" height="18" font="5">and λ ∈ [0, 1] then:</text>
+<text top="812" left="245" width="41" height="18" font="5">D(λp</text>
+<text top="820" left="286" width="6" height="12" font="9">1</text>
+<text top="812" left="297" width="81" height="18" font="5">+ (1 − λ)p</text>
+<text top="820" left="378" width="6" height="12" font="9">2</text>
+<text top="812" left="385" width="63" height="18" font="5">) = sup</text>
+<text top="833" left="416" width="7" height="11" font="9">x</text>
+<text top="832" left="423" width="32" height="12" font="9">∈[0,1]</text>
+<text top="812" left="458" width="15" height="18" font="5">|T</text>
+<text top="820" left="473" width="14" height="11" font="9">λp</text>
+<text top="824" left="487" width="5" height="7" font="10">1</text>
+<text top="820" left="493" width="50" height="12" font="9">+(1−λ)p</text>
+<text top="824" left="543" width="5" height="7" font="10">2</text>
+<text top="812" left="550" width="121" height="18" font="5">F (x) − F (x)| ≤</text>
+<text top="857" left="166" width="46" height="18" font="5">λ sup</text>
+<text top="878" left="180" width="7" height="11" font="9">x</text>
+<text top="877" left="187" width="32" height="12" font="9">∈[0,1]</text>
+<text top="857" left="221" width="15" height="18" font="5">|T</text>
+<text top="865" left="237" width="6" height="11" font="9">p</text>
+<text top="869" left="243" width="5" height="7" font="10">1</text>
+<text top="857" left="250" width="190" height="18" font="5">F (x)−F (x)|+(1−λ) sup</text>
+<text top="878" left="407" width="7" height="11" font="9">x</text>
+<text top="877" left="414" width="32" height="12" font="9">∈[0,1]</text>
+<text top="857" left="449" width="15" height="18" font="5">|T</text>
+<text top="865" left="464" width="6" height="11" font="9">p</text>
+<text top="869" left="471" width="5" height="7" font="10">2</text>
+<text top="857" left="478" width="158" height="18" font="5">F (x)−F (x)| = λD(p</text>
+<text top="865" left="636" width="6" height="12" font="9">1</text>
+<text top="857" left="643" width="98" height="18" font="5">)+(1−λ)D(p</text>
+<text top="865" left="741" width="6" height="12" font="9">2</text>
+<text top="857" left="748" width="12" height="18" font="5">).</text>
+<text top="930" left="166" width="582" height="18" font="5">Hence for solving problem (P) one can recall classical results about convex</text>
+<text top="952" left="166" width="583" height="18" font="5">programming problems (see for instance Rockafellar and Wets, 1998). A</text>
+<text top="973" left="166" width="300" height="18" font="5">necessary and sufficient condition for p</text>
+<text top="971" left="466" width="6" height="12" font="9">∗</text>
+<text top="973" left="479" width="270" height="18" font="5">∈ C to be a solution of (P) can be</text>
+<text top="995" left="166" width="259" height="18" font="5">given by Kuhn-Tucker conditions.</text>
+<text top="1040" left="453" width="9" height="18" font="5">6</text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="189" left="166" width="15" height="23" font="6">4</text>
+<text top="189" left="210" width="540" height="23" font="6">Inverse problem for distribution functions</text>
+<text top="222" left="210" width="207" height="23" font="6">and applications</text>
+<text top="266" left="166" width="583" height="18" font="5">In this section we consider different problems. We show that for a particu-</text>
+<text top="287" left="166" width="583" height="18" font="5">lar class of distribution functions the inverse problem can be solved exactly</text>
+<text top="309" left="166" width="583" height="18" font="5">without solving any optimization problem. Then we discuss two ways of con-</text>
+<text top="331" left="166" width="583" height="18" font="5">struct IFS to approximate a distribution function F with a finite number of</text>
+<text top="352" left="166" width="100" height="18" font="5">parameters p</text>
+<text top="360" left="266" width="4" height="11" font="9">i</text>
+<text top="352" left="277" width="93" height="18" font="5">and maps w</text>
+<text top="360" left="370" width="4" height="11" font="9">i</text>
+<text top="352" left="375" width="5" height="18" font="5">.</text>
+<text top="374" left="193" width="556" height="18" font="5">As is usual in statistical applications, given a sample of n independent and</text>
+<text top="396" left="166" width="291" height="18" font="5">identically distributed observations, (x</text>
+<text top="403" left="458" width="6" height="12" font="9">1</text>
+<text top="396" left="465" width="18" height="18" font="5">, x</text>
+<text top="403" left="483" width="6" height="12" font="9">2</text>
+<text top="396" left="490" width="52" height="18" font="5">, . . . , x</text>
+<text top="403" left="542" width="8" height="11" font="9">n</text>
+<text top="396" left="550" width="198" height="18" font="5">), drawn from an unknown</text>
+<text top="417" left="166" width="583" height="18" font="5">distribution function F , one can easily contruct the empirical distribution</text>
+<text top="439" left="166" width="141" height="18" font="5">function (e.d.f.) ˆ</text>
+<text top="439" left="294" width="11" height="18" font="5">F</text>
+<text top="447" left="305" width="8" height="11" font="9">n</text>
+<text top="439" left="320" width="78" height="18" font="5">that reads</text>
+<text top="487" left="325" width="9" height="18" font="5">ˆ</text>
+<text top="492" left="321" width="11" height="18" font="5">F</text>
+<text top="500" left="332" width="8" height="11" font="9">n</text>
+<text top="492" left="341" width="42" height="18" font="5">(x) =</text>
+<text top="480" left="391" width="9" height="18" font="5">1</text>
+<text top="504" left="390" width="10" height="18" font="5">n</text>
+<text top="475" left="414" width="8" height="11" font="9">n</text>
+<text top="488" left="405" width="26" height="8" font="5">X</text>
+<text top="518" left="408" width="4" height="11" font="9">i</text>
+<text top="517" left="412" width="16" height="12" font="9">=1</text>
+<text top="492" left="434" width="11" height="18" font="5">χ</text>
+<text top="499" left="445" width="42" height="12" font="9">(−∞,x]</text>
+<text top="492" left="487" width="17" height="18" font="5">(x</text>
+<text top="500" left="504" width="4" height="11" font="9">i</text>
+<text top="492" left="509" width="12" height="18" font="5">),</text>
+<text top="492" left="542" width="53" height="18" font="5">x ∈ R ,</text>
+<text top="547" left="166" width="64" height="18" font="5">where χ</text>
+<text top="554" left="230" width="10" height="11" font="9">A</text>
+<text top="547" left="248" width="501" height="18" font="5">is the indicator function of the set A. Asymptotical properties</text>
+<text top="568" left="166" width="140" height="18" font="5">of optimality of ˆ</text>
+<text top="568" left="293" width="11" height="18" font="5">F</text>
+<text top="576" left="305" width="8" height="11" font="9">n</text>
+<text top="568" left="320" width="429" height="18" font="5">as estimator of the unknown F when n goes to infinity</text>
+<text top="590" left="166" width="583" height="18" font="5">are well known and studied (Millar 1979 and 1983). This function has an</text>
+<text top="612" left="166" width="583" height="18" font="5">IFS representation that is exact and can be found without solving any opti-</text>
+<text top="633" left="166" width="346" height="18" font="5">mization problem. We assume that the the x</text>
+<text top="641" left="512" width="4" height="11" font="9">i</text>
+<text top="633" left="523" width="226" height="18" font="5">in the sample are all different</text>
+<text top="655" left="166" width="583" height="18" font="5">(this assumption is natural if F is a continuous distribution function). Let</text>
+<text top="676" left="166" width="13" height="18" font="5">w</text>
+<text top="684" left="179" width="4" height="11" font="9">i</text>
+<text top="676" left="184" width="55" height="18" font="5">(x) : [x</text>
+<text top="684" left="239" width="4" height="11" font="9">i</text>
+<text top="684" left="244" width="16" height="12" font="9">−1</text>
+<text top="676" left="261" width="18" height="18" font="5">, x</text>
+<text top="684" left="278" width="4" height="11" font="9">i</text>
+<text top="676" left="284" width="52" height="18" font="5">) → [x</text>
+<text top="684" left="335" width="4" height="11" font="9">i</text>
+<text top="684" left="339" width="16" height="12" font="9">−1</text>
+<text top="676" left="357" width="18" height="18" font="5">, x</text>
+<text top="684" left="374" width="4" height="11" font="9">i</text>
+<text top="676" left="379" width="196" height="18" font="5">), when i = 1 . . . n and w</text>
+<text top="684" left="576" width="6" height="12" font="9">1</text>
+<text top="676" left="583" width="72" height="18" font="5">(x) : [0, x</text>
+<text top="684" left="655" width="6" height="12" font="9">1</text>
+<text top="676" left="662" width="68" height="18" font="5">) → [0, x</text>
+<text top="684" left="730" width="6" height="12" font="9">1</text>
+<text top="676" left="737" width="12" height="18" font="5">),</text>
+<text top="698" left="166" width="13" height="18" font="5">w</text>
+<text top="706" left="179" width="8" height="11" font="9">n</text>
+<text top="705" left="187" width="16" height="12" font="9">+1</text>
+<text top="698" left="204" width="54" height="18" font="5">(x) : [x</text>
+<text top="706" left="258" width="8" height="11" font="9">n</text>
+<text top="698" left="266" width="18" height="18" font="5">, x</text>
+<text top="706" left="284" width="8" height="11" font="9">n</text>
+<text top="705" left="292" width="16" height="12" font="9">+1</text>
+<text top="698" left="309" width="48" height="18" font="5">] → [x</text>
+<text top="706" left="357" width="8" height="11" font="9">n</text>
+<text top="698" left="366" width="18" height="18" font="5">, x</text>
+<text top="706" left="383" width="8" height="11" font="9">n</text>
+<text top="705" left="391" width="16" height="12" font="9">+1</text>
+<text top="698" left="408" width="60" height="18" font="5">],with x</text>
+<text top="705" left="468" width="6" height="12" font="9">0</text>
+<text top="698" left="481" width="64" height="18" font="5">= and x</text>
+<text top="706" left="545" width="8" height="11" font="9">n</text>
+<text top="705" left="552" width="16" height="12" font="9">+1</text>
+<text top="698" left="575" width="174" height="18" font="5">= 1. Assume also that</text>
+<text top="720" left="166" width="215" height="18" font="5">every map is of the form w</text>
+<text top="727" left="381" width="4" height="11" font="9">i</text>
+<text top="720" left="386" width="190" height="18" font="5">(x) = x. If we choose p</text>
+<text top="727" left="576" width="4" height="11" font="9">i</text>
+<text top="720" left="588" width="14" height="18" font="5">=</text>
+<text top="717" left="611" width="6" height="12" font="9">1</text>
+<text top="731" left="611" width="8" height="11" font="9">n</text>
+<text top="720" left="620" width="129" height="18" font="5">, i = 2 . . . n + 1,</text>
+<text top="741" left="166" width="9" height="18" font="5">p</text>
+<text top="749" left="175" width="6" height="12" font="9">1</text>
+<text top="741" left="187" width="62" height="18" font="5">= 0 and</text>
+<text top="770" left="368" width="8" height="18" font="5">δ</text>
+<text top="777" left="375" width="6" height="12" font="9">1</text>
+<text top="770" left="387" width="14" height="18" font="5">=</text>
+<text top="758" left="408" width="41" height="18" font="5">n − 1</text>
+<text top="783" left="420" width="10" height="18" font="5">n</text>
+<text top="782" left="430" width="6" height="12" font="9">2</text>
+<text top="770" left="451" width="5" height="18" font="5">,</text>
+<text top="770" left="476" width="8" height="18" font="5">δ</text>
+<text top="778" left="484" width="4" height="11" font="9">i</text>
+<text top="770" left="494" width="32" height="18" font="5">= −</text>
+<text top="758" left="533" width="9" height="18" font="5">1</text>
+<text top="783" left="528" width="10" height="18" font="5">n</text>
+<text top="782" left="539" width="6" height="12" font="9">2</text>
+<text top="806" left="166" width="304" height="18" font="5">then the following representation holds:</text>
+<text top="873" left="249" width="10" height="18" font="5">T</text>
+<text top="880" left="259" width="6" height="11" font="9">p</text>
+<text top="868" left="270" width="9" height="18" font="5">ˆ</text>
+<text top="873" left="266" width="11" height="18" font="5">F</text>
+<text top="880" left="277" width="8" height="11" font="9">n</text>
+<text top="873" left="286" width="42" height="18" font="5">(x) =</text>
+<text top="843" left="333" width="16" height="8" font="5"></text>
+<text top="859" left="333" width="16" height="8" font="5"></text>
+<text top="865" left="333" width="16" height="8" font="5"></text>
+<text top="897" left="333" width="16" height="8" font="5"></text>
+<text top="902" left="333" width="16" height="8" font="5"></text>
+<text top="847" left="349" width="14" height="18" font="5">0,</text>
+<text top="847" left="538" width="38" height="18" font="5">i = 1</text>
+<text top="871" left="352" width="6" height="12" font="9">1</text>
+<text top="884" left="351" width="8" height="11" font="9">n</text>
+<text top="869" left="364" width="9" height="18" font="5">ˆ</text>
+<text top="873" left="360" width="11" height="18" font="5">F</text>
+<text top="881" left="372" width="8" height="11" font="9">n</text>
+<text top="873" left="380" width="41" height="18" font="5">(x) +</text>
+<text top="871" left="427" width="8" height="11" font="9">n</text>
+<text top="871" left="435" width="16" height="12" font="9">−1</text>
+<text top="884" left="432" width="8" height="11" font="9">n</text>
+<text top="884" left="440" width="5" height="7" font="10">2</text>
+<text top="873" left="453" width="5" height="18" font="5">,</text>
+<text top="873" left="538" width="38" height="18" font="5">i = 2</text>
+<text top="897" left="352" width="6" height="12" font="9">1</text>
+<text top="910" left="351" width="8" height="11" font="9">n</text>
+<text top="895" left="367" width="9" height="18" font="5">ˆ</text>
+<text top="899" left="363" width="11" height="18" font="5">F</text>
+<text top="907" left="375" width="8" height="11" font="9">n</text>
+<text top="899" left="383" width="41" height="18" font="5">(x) +</text>
+<text top="897" left="430" width="4" height="11" font="9">i</text>
+<text top="897" left="435" width="16" height="12" font="9">−1</text>
+<text top="910" left="437" width="8" height="11" font="9">n</text>
+<text top="899" left="457" width="14" height="18" font="5">+</text>
+<text top="897" left="476" width="8" height="11" font="9">n</text>
+<text top="897" left="484" width="30" height="12" font="9">−i+1</text>
+<text top="910" left="488" width="8" height="11" font="9">n</text>
+<text top="910" left="496" width="5" height="7" font="10">2</text>
+<text top="899" left="516" width="149" height="18" font="5">, i = 3, . . . , n + 1.</text>
+<text top="940" left="166" width="92" height="18" font="5">when x ∈ [x</text>
+<text top="948" left="258" width="4" height="11" font="9">i</text>
+<text top="947" left="262" width="16" height="12" font="9">−1</text>
+<text top="940" left="280" width="18" height="18" font="5">, x</text>
+<text top="948" left="297" width="4" height="11" font="9">i</text>
+<text top="940" left="303" width="447" height="18" font="5">). Furthermore, from Corollary <a href="xml/0111152v1.html#4">2.1 </a>we are guaranteed that</text>
+<text top="980" left="312" width="24" height="18" font="5">lim</text>
+<text top="995" left="308" width="6" height="11" font="9">s</text>
+<text top="995" left="314" width="25" height="12" font="9">→∞</text>
+<text top="980" left="342" width="9" height="18" font="5">d</text>
+<text top="987" left="352" width="13" height="12" font="9">∞</text>
+<text top="980" left="365" width="17" height="18" font="5">(T</text>
+<text top="977" left="385" width="16" height="12" font="9">(s)</text>
+<text top="989" left="382" width="6" height="11" font="9">p</text>
+<text top="980" left="401" width="31" height="18" font="5">u, ˆ</text>
+<text top="980" left="419" width="11" height="18" font="5">F</text>
+<text top="987" left="430" width="8" height="11" font="9">n</text>
+<text top="980" left="439" width="48" height="18" font="5">) → 0,</text>
+<text top="979" left="508" width="100" height="18" font="5">∀ u ∈ F [0, 1].</text>
+<text top="1040" left="453" width="9" height="18" font="5">7</text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="583" height="18" font="5">Note that from the point of view of applications, constructing the e.d.f. or</text>
+<text top="215" left="166" width="583" height="18" font="5">iterate the IFS with the given maps is exactly equivalent if one start, for</text>
+<text top="237" left="166" width="583" height="18" font="5">example, with a uniform distribution on [0,1] in the first iteration. So this</text>
+<text top="258" left="166" width="583" height="18" font="5">is just a case when we can present an IFS that gives exact result for this</text>
+<text top="280" left="166" width="312" height="18" font="5">particular class of distribution functions.</text>
+<text top="302" left="193" width="557" height="18" font="5">What follows, on the contrary, is more attractive from the point of view of</text>
+<text top="323" left="166" width="583" height="18" font="5">applications. Suppose that one knows the distribution function F and wants</text>
+<text top="345" left="166" width="583" height="18" font="5">to construct the IFS which has F as fixed point. In general one has to provide</text>
+<text top="367" left="166" width="250" height="18" font="5">an infinite set of affine maps {w</text>
+<text top="374" left="416" width="4" height="11" font="9">i</text>
+<text top="367" left="421" width="328" height="18" font="5">, i ∈ N} and solve an extremal problem to</text>
+<text top="388" left="166" width="345" height="18" font="5">find the corresponding sequence of weigths p</text>
+<text top="396" left="511" width="4" height="11" font="9">i</text>
+<text top="388" left="516" width="233" height="18" font="5">, i ∈ N. This problem has not</text>
+<text top="410" left="166" width="583" height="18" font="5">a general solution but at the same time the solution in terms of a finite,</text>
+<text top="432" left="166" width="583" height="18" font="5">possibily few, number of maps and weigths is crucial in applications like</text>
+<text top="453" left="166" width="274" height="18" font="5">image compression and trasmission.</text>
+<text top="475" left="193" width="434" height="18" font="5">The idea is the following: one can think at n points (x</text>
+<text top="482" left="627" width="6" height="12" font="9">1</text>
+<text top="475" left="634" width="18" height="18" font="5">, x</text>
+<text top="482" left="652" width="6" height="12" font="9">2</text>
+<text top="475" left="659" width="52" height="18" font="5">, . . . , x</text>
+<text top="483" left="711" width="8" height="11" font="9">n</text>
+<text top="475" left="719" width="30" height="18" font="5">) as</text>
+<text top="496" left="166" width="583" height="18" font="5">they were drawn from the distribution function F , and use the same maps</text>
+<text top="518" left="166" width="13" height="18" font="5">w</text>
+<text top="526" left="179" width="4" height="11" font="9">i</text>
+<text top="518" left="191" width="113" height="18" font="5">of the e.d.f. ˆ</text>
+<text top="518" left="290" width="11" height="18" font="5">F</text>
+<text top="526" left="302" width="8" height="11" font="9">n</text>
+<text top="518" left="310" width="222" height="18" font="5">, then instead of using the p</text>
+<text top="526" left="532" width="4" height="11" font="9">i</text>
+<text top="518" left="544" width="205" height="18" font="5">equal to 1/n one solve the</text>
+<text top="540" left="166" width="583" height="18" font="5">extremal problem as it is usual in IFS application. The corresponding IFS</text>
+<text top="561" left="166" width="583" height="18" font="5">should have a fixed point that is a “good” approximation on F . So it is</text>
+<text top="583" left="166" width="557" height="18" font="5">sufficient to store the simulated data and the weights instead of F itself.</text>
+<text top="605" left="193" width="197" height="18" font="5">We take the functional T</text>
+<text top="612" left="389" width="6" height="11" font="9">p</text>
+<text top="605" left="397" width="259" height="18" font="5">F with the particular choice of δ</text>
+<text top="612" left="656" width="4" height="11" font="9">i</text>
+<text top="605" left="668" width="81" height="18" font="5">= 0. This</text>
+<text top="627" left="166" width="583" height="18" font="5">choice is in principle not necessary but simplifies the solution of the problem.</text>
+<text top="648" left="166" width="583" height="18" font="5">We simulated n i.i.d. observations from the distribution function F and we</text>
+<text top="670" left="166" width="251" height="18" font="5">use the maps of the e.d.f. above.</text>
+<text top="692" left="193" width="325" height="18" font="5">We now try to solve the extremal problem</text>
+<text top="731" left="398" width="41" height="18" font="5">min d</text>
+<text top="738" left="439" width="13" height="12" font="9">∞</text>
+<text top="731" left="453" width="17" height="18" font="5">(T</text>
+<text top="739" left="470" width="6" height="11" font="9">p</text>
+<text top="731" left="477" width="40" height="18" font="5">F, F )</text>
+<text top="780" left="166" width="150" height="18" font="5">under the constrain</text>
+<text top="767" left="329" width="8" height="11" font="9">n</text>
+<text top="779" left="324" width="19" height="8" font="5">P</text>
+<text top="800" left="323" width="4" height="11" font="9">i</text>
+<text top="799" left="327" width="16" height="12" font="9">=1</text>
+<text top="780" left="346" width="9" height="18" font="5">p</text>
+<text top="787" left="355" width="4" height="11" font="9">i</text>
+<text top="780" left="366" width="48" height="18" font="5">= 1, p</text>
+<text top="787" left="413" width="4" height="11" font="9">i</text>
+<text top="779" left="424" width="237" height="18" font="5">≥ 0, i = 1, . . . , n (with some p</text>
+<text top="787" left="661" width="4" height="11" font="9">i</text>
+<text top="780" left="671" width="78" height="18" font="5">&gt; 0). The</text>
+<text top="812" left="166" width="208" height="18" font="5">optimal solution will be {ˆ</text>
+<text top="812" left="364" width="9" height="18" font="5">p</text>
+<text top="819" left="373" width="4" height="11" font="9">i</text>
+<text top="812" left="378" width="203" height="18" font="5">, i = 1, . . . , n} such that d</text>
+<text top="819" left="581" width="13" height="12" font="9">∞</text>
+<text top="812" left="595" width="17" height="18" font="5">(T</text>
+<text top="819" left="613" width="6" height="12" font="9">ˆ</text>
+<text top="819" left="612" width="6" height="11" font="9">p</text>
+<text top="812" left="619" width="130" height="18" font="5">F, F ) = 0 that it</text>
+<text top="835" left="166" width="319" height="18" font="5">is true in at least one case: if F equals ˆ</text>
+<text top="835" left="472" width="11" height="18" font="5">F</text>
+<text top="843" left="483" width="8" height="11" font="9">n</text>
+<text top="835" left="498" width="43" height="18" font="5">and p</text>
+<text top="843" left="541" width="4" height="11" font="9">i</text>
+<text top="835" left="552" width="197" height="18" font="5">= 1/n. Otherwise we will</text>
+<text top="857" left="166" width="583" height="18" font="5">obtain some positive number. That means that, in principle, in the worst</text>
+<text top="878" left="166" width="534" height="18" font="5">case we can approximate F with its empirical distribution function ˆ</text>
+<text top="878" left="688" width="11" height="18" font="5">F</text>
+<text top="886" left="699" width="8" height="11" font="9">n</text>
+<text top="878" left="707" width="42" height="18" font="5">. But</text>
+<text top="900" left="166" width="510" height="18" font="5">we can generally do better. So let us solve the problem: let us fix x</text>
+<text top="907" left="676" width="6" height="12" font="9">0</text>
+<text top="900" left="688" width="61" height="18" font="5">= 0 and</text>
+<text top="1040" left="453" width="9" height="18" font="5">8</text>
+</page>
+<page number="9" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="10" height="18" font="5">x</text>
+<text top="201" left="176" width="8" height="11" font="9">n</text>
+<text top="200" left="184" width="16" height="12" font="9">+1</text>
+<text top="193" left="206" width="72" height="18" font="5">= 1, then</text>
+<text top="230" left="169" width="9" height="18" font="5">d</text>
+<text top="237" left="178" width="13" height="12" font="9">∞</text>
+<text top="230" left="192" width="17" height="18" font="5">(T</text>
+<text top="237" left="209" width="6" height="11" font="9">p</text>
+<text top="230" left="216" width="96" height="18" font="5">F, F ) = sup</text>
+<text top="250" left="280" width="7" height="11" font="9">x</text>
+<text top="250" left="287" width="32" height="12" font="9">∈[0,1]</text>
+<text top="229" left="322" width="15" height="18" font="5">|T</text>
+<text top="237" left="337" width="6" height="11" font="9">p</text>
+<text top="230" left="344" width="102" height="18" font="5">F (x) − F (x)|</text>
+<text top="287" left="261" width="14" height="18" font="5">=</text>
+<text top="287" left="296" width="33" height="18" font="5">max</text>
+<text top="303" left="280" width="4" height="11" font="9">i</text>
+<text top="303" left="284" width="60" height="12" font="9">=1,... ,n+1</text>
+<text top="269" left="347" width="14" height="8" font="5">(</text>
+<text top="287" left="374" width="26" height="18" font="5">sup</text>
+<text top="307" left="362" width="11" height="12" font="9">[x</text>
+<text top="312" left="373" width="18" height="9" font="10">i−1</text>
+<text top="308" left="391" width="11" height="11" font="9">,x</text>
+<text top="312" left="402" width="4" height="6" font="10">i</text>
+<text top="307" left="407" width="5" height="12" font="9">)</text>
+<text top="287" left="415" width="15" height="18" font="5">|T</text>
+<text top="295" left="430" width="6" height="11" font="9">p</text>
+<text top="287" left="437" width="102" height="18" font="5">F (x) − F (x)|</text>
+<text top="269" left="539" width="14" height="8" font="5">)</text>
+<text top="348" left="261" width="14" height="18" font="5">=</text>
+<text top="348" left="296" width="33" height="18" font="5">max</text>
+<text top="364" left="280" width="4" height="11" font="9">i</text>
+<text top="363" left="284" width="60" height="12" font="9">=1,... ,n+1</text>
+<text top="330" left="347" width="14" height="8" font="5">(</text>
+<text top="348" left="374" width="26" height="18" font="5">sup</text>
+<text top="368" left="362" width="11" height="12" font="9">[x</text>
+<text top="373" left="373" width="18" height="9" font="10">i−1</text>
+<text top="368" left="391" width="11" height="11" font="9">,x</text>
+<text top="373" left="402" width="4" height="6" font="10">i</text>
+<text top="368" left="407" width="5" height="12" font="9">)</text>
+<text top="329" left="415" width="6" height="8" font="5"></text>
+<text top="340" left="415" width="6" height="8" font="5"></text>
+<text top="351" left="415" width="6" height="8" font="5"></text>
+<text top="361" left="415" width="6" height="8" font="5"></text>
+<text top="372" left="415" width="6" height="8" font="5"></text>
+<text top="330" left="423" width="4" height="11" font="9">i</text>
+<text top="330" left="428" width="16" height="12" font="9">−1</text>
+<text top="344" left="421" width="26" height="8" font="5">X</text>
+<text top="373" left="423" width="5" height="11" font="9">j</text>
+<text top="373" left="429" width="16" height="12" font="9">=1</text>
+<text top="348" left="449" width="9" height="18" font="5">p</text>
+<text top="355" left="458" width="5" height="11" font="9">j</text>
+<text top="347" left="469" width="64" height="18" font="5">− (1 − p</text>
+<text top="355" left="533" width="4" height="11" font="9">i</text>
+<text top="348" left="538" width="44" height="18" font="5">)F (x)</text>
+<text top="329" left="582" width="6" height="8" font="5"></text>
+<text top="340" left="582" width="6" height="8" font="5"></text>
+<text top="351" left="582" width="6" height="8" font="5"></text>
+<text top="361" left="582" width="6" height="8" font="5"></text>
+<text top="372" left="582" width="6" height="8" font="5"></text>
+<text top="330" left="588" width="14" height="8" font="5">)</text>
+<text top="411" left="261" width="14" height="18" font="5">=</text>
+<text top="411" left="296" width="33" height="18" font="5">max</text>
+<text top="427" left="280" width="4" height="11" font="9">i</text>
+<text top="426" left="284" width="60" height="12" font="9">=1,... ,n+1</text>
+<text top="393" left="347" width="20" height="8" font="5">(</text>
+<text top="403" left="362" width="6" height="8" font="5"></text>
+<text top="414" left="362" width="6" height="8" font="5"></text>
+<text top="424" left="362" width="6" height="8" font="5"></text>
+<text top="435" left="362" width="6" height="8" font="5"></text>
+<text top="393" left="370" width="4" height="11" font="9">i</text>
+<text top="393" left="375" width="16" height="12" font="9">−1</text>
+<text top="406" left="368" width="26" height="8" font="5">X</text>
+<text top="436" left="370" width="5" height="11" font="9">j</text>
+<text top="436" left="376" width="16" height="12" font="9">=1</text>
+<text top="411" left="397" width="9" height="18" font="5">p</text>
+<text top="418" left="406" width="5" height="11" font="9">j</text>
+<text top="410" left="416" width="64" height="18" font="5">− (1 − p</text>
+<text top="418" left="480" width="4" height="11" font="9">i</text>
+<text top="411" left="485" width="38" height="18" font="5">)F (x</text>
+<text top="418" left="523" width="4" height="11" font="9">i</text>
+<text top="418" left="527" width="16" height="12" font="9">−1</text>
+<text top="411" left="544" width="7" height="18" font="5">)</text>
+<text top="392" left="551" width="6" height="8" font="5"></text>
+<text top="403" left="551" width="6" height="8" font="5"></text>
+<text top="414" left="551" width="6" height="8" font="5"></text>
+<text top="424" left="551" width="6" height="8" font="5"></text>
+<text top="435" left="551" width="6" height="8" font="5"></text>
+<text top="411" left="560" width="5" height="18" font="5">,</text>
+<text top="392" left="568" width="6" height="8" font="5"></text>
+<text top="403" left="568" width="6" height="8" font="5"></text>
+<text top="414" left="568" width="6" height="8" font="5"></text>
+<text top="424" left="568" width="6" height="8" font="5"></text>
+<text top="435" left="568" width="6" height="8" font="5"></text>
+<text top="393" left="576" width="4" height="11" font="9">i</text>
+<text top="393" left="581" width="16" height="12" font="9">−1</text>
+<text top="406" left="574" width="26" height="8" font="5">X</text>
+<text top="436" left="576" width="5" height="11" font="9">j</text>
+<text top="436" left="582" width="16" height="12" font="9">=1</text>
+<text top="411" left="603" width="9" height="18" font="5">p</text>
+<text top="418" left="611" width="5" height="11" font="9">j</text>
+<text top="410" left="622" width="64" height="18" font="5">− (1 − p</text>
+<text top="418" left="686" width="4" height="11" font="9">i</text>
+<text top="411" left="691" width="38" height="18" font="5">)F (x</text>
+<text top="408" left="729" width="10" height="12" font="9">−</text>
+<text top="420" left="729" width="4" height="11" font="9">i</text>
+<text top="411" left="739" width="7" height="18" font="5">)</text>
+<text top="392" left="746" width="6" height="8" font="5"></text>
+<text top="403" left="746" width="6" height="8" font="5"></text>
+<text top="414" left="746" width="6" height="8" font="5"></text>
+<text top="424" left="746" width="6" height="8" font="5"></text>
+<text top="435" left="746" width="6" height="8" font="5"></text>
+<text top="393" left="752" width="14" height="8" font="5">)</text>
+<text top="466" left="166" width="463" height="18" font="5">and the last line is due to the non-decreasing property of F .</text>
+<text top="501" left="166" width="114" height="16" font="5">Example 4.1.</text>
+<text top="500" left="290" width="460" height="18" font="8"><i>Suppose that </i>F <i>is the distribution function of a uniform dis-</i></text>
+<text top="522" left="166" width="580" height="18" font="8"><i>tribution on [0,1] and suppose that we can only draw one observation from </i>F</text>
+<text top="544" left="166" width="156" height="18" font="8"><i>(or choose a point) </i>x</text>
+<text top="551" left="323" width="6" height="12" font="9">1</text>
+<text top="544" left="330" width="295" height="18" font="8"><i>. The empirical distribution function </i>ˆ</text>
+<text top="544" left="612" width="11" height="18" font="5">F</text>
+<text top="551" left="623" width="6" height="12" font="9">1</text>
+<text top="544" left="631" width="58" height="18" font="5">(x) = χ</text>
+<text top="551" left="689" width="13" height="12" font="9">{x</text>
+<text top="556" left="702" width="5" height="7" font="10">1</text>
+<text top="552" left="708" width="4" height="11" font="9">,</text>
+<text top="551" left="712" width="13" height="12" font="9">1}</text>
+<text top="544" left="725" width="24" height="18" font="5">(x)</text>
+<text top="566" left="166" width="583" height="18" font="8"><i>is usless if we have in mind to approximate </i>F <i>. Let us use the second tech-</i></text>
+<text top="587" left="166" width="91" height="18" font="8"><i>nique: fix </i>w</text>
+<text top="594" left="257" width="6" height="12" font="9">1</text>
+<text top="587" left="270" width="41" height="18" font="5">: [0, x</text>
+<text top="594" left="311" width="6" height="12" font="9">1</text>
+<text top="587" left="318" width="66" height="18" font="5">) → [0, x</text>
+<text top="594" left="384" width="6" height="12" font="9">1</text>
+<text top="587" left="392" width="60" height="18" font="5">) <i>and </i>w</text>
+<text top="594" left="451" width="6" height="12" font="9">2</text>
+<text top="587" left="464" width="25" height="18" font="5">: [x</text>
+<text top="594" left="488" width="6" height="12" font="9">1</text>
+<text top="587" left="495" width="65" height="18" font="5">, 1] → [x</text>
+<text top="594" left="560" width="6" height="12" font="9">1</text>
+<text top="587" left="567" width="182" height="18" font="5">, 1]<i>. We try to solve the</i></text>
+<text top="609" left="166" width="183" height="18" font="8"><i>above extremal problem.</i></text>
+<text top="662" left="169" width="9" height="18" font="5">d</text>
+<text top="669" left="179" width="13" height="12" font="9">∞</text>
+<text top="662" left="192" width="17" height="18" font="5">(T</text>
+<text top="670" left="209" width="6" height="11" font="9">p</text>
+<text top="662" left="216" width="59" height="18" font="5">F, F ) =</text>
+<text top="662" left="296" width="33" height="18" font="5">max</text>
+<text top="678" left="280" width="4" height="11" font="9">i</text>
+<text top="677" left="284" width="60" height="12" font="9">=1,... ,n+1</text>
+<text top="644" left="347" width="20" height="8" font="5">(</text>
+<text top="654" left="362" width="6" height="8" font="5"></text>
+<text top="665" left="362" width="6" height="8" font="5"></text>
+<text top="676" left="362" width="6" height="8" font="5"></text>
+<text top="686" left="362" width="6" height="8" font="5"></text>
+<text top="645" left="370" width="4" height="11" font="9">i</text>
+<text top="644" left="375" width="16" height="12" font="9">−1</text>
+<text top="658" left="368" width="26" height="8" font="5">X</text>
+<text top="688" left="370" width="5" height="11" font="9">j</text>
+<text top="687" left="376" width="16" height="12" font="9">=1</text>
+<text top="662" left="397" width="9" height="18" font="5">p</text>
+<text top="670" left="406" width="5" height="11" font="9">j</text>
+<text top="662" left="416" width="64" height="18" font="5">− (1 − p</text>
+<text top="670" left="480" width="4" height="11" font="9">i</text>
+<text top="662" left="485" width="38" height="18" font="5">)F (x</text>
+<text top="670" left="523" width="4" height="11" font="9">i</text>
+<text top="662" left="528" width="7" height="18" font="5">)</text>
+<text top="643" left="535" width="6" height="8" font="5"></text>
+<text top="654" left="535" width="6" height="8" font="5"></text>
+<text top="665" left="535" width="6" height="8" font="5"></text>
+<text top="676" left="535" width="6" height="8" font="5"></text>
+<text top="686" left="535" width="6" height="8" font="5"></text>
+<text top="662" left="544" width="5" height="18" font="5">,</text>
+<text top="643" left="552" width="6" height="8" font="5"></text>
+<text top="654" left="552" width="6" height="8" font="5"></text>
+<text top="665" left="552" width="6" height="8" font="5"></text>
+<text top="676" left="552" width="6" height="8" font="5"></text>
+<text top="686" left="552" width="6" height="8" font="5"></text>
+<text top="645" left="560" width="4" height="11" font="9">i</text>
+<text top="644" left="564" width="16" height="12" font="9">−1</text>
+<text top="658" left="557" width="26" height="8" font="5">X</text>
+<text top="688" left="559" width="5" height="11" font="9">j</text>
+<text top="687" left="565" width="16" height="12" font="9">=1</text>
+<text top="662" left="586" width="9" height="18" font="5">p</text>
+<text top="670" left="595" width="5" height="11" font="9">j</text>
+<text top="662" left="606" width="64" height="18" font="5">− (1 − p</text>
+<text top="670" left="670" width="4" height="11" font="9">i</text>
+<text top="662" left="675" width="38" height="18" font="5">)F (x</text>
+<text top="670" left="713" width="4" height="11" font="9">i</text>
+<text top="669" left="717" width="16" height="12" font="9">+1</text>
+<text top="662" left="734" width="7" height="18" font="5">)</text>
+<text top="643" left="741" width="6" height="8" font="5"></text>
+<text top="654" left="741" width="6" height="8" font="5"></text>
+<text top="665" left="741" width="6" height="8" font="5"></text>
+<text top="676" left="741" width="6" height="8" font="5"></text>
+<text top="686" left="741" width="6" height="8" font="5"></text>
+<text top="644" left="747" width="14" height="8" font="5">)</text>
+<text top="719" left="261" width="51" height="18" font="5">= max</text>
+<text top="706" left="313" width="13" height="8" font="5"></text>
+<text top="718" left="326" width="73" height="18" font="5">| − (1 − p</text>
+<text top="726" left="399" width="6" height="12" font="9">1</text>
+<text top="719" left="407" width="115" height="18" font="5">) · 0|, | − (1 − p</text>
+<text top="726" left="521" width="6" height="12" font="9">1</text>
+<text top="719" left="528" width="17" height="18" font="5">)x</text>
+<text top="726" left="545" width="6" height="12" font="9">1</text>
+<text top="718" left="552" width="10" height="18" font="5">|,</text>
+<text top="767" left="270" width="14" height="18" font="5">|p</text>
+<text top="775" left="284" width="6" height="12" font="9">1</text>
+<text top="767" left="295" width="64" height="18" font="5">− (1 − p</text>
+<text top="775" left="359" width="6" height="12" font="9">2</text>
+<text top="768" left="366" width="17" height="18" font="5">)x</text>
+<text top="775" left="383" width="6" height="12" font="9">1</text>
+<text top="767" left="390" width="27" height="18" font="5">|, |p</text>
+<text top="775" left="417" width="6" height="12" font="9">1</text>
+<text top="767" left="428" width="64" height="18" font="5">− (1 − p</text>
+<text top="775" left="492" width="6" height="12" font="9">2</text>
+<text top="768" left="499" width="12" height="18" font="5">)|</text>
+<text top="755" left="511" width="13" height="8" font="5"></text>
+<text top="806" left="261" width="87" height="18" font="5">= max{0, x</text>
+<text top="813" left="348" width="6" height="12" font="9">1</text>
+<text top="806" left="356" width="46" height="18" font="5">(1 − p</text>
+<text top="813" left="402" width="6" height="12" font="9">1</text>
+<text top="806" left="409" width="24" height="18" font="5">), p</text>
+<text top="813" left="433" width="6" height="12" font="9">1</text>
+<text top="806" left="440" width="47" height="18" font="5">(1 − x</text>
+<text top="813" left="487" width="6" height="12" font="9">1</text>
+<text top="806" left="494" width="37" height="18" font="5">), 0},</text>
+<text top="806" left="570" width="10" height="18" font="5">x</text>
+<text top="813" left="580" width="6" height="12" font="9">1</text>
+<text top="806" left="592" width="76" height="18" font="5">∈ (0, 1), p</text>
+<text top="813" left="668" width="6" height="12" font="9">1</text>
+<text top="806" left="679" width="26" height="18" font="5">+ p</text>
+<text top="813" left="706" width="6" height="12" font="9">2</text>
+<text top="806" left="718" width="35" height="18" font="5">= 1 .</text>
+<text top="842" left="166" width="262" height="18" font="8"><i>now minimazing with respect to </i>p</text>
+<text top="850" left="428" width="6" height="12" font="9">1</text>
+<text top="842" left="442" width="44" height="18" font="8"><i>and </i>p</text>
+<text top="850" left="486" width="6" height="12" font="9">2</text>
+<text top="842" left="500" width="167" height="18" font="8"><i>under the constrain </i>p</text>
+<text top="850" left="667" width="6" height="12" font="9">1</text>
+<text top="842" left="679" width="27" height="18" font="5">+ p</text>
+<text top="850" left="706" width="6" height="12" font="9">2</text>
+<text top="842" left="720" width="29" height="18" font="5">= 1</text>
+<text top="864" left="166" width="158" height="18" font="8"><i>one obtains simply </i>p</text>
+<text top="871" left="324" width="6" height="12" font="9">1</text>
+<text top="864" left="336" width="29" height="18" font="5">= x</text>
+<text top="871" left="365" width="6" height="12" font="9">1</text>
+<text top="864" left="372" width="251" height="18" font="8"><i>. The resulting functional will be</i></text>
+<text top="916" left="290" width="10" height="18" font="5">T</text>
+<text top="924" left="301" width="7" height="11" font="9">x</text>
+<text top="928" left="308" width="5" height="7" font="10">1</text>
+<text top="916" left="315" width="10" height="18" font="5">u</text>
+<text top="916" left="325" width="42" height="18" font="5">(x) =</text>
+<text top="898" left="372" width="14" height="8" font="5">(</text>
+<text top="904" left="386" width="10" height="18" font="5">x</text>
+<text top="911" left="396" width="6" height="12" font="9">1</text>
+<text top="904" left="406" width="39" height="18" font="5">u(x),</text>
+<text top="904" left="546" width="63" height="18" font="5">x ∈ [0, x</text>
+<text top="911" left="609" width="6" height="12" font="9">1</text>
+<text top="904" left="617" width="7" height="18" font="5">)</text>
+<text top="930" left="386" width="47" height="18" font="5">(1 − x</text>
+<text top="937" left="434" width="6" height="12" font="9">1</text>
+<text top="930" left="441" width="75" height="18" font="5">) u(x) + x</text>
+<text top="937" left="516" width="6" height="12" font="9">1</text>
+<text top="930" left="523" width="5" height="18" font="5">,</text>
+<text top="930" left="546" width="47" height="18" font="5">x ∈ [x</text>
+<text top="937" left="593" width="6" height="12" font="9">1</text>
+<text top="930" left="600" width="22" height="18" font="5">, 1]</text>
+<text top="973" left="166" width="160" height="18" font="8"><i>and it is clear that </i>T</text>
+<text top="981" left="326" width="7" height="11" font="9">x</text>
+<text top="985" left="333" width="5" height="7" font="10">1</text>
+<text top="973" left="340" width="10" height="18" font="5">u</text>
+<text top="973" left="350" width="58" height="18" font="5">(x) = T</text>
+<text top="981" left="408" width="7" height="11" font="9">x</text>
+<text top="985" left="416" width="5" height="7" font="10">1</text>
+<text top="973" left="423" width="321" height="18" font="5">x<i>, for one iteration only, is closer than </i>ˆ</text>
+<text top="973" left="731" width="11" height="18" font="5">F</text>
+<text top="980" left="742" width="6" height="12" font="9">1</text>
+<text top="995" left="166" width="452" height="18" font="8"><i>to </i>F (x) = x <i>and the approximation is better and better as </i>x</text>
+<text top="1002" left="619" width="6" height="12" font="9">1</text>
+<text top="995" left="631" width="69" height="18" font="5">→ 0 <i>or </i>x</text>
+<text top="1002" left="700" width="6" height="12" font="9">1</text>
+<text top="995" left="712" width="37" height="18" font="5">→ 1<i>.</i></text>
+<text top="1040" left="453" width="9" height="18" font="5">9</text>
+</page>
+<page number="10" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="193" width="556" height="18" font="5">We propose now a more efficient method to approximate F when F is</text>
+<text top="215" left="166" width="583" height="18" font="5">not to be estimated. We have already mentioned that the e.d.f. is the better</text>
+<text top="237" left="166" width="583" height="18" font="5">estimator of an unknown distribution function F , so one can think to sample</text>
+<text top="258" left="166" width="473" height="18" font="5">n points from F and use their values to approximate F by ˆ</text>
+<text top="258" left="627" width="11" height="18" font="5">F</text>
+<text top="266" left="638" width="8" height="11" font="9">n</text>
+<text top="258" left="647" width="103" height="18" font="5">. As n → ∞,</text>
+<text top="280" left="166" width="484" height="18" font="5">the statistical literature assures almost sure convergence of ˆ</text>
+<text top="280" left="638" width="11" height="18" font="5">F</text>
+<text top="287" left="649" width="8" height="11" font="9">n</text>
+<text top="280" left="657" width="92" height="18" font="5">(x) to F (x)</text>
+<text top="302" left="166" width="530" height="18" font="5">for every x. We also have shown the exact IFS representation of ˆ</text>
+<text top="302" left="684" width="11" height="18" font="5">F</text>
+<text top="309" left="695" width="8" height="11" font="9">n</text>
+<text top="302" left="704" width="45" height="18" font="5">. But</text>
+<text top="323" left="166" width="583" height="18" font="5">this method is not efficient. On the contrary, suppose that F is a continuous</text>
+<text top="345" left="166" width="583" height="18" font="5">distribution function. As we know F , we can think to approximate it by</text>
+<text top="367" left="166" width="492" height="18" font="5">means of continuous functions instead of simple functions like ˆ</text>
+<text top="367" left="645" width="11" height="18" font="5">F</text>
+<text top="374" left="657" width="8" height="11" font="9">n</text>
+<text top="367" left="665" width="84" height="18" font="5">. Choose n</text>
+<text top="388" left="166" width="70" height="18" font="5">points (x</text>
+<text top="395" left="236" width="6" height="12" font="9">1</text>
+<text top="388" left="243" width="52" height="18" font="5">, . . . , x</text>
+<text top="396" left="295" width="8" height="11" font="9">n</text>
+<text top="388" left="304" width="155" height="18" font="5">) and assume that x</text>
+<text top="395" left="459" width="6" height="12" font="9">0</text>
+<text top="388" left="471" width="77" height="18" font="5">= 0 and x</text>
+<text top="396" left="548" width="8" height="11" font="9">n</text>
+<text top="395" left="556" width="16" height="12" font="9">+1</text>
+<text top="388" left="578" width="171" height="18" font="5">= 1. One can costruct</text>
+<text top="410" left="166" width="181" height="18" font="5">the following functional</text>
+<text top="453" left="190" width="10" height="18" font="5">T</text>
+<text top="461" left="201" width="8" height="11" font="9">F</text>
+<text top="453" left="211" width="95" height="18" font="5">u(x) = (F (x</text>
+<text top="461" left="306" width="4" height="11" font="9">i</text>
+<text top="453" left="311" width="59" height="18" font="5">) − F (x</text>
+<text top="461" left="370" width="4" height="11" font="9">i</text>
+<text top="460" left="375" width="16" height="12" font="9">−1</text>
+<text top="453" left="392" width="24" height="18" font="5">))u</text>
+<text top="440" left="419" width="59" height="18" font="5"> x − x</text>
+<text top="448" left="478" width="4" height="11" font="9">i</text>
+<text top="448" left="482" width="16" height="12" font="9">−1</text>
+<text top="465" left="433" width="10" height="18" font="5">x</text>
+<text top="473" left="443" width="4" height="11" font="9">i</text>
+<text top="465" left="452" width="28" height="18" font="5">− x</text>
+<text top="473" left="480" width="4" height="11" font="9">i</text>
+<text top="472" left="484" width="16" height="12" font="9">−1</text>
+<text top="440" left="503" width="13" height="8" font="5"></text>
+<text top="453" left="521" width="48" height="18" font="5">+ F (x</text>
+<text top="461" left="569" width="4" height="11" font="9">i</text>
+<text top="460" left="573" width="16" height="12" font="9">−1</text>
+<text top="453" left="590" width="12" height="18" font="5">),</text>
+<text top="453" left="622" width="47" height="18" font="5">x ∈ [x</text>
+<text top="461" left="669" width="4" height="11" font="9">i</text>
+<text top="460" left="673" width="16" height="12" font="9">−1</text>
+<text top="453" left="690" width="18" height="18" font="5">, x</text>
+<text top="461" left="708" width="4" height="11" font="9">i</text>
+<text top="453" left="713" width="12" height="18" font="5">),</text>
+<text top="497" left="166" width="260" height="18" font="5">i = 1, . . . , n + 1. Notice that T</text>
+<text top="505" left="427" width="8" height="11" font="9">F</text>
+<text top="497" left="446" width="276" height="18" font="5">is a particular case of (<a href="xml/0111152v1.html#3">1) </a>where p</text>
+<text top="505" left="721" width="4" height="11" font="9">i</text>
+<text top="497" left="735" width="14" height="18" font="5">=</text>
+<text top="519" left="166" width="31" height="18" font="5">F (x</text>
+<text top="526" left="197" width="4" height="11" font="9">i</text>
+<text top="519" left="202" width="60" height="18" font="5">) − F (x</text>
+<text top="526" left="262" width="4" height="11" font="9">i</text>
+<text top="526" left="266" width="16" height="12" font="9">−1</text>
+<text top="519" left="283" width="26" height="18" font="5">), δ</text>
+<text top="526" left="309" width="4" height="11" font="9">i</text>
+<text top="519" left="319" width="81" height="18" font="5">= 0 and w</text>
+<text top="526" left="400" width="4" height="11" font="9">i</text>
+<text top="519" left="405" width="120" height="18" font="5">(x) : [0, 1) → [x</text>
+<text top="526" left="525" width="4" height="11" font="9">i</text>
+<text top="526" left="529" width="16" height="12" font="9">−1</text>
+<text top="519" left="546" width="18" height="18" font="5">, x</text>
+<text top="526" left="564" width="4" height="11" font="9">i</text>
+<text top="519" left="569" width="180" height="18" font="5">). This is a contraction</text>
+<text top="540" left="166" width="196" height="18" font="5">and, at each iteration, T</text>
+<text top="548" left="362" width="8" height="11" font="9">F</text>
+<text top="540" left="381" width="304" height="18" font="5">passes exactly through the points F (x</text>
+<text top="548" left="685" width="4" height="11" font="9">i</text>
+<text top="540" left="690" width="59" height="18" font="5">). It is</text>
+<text top="562" left="166" width="583" height="18" font="5">almost evident that, when n increases the fixed point of the above functional</text>
+<text top="584" left="166" width="583" height="18" font="5">will be “close” to F . So again, instead of sending an infinite set of weigths</text>
+<text top="605" left="166" width="583" height="18" font="5">and maps, one can send n points and the values of F evaluated at these</text>
+<text top="627" left="166" width="582" height="18" font="5">points. All in summary, only 2 · n informations should be sent to reconstruct</text>
+<text top="649" left="166" width="19" height="18" font="5">F .</text>
+<text top="670" left="193" width="556" height="18" font="5">For n small, the choice of a good grid of point is critical. So one question</text>
+<text top="692" left="166" width="583" height="18" font="5">arises: how to choose the n points ? One can proceed case by case but</text>
+<text top="714" left="166" width="583" height="18" font="5">as F is a distribution function one can use its properties. We propose the</text>
+<text top="735" left="166" width="283" height="18" font="5">following solution: take n points (u</text>
+<text top="743" left="449" width="6" height="12" font="9">1</text>
+<text top="735" left="456" width="18" height="18" font="5">, u</text>
+<text top="743" left="474" width="6" height="12" font="9">2</text>
+<text top="735" left="481" width="52" height="18" font="5">, . . . , u</text>
+<text top="743" left="534" width="8" height="11" font="9">n</text>
+<text top="735" left="542" width="207" height="18" font="5">) equally spaced [0, 1] and</text>
+<text top="757" left="166" width="62" height="18" font="5">define x</text>
+<text top="765" left="228" width="4" height="11" font="9">i</text>
+<text top="757" left="241" width="32" height="18" font="5">= F</text>
+<text top="755" left="276" width="16" height="12" font="9">−1</text>
+<text top="757" left="293" width="17" height="18" font="5">(u</text>
+<text top="765" left="310" width="4" height="11" font="9">i</text>
+<text top="757" left="315" width="234" height="18" font="5">), i = 1, . . . , n. The points x</text>
+<text top="765" left="548" width="4" height="11" font="9">i</text>
+<text top="757" left="561" width="188" height="18" font="5">are just the quantiles of</text>
+<text top="779" left="166" width="583" height="18" font="5">F . In this way, it is assured that the profile of F is followed as smooth</text>
+<text top="800" left="166" width="297" height="18" font="5">as possible. In fact, if two quantiles x</text>
+<text top="808" left="463" width="4" height="11" font="9">i</text>
+<text top="800" left="475" width="45" height="18" font="5">and x</text>
+<text top="808" left="520" width="4" height="11" font="9">i</text>
+<text top="808" left="524" width="16" height="12" font="9">+1</text>
+<text top="800" left="548" width="201" height="18" font="5">are relatively distant each</text>
+<text top="822" left="166" width="414" height="18" font="5">other, than F is slowly increasing in the interval (x</text>
+<text top="830" left="580" width="4" height="11" font="9">i</text>
+<text top="822" left="585" width="18" height="18" font="5">, x</text>
+<text top="830" left="603" width="4" height="11" font="9">i</text>
+<text top="829" left="607" width="16" height="12" font="9">+1</text>
+<text top="822" left="624" width="124" height="18" font="5">) and viceversa.</text>
+<text top="844" left="166" width="583" height="18" font="5">This method is more efficient than simply taking equally spaced points on</text>
+<text top="865" left="166" width="583" height="18" font="5">[0, 1]. If this method of choosing the points is used, the the functional simply</text>
+<text top="887" left="166" width="81" height="18" font="5">appears as</text>
+<text top="930" left="193" width="10" height="18" font="5">T</text>
+<text top="938" left="204" width="8" height="11" font="9">F</text>
+<text top="930" left="214" width="52" height="18" font="5">u(x) =</text>
+<text top="918" left="274" width="9" height="18" font="5">1</text>
+<text top="943" left="273" width="10" height="18" font="5">n</text>
+<text top="930" left="285" width="10" height="18" font="5">u</text>
+<text top="918" left="299" width="59" height="18" font="5"> x − x</text>
+<text top="926" left="358" width="4" height="11" font="9">i</text>
+<text top="925" left="362" width="16" height="12" font="9">−1</text>
+<text top="943" left="313" width="10" height="18" font="5">x</text>
+<text top="950" left="323" width="4" height="11" font="9">i</text>
+<text top="942" left="332" width="28" height="18" font="5">− x</text>
+<text top="950" left="360" width="4" height="11" font="9">i</text>
+<text top="950" left="365" width="16" height="12" font="9">−1</text>
+<text top="918" left="383" width="13" height="8" font="5"></text>
+<text top="930" left="401" width="14" height="18" font="5">+</text>
+<text top="918" left="420" width="37" height="18" font="5">i − 1</text>
+<text top="943" left="433" width="10" height="18" font="5">n</text>
+<text top="930" left="459" width="5" height="18" font="5">,</text>
+<text top="930" left="484" width="47" height="18" font="5">x ∈ [x</text>
+<text top="938" left="531" width="4" height="11" font="9">i</text>
+<text top="937" left="535" width="16" height="12" font="9">−1</text>
+<text top="930" left="552" width="18" height="18" font="5">, x</text>
+<text top="938" left="570" width="4" height="11" font="9">i</text>
+<text top="930" left="575" width="147" height="18" font="5">), i = 1, . . . , n + 1 .</text>
+<text top="973" left="166" width="396" height="18" font="5">And this suggests an empirical estimator of F . If q</text>
+<text top="981" left="563" width="4" height="11" font="9">i</text>
+<text top="973" left="568" width="181" height="18" font="5">, i = 1, 2, . . . , k, k &lt; n,</text>
+<text top="995" left="166" width="333" height="18" font="5">are the empirical quantiles of the sample (x</text>
+<text top="1002" left="499" width="6" height="12" font="9">1</text>
+<text top="995" left="507" width="18" height="18" font="5">, x</text>
+<text top="1002" left="525" width="6" height="12" font="9">2</text>
+<text top="995" left="532" width="52" height="18" font="5">, . . . , x</text>
+<text top="1003" left="584" width="8" height="11" font="9">n</text>
+<text top="995" left="592" width="72" height="18" font="5">) of order</text>
+<text top="993" left="673" width="4" height="11" font="9">i</text>
+<text top="1006" left="672" width="7" height="11" font="9">k</text>
+<text top="995" left="680" width="69" height="18" font="5">, then an</text>
+<text top="1040" left="449" width="18" height="18" font="5">10</text>
+</page>
+<page number="11" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="166" width="544" height="18" font="5">estimator of the unknown distribution function F should be written as</text>
+<text top="233" left="279" width="9" height="18" font="5">˜</text>
+<text top="238" left="275" width="11" height="18" font="5">F</text>
+<text top="245" left="287" width="17" height="12" font="9">(k)</text>
+<text top="238" left="304" width="52" height="18" font="5">u(x) =</text>
+<text top="226" left="364" width="9" height="18" font="5">1</text>
+<text top="250" left="363" width="9" height="18" font="5">k</text>
+<text top="238" left="375" width="10" height="18" font="5">u</text>
+<text top="225" left="388" width="56" height="18" font="5"> x − q</text>
+<text top="233" left="444" width="4" height="11" font="9">i</text>
+<text top="233" left="448" width="16" height="12" font="9">−1</text>
+<text top="250" left="403" width="8" height="18" font="5">q</text>
+<text top="258" left="410" width="4" height="11" font="9">i</text>
+<text top="250" left="420" width="26" height="18" font="5">− q</text>
+<text top="258" left="445" width="4" height="11" font="9">i</text>
+<text top="257" left="449" width="16" height="12" font="9">−1</text>
+<text top="225" left="468" width="13" height="8" font="5"></text>
+<text top="238" left="485" width="14" height="18" font="5">+</text>
+<text top="226" left="507" width="6" height="18" font="5">i</text>
+<text top="250" left="505" width="9" height="18" font="5">k</text>
+<text top="238" left="516" width="5" height="18" font="5">,</text>
+<text top="238" left="542" width="45" height="18" font="5">x ∈ [q</text>
+<text top="246" left="586" width="4" height="11" font="9">i</text>
+<text top="245" left="591" width="16" height="12" font="9">−1</text>
+<text top="238" left="608" width="16" height="18" font="5">, q</text>
+<text top="246" left="623" width="4" height="11" font="9">i</text>
+<text top="238" left="629" width="12" height="18" font="5">),</text>
+<text top="287" left="166" width="161" height="18" font="5">i = 1, . . . , k, with q</text>
+<text top="294" left="327" width="6" height="12" font="9">0</text>
+<text top="287" left="343" width="66" height="18" font="5">= and q</text>
+<text top="295" left="409" width="7" height="11" font="9">k</text>
+<text top="294" left="416" width="16" height="12" font="9">+1</text>
+<text top="287" left="441" width="308" height="18" font="5">= 1 As n and k = k(n) go to infinity</text>
+<text top="304" left="170" width="9" height="18" font="5">ˆ</text>
+<text top="309" left="166" width="11" height="18" font="5">F</text>
+<text top="316" left="178" width="17" height="12" font="9">(k)</text>
+<text top="309" left="202" width="311" height="18" font="5">converges to F . Relative efficiency of ˜</text>
+<text top="309" left="500" width="11" height="18" font="5">F</text>
+<text top="316" left="512" width="17" height="12" font="9">(k)</text>
+<text top="309" left="536" width="137" height="18" font="5">with respect to ˆ</text>
+<text top="309" left="660" width="11" height="18" font="5">F</text>
+<text top="316" left="672" width="8" height="11" font="9">n</text>
+<text top="309" left="687" width="62" height="18" font="5">is inves-</text>
+<text top="331" left="166" width="583" height="18" font="5">tigated via simulations. The results are reported in Table <a href="xml/0111152v1.html#13">4 </a>for differently</text>
+<text top="352" left="166" width="549" height="18" font="5">shaped distribution functions and sample sizes. What emerges is that ˜</text>
+<text top="352" left="703" width="11" height="18" font="5">F</text>
+<text top="359" left="714" width="17" height="12" font="9">(k)</text>
+<text top="352" left="737" width="12" height="18" font="5">is</text>
+<text top="374" left="166" width="404" height="18" font="5">equivalent to the e.d.f. in the sense of the sup-norm.</text>
+<text top="429" left="166" width="136" height="23" font="6">References</text>
+<text top="473" left="210" width="539" height="18" font="5">Arnold, L., Crauel H. (1992), Iterated function systems and multiplica-</text>
+<text top="495" left="210" width="539" height="18" font="5">tive ergodic theory, Diffusion processes and related problems in analysis</text>
+<text top="516" left="210" width="539" height="18" font="5">(Pinsky M.A., Vihstutz V. eds.), vol. II, Stochastics flows, Progress in</text>
+<text top="538" left="210" width="330" height="18" font="5">probability 27, Birk¨auser, Boston, 283-305.</text>
+<text top="574" left="210" width="539" height="18" font="5">Barnsley, M.F., Demko, S. (1985), Iterated function systems and the</text>
+<text top="596" left="210" width="539" height="18" font="5">global construction of fractals, Proc. Roy. Soc. London, Ser A, 399,</text>
+<text top="618" left="210" width="64" height="18" font="5">243-275.</text>
+<text top="654" left="210" width="539" height="18" font="5">Cabrelli, C.A., Forte, B., Molter, U.M., Vrscay, E.R. (1992), Iterated</text>
+<text top="676" left="210" width="539" height="18" font="5">fuzzy set systems: a new approach to the inverse problem for fractals</text>
+<text top="698" left="210" width="391" height="18" font="5">and other sets, J. Math. Anal. Appl., 171, 79-100.</text>
+<text top="734" left="210" width="539" height="18" font="5">Elton, J.H., Piccioni, M. (1992), Iterated function systems arising from</text>
+<text top="756" left="210" width="539" height="18" font="5">recursive estimation problems, Probab. Theory Related Fields, 91,</text>
+<text top="777" left="210" width="64" height="18" font="5">103-114.</text>
+<text top="814" left="210" width="539" height="18" font="5">Forte, B., Vrscay, E.R. (1994), Solving the inverse problem for func-</text>
+<text top="835" left="210" width="539" height="18" font="5">tion/image approximation using iterated function systems, I. Theoret-</text>
+<text top="857" left="210" width="249" height="18" font="5">ical basis, Fractal, 2, 3, 325-334.</text>
+<text top="894" left="210" width="539" height="18" font="5">Hutchinson, J., (1981), Fractals and self-similarity, Indiana Univ. J.</text>
+<text top="916" left="210" width="46" height="16" font="5">Math.</text>
+<text top="915" left="256" width="125" height="18" font="5">, 30, 5, 713-747.</text>
+<text top="952" left="210" width="538" height="18" font="5">Kwiecinska, A.A., Slomczynski, W. (2000), Random dynamical systems</text>
+<text top="973" left="210" width="539" height="18" font="5">arising from iterated function systems with place-dependent probabil-</text>
+<text top="995" left="210" width="330" height="18" font="5">ities, Stat. and Prob. Letters, 50, 401-407.</text>
+<text top="1040" left="449" width="18" height="18" font="5">11</text>
+</page>
+<page number="12" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="193" left="210" width="539" height="18" font="5">La Torre, D., Rocca, M. (1999), Iterated function systems and opti-</text>
+<text top="215" left="210" width="539" height="18" font="5">mization problems, Rend. Sem. Mat. Messina SER II, 6, 21, 165-173.</text>
+<text top="252" left="210" width="539" height="18" font="5">Millar, P.W. (1979), Asymptotic minimax theorems for the sample dis-</text>
+<text top="273" left="210" width="539" height="18" font="5">tribution function, <i>Z. Wahrscheinlichkeitstheorie Verw. Geb.</i>, 48, 233-</text>
+<text top="295" left="210" width="31" height="18" font="5">252.</text>
+<text top="331" left="210" width="539" height="18" font="5">Millar, P.W. (1983), The minimax principle in asymptotic statistical</text>
+<text top="353" left="210" width="342" height="18" font="5">theory, <i>Lecture Notes in Math.</i>, 976, 76-265.</text>
+<text top="390" left="210" width="539" height="18" font="5">Montrucchio, L., Privileggi, F. (1999), Fractal steady states in stochas-</text>
+<text top="411" left="210" width="432" height="18" font="5">tic optimal control models, Ann. Op. Res., 88, 183-197.</text>
+<text top="448" left="210" width="537" height="18" font="5">Rockafellar, R.T., Wets, R.J-B. (1998), Variational analysis, Springer.</text>
+<text top="1040" left="449" width="18" height="18" font="5">12</text>
+</page>
+<page number="13" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="238" left="175" width="158" height="18" font="5">number of points d</text>
+<text top="246" left="333" width="13" height="12" font="9">∞</text>
+<text top="231" left="350" width="24" height="21" font="5"> ˜</text>
+<text top="238" left="360" width="11" height="18" font="5">F</text>
+<text top="234" left="374" width="16" height="12" font="9">(4)</text>
+<text top="248" left="372" width="17" height="12" font="9">(k)</text>
+<text top="238" left="391" width="29" height="18" font="5">u, F</text>
+<text top="231" left="423" width="11" height="8" font="5"></text>
+<text top="238" left="451" width="9" height="18" font="5">d</text>
+<text top="246" left="461" width="13" height="12" font="9">∞</text>
+<text top="231" left="477" width="23" height="21" font="5"> ˆ</text>
+<text top="238" left="488" width="11" height="18" font="5">F</text>
+<text top="246" left="499" width="8" height="11" font="9">n</text>
+<text top="238" left="507" width="19" height="18" font="5">, F</text>
+<text top="231" left="529" width="11" height="8" font="5"></text>
+<text top="234" left="560" width="16" height="12" font="9">(a)</text>
+<text top="249" left="560" width="15" height="12" font="9">(b)</text>
+<text top="238" left="582" width="175" height="18" font="5">· 100% distribution F</text>
+<text top="265" left="186" width="106" height="18" font="5">drawn from F</text>
+<text top="265" left="368" width="22" height="18" font="5">(a)</text>
+<text top="265" left="484" width="23" height="18" font="5">(b)</text>
+<text top="287" left="232" width="18" height="18" font="5">10</text>
+<text top="287" left="350" width="58" height="18" font="5">0.20232</text>
+<text top="287" left="467" width="58" height="18" font="5">0.24103</text>
+<text top="287" left="568" width="55" height="18" font="5">83.94%</text>
+<text top="287" left="669" width="72" height="18" font="5">Beta(2,2)</text>
+<text top="309" left="232" width="18" height="18" font="5">50</text>
+<text top="309" left="350" width="58" height="18" font="5">0.09376</text>
+<text top="309" left="467" width="58" height="18" font="5">0.10241</text>
+<text top="309" left="568" width="55" height="18" font="5">91.56%</text>
+<text top="309" left="669" width="72" height="18" font="5">Beta(2,2)</text>
+<text top="331" left="228" width="26" height="18" font="5">100</text>
+<text top="331" left="350" width="58" height="18" font="5">0.06989</text>
+<text top="331" left="467" width="58" height="18" font="5">0.07131</text>
+<text top="331" left="568" width="55" height="18" font="5">98.01%</text>
+<text top="331" left="669" width="72" height="18" font="5">Beta(2,2)</text>
+<text top="352" left="228" width="26" height="18" font="5">500</text>
+<text top="352" left="350" width="58" height="18" font="5">0.02884</text>
+<text top="352" left="467" width="58" height="18" font="5">0.02917</text>
+<text top="352" left="568" width="55" height="18" font="5">98.87%</text>
+<text top="352" left="669" width="72" height="18" font="5">Beta(2,2)</text>
+<text top="374" left="223" width="35" height="18" font="5">1000</text>
+<text top="374" left="350" width="58" height="18" font="5">0.02475</text>
+<text top="374" left="467" width="58" height="18" font="5">0.02506</text>
+<text top="374" left="568" width="55" height="18" font="5">98.78%</text>
+<text top="374" left="669" width="72" height="18" font="5">Beta(2,2)</text>
+<text top="396" left="232" width="18" height="18" font="5">10</text>
+<text top="396" left="350" width="58" height="18" font="5">0.18747</text>
+<text top="396" left="467" width="58" height="18" font="5">0.19472</text>
+<text top="396" left="568" width="55" height="18" font="5">96.27%</text>
+<text top="396" left="669" width="72" height="18" font="5">Beta(3,3)</text>
+<text top="418" left="232" width="18" height="18" font="5">50</text>
+<text top="418" left="350" width="58" height="18" font="5">0.09945</text>
+<text top="418" left="467" width="58" height="18" font="5">0.09777</text>
+<text top="418" left="563" width="64" height="18" font="5">101.72%</text>
+<text top="418" left="669" width="72" height="18" font="5">Beta(3,3)</text>
+<text top="440" left="228" width="26" height="18" font="5">100</text>
+<text top="440" left="350" width="58" height="18" font="5">0.07103</text>
+<text top="440" left="467" width="58" height="18" font="5">0.07521</text>
+<text top="440" left="568" width="55" height="18" font="5">94.44%</text>
+<text top="440" left="669" width="72" height="18" font="5">Beta(3,3)</text>
+<text top="461" left="228" width="26" height="18" font="5">500</text>
+<text top="461" left="350" width="58" height="18" font="5">0.03077</text>
+<text top="461" left="467" width="58" height="18" font="5">0.03061</text>
+<text top="461" left="563" width="64" height="18" font="5">100.52%</text>
+<text top="461" left="669" width="72" height="18" font="5">Beta(3,3)</text>
+<text top="483" left="223" width="35" height="18" font="5">1000</text>
+<text top="483" left="350" width="58" height="18" font="5">0.01993</text>
+<text top="483" left="467" width="58" height="18" font="5">0.02018</text>
+<text top="483" left="568" width="55" height="18" font="5">98.74%</text>
+<text top="483" left="669" width="72" height="18" font="5">Beta(3,3)</text>
+<text top="505" left="232" width="18" height="18" font="5">10</text>
+<text top="505" left="350" width="58" height="18" font="5">0.20842</text>
+<text top="505" left="467" width="58" height="18" font="5">0.22220</text>
+<text top="505" left="568" width="55" height="18" font="5">93.80%</text>
+<text top="505" left="669" width="72" height="18" font="5">Beta(5,3)</text>
+<text top="527" left="232" width="18" height="18" font="5">50</text>
+<text top="527" left="350" width="58" height="18" font="5">0.10615</text>
+<text top="527" left="467" width="58" height="18" font="5">0.10517</text>
+<text top="527" left="563" width="64" height="18" font="5">100.93%</text>
+<text top="527" left="669" width="72" height="18" font="5">Beta(5,3)</text>
+<text top="549" left="228" width="26" height="18" font="5">100</text>
+<text top="549" left="350" width="58" height="18" font="5">0.06881</text>
+<text top="549" left="467" width="58" height="18" font="5">0.07096</text>
+<text top="549" left="568" width="55" height="18" font="5">96.96%</text>
+<text top="549" left="669" width="72" height="18" font="5">Beta(5,3)</text>
+<text top="570" left="228" width="26" height="18" font="5">500</text>
+<text top="570" left="350" width="58" height="18" font="5">0.02959</text>
+<text top="570" left="467" width="58" height="18" font="5">0.02971</text>
+<text top="570" left="568" width="55" height="18" font="5">99.60%</text>
+<text top="570" left="669" width="72" height="18" font="5">Beta(5,3)</text>
+<text top="592" left="223" width="35" height="18" font="5">1000</text>
+<text top="592" left="350" width="58" height="18" font="5">0.02176</text>
+<text top="592" left="467" width="58" height="18" font="5">0.02194</text>
+<text top="592" left="568" width="55" height="18" font="5">99.17%</text>
+<text top="592" left="669" width="72" height="18" font="5">Beta(5,3)</text>
+<text top="614" left="232" width="18" height="18" font="5">10</text>
+<text top="614" left="350" width="58" height="18" font="5">0.23054</text>
+<text top="614" left="467" width="58" height="18" font="5">0.23301</text>
+<text top="614" left="568" width="55" height="18" font="5">98.94%</text>
+<text top="614" left="669" width="72" height="18" font="5">Beta(3,5)</text>
+<text top="636" left="232" width="18" height="18" font="5">50</text>
+<text top="636" left="350" width="58" height="18" font="5">0.08993</text>
+<text top="636" left="462" width="67" height="18" font="5">0.089347</text>
+<text top="636" left="563" width="64" height="18" font="5">100.66%</text>
+<text top="636" left="669" width="72" height="18" font="5">Beta(3,5)</text>
+<text top="658" left="228" width="26" height="18" font="5">100</text>
+<text top="658" left="350" width="58" height="18" font="5">0.06541</text>
+<text top="658" left="467" width="58" height="18" font="5">0.06515</text>
+<text top="658" left="563" width="64" height="18" font="5">100.40%</text>
+<text top="658" left="669" width="72" height="18" font="5">Beta(3,5)</text>
+<text top="679" left="228" width="26" height="18" font="5">500</text>
+<text top="679" left="350" width="58" height="18" font="5">0.02978</text>
+<text top="679" left="467" width="58" height="18" font="5">0.03015</text>
+<text top="679" left="568" width="55" height="18" font="5">98.80%</text>
+<text top="679" left="669" width="72" height="18" font="5">Beta(3,5)</text>
+<text top="701" left="223" width="35" height="18" font="5">1000</text>
+<text top="701" left="350" width="58" height="18" font="5">0.01978</text>
+<text top="701" left="467" width="58" height="18" font="5">0.02003</text>
+<text top="701" left="568" width="55" height="18" font="5">98.77%</text>
+<text top="701" left="669" width="72" height="18" font="5">Beta(3,5)</text>
+<text top="723" left="232" width="18" height="18" font="5">10</text>
+<text top="723" left="350" width="58" height="18" font="5">0.20522</text>
+<text top="723" left="467" width="58" height="18" font="5">0.24492</text>
+<text top="723" left="568" width="55" height="18" font="5">83.79%</text>
+<text top="723" left="669" width="72" height="18" font="5">Beta(1,1)</text>
+<text top="745" left="232" width="18" height="18" font="5">50</text>
+<text top="745" left="350" width="58" height="18" font="5">0.10456</text>
+<text top="745" left="467" width="58" height="18" font="5">0.11990</text>
+<text top="745" left="568" width="55" height="18" font="5">87.20%</text>
+<text top="745" left="669" width="72" height="18" font="5">Beta(1,1)</text>
+<text top="766" left="228" width="26" height="18" font="5">100</text>
+<text top="766" left="350" width="58" height="18" font="5">0.07621</text>
+<text top="766" left="467" width="58" height="18" font="5">0.08124</text>
+<text top="766" left="568" width="55" height="18" font="5">93.81%</text>
+<text top="766" left="669" width="72" height="18" font="5">Beta(1,1)</text>
+<text top="788" left="228" width="26" height="18" font="5">500</text>
+<text top="788" left="350" width="58" height="18" font="5">0.02938</text>
+<text top="788" left="467" width="58" height="18" font="5">0.02974</text>
+<text top="788" left="568" width="55" height="18" font="5">98.77%</text>
+<text top="788" left="669" width="72" height="18" font="5">Beta(1,1)</text>
+<text top="810" left="223" width="35" height="18" font="5">1000</text>
+<text top="810" left="350" width="58" height="18" font="5">0.02382</text>
+<text top="810" left="467" width="58" height="18" font="5">0.02428</text>
+<text top="810" left="568" width="55" height="18" font="5">98.09%</text>
+<text top="810" left="669" width="72" height="18" font="5">Beta(1,1)</text>
+<text top="845" left="166" width="583" height="18" font="5">Table 1: Simultation results. Values are the arithmetic means over 30 trials.</text>
+<text top="867" left="166" width="583" height="18" font="5">The functional is iterated 4 times starting with the uniform distribution on</text>
+<text top="889" left="166" width="583" height="18" font="5">[0,1] as initial point. Functions are evaluated at 20 equally spaced points on</text>
+<text top="910" left="166" width="583" height="18" font="5">[0,1]. The proposed estimator can be said to be almost equivalent as the best</text>
+<text top="932" left="166" width="91" height="18" font="5">estimator ˆ</text>
+<text top="932" left="244" width="11" height="18" font="5">F</text>
+<text top="940" left="256" width="8" height="11" font="9">n</text>
+<text top="932" left="264" width="5" height="18" font="5">.</text>
+<text top="1040" left="449" width="18" height="18" font="5">13</text>
+</page>
+</pdf2xml>
