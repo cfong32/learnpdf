@@ -1,4 +1,6 @@
 .ipynb_checkpoints
 temp/
 pdf/
+dataset/
+xml/
 *.pickle
